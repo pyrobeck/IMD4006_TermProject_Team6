@@ -4,7 +4,7 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 [Serializable] 
-public class MoveInputEvent : UnityEvent<float> { }
+public class MoveInputEvent : UnityEvent<float> { } 
 [Serializable]
 public class JumpInputEvent : UnityEvent { }
 [Serializable]
