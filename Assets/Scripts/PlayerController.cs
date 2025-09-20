@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private BoxCollider2D groundCheckCol;
+    [SerializeField] private Animator animator;
 
     private bool isGrounded = true;
     WalkState walkState = WalkState.Idle;
@@ -44,23 +45,28 @@ public class PlayerController : MonoBehaviour
             //(aka the player is not going full speed)
             //and sets the walkState to Walking accordingly
             walkState = WalkState.Walking;
+            animator.SetBool("isWalking", true);
         } else if(horizontal == 1 || horizontal == -1) //help I don't know the absolute function in C#
         {
             //if the stick is pushed fully in either direction 
             //(aka the player is going full speed)
             //then walkState is set to Running
             walkState = WalkState.Running;
+            animator.SetBool("isRunning", true);
         } else if(horizontal == 0)
         {
             //if the stick is not pushed at all
             //(aka the player is not moving)
             //then walkState is set to Idle
             walkState = WalkState.Idle;
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isRunning", false);
         }
         else
         {
             //if we somehow get a different input, they're probably moving so let's go with Running
             walkState = WalkState.Running;
+            animator.SetBool("isRunning", true);
         }
 
         Debug.Log(walkState);
@@ -71,6 +77,7 @@ public class PlayerController : MonoBehaviour
         if(isGrounded == true)
         {
           rigidBody.linearVelocityY = jumpHeight;
+          animator.SetBool("isJumping", true);
         }
 
     }
@@ -83,6 +90,8 @@ public class PlayerController : MonoBehaviour
         //the input controller script on the game manager
 
 
+        animator.SetBool("isRolling", true);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -91,6 +100,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Ground") == true)
         {
             isGrounded= true;
+            animator.SetBool("isJumping", false);
         }
 
     }

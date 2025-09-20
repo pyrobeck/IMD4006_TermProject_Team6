@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-[Serializable] 
-public class MoveInputEvent : UnityEvent<float> { } 
+[Serializable]
+public class MoveInputEvent : UnityEvent<float> { }
 [Serializable]
 public class JumpInputEvent : UnityEvent { }
 [Serializable]
@@ -17,7 +17,8 @@ public class InputController : MonoBehaviour
     public JumpInputEvent jumpInputEvent;
     public RollInputEvent rollInputEvent;
 
-    private void Awake(){
+    private void Awake()
+    {
         controls = new InputSystem_Actions();
     }
     private void OnEnable()
@@ -26,7 +27,7 @@ public class InputController : MonoBehaviour
 
         controls.Player.Move.performed += OnMovePerformed;
         controls.Player.Move.canceled += OnMovePerformed;
-        
+
         controls.Player.Jump.performed += OnJumpPerformed;
 
         controls.Player.Roll.performed += OnRollPerformed;
