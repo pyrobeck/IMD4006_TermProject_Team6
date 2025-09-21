@@ -69,14 +69,15 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isRunning", true);
 
             //going left
-            if (horizontal == -1){
-                animator.transform.Rotate(0, 180, 0);
+            if (horizontal == -1)
+            {
+                animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
             }
             //going right
-            if (horizontal == 1){
-                animator.transform.Rotate(0, 180, 0);
+            if (horizontal == 1)
+            {
+                animator.transform.localScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f);
             }
-
 
         }
         else if(horizontal == 0)
