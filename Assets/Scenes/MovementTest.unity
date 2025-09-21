@@ -435,7 +435,7 @@ MonoBehaviour:
   jumpHeight: 20
   rigidBody: {fileID: 0}
   groundCheckCol: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 419141058}
 --- !u!320 &419141057
 PlayableDirector:
   m_ObjectHideFlags: 0
