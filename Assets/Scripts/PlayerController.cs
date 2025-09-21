@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private BoxCollider2D groundCheckCol;
     [SerializeField] private Animator animator;
 
+    
+
     private bool isGrounded = true;
     WalkState walkState = WalkState.Idle;
 
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
