@@ -49,6 +49,17 @@ public class PlayerController : MonoBehaviour
             //and sets the walkState to Walking accordingly
             walkState = WalkState.Walking;
             animator.SetBool("isWalking", true);
+
+            //going left
+            if (horizontal < 0){
+                animator.transform.Rotate(0, 180, 0);
+            }
+            //going right
+            if (horizontal > 0) {
+                animator.transform.Rotate(0, 180, 0);
+            }
+
+
         } else if(horizontal == 1 || horizontal == -1) //help I don't know the absolute function in C#
         {
             //if the stick is pushed fully in either direction 
@@ -56,7 +67,19 @@ public class PlayerController : MonoBehaviour
             //then walkState is set to Running
             walkState = WalkState.Running;
             animator.SetBool("isRunning", true);
-        } else if(horizontal == 0)
+
+            //going left
+            if (horizontal == -1){
+                animator.transform.Rotate(0, 180, 0);
+            }
+            //going right
+            if (horizontal == 1){
+                animator.transform.Rotate(0, 180, 0);
+            }
+
+
+        }
+        else if(horizontal == 0)
         {
             //if the stick is not pushed at all
             //(aka the player is not moving)
@@ -94,6 +117,7 @@ public class PlayerController : MonoBehaviour
 
 
         animator.SetBool("isRolling", true);
+        animator.SetBool("isRolling", false);
 
     }
 
@@ -114,6 +138,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Ground") == true)
         {
             isGrounded = false;
+            animator.SetBool("isJumping", false);
         }
     }
 
