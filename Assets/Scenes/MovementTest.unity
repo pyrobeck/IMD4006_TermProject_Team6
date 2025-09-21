@@ -435,6 +435,7 @@ MonoBehaviour:
   jumpHeight: 20
   rigidBody: {fileID: 0}
   groundCheckCol: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!320 &419141057
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -1054,7 +1055,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1768506265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32da85ce50ea49b4795a1aceb8eb29b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 76ec32e3d555f1e46892159276095f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveInputEvent:
