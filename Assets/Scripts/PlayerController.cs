@@ -160,7 +160,7 @@ public class PlayerController : MonoBehaviour
 
          if (!audioSource.isPlaying){
             audioSource.clip = walkAudio;
-            audioSource.volume = 0.1f;
+            audioSource.volume = 1.0f;
             audioSource.loop = true;      // enable looping
             audioSource.Play();
         }   
@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
 
          if (!audioSource.isPlaying){
             audioSource.clip = runAudio;
-            audioSource.volume = 0.1f;
+            audioSource.volume = 1.0f;
             audioSource.loop = true;      // enable looping
             audioSource.Play();
         }   
@@ -187,7 +187,7 @@ public class PlayerController : MonoBehaviour
     }
     public void PlayJumpSound(){
         Debug.Log("Enters walksounds function");
-        audioSource.PlayOneShot(jumpAudio, 0.2f);
+        audioSource.PlayOneShot(jumpAudio, 1.0f);
 
     }
     
