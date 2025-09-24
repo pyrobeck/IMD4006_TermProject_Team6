@@ -127,6 +127,8 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isRolling", true);
         animator.SetBool("isRolling", false);
 
+        //This is the sound function for the roll, it works
+        //PlayRollSound();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
