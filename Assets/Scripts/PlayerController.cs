@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip walkAudio;
     public AudioClip runAudio;
     public AudioClip jumpAudio;
-    public float volume = 0.5f;
+    public AudioClip rollAudio;
+    public float volume = 1.0f;
 
     private bool isGrounded = true;
     WalkState walkState = WalkState.Idle;
@@ -188,6 +189,12 @@ public class PlayerController : MonoBehaviour
     public void PlayJumpSound(){
         Debug.Log("Enters walksounds function");
         audioSource.PlayOneShot(jumpAudio, 1.0f);
+
+    }
+
+    public void PlayRollSound(){
+        Debug.Log("Enters rollsounds function");
+        audioSource.PlayOneShot(rollAudio, 1.0f);
 
     }
     
