@@ -19,7 +19,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private BoxCollider2D groundCheckCol;
     [SerializeField] private Animator animator;
 
-    
+    public AudioSource audioSource;
+    public AudioClip walkAudio;
+    public AudioClip runAudio;
+    public AudioClip jumpAudio;
+    public AudioClip rollAudio;
+    public float volume = 1.0f;
 
     private bool isGrounded = true;
     WalkState walkState = WalkState.Idle;
@@ -30,6 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -49,14 +55,13 @@ public class PlayerController : MonoBehaviour
             //and sets the walkState to Walking accordingly
             walkState = WalkState.Walking;
             animator.SetBool("isWalking", true);
-
-            //going left
-            if (horizontal < 0){
-                animator.transform.Rotate(0, 180, 0);
-            }
-            //going right
-            if (horizontal > 0) {
-                animator.transform.Rotate(0, 180, 0);
+            animator.SetBool("isRunning", false);
+            PlayWalkSound();
+           if (horizontal < 0)
+            {
+                animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
+            }else{
+                animator.transform.localScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f);
             }
 
 
@@ -67,18 +72,16 @@ public class PlayerController : MonoBehaviour
             //then walkState is set to Running
             walkState = WalkState.Running;
             animator.SetBool("isRunning", true);
+            animator.SetBool("isWalking", false);
 
-            //going left
-            if (horizontal == -1)
+            PlayRunSound();
+
+            if (horizontal < 0)
             {
                 animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
-            }
-            //going right
-            if (horizontal == 1)
-            {
+            } else {
                 animator.transform.localScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f);
             }
-
         }
         else if(horizontal == 0)
         {
@@ -88,12 +91,15 @@ public class PlayerController : MonoBehaviour
             walkState = WalkState.Idle;
             animator.SetBool("isWalking", false);
             animator.SetBool("isRunning", false);
+            StopSound();
         }
         else
         {
             //if we somehow get a different input, they're probably moving so let's go with Running
             walkState = WalkState.Running;
             animator.SetBool("isRunning", true);
+            PlayRunSound();
+
         }
 
         Debug.Log(walkState);
@@ -103,8 +109,9 @@ public class PlayerController : MonoBehaviour
     {
         if(isGrounded == true)
         {
-          rigidBody.linearVelocityY = jumpHeight;
-          animator.SetBool("isJumping", true);
+            rigidBody.linearVelocityY = jumpHeight;
+            animator.SetBool("isJumping", true);
+            PlayJumpSound();
         }
 
     }
@@ -128,6 +135,7 @@ public class PlayerController : MonoBehaviour
             moveSpeed = 6.5F;
             animator.SetBool("isRolling", false);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -156,4 +164,48 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
+
+    public void PlayWalkSound(){
+        Debug.Log("Enters walksounds function");
+
+         if (!audioSource.isPlaying){
+            audioSource.clip = walkAudio;
+            audioSource.volume = 1.0f;
+            audioSource.loop = true;      // enable looping
+            audioSource.Play();
+        }   
+    }
+
+    public void PlayRunSound(){
+        Debug.Log("Enters runsounds function");
+
+         if (!audioSource.isPlaying){
+            audioSource.clip = runAudio;
+            audioSource.volume = 1.0f;
+            audioSource.loop = true;      // enable looping
+            audioSource.Play();
+        }   
+    }
+
+     public void StopSound(){
+        Debug.Log("Enters stop function");
+
+        if (audioSource.isPlaying){
+                audioSource.Stop();
+                Debug.Log("Stop the music");
+        }
+    }
+    public void PlayJumpSound(){
+        Debug.Log("Enters walksounds function");
+        audioSource.PlayOneShot(jumpAudio, 1.0f);
+
+    }
+
+    public void PlayRollSound(){
+        Debug.Log("Enters rollsounds function");
+        audioSource.PlayOneShot(rollAudio, 1.0f);
+
+    }
+    
+
 }

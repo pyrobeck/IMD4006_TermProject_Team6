@@ -442,7 +442,7 @@ MonoBehaviour:
   runAudio: {fileID: 8300000, guid: 52e35c27d0ffe514681754e694018251, type: 3}
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
-  volume: 1
+  volume: 0.5
 --- !u!320 &419141057
 PlayableDirector:
   m_ObjectHideFlags: 0
