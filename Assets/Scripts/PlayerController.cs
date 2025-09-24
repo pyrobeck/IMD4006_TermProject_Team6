@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour
             rigidBody.linearVelocityY = jumpHeight;
             animator.SetBool("isJumping", true);
             PlayJumpSound();
-        }
+        } 
 
     }
 
