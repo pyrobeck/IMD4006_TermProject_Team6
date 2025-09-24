@@ -132,6 +132,7 @@ public class PlayerController : MonoBehaviour
         //the input controller script on the game manager
         if (!isRolling && isGrounded)
         {
+            PlayRollSound();
             StartCoroutine(Roll());
         }
 
@@ -163,10 +164,6 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     public void PlayWalkSound(){
         Debug.Log("Enters walksounds function");
 
@@ -208,14 +205,7 @@ public class PlayerController : MonoBehaviour
         audioSource.PlayOneShot(rollAudio, 1.0f);
 
     }
-    
 
-}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     private System.Collections.IEnumerator Roll()
     {
         //the actual rolling is done here; aka making it faster for the time used
@@ -232,13 +222,5 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isRolling", false);
         isRolling = false;
     }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 }
->>>>>>> Stashed changes
-=======
-}
->>>>>>> Stashed changes
-=======
-}
->>>>>>> Stashed changes
