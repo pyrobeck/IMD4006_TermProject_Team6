@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip walkAudio;
+    public AudioClip runAudio;
     public AudioClip jumpAudio;
     public float volume = 0.5f;
 
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
             walkState = WalkState.Walking;
             animator.SetBool("isWalking", true);
             animator.SetBool("isRunning", false);
-
+            PlayWalkSound();
            if (horizontal < 0)
             {
                 animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
@@ -72,7 +73,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isRunning", true);
             animator.SetBool("isWalking", false);
 
-            PlayWalkSound();
+            PlayRunSound();
 
             if (horizontal < 0)
             {
@@ -96,6 +97,7 @@ public class PlayerController : MonoBehaviour
             //if we somehow get a different input, they're probably moving so let's go with Running
             walkState = WalkState.Running;
             animator.SetBool("isRunning", true);
+            PlayRunSound();
 
         }
 
@@ -156,12 +158,23 @@ public class PlayerController : MonoBehaviour
     public void PlayWalkSound(){
         Debug.Log("Enters walksounds function");
 
-        audioSource.clip = walkAudio;
-        audioSource.volume = 0.1f;
-        audioSource.loop = true;      // enable looping
-        audioSource.isPlaying
-        audioSource.Play();
-        
+         if (!audioSource.isPlaying){
+            audioSource.clip = walkAudio;
+            audioSource.volume = 0.1f;
+            audioSource.loop = true;      // enable looping
+            audioSource.Play();
+        }   
+    }
+
+    public void PlayRunSound(){
+        Debug.Log("Enters runsounds function");
+
+         if (!audioSource.isPlaying){
+            audioSource.clip = runAudio;
+            audioSource.volume = 0.1f;
+            audioSource.loop = true;      // enable looping
+            audioSource.Play();
+        }   
     }
 
      public void StopSound(){
@@ -174,8 +187,7 @@ public class PlayerController : MonoBehaviour
     }
     public void PlayJumpSound(){
         Debug.Log("Enters walksounds function");
-
-        audioSource.PlayOneShot(jumpAudio, 0.5f);
+        audioSource.PlayOneShot(jumpAudio, 0.2f);
 
     }
     
