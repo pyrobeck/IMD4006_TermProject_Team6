@@ -438,7 +438,8 @@ MonoBehaviour:
   groundCheckCol: {fileID: 0}
   animator: {fileID: 419141058}
   audioSource: {fileID: 0}
-  KoD_walkSoundLoop: {fileID: 0}
+  walkAudio: {fileID: 8300000, guid: 248689fcdafe38940a2863c81f7ccbc9, type: 3}
+  jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   volume: 0.5
 --- !u!320 &419141057
 PlayableDirector:
@@ -490,11 +491,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 248689fcdafe38940a2863c81f7ccbc9, type: 3}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

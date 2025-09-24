@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
         {
             rigidBody.linearVelocityY = jumpHeight;
             animator.SetBool("isJumping", true);
-            audioSource.PlayOneShot(jumpAudio, 0.5f);
+            PlayJumpSound();
         }
 
     }
@@ -154,14 +154,14 @@ public class PlayerController : MonoBehaviour
     }
 
     public void PlayWalkSound(){
-        Debug.Log("Enters sounds function");
+        Debug.Log("Enters walksounds function");
 
         audioSource.clip = walkAudio;
-        audioSource.volume = 0.5f;
+        audioSource.volume = 0.1f;
         audioSource.loop = true;      // enable looping
-        if (!audioSource.isPlaying) {
-            audioSource.Play();
-        }
+        audioSource.isPlaying
+        audioSource.Play();
+        
     }
 
      public void StopSound(){
@@ -171,6 +171,12 @@ public class PlayerController : MonoBehaviour
                 audioSource.Stop();
                 Debug.Log("Stop the music");
         }
+    }
+    public void PlayJumpSound(){
+        Debug.Log("Enters walksounds function");
+
+        audioSource.PlayOneShot(jumpAudio, 0.5f);
+
     }
     
 
