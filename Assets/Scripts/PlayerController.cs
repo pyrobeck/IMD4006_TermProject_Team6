@@ -43,12 +43,17 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Move();
+
 
         if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && isGrounded)
         {
             StartCoroutine(Roll());
         }
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
     }
     public void onMoveInput(float horizontal)
     {
