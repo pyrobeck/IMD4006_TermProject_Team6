@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     {
         Idle,
         Walking,
-        Running
+        Running,
     }
 
     [SerializeField] private float moveSpeed = 6.5F;
@@ -115,11 +115,19 @@ public class PlayerController : MonoBehaviour
         //Roll code goes in here
         //Remember to connect the player and their functions to
         //the input controller script on the game manager
-
-
-        animator.SetBool("isRolling", true);
-        animator.SetBool("isRolling", false);
-
+        if(Input.GetKeyDown(KeyCode.J)) //Input.GetKeyDown(KeyCode.JoystickButton1)
+        {
+            moveSpeed = 10F;
+            animator.SetBool("isRolling", true);
+            new WaitForSeconds(1f);
+            moveSpeed = 6.5F;
+            animator.SetBool("isRolling", false);
+        }
+        else
+        {
+            moveSpeed = 6.5F;
+            animator.SetBool("isRolling", false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
