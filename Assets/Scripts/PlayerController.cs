@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float moveSpeed = 6.5F;
     [SerializeField] private float jumpHeight = 20F;
+    [SerializeField] private float rollSpeed = 10F;
+    [SerializeField] private float rollDuration = 0.6F;
 
     float horizontal;
 
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour
     public float volume = 1.0f;
 
     private bool isGrounded = true;
+    private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
 
     //idle = 0 walking between -1 and 1 running = 1
@@ -41,6 +44,11 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         Move();
+
+        if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && isGrounded)
+        {
+            StartCoroutine(Roll());
+        }
     }
     public void onMoveInput(float horizontal)
     {
@@ -122,18 +130,9 @@ public class PlayerController : MonoBehaviour
         //Roll code goes in here
         //Remember to connect the player and their functions to
         //the input controller script on the game manager
-        if(Input.GetKeyDown(KeyCode.J)) //Input.GetKeyDown(KeyCode.JoystickButton1)
+        if (!isRolling && isGrounded)
         {
-            moveSpeed = 10F;
-            animator.SetBool("isRolling", true);
-            new WaitForSeconds(1f);
-            moveSpeed = 6.5F;
-            animator.SetBool("isRolling", false);
-        }
-        else
-        {
-            moveSpeed = 6.5F;
-            animator.SetBool("isRolling", false);
+            StartCoroutine(Roll());
         }
 
     }
@@ -165,6 +164,7 @@ public class PlayerController : MonoBehaviour
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
 
+<<<<<<< Updated upstream
     public void PlayWalkSound(){
         Debug.Log("Enters walksounds function");
 
@@ -209,3 +209,22 @@ public class PlayerController : MonoBehaviour
     
 
 }
+=======
+    private System.Collections.IEnumerator Roll()
+    {
+        //the actual rolling is done here; aka making it faster for the time used
+        Debug.Log("Rolling!");
+        isRolling = true;
+        animator.SetBool("isRolling", true);
+
+        float originalSpeed = moveSpeed;
+        moveSpeed = rollSpeed;
+
+        yield return new WaitForSeconds(rollDuration);
+
+        moveSpeed = originalSpeed;
+        animator.SetBool("isRolling", false);
+        isRolling = false;
+    }
+}
+>>>>>>> Stashed changes
