@@ -166,6 +166,7 @@ public class PlayerController : MonoBehaviour
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public void PlayWalkSound(){
         Debug.Log("Enters walksounds function");
 
@@ -213,6 +214,8 @@ public class PlayerController : MonoBehaviour
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     private System.Collections.IEnumerator Roll()
     {
         //the actual rolling is done here; aka making it faster for the time used
@@ -230,6 +233,10 @@ public class PlayerController : MonoBehaviour
         isRolling = false;
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+}
+>>>>>>> Stashed changes
+=======
 }
 >>>>>>> Stashed changes
 =======
