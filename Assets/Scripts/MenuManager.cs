@@ -6,6 +6,15 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject controlsPanel; // Assign your controls image panel here
     public GameObject creditsPanel;  // Assign a panel for credits text later
+    public GameObject levelsPanel;  
+
+    void Start()
+    {
+        controlsPanel.SetActive(false);
+        creditsPanel.SetActive(false);        
+        levelsPanel.SetActive(false);
+
+    }
 
     // Start Level 1
     public void StartGame()
@@ -14,9 +23,14 @@ public class MenuManager : MonoBehaviour
     }
 
     // Open Levels Scene
-    public void OpenLevels()
+    public void ShowLevels()
     {
-        SceneManager.LoadScene("LevelsScene"); // Make this another scene
+        levelsPanel.SetActive(true);
+    }
+
+    public void HideLevels()
+    {
+        levelsPanel.SetActive(false);
     }
 
     // Show Controls Image
@@ -41,4 +55,22 @@ public class MenuManager : MonoBehaviour
         creditsPanel.SetActive(false);
     }
 
+    // Level buttons
+    public void LoadLevel1()
+    {
+        Debug.Log("Load Level 1");
+        //SceneManager.LoadScene("Level1");
+    }
+
+    public void LoadLevel2()
+    {
+        Debug.Log("Load Level 2");
+        //SceneManager.LoadScene("Level2");
+    }
+
+    public void LoadLevel3()
+    {
+        Debug.Log("Load Level 3");
+        //SceneManager.LoadScene("Level3");
+    }
 }
