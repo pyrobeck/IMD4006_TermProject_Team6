@@ -22,8 +22,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator animator;
 
     public AudioSource audioSource;
-    public AudioClip walkAudio;
-    public AudioClip runAudio;
+    public AudioSource audioSourceMusic;
+    public AudioSource audioSourceBass;
+    public AudioSource audioSourceDrums;
+
+    public AudioClip music;
+    public AudioClip bass;
+    public AudioClip drums;
+
     public AudioClip jumpAudio;
     public AudioClip rollAudio;
     public float volume = 1.0f;
@@ -39,11 +45,15 @@ public class PlayerController : MonoBehaviour
         rigidBody = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        
+        StartTracks();
+        
     }
 
     private void Update()
     {
         Move();
+        drumVol();
 
         if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && isGrounded)
         {
@@ -64,7 +74,7 @@ public class PlayerController : MonoBehaviour
             walkState = WalkState.Walking;
             animator.SetBool("isWalking", true);
             animator.SetBool("isRunning", false);
-            PlayWalkSound();
+            //PlayWalkSound();
            if (horizontal < 0)
             {
                 animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
@@ -82,7 +92,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isRunning", true);
             animator.SetBool("isWalking", false);
 
-            PlayRunSound();
+            //PlayRunSound();
 
             if (horizontal < 0)
             {
@@ -99,14 +109,14 @@ public class PlayerController : MonoBehaviour
             walkState = WalkState.Idle;
             animator.SetBool("isWalking", false);
             animator.SetBool("isRunning", false);
-            StopSound();
+            //StopSound();
         }
         else
         {
             //if we somehow get a different input, they're probably moving so let's go with Running
             walkState = WalkState.Running;
             animator.SetBool("isRunning", true);
-            PlayRunSound();
+           // PlayRunSound();
 
         }
 
@@ -164,47 +174,20 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
-    public void PlayWalkSound(){
-        Debug.Log("Enters walksounds function");
 
-         if (!audioSource.isPlaying){
-            audioSource.clip = walkAudio;
-            audioSource.volume = 1.0f;
-            audioSource.loop = true;      // enable looping
-            audioSource.Play();
-        }   
-    }
 
-    public void PlayRunSound(){
-        Debug.Log("Enters runsounds function");
 
-         if (!audioSource.isPlaying){
-            audioSource.clip = runAudio;
-            audioSource.volume = 1.0f;
-            audioSource.loop = true;      // enable looping
-            audioSource.Play();
-        }   
-    }
+    //  public void StopSound(){
+    //     Debug.Log("Enters stop function");
 
-     public void StopSound(){
-        Debug.Log("Enters stop function");
+    //     if (audioSource.isPlaying){
+    //             audioSource.Stop();
+    //             Debug.Log("Stop the music");
+    //     }
+    // }
 
-        if (audioSource.isPlaying){
-                audioSource.Stop();
-                Debug.Log("Stop the music");
-        }
-    }
-    public void PlayJumpSound(){
-        Debug.Log("Enters walksounds function");
-        audioSource.PlayOneShot(jumpAudio, 1.0f);
 
-    }
 
-    public void PlayRollSound(){
-        Debug.Log("Enters rollsounds function");
-        audioSource.PlayOneShot(rollAudio, 1.0f);
-
-    }
 
     private System.Collections.IEnumerator Roll()
     {
@@ -223,4 +206,38 @@ public class PlayerController : MonoBehaviour
         isRolling = false;
     }
 
+////////////////////////////////////////////////////////////////////////////
+    public void StartTracks(){
+             // 🎶 Start background tracks
+        audioSourceMusic.clip = music;
+        audioSourceMusic.volume = 0.5f; // half volume
+        audioSourceMusic.loop = true;
+        audioSourceMusic.Play();
+
+        audioSourceBass.clip = bass;
+        audioSourceBass.volume = 0.0f;// start silent
+        audioSourceBass.loop = true;
+        audioSourceBass.Play();
+
+        audioSourceDrums.clip = drums; //Horizontal movement
+        audioSourceDrums.volume = 0f; // start silent
+        audioSourceDrums.loop = true;
+        audioSourceDrums.Play();
+    }
+
+    public void drumVol(){
+        audioSourceDrums.volume = Mathf.Abs(horizontal);
+    }
+
+    public void PlayJumpSound(){
+        Debug.Log("Enters walksounds function");
+        audioSource.PlayOneShot(jumpAudio, 1.0f);
+
+    }
+        
+    public void PlayRollSound(){
+        Debug.Log("Enters rollsounds function");
+        audioSource.PlayOneShot(rollAudio, 1.0f);
+
+    }
 }
