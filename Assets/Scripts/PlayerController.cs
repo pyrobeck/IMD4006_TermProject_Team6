@@ -5,9 +5,11 @@ public class PlayerController : MonoBehaviour
 {
     private enum WalkState
     {
-        Idle,
-        Walking,
-        Running,
+        Idle, //0
+        Walking, //1
+        Running, //2
+        Jumping, //3
+        Rolling //4
     }
 
     [SerializeField] private float moveSpeed = 6.5F;
@@ -72,8 +74,7 @@ public class PlayerController : MonoBehaviour
             //(aka the player is not going full speed)
             //and sets the walkState to Walking accordingly
             walkState = WalkState.Walking;
-            animator.SetBool("isWalking", true);
-            animator.SetBool("isRunning", false);
+            animator.SetInteger("state", 1);
             //PlayWalkSound();
            if (horizontal < 0)
             {
@@ -89,8 +90,7 @@ public class PlayerController : MonoBehaviour
             //(aka the player is going full speed)
             //then walkState is set to Running
             walkState = WalkState.Running;
-            animator.SetBool("isRunning", true);
-            animator.SetBool("isWalking", false);
+            animator.SetInteger("state", 2);
 
             //PlayRunSound();
 
@@ -107,16 +107,15 @@ public class PlayerController : MonoBehaviour
             //(aka the player is not moving)
             //then walkState is set to Idle
             walkState = WalkState.Idle;
-            animator.SetBool("isWalking", false);
-            animator.SetBool("isRunning", false);
+            animator.SetInteger("state", 0);
             //StopSound();
         }
         else
         {
             //if we somehow get a different input, they're probably moving so let's go with Running
             walkState = WalkState.Running;
-            animator.SetBool("isRunning", true);
-           // PlayRunSound();
+            animator.SetInteger("state", 2);
+            // PlayRunSound();
 
         }
 
@@ -128,7 +127,7 @@ public class PlayerController : MonoBehaviour
         if(isGrounded == true)
         {
             rigidBody.linearVelocityY = jumpHeight;
-            animator.SetBool("isJumping", true);
+            animator.SetInteger("state", 3);
             PlayJumpSound();
         }
 
@@ -154,7 +153,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Ground") == true)
         {
             isGrounded= true;
-            animator.SetBool("isJumping", false);
+            animator.SetInteger("state", 0);
         }
 
     }
@@ -165,7 +164,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Ground") == true)
         {
             isGrounded = false;
-            animator.SetBool("isJumping", false);
+            animator.SetInteger("state", 3);
         }
     }
 
@@ -194,7 +193,7 @@ public class PlayerController : MonoBehaviour
         //the actual rolling is done here; aka making it faster for the time used
         Debug.Log("Rolling!");
         isRolling = true;
-        animator.SetBool("isRolling", true);
+        animator.SetInteger("state", 4);
 
         float originalSpeed = moveSpeed;
         moveSpeed = rollSpeed;
@@ -202,7 +201,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(rollDuration);
 
         moveSpeed = originalSpeed;
-        animator.SetBool("isRolling", false);
+        animator.SetInteger("state", 0);
         isRolling = false;
     }
 
