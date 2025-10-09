@@ -9,24 +9,35 @@ public class cameraMovement : MonoBehaviour
     Vector3 zOffset = new Vector3(0, 0, -10);
     Vector3 lookAheadOffset = new Vector3(3, 0, 0);
     int direction = 1;
-    [SerializeField] float lookAheadOffsetX = 4;
+    [SerializeField] float lookAheadOffsetX;
     Vector3 yOffset;
+    Vector3 targetX;
 
     [SerializeField] float zoom = 7;
+
+    float screenUpperLimit;
+    float screenLowerLimit;
 
     void Start()
     {
         this.GetComponent<Camera>().orthographicSize = zoom;
-        yOffset = new Vector3 (0, zoom/2, 0);
+        yOffset = new Vector3 (0, zoom/2, 0);  //player will always be in the bottom quarter of the screen
+
+        lookAheadOffsetX = (float)(zoom / 3) + zoom; //player will always have about 90% of the screen in front of them
+
+        screenUpperLimit = zoom + zoom / 2;
+        screenLowerLimit = -zoom + zoom/2;
     }
 
     // Update is called once per frame
     void Update()
     {
+        targetX = new Vector3 (target.position.x, 0, 0);
         updateDirection();
         updateLookAheadOffset();
+        updateYOffset();
 
-        transform.position = Vector3.MoveTowards(this.transform.position, target.position + lookAheadOffset + yOffset + zOffset, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(this.transform.position, targetX + lookAheadOffset + yOffset + zOffset, moveSpeed * Time.deltaTime);
     }
 
     private void updateDirection()
@@ -45,6 +56,27 @@ public class cameraMovement : MonoBehaviour
     {
         lookAheadOffset = new Vector3(lookAheadOffsetX * direction, 0, 0);
     }
+
+    private void updateYOffset()
+    {
+        if(target.position.y > screenUpperLimit)
+        {
+            yOffset.y = yOffset.y + (float)(zoom*1.5);
+            screenUpperLimit = screenUpperLimit + (float)(zoom * 1.5);
+            screenLowerLimit = screenLowerLimit + (float)(zoom * 1.5);
+        }
+        if (target.position.y < screenLowerLimit)
+        {
+            yOffset.y = yOffset.y - (float)(zoom * 1.5);
+            screenUpperLimit = screenUpperLimit - (float)(zoom * 1.5);
+            screenLowerLimit = screenLowerLimit - (float)(zoom * 1.5);
+        }
+    }
+
+
+
+
+
 }
 
 
