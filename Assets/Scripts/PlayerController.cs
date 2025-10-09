@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
         Rolling //4
     }
 
+  
+
     [SerializeField] private float moveSpeed = 6.5F;
     [SerializeField] private float jumpHeight = 20F;
     [SerializeField] private float rollSpeed = 10F;
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded = true;
     private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
+    Vector3 directionFacing = new Vector3(1, 0, 0);
 
     //idle = 0 walking between -1 and 1 running = 1
 
@@ -54,13 +57,18 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Move();
+       
         drumVol();
 
         if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && isGrounded)
         {
             StartCoroutine(Roll());
         }
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
     }
     public void onMoveInput(float horizontal)
     {
@@ -78,9 +86,11 @@ public class PlayerController : MonoBehaviour
             //PlayWalkSound();
            if (horizontal < 0)
             {
+                directionFacing = new Vector3(-1, 0, 0);
                 animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
             }else{
                 animator.transform.localScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f);
+                directionFacing = new Vector3(1, 0, 0);
             }
 
 
@@ -96,9 +106,11 @@ public class PlayerController : MonoBehaviour
 
             if (horizontal < 0)
             {
-                animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
+                directionFacing = new Vector3(-1, 0, 0);
+                animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f); //what in the world do these numbers mean
             } else {
-                animator.transform.localScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f);
+                directionFacing = new Vector3(1, 0, 0);
+                animator.transform.localScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f); //maybe make a constant or something
             }
         }
         else if(horizontal == 0)
@@ -120,6 +132,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Debug.Log(walkState);
+        Debug.Log(horizontal);
     }
 
     public void onJumpInput()
