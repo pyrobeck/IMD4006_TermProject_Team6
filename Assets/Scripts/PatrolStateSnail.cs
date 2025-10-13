@@ -27,10 +27,6 @@ public class PatrolStateSnail : MonoBehaviour
         if (hit.collider == null | hitEnemy.collider == true)
         {
             Rotate();
-            if(hitEnemy.collider == true)
-            {
-                Debug.Log("enemy");
-            }
         }
     }
 
