@@ -77,9 +77,9 @@ public class PlayerController : MonoBehaviour
     public void onMoveInput(float horizontal)
     {
         this.horizontal= horizontal;
-        Debug.Log(horizontal);
+        //Debug.Log(horizontal);
 
-        if (horizontal < 1 && horizontal > -1 && horizontal!= 0)
+        if (horizontal < 0.8 && horizontal > -0.8 && horizontal!= 0)
         {
 
             //If the stick is not pushed all the way in either direction
@@ -135,8 +135,8 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        Debug.Log(walkState);
-        Debug.Log(horizontal);
+       // Debug.Log(walkState);
+       // Debug.Log(horizontal);
     }
 
     public void onJumpInput()
