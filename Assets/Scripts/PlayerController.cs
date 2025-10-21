@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
         Rolling //4
     }
 
-  
 
     [SerializeField] private float moveSpeed = 6.5F;
     [SerializeField] private float jumpHeight = 20F;
@@ -45,14 +44,18 @@ public class PlayerController : MonoBehaviour
 
     //idle = 0 walking between -1 and 1 running = 1
 
+    private Vector3 lastCheckpointPosition;
+
+
     private void Start()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-        
+        Vector3 lastCheckpointPosition = new Vector3(1f, 1f, 1f); // Default position
+
         StartTracks();
-        
+
     }
 
     private void Update()
@@ -70,6 +73,7 @@ public class PlayerController : MonoBehaviour
     {
         Move();
     }
+
     public void onMoveInput(float horizontal)
     {
         this.horizontal= horizontal;
@@ -168,6 +172,25 @@ public class PlayerController : MonoBehaviour
             isGrounded= true;
             animator.SetInteger("state", 0);
         }
+        // Store the position of the checkpoint
+        if (collision.CompareTag("Respawn") == true) {
+            lastCheckpointPosition = collision.transform.position;
+            Debug.Log("Checkpoint reached at: " + lastCheckpointPosition);
+
+            // Deactivate all other checkpoints
+            foreach (Checkpoint cp in FindObjectsOfType<Checkpoint>()) { cp.SetInactive(); }
+
+            Checkpoint thisCheckpoint = collision.GetComponent<Checkpoint>();
+                if (thisCheckpoint != null) {
+                    thisCheckpoint.SetActive();
+                }
+        }
+
+        // If collides with enemy, go back to checkpoint
+        if (collision.CompareTag("Enemies") == true) {
+            transform.position = lastCheckpointPosition;
+            Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
+        }
 
     }
 
@@ -179,6 +202,7 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
             animator.SetInteger("state", 3);
         }
+
     }
 
     private void Move()
@@ -186,20 +210,6 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
-
-
-
-    //  public void StopSound(){
-    //     Debug.Log("Enters stop function");
-
-    //     if (audioSource.isPlaying){
-    //             audioSource.Stop();
-    //             Debug.Log("Stop the music");
-    //     }
-    // }
-
-
-
 
     private System.Collections.IEnumerator Roll()
     {
@@ -218,7 +228,7 @@ public class PlayerController : MonoBehaviour
         isRolling = false;
     }
 
-////////////////////////////////////////////////////////////////////////////
+///////////////////// Play Music ///////////////////////////////////////////////////////
     public void StartTracks(){
              // 🎶 Start background tracks
         audioSourceMusic.clip = music;
@@ -252,4 +262,16 @@ public class PlayerController : MonoBehaviour
         audioSource.PlayOneShot(rollAudio, 1.0f);
 
     }
+
+    /////////////////////Collsion with enemies and check point //////////////////////////////////
+
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemies"))
+        {
+            transform.position = lastCheckpointPosition;
+        }
+    }
+
 }
