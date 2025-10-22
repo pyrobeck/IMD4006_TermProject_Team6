@@ -230,7 +230,7 @@ public class PlayerController : MonoBehaviour
 
 ///////////////////// Play Music ///////////////////////////////////////////////////////
     public void StartTracks(){
-             // 🎶 Start background tracks
+             // Start background tracks
         audioSourceMusic.clip = music;
         audioSourceMusic.volume = 0.5f; // half volume
         audioSourceMusic.loop = true;

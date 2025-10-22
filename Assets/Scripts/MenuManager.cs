@@ -30,7 +30,7 @@ public class MenuManager : MonoBehaviour
     public void StartGame()
     {
         StopMusic();
-        SceneManager.LoadScene("Level1"); // Replace with your level 1 scene name
+        SceneManager.LoadScene("Level_1");
     }
 
     // Open Levels Scene
@@ -71,7 +71,7 @@ public class MenuManager : MonoBehaviour
     {
         StopMusic();
         Debug.Log("Load Level 1");
-        //SceneManager.LoadScene("Level1");
+                SceneManager.LoadScene("Level_1");
     }
 
     public void LoadLevel2()
