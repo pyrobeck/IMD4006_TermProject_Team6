@@ -11,7 +11,7 @@ public class PatrolStateSnail : MonoBehaviour
     
     public float raycastDistance, enemyDistance;
     public float speed;
-    private bool faceRight = true;
+    private bool faceRight = false;
 
     void Start()
     {
