@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static UnityEngine.UI.Image;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,7 +23,7 @@ public class PlayerController : MonoBehaviour
     float horizontal;
 
     [SerializeField] private Rigidbody2D rigidBody;
-    [SerializeField] private BoxCollider2D groundCheckCol;
+    [SerializeField] private CapsuleCollider2D collidor;
     [SerializeField] private Animator animator;
 
     public AudioSource audioSource;
@@ -37,7 +39,12 @@ public class PlayerController : MonoBehaviour
     public AudioClip rollAudio;
     public float volume = 1.0f;
 
-    private bool isGrounded = true;
+    public LayerMask groundLayer;
+    
+
+ 
+
+
     private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
     Vector3 directionFacing = new Vector3(1, 0, 0);
@@ -50,9 +57,13 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
+        collidor = this.GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         Vector3 lastCheckpointPosition = new Vector3(1f, 1f, 1f); // Default position
+
+       
+
 
         StartTracks();
 
@@ -60,10 +71,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-       
+    
         drumVol();
 
-        if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && isGrounded)
+        if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && IsGrounded())
         {
             StartCoroutine(Roll());
         }
@@ -141,7 +152,7 @@ public class PlayerController : MonoBehaviour
 
     public void onJumpInput()
     {
-        if(isGrounded == true)
+        if(IsGrounded() == true)
         {
             rigidBody.linearVelocityY = jumpHeight;
             animator.SetInteger("state", 3);
@@ -156,7 +167,7 @@ public class PlayerController : MonoBehaviour
         //Roll code goes in here
         //Remember to connect the player and their functions to
         //the input controller script on the game manager
-        if (!isRolling && isGrounded)
+        if (!isRolling && IsGrounded())
         {
             PlayRollSound();
             StartCoroutine(Roll());
@@ -166,13 +177,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //when the player's groundCheck trigger comes into contact with ground, set isGrounded to true
-        if (collision.CompareTag("Ground") == true)
-        {
-            isGrounded= true;
-            animator.SetInteger("state", 0);
-        }
-        // Store the position of the checkpoint
+
         if (collision.CompareTag("Respawn") == true) {
             lastCheckpointPosition = collision.transform.position;
             Debug.Log("Checkpoint reached at: " + lastCheckpointPosition);
@@ -194,7 +199,29 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+
+    private bool IsGrounded()
+    {
+        Vector2 position = transform.position;
+        Vector2 size = collidor.bounds.size * 0.7f;
+        float angle = 0;
+        Vector2 direction = Vector2.down;
+        float distance = 0.5f;
+
+
+
+        //oxCast(Vector2 origin, Vector2 size, float angle, Vector2 direction, float distance = Mathf.Infinity, int layerMask = Physics2D.AllLayers, float minDepth = -Mathf.Infinity, float maxDepth = Mathf.Infinity); 
+        RaycastHit2D groundCheck = Physics2D.BoxCast(position, size, angle, direction, distance, groundLayer);
+
+
+        if (groundCheck)
+        {
+            return true;
+        }
+            return false;
+    }
+
+/*    private void OnTriggerExit2D(Collider2D collision)
     {
         //When the player's groundCheck trigger leaves the ground, change isGrounded to false
         if (collision.CompareTag("Ground") == true)
@@ -203,7 +230,7 @@ public class PlayerController : MonoBehaviour
             animator.SetInteger("state", 3);
         }
 
-    }
+    }*/
 
     private void Move()
     {
