@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     bool isJumping = false;
     [SerializeField] float coyoteTime = 0.175f;
     float coyoteTimeCounter;
+    float jumpBufferTime = 0.1f;
+    float jumpBufferTimer = 0;
 
 
     [SerializeField] private float rollSpeed = 10F;
@@ -80,6 +82,7 @@ public class PlayerController : MonoBehaviour
     {
       
         coyoteTimer();
+        updateJumpBufferTimer();
 
         if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && IsGrounded())
         {
@@ -166,6 +169,7 @@ public class PlayerController : MonoBehaviour
 
     public void onJumpInput()
     {
+
         //checks if they're still within the grace period of jumping
         if (coyoteTimeCounter > 0)
         {
@@ -176,7 +180,11 @@ public class PlayerController : MonoBehaviour
             PlayJumpSound();
 
         }
-        coyoteTimeCounter = -1;
+        else //otherwise, store the jump input for a moment to see if they hit ground
+        {
+            jumpBuffer();              
+        }
+            coyoteTimeCounter = -1;
     }
 
     public void onJumpCanceled()
@@ -185,7 +193,7 @@ public class PlayerController : MonoBehaviour
      //cuts the vertical velocity when they let go of the jump button to shorten the jump
 
      rigidBody.linearVelocityY = rigidBody.linearVelocityY * 0.3f;
-        isJumping = false;
+     isJumping = false;
        
     }
 
@@ -212,6 +220,23 @@ public class PlayerController : MonoBehaviour
         else
         {
             coyoteTimeCounter -= Time.deltaTime;
+        }
+    }
+
+    private void jumpBuffer()
+    {
+        jumpBufferTimer = jumpBufferTime;
+    }
+    //when jump input is given while in the air, start a short timer 
+    //if the player lands on the ground in that time, input the jump
+    private void updateJumpBufferTimer()
+    {
+        jumpBufferTimer-= Time.deltaTime;
+
+        if(jumpBufferTimer > 0 && IsGrounded() == true)
+        {
+            onJumpInput();
+            jumpBufferTimer = -1;
         }
     }
     public void onRollInput()
@@ -274,16 +299,6 @@ public class PlayerController : MonoBehaviour
             return false;
     }
 
-/*    private void OnTriggerExit2D(Collider2D collision)
-    {
-        //When the player's groundCheck trigger leaves the ground, change isGrounded to false
-        if (collision.CompareTag("Ground") == true)
-        {
-            isGrounded = false;
-            animator.SetInteger("state", 3);
-        }
-
-    }*/
 
     private void Move()
     {
