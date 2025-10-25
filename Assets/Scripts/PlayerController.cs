@@ -11,12 +11,18 @@ public class PlayerController : MonoBehaviour
         Walking, //1
         Running, //2
         Jumping, //3
-        Rolling //4
+        Rolling, //4
     }
 
 
     [SerializeField] private float moveSpeed = 6.5F;
+
     [SerializeField] private float jumpHeight = 20F;
+    [SerializeField] private float jumpUpwardsGravity = 5f;
+    [SerializeField] private float fallingGravity  = 7f;
+    bool isJumping = false;
+
+
     [SerializeField] private float rollSpeed = 10F;
     [SerializeField] private float rollDuration = 0.6F;
 
@@ -83,6 +89,11 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        if(isJumping == true)
+        {
+            JumpPhysics();
+        }
+
     }
 
     public void onMoveInput(float horizontal)
@@ -154,6 +165,7 @@ public class PlayerController : MonoBehaviour
     {
         if(IsGrounded() == true)
         {
+            isJumping = true;
             rigidBody.linearVelocityY = jumpHeight;
             animator.SetInteger("state", 3);
             PlayJumpSound();
@@ -161,6 +173,28 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void onJumpCanceled()
+    {
+    
+     //cuts the vertical velocity when they let go of the jump button to shorten the jump
+
+     rigidBody.linearVelocityY = rigidBody.linearVelocityY * 0.3f;
+        
+       
+    }
+
+    private void JumpPhysics()
+    {
+        //if the player is moving upwards
+      if(rigidBody.linearVelocityY > 0)
+        {
+            rigidBody.gravityScale = jumpUpwardsGravity;
+        }
+        else
+        {
+            rigidBody.gravityScale = fallingGravity;
+        }
+    }
     public void onRollInput()
     {
         Debug.Log("Roll Pressed");
