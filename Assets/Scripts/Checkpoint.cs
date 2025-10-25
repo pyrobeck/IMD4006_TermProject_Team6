@@ -25,4 +25,6 @@ public class Checkpoint : MonoBehaviour
         isActive = false;
         spriteRenderer.color = inactiveColor;
     }
+
+
 }

@@ -73,11 +73,18 @@ public class cameraMovement : MonoBehaviour
         }
     }
 
+    public void SnapToTarget()
+    {
+       targetX = new Vector3 (target.position.x, 0, 0);
+        updateDirection();
+        updateLookAheadOffset();
+        updateYOffset();
 
-
-
+        transform.position = Vector3.MoveTowards(this.transform.position, targetX + lookAheadOffset + yOffset + zOffset, moveSpeed * Time.deltaTime);
+    }
 
 }
+
 
 
 

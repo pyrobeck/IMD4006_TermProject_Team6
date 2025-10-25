@@ -132,7 +132,6 @@ public class PlayerController : MonoBehaviour
             walkState = WalkState.Running;
             animator.SetInteger("state", 2);
             // PlayRunSound();
-
         }
 
        // Debug.Log(walkState);
@@ -177,9 +176,10 @@ public class PlayerController : MonoBehaviour
             lastCheckpointPosition = collision.transform.position;
             Debug.Log("Checkpoint reached at: " + lastCheckpointPosition);
 
+
             // Deactivate all other checkpoints
             foreach (Checkpoint cp in FindObjectsOfType<Checkpoint>()) { cp.SetInactive(); }
-
+            
             Checkpoint thisCheckpoint = collision.GetComponent<Checkpoint>();
                 if (thisCheckpoint != null) {
                     thisCheckpoint.SetActive();
@@ -188,22 +188,32 @@ public class PlayerController : MonoBehaviour
 
         // If collides with enemy, go back to checkpoint
         if (collision.CompareTag("Enemies") == true) {
-            transform.position = lastCheckpointPosition;
-            Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
+            Vector3 respawnPos = lastCheckpointPosition;
+            respawnPos.y += 5;
+            transform.position = respawnPos;
+
+            Debug.Log("Hit enemy! Respawning at: " + respawnPos);
         }
 
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //When the player's groundCheck trigger leaves the ground, change isGrounded to false
+        // Camera snap when leaving checkpoint trigger
+        if (collision.CompareTag("Respawn") == true) 
+        {
+            cameraMovement cam = Camera.main.GetComponent<cameraMovement>();
+            cam.SnapToTarget();
+        }
+
+        // Ground exit detection
         if (collision.CompareTag("Ground") == true)
         {
             isGrounded = false;
             animator.SetInteger("state", 3);
         }
-
     }
+
 
     private void Move()
     {
@@ -261,17 +271,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Enters rollsounds function");
         audioSource.PlayOneShot(rollAudio, 1.0f);
 
-    }
-
-    /////////////////////Collsion with enemies and check point //////////////////////////////////
-
-    
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemies"))
-        {
-            transform.position = lastCheckpointPosition;
-        }
     }
 
 }
