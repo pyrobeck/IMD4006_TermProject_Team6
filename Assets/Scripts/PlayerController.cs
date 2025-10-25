@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpUpwardsGravity = 5f;
     [SerializeField] private float fallingGravity  = 7f;
     bool isJumping = false;
+    [SerializeField] float coyoteTime = 0.175f;
+    float coyoteTimeCounter;
 
 
     [SerializeField] private float rollSpeed = 10F;
@@ -67,8 +69,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         Vector3 lastCheckpointPosition = new Vector3(1f, 1f, 1f); // Default position
-
-       
+        coyoteTimeCounter = coyoteTime;
 
 
         StartTracks();
@@ -77,13 +78,15 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-    
-        drumVol();
+      
+        coyoteTimer();
 
         if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && IsGrounded())
         {
             StartCoroutine(Roll());
         }
+
+        drumVol();
     }
 
     private void FixedUpdate()
@@ -163,14 +166,17 @@ public class PlayerController : MonoBehaviour
 
     public void onJumpInput()
     {
-        if(IsGrounded() == true)
+        //checks if they're still within the grace period of jumping
+        if (coyoteTimeCounter > 0)
         {
             isJumping = true;
             rigidBody.linearVelocityY = jumpHeight;
+            coyoteTimeCounter = -1;
             animator.SetInteger("state", 3);
             PlayJumpSound();
-        }
 
+        }
+        coyoteTimeCounter = -1;
     }
 
     public void onJumpCanceled()
@@ -179,7 +185,7 @@ public class PlayerController : MonoBehaviour
      //cuts the vertical velocity when they let go of the jump button to shorten the jump
 
      rigidBody.linearVelocityY = rigidBody.linearVelocityY * 0.3f;
-        
+        isJumping = false;
        
     }
 
@@ -193,6 +199,19 @@ public class PlayerController : MonoBehaviour
         else
         {
             rigidBody.gravityScale = fallingGravity;
+        }
+    }
+
+    private void coyoteTimer()
+    {
+        //starts a timer whenever the player leaves the ground. Resets it once they return to ground
+        if (IsGrounded() && isJumping == false)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
         }
     }
     public void onRollInput()
@@ -313,7 +332,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public void PlayJumpSound(){
-        Debug.Log("Enters walksounds function");
+        //Debug.Log("Enters walksounds function");
         audioSource.PlayOneShot(jumpAudio, 1.0f);
 
     }
