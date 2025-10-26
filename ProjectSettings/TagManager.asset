@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Enemies
+  - BGElements
   layers:
   - Default
   - TransparentFX

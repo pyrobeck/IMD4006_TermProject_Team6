@@ -8,48 +8,55 @@ public class TapBPM : MonoBehaviour
     float averageTimeInterval = 0;
 
     int BPM = 0;
-    int averageBPM = 0;
+    public int averageBPM = 0;
 
-void Update()
-{
-    // Check if *any* key was pressed this frame
-    if (Input.anyKeyDown){
-        // Loop through all possible KeyCode values
-        foreach (KeyCode key in System.Enum.GetValues(typeof(KeyCode))) {
-            // Only proceed if this key was pressed
-            if (Input.GetKeyDown(key)){
-                // Filter out joystick keys (gamepad buttons)
-                if (!key.ToString().StartsWith("Joystick") &&
-                    !key.ToString().StartsWith("Mouse")) // Optional: ignore mouse clicks too
+    public delegate void OnBPMUpdated(int bpm);
+    public static event OnBPMUpdated BPMUpdated;
+
+    void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            foreach (KeyCode key in System.Enum.GetValues(typeof(KeyCode)))
+            {
+                if (Input.GetKeyDown(key))
                 {
-                    calculateAverageBPM();
-                    break;
+                    if (!key.ToString().StartsWith("Joystick") &&
+                        !key.ToString().StartsWith("Mouse"))
+                    {
+                        CalculateAverageBPM();
+                        BPMUpdated?.Invoke(averageBPM); // Notify listeners
+                        break;
+                    }
                 }
             }
         }
     }
-}
 
-    void calculateAverageBPM()
+    void CalculateAverageBPM()
     {
-        calculateAverageTimeInterval();
+        CalculateAverageTimeInterval();
 
         BPM = (int)(60 / averageTimeInterval);
-
         averageBPM = (averageBPM + BPM) / 2;
 
         Debug.Log("BPM: " + averageBPM);
     }
 
-    void calculateAverageTimeInterval()
+    void CalculateAverageTimeInterval()
     {
         currentTime = Time.time;
         timeIntervalSincePreviousTap = currentTime - previousTapTime;
-        averageTimeInterval = (averageTimeInterval + timeIntervalSincePreviousTap) / 2;
+
+        if (previousTapTime == 0)
+            averageTimeInterval = timeIntervalSincePreviousTap;
+        else
+            averageTimeInterval = (averageTimeInterval + timeIntervalSincePreviousTap) / 2;
+
         previousTapTime = currentTime;
     }
 
-    int getBPM()  //for anything that needs to access the averageBPM in the future
+    public int GetBPM()
     {
         return averageBPM;
     }
