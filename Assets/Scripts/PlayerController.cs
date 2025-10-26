@@ -173,21 +173,23 @@ public class PlayerController : MonoBehaviour
             animator.SetInteger("state", 0);
         }
         // Store the position of the checkpoint
-        if (collision.CompareTag("Respawn") == true) {
-            lastCheckpointPosition = collision.transform.position;
+        if (collision.CompareTag("Respawn"))
+        {
+            lastCheckpointPosition = new Vector3(collision.transform.position.x, collision.transform.position.y, transform.position.z);
             Debug.Log("Checkpoint reached at: " + lastCheckpointPosition);
 
-            // Deactivate all other checkpoints
-            foreach (Checkpoint cp in FindObjectsOfType<Checkpoint>()) { cp.SetInactive(); }
+            foreach (Checkpoint cp in FindObjectsOfType<Checkpoint>())
+                cp.SetInactive();
 
             Checkpoint thisCheckpoint = collision.GetComponent<Checkpoint>();
-                if (thisCheckpoint != null) {
-                    thisCheckpoint.SetActive();
-                }
+            if (thisCheckpoint != null)
+                thisCheckpoint.SetActive();
+
+
         }
 
-        // If collides with enemy, go back to checkpoint
-        if (collision.CompareTag("Enemies") == true) {
+        if (collision.CompareTag("Enemies"))
+        {
             transform.position = lastCheckpointPosition;
             Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
         }

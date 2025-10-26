@@ -46,4 +46,14 @@ public class cameraMovement : MonoBehaviour
     {
         lookAheadOffset = new Vector3(lookAheadOffsetX * direction, 0, 0);
     }
+
+       public void SnapToTarget()
+    {
+        UpdateDirection();
+        UpdateLookAheadOffset();
+
+        // Instantly set camera position to target’s location
+        Vector3 snapPos = new Vector3(target.position.x, target.position.y + zoom / 3f, 0) + lookAheadOffset + zOffset;
+        transform.position = snapPos;
+    }
 }
