@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rollSpeed = 10f;
     [SerializeField] private float rollDuration = 0.6f;
 
+    
     private float horizontal;
     private bool isGrounded = true;
     private bool isRolling = false;
@@ -95,10 +96,16 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 moveDirection = Vector3.right * horizontal * moveSpeed * Time.deltaTime;
 
+        // Apply player movement
+        transform.position += moveDirection;
+
+        // If standing on a moving platform, follow its motion
         if (currentPlatform != null)
-            transform.localPosition += moveDirection; // localPosition so it moves relative to platform
-        else
-            transform.position += moveDirection;
+        {
+            Vector3 platformDelta = currentPlatform.position - lastPlatformPos;
+            transform.position += platformDelta;
+            lastPlatformPos = currentPlatform.position;
+        }
     }
 
 
@@ -128,10 +135,10 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("MovingPlatform"))
         {
             currentPlatform = collision.transform;
-            transform.SetParent(currentPlatform);
             lastPlatformPos = currentPlatform.position;
             isGrounded = true;
         }
+
 
         if (collision.CompareTag("Respawn"))
         {
@@ -160,7 +167,6 @@ public class PlayerController : MonoBehaviour
         // Unparent from moving platform
         if (collision.CompareTag("MovingPlatform"))
         {
-            transform.SetParent(null);
             currentPlatform = null;
         }
     }
