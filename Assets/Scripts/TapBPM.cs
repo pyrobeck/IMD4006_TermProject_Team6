@@ -8,10 +8,16 @@ public class TapBPM : MonoBehaviour
     float averageTimeInterval = 0;
 
     int BPM = 0;
-    public int averageBPM = 0;
+    public int averageBPM = 131; // Default to 131 BPM
 
     public delegate void OnBPMUpdated(int bpm);
     public static event OnBPMUpdated BPMUpdated;
+
+    void Start()
+    {
+        // Notify listeners of the default BPM immediately
+        BPMUpdated?.Invoke(averageBPM);
+    }
 
     void Update()
     {
@@ -56,8 +62,5 @@ public class TapBPM : MonoBehaviour
         previousTapTime = currentTime;
     }
 
-    public int GetBPM()
-    {
-        return averageBPM;
-    }
+    public int GetBPM() => averageBPM;
 }

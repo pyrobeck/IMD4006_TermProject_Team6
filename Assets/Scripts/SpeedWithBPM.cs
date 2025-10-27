@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class PlatformMoveWithBPMBounce : MonoBehaviour
+public class SpeedWithBPM : MonoBehaviour
 {
     public Transform platform;       // Object to move
-    public float minSpeed = 0.1f;    // speed at BPM 1
-    public float maxSpeed = 2f;      // speed at BPM 800
+    public float minSpeed = 0.3f;    // speed at BPM 1
+    public float maxSpeed = 3f;      // speed at BPM 800
     public float minX = -20f;        // left boundary
     public float maxX = 20f;         // right boundary
 
@@ -17,7 +17,11 @@ public class PlatformMoveWithBPMBounce : MonoBehaviour
             platform = transform;
 
         TapBPM.BPMUpdated += OnBPMChanged;
+
+        // Apply default speed based on BPM 131
+        OnBPMChanged(131);
     }
+
 
     void OnDestroy()
     {

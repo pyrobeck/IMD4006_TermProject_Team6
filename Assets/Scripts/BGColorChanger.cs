@@ -9,7 +9,10 @@ public class BGColorChanger : MonoBehaviour
     void Start()
     {
         bgElements = GameObject.FindGameObjectsWithTag("BGElements");
-        TapBPM.BPMUpdated += OnBPMChanged; // Subscribe to BPM updates
+        TapBPM.BPMUpdated += OnBPMChanged;
+
+        // Set default color based on BPM 131
+        OnBPMChanged(131);
     }
 
     void OnDestroy()
