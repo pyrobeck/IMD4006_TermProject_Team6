@@ -22,11 +22,12 @@ public class PatrolStateSnail : MonoBehaviour
     {
 
         RaycastHit2D hit = Physics2D.Raycast(ledgeDetector.position, Vector2.down, raycastDistance, groundLayer);
-        RaycastHit2D hitEnemy = Physics2D.Raycast(ledgeDetector.position, Vector2.right, enemyDistance, enemyLayer);
+        RaycastHit2D hitEnemy = Physics2D.Raycast(ledgeDetector.position, Vector2.left, enemyDistance, enemyLayer);
 
         if (hit.collider == null | hitEnemy.collider == true)
         {
             Rotate();
+
         }
     }
 
@@ -35,10 +36,12 @@ public class PatrolStateSnail : MonoBehaviour
         if (faceRight)
         {
             rb.linearVelocity = new Vector2(bpm, rb.linearVelocity.y);
+            print("right");
         }
         else
         {
             rb.linearVelocity = new Vector2(-bpm, rb.linearVelocity.y);
+            print("left");
         }
         
     }
@@ -47,6 +50,6 @@ public class PatrolStateSnail : MonoBehaviour
     {
         faceRight = !faceRight;
         transform.Rotate(0, 180, 0);
-        
+        print("rot");
     }
 }
