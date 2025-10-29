@@ -858,6 +858,7 @@ MonoBehaviour:
   controlsPanel: {fileID: 1619116738}
   creditsPanel: {fileID: 1575549009}
   levelsPanel: {fileID: 1709636356}
+  backgroundMusic: {fileID: 8300000, guid: c12706892679b974b8078135e4211bad, type: 3}
 --- !u!1 &359891969
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,84 +3,57 @@ using UnityEngine;
 public class cameraMovement : MonoBehaviour
 {
     [SerializeField] Transform target;
-    float moveSpeed = 20;
- 
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float zoom = 7f;
+    [SerializeField] float verticalFollowSmoothness = 3f; // Smooth damp for Y tracking
 
     Vector3 zOffset = new Vector3(0, 0, -10);
-    Vector3 lookAheadOffset = new Vector3(3, 0, 0);
-    int direction = 1;
+    Vector3 lookAheadOffset;
     float lookAheadOffsetX;
-    Vector3 yOffset;
-    Vector3 targetX;
+    int direction = 1;
 
-    [SerializeField] float zoom = 7;
-
-    float screenUpperLimit;
-    float screenLowerLimit;
+    float currentYVelocity; // Used for smooth damping
 
     void Start()
     {
-        this.GetComponent<Camera>().orthographicSize = zoom;
-        yOffset = new Vector3 (0, (float)(zoom/3), 0);  //player will always be in the bottom quarter of the screen
+        Camera cam = GetComponent<Camera>();
+        cam.orthographicSize = zoom;
 
-        lookAheadOffsetX = (float)(zoom / 3) + zoom; //player will always have about 90% of the screen in front of them
-
-        screenUpperLimit = zoom + zoom / 3 + yOffset.y;
-        screenLowerLimit = -zoom + zoom/3 + yOffset.y;
+        lookAheadOffsetX = (zoom / 3f) + zoom; // forward view distance
     }
 
-    // Update is called once per frame
     void Update()
     {
-        targetX = new Vector3 (target.position.x, 0, 0);
-        updateDirection();
-        updateLookAheadOffset();
-        updateYOffset();
+        UpdateDirection();
+        UpdateLookAheadOffset();
 
-        transform.position = Vector3.MoveTowards(this.transform.position, targetX + lookAheadOffset + yOffset + zOffset, moveSpeed * Time.deltaTime);
+        // Smoothly follow player Y position
+        float targetY = Mathf.SmoothDamp(transform.position.y, target.position.y + zoom / 3f, ref currentYVelocity, 1f / verticalFollowSmoothness);
+
+        // Target X position follows player, Y follows smoothly, Z stays fixed
+        Vector3 targetPos = new Vector3(target.position.x, targetY, 0) + lookAheadOffset + zOffset;
+
+        transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
     }
 
-    private void updateDirection()
+    private void UpdateDirection()
     {
-        if (target.localScale.x < 0)
-        {
-            direction = -1;
-        }
-        else
-        {
-            direction = 1;
-        }
+        // Flip lookahead depending on player facing direction
+        direction = target.localScale.x < 0 ? -1 : 1;
     }
 
-  private void updateLookAheadOffset()
+    private void UpdateLookAheadOffset()
     {
         lookAheadOffset = new Vector3(lookAheadOffsetX * direction, 0, 0);
     }
 
-    private void updateYOffset()
+       public void SnapToTarget()
     {
-        if(target.position.y > screenUpperLimit)
-        {
-            yOffset.y = yOffset.y + (float)(zoom*1.5);
-            screenUpperLimit = screenUpperLimit + (float)(zoom + zoom / 3);
-            screenLowerLimit = screenLowerLimit + (float)(zoom + zoom / 3);
-        }
-        if (target.position.y < screenLowerLimit)
-        {
-            yOffset.y = yOffset.y - (float)(zoom * 1.5);
-            screenUpperLimit = screenUpperLimit - (float)(zoom + zoom / 3);
-            screenLowerLimit = screenLowerLimit - (float)(zoom + zoom / 3);
-        }
+        UpdateDirection();
+        UpdateLookAheadOffset();
+
+        // Instantly set camera position to target’s location
+        Vector3 snapPos = new Vector3(target.position.x, target.position.y + zoom / 3f, 0) + lookAheadOffset + zOffset;
+        transform.position = snapPos;
     }
-
-
-
-
-
 }
-
-
-
-
-//using these tutorials for help
-//https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.MoveTowards.html
