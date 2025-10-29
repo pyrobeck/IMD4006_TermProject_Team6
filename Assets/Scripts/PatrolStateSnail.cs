@@ -10,7 +10,7 @@ public class PatrolStateSnail : MonoBehaviour
 
     
     public float raycastDistance, enemyDistance;
-    public float speed;
+    public float bpm;
     private bool faceRight = false;
 
     void Start()
@@ -34,11 +34,11 @@ public class PatrolStateSnail : MonoBehaviour
     {
         if (faceRight)
         {
-            rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(bpm, rb.linearVelocity.y);
         }
         else
         {
-            rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(-bpm, rb.linearVelocity.y);
         }
         
     }
