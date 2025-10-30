@@ -63,10 +63,6 @@ public class PlayerController : MonoBehaviour
        
         drumVol();
 
-        if (Input.GetKeyDown(KeyCode.JoystickButton1) && !isRolling && isGrounded)
-        {
-            StartCoroutine(Roll());
-        }
     }
 
     private void FixedUpdate()
@@ -208,29 +204,35 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Move()
-    {
+    {   
+        //avoiding the weird movement when the player is rolling and moving
+        if (isRolling) return;
+
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
 
     private System.Collections.IEnumerator Roll()
     {
-        //the actual rolling is done here; aka making it faster for the time used
         Debug.Log("Rolling!");
         isRolling = true;
         animator.SetInteger("state", 4);
+        PlayRollSound();
 
-        float originalSpeed = moveSpeed;
-        moveSpeed = rollSpeed;
+        //
+        //rigidBody.linearVelocity = new Vector2(0, 0);
+
+        // Apply roll force once
+        rigidBody.AddForce(directionFacing * rollSpeed, ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(rollDuration);
 
-        moveSpeed = originalSpeed;
-        animator.SetInteger("state", 0);
         isRolling = false;
+        animator.SetInteger("state", 0);
     }
 
-///////////////////// Play Music ///////////////////////////////////////////////////////
+
+    ///////////////////// Play Music ///////////////////////////////////////////////////////
     public void StartTracks(){
              // Start background tracks
         audioSourceMusic.clip = music;
