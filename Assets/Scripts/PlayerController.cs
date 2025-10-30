@@ -219,10 +219,10 @@ public class PlayerController : MonoBehaviour
         animator.SetInteger("state", 4);
         PlayRollSound();
 
-        //
+        //in case we want the roll to be smoother
         //rigidBody.linearVelocity = new Vector2(0, 0);
 
-        // Apply roll force once
+        //pushing the roll once
         rigidBody.AddForce(directionFacing * rollSpeed, ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(rollDuration);
