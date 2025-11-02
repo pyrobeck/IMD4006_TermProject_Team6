@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static UnityEngine.UI.Image;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,19 +11,29 @@ public class PlayerController : MonoBehaviour
         Walking, //1
         Running, //2
         Jumping, //3
-        Rolling //4
+        Rolling, //4
     }
 
 
     [SerializeField] private float moveSpeed = 6.5F;
+
     [SerializeField] private float jumpHeight = 20F;
+    [SerializeField] private float jumpUpwardsGravity = 5f;
+    [SerializeField] private float fallingGravity  = 7f;
+    bool isJumping = false;
+    [SerializeField] float coyoteTime = 0.175f;
+    float coyoteTimeCounter;
+    float jumpBufferTime = 0.1f;
+    float jumpBufferTimer = 0;
+
+
     [SerializeField] private float rollSpeed = 10F;
     [SerializeField] private float rollDuration = 0.6F;
 
     float horizontal;
 
     [SerializeField] private Rigidbody2D rigidBody;
-    [SerializeField] private BoxCollider2D groundCheckCol;
+    [SerializeField] private CapsuleCollider2D collidor;
     [SerializeField] private Animator animator;
 
     public AudioSource audioSource;
@@ -37,7 +49,12 @@ public class PlayerController : MonoBehaviour
     public AudioClip rollAudio;
     public float volume = 1.0f;
 
-    private bool isGrounded = true;
+    public LayerMask groundLayer;
+
+    [SerializeField] public cameraMovement camera;
+ 
+
+
     private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
     Vector3 directionFacing = new Vector3(1, 0, 0);
@@ -50,9 +67,12 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
+        collidor = this.GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         Vector3 lastCheckpointPosition = new Vector3(1f, 1f, 1f); // Default position
+        coyoteTimeCounter = coyoteTime;
+
 
         StartTracks();
 
@@ -60,14 +80,20 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-       
-        drumVol();
+      
+        coyoteTimer();
+        updateJumpBufferTimer();
 
     }
 
     private void FixedUpdate()
     {
         Move();
+        if(isJumping == true)
+        {
+            JumpPhysics();
+        }
+
     }
 
     public void onMoveInput(float horizontal)
@@ -137,22 +163,83 @@ public class PlayerController : MonoBehaviour
 
     public void onJumpInput()
     {
-        if(isGrounded == true)
+
+        //checks if they're still within the grace period of jumping
+        if (coyoteTimeCounter > 0)
         {
+            isJumping = true;
             rigidBody.linearVelocityY = jumpHeight;
+            coyoteTimeCounter = -1;
             animator.SetInteger("state", 3);
             PlayJumpSound();
-        }
 
+        }
+        else //otherwise, store the jump input for a moment to see if they hit ground
+        {
+            jumpBuffer();              
+        }
+            coyoteTimeCounter = -1;
     }
 
+    public void onJumpCanceled()
+    {
+    
+     //cuts the vertical velocity when they let go of the jump button to shorten the jump
+
+     rigidBody.linearVelocityY = rigidBody.linearVelocityY * 0.3f;
+     isJumping = false;
+       
+    }
+
+    private void JumpPhysics()
+    {
+        //if the player is moving upwards
+      if(rigidBody.linearVelocityY > 0)
+        {
+            rigidBody.gravityScale = jumpUpwardsGravity;
+        }
+        else
+        {
+            rigidBody.gravityScale = fallingGravity;
+        }
+    }
+
+    private void coyoteTimer()
+    {
+        //starts a timer whenever the player leaves the ground. Resets it once they return to ground
+        if (IsGrounded() && isJumping == false)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+    }
+
+    private void jumpBuffer()
+    {
+        jumpBufferTimer = jumpBufferTime;
+    }
+    //when jump input is given while in the air, start a short timer 
+    //if the player lands on the ground in that time, input the jump
+    private void updateJumpBufferTimer()
+    {
+        jumpBufferTimer-= Time.deltaTime;
+
+        if(jumpBufferTimer > 0 && IsGrounded() == true)
+        {
+            onJumpInput();
+            jumpBufferTimer = -1;
+        }
+    }
     public void onRollInput()
     {
         Debug.Log("Roll Pressed");
         //Roll code goes in here
         //Remember to connect the player and their functions to
         //the input controller script on the game manager
-        if (!isRolling && isGrounded)
+        if (!isRolling && IsGrounded())
         {
             PlayRollSound();
             StartCoroutine(Roll());
@@ -162,12 +249,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //when the player's groundCheck trigger comes into contact with ground, set isGrounded to true
-        if (collision.CompareTag("Ground") == true)
-        {
-            isGrounded= true;
-            animator.SetInteger("state", 0);
-        }
+
         // Store the position of the checkpoint
         if (collision.CompareTag("Respawn"))
         {
@@ -187,21 +269,34 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Enemies"))
         {
             transform.position = lastCheckpointPosition;
+            camera.SnapToTarget();
             Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
         }
 
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        //When the player's groundCheck trigger leaves the ground, change isGrounded to false
-        if (collision.CompareTag("Ground") == true)
-        {
-            isGrounded = false;
-            animator.SetInteger("state", 3);
-        }
 
+    private bool IsGrounded()
+    {
+        Vector2 position = transform.position;
+        Vector2 size = collidor.bounds.size * 0.7f;
+        float angle = 0;
+        Vector2 direction = Vector2.down;
+        float distance = 0.5f;
+
+
+
+        //oxCast(Vector2 origin, Vector2 size, float angle, Vector2 direction, float distance = Mathf.Infinity, int layerMask = Physics2D.AllLayers, float minDepth = -Mathf.Infinity, float maxDepth = Mathf.Infinity); 
+        RaycastHit2D groundCheck = Physics2D.BoxCast(position, size, angle, direction, distance, groundLayer);
+
+
+        if (groundCheck)
+        {
+            return true;
+        }
+            return false;
     }
+
 
     private void Move()
     {   
@@ -256,7 +351,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public void PlayJumpSound(){
-        Debug.Log("Enters walksounds function");
+        //Debug.Log("Enters walksounds function");
         audioSource.PlayOneShot(jumpAudio, 1.0f);
 
     }
@@ -275,6 +370,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemies"))
         {
             transform.position = lastCheckpointPosition;
+            camera.SnapToTarget();
         }
     }
 
