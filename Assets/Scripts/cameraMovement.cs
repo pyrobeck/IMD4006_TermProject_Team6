@@ -98,7 +98,7 @@ public class cameraMovement : MonoBehaviour
         Vector3 snapPos = new Vector3(target.position.x, target.position.y, 0) + lookAheadOffset + yOffset + zOffset;
 
         transform.position = snapPos;
-        Debug.Log("I am being called");
+       
     }
 
 }

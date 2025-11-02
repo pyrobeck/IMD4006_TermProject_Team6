@@ -256,8 +256,10 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Respawn") == true) {
-            lastCheckpointPosition = collision.transform.position;
+        // Store the position of the checkpoint
+        if (collision.CompareTag("Respawn"))
+        {
+            lastCheckpointPosition = new Vector3(collision.transform.position.x, collision.transform.position.y, transform.position.z);
             Debug.Log("Checkpoint reached at: " + lastCheckpointPosition);
 
             // Deactivate all other checkpoints
