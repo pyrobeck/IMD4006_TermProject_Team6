@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class cameraMovement : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class cameraMovement : MonoBehaviour
     Vector3 yOffset;
     Vector3 targetX;
 
+
     [SerializeField] float zoom = 7;
 
     float screenUpperLimit;
@@ -25,13 +27,16 @@ public class cameraMovement : MonoBehaviour
 
         lookAheadOffsetX = (float)(zoom / 5) + zoom; //player will always have about 90% of the screen in front of them
 
-        screenUpperLimit = zoom + zoom / 3 + yOffset.y;
-        screenLowerLimit = -zoom + zoom / 3 + yOffset.y;
+        screenUpperLimit = zoom  + yOffset.y;
+        screenLowerLimit = -zoom + zoom / 5 + yOffset.y;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //uncomment these if you need to see the screen limits for level design
+        //Debug.DrawRay(new Vector3(0,screenUpperLimit,0), Vector3.right * 1000);
+        //Debug.DrawRay(new Vector3(0, screenLowerLimit, 0), Vector3.right * 1000);
         targetX = new Vector3(target.position.x, 0, 0);
         updateDirection();
         updateLookAheadOffset();
@@ -61,21 +66,40 @@ public class cameraMovement : MonoBehaviour
     {
         if (target.position.y > screenUpperLimit)
         {
-            yOffset.y = yOffset.y + (float)(zoom * 1.5);
-            screenUpperLimit = screenUpperLimit + (float)(zoom + zoom / 3);
-            screenLowerLimit = screenLowerLimit + (float)(zoom + zoom / 3);
+            while(target.position.y > screenUpperLimit)
+            {
+                yOffset.y = yOffset.y + (float)(zoom * 1.5);
+                screenUpperLimit = screenUpperLimit + (float)(zoom * 1.5);
+                screenLowerLimit = screenLowerLimit + (float)(zoom * 1.5);
+            }
+
         }
         if (target.position.y < screenLowerLimit)
         {
-            yOffset.y = yOffset.y - (float)(zoom * 1.5);
-            screenUpperLimit = screenUpperLimit - (float)(zoom + zoom / 3);
-            screenLowerLimit = screenLowerLimit - (float)(zoom + zoom / 3);
+            while(target.position.y < screenLowerLimit)
+            {
+                yOffset.y = yOffset.y - (float)(zoom * 1.5);
+                screenUpperLimit = screenUpperLimit - (float)(zoom * 1.5);
+                screenLowerLimit = screenLowerLimit - (float)(zoom * 1.5);
+            }
+     
         }
     }
 
 
+    public void SnapToTarget()
+    {
+        updateDirection();
+        updateLookAheadOffset();
+        updateYOffset();
 
 
+
+        Vector3 snapPos = new Vector3(target.position.x, target.position.y, 0) + lookAheadOffset + yOffset + zOffset;
+
+        transform.position = snapPos;
+        Debug.Log("I am being called");
+    }
 
 }
 

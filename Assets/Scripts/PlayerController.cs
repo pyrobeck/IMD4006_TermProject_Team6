@@ -50,8 +50,8 @@ public class PlayerController : MonoBehaviour
     public float volume = 1.0f;
 
     public LayerMask groundLayer;
-    
 
+    [SerializeField] public cameraMovement camera;
  
 
 
@@ -272,6 +272,7 @@ public class PlayerController : MonoBehaviour
         // If collides with enemy, go back to checkpoint
         if (collision.CompareTag("Enemies") == true) {
             transform.position = lastCheckpointPosition;
+            camera.SnapToTarget();
             Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
         }
 
@@ -366,6 +367,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemies"))
         {
             transform.position = lastCheckpointPosition;
+            camera.SnapToTarget();
         }
     }
 
