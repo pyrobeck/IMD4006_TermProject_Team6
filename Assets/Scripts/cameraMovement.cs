@@ -5,6 +5,7 @@ public class cameraMovement : MonoBehaviour
 {
     [SerializeField] Transform target;
     float moveSpeed = 20;
+    float directionFlippingMoveSpeed = 10;
 
 
     Vector3 zOffset = new Vector3(0, 0, -10);
@@ -14,21 +15,34 @@ public class cameraMovement : MonoBehaviour
     Vector3 yOffset;
     Vector3 targetX;
 
+    Vector3 cameraTarget;
+    Vector3 cameraTargetXRecord;
+
 
     [SerializeField] float zoom = 7;
 
     float screenUpperLimit;
     float screenLowerLimit;
 
+    float deadzoneRight;
+    float deadzoneLeft;
+
+    float deadzoneRatio;
+
+
     void Start()
     {
         this.GetComponent<Camera>().orthographicSize = zoom;
-        yOffset = new Vector3(0, (float)(zoom / 3), 0);  //player will always be in the bottom quarter of the screen
+        yOffset = new Vector3(0, (float)(zoom * 0.5f), 0);  //player will always be in the bottom quarter or so of the screen
 
-        lookAheadOffsetX = (float)(zoom / 5) + zoom; //player will always have about 90% of the screen in front of them
+        lookAheadOffsetX = (float)zoom/3; //player will always have about 80% of the screen in front of them
 
         screenUpperLimit = zoom  + yOffset.y;
         screenLowerLimit = -zoom + zoom / 5 + yOffset.y;
+
+        deadzoneRatio = zoom / 5;
+        deadzoneRight = deadzoneRatio;
+        deadzoneLeft = -deadzoneRatio;
     }
 
     // Update is called once per frame
@@ -37,16 +51,59 @@ public class cameraMovement : MonoBehaviour
         //uncomment these if you need to see the screen limits for level design
         //Debug.DrawRay(new Vector3(0,screenUpperLimit,0), Vector3.right * 1000);
         //Debug.DrawRay(new Vector3(0, screenLowerLimit, 0), Vector3.right * 1000);
+        //and these for the camera movement deadzone
+        Debug.DrawRay(new Vector3(deadzoneRight, 0, 0), Vector3.up * 500);
+        Debug.DrawRay(new Vector3(deadzoneLeft, 0, 0), Vector3.up * 500);
+
         targetX = new Vector3(target.position.x, 0, 0);
         updateDirection();
         updateLookAheadOffset();
         updateYOffset();
 
-        transform.position = Vector3.MoveTowards(this.transform.position, targetX + lookAheadOffset + yOffset + zOffset, moveSpeed * Time.deltaTime);
+        updateCameraPosition();
+
+        updateDeadzonePosition();
     }
 
+    private void updateCameraPosition()
+    {
+      
+
+        //only update the camera target if the player is outside the camera deadzone
+        //this is so the camera smoothly stops following the player's slight horizontal adjustments, but still follows them jumping or falling
+        if (!(target.position.x < deadzoneRight && target.position.x > deadzoneLeft))
+        {
+            cameraTarget = targetX + lookAheadOffset + yOffset + zOffset;
+            cameraTargetXRecord = new Vector3(cameraTarget.x, 0, 0); //keep a record of the last horizontal target while the player was outside the deadzone
+        }
+        else
+        {
+            cameraTarget = cameraTargetXRecord + yOffset + zOffset;
+        }
+
+
+            transform.position = Vector3.MoveTowards(this.transform.position, cameraTarget, moveSpeed * Time.deltaTime);
+    }
+
+    private void updateDeadzonePosition()
+    {
+        //if the player is within the camera deadzone, don't move it
+        if (target.position.x < deadzoneRight && target.position.x > deadzoneLeft)
+        {
+            return;
+        }
+       deadzoneRight = Mathf.Lerp(deadzoneRight, target.position.x + deadzoneRatio, (moveSpeed*0.1f) * Time.deltaTime);
+       deadzoneLeft = Mathf.Lerp(deadzoneLeft, target.position.x - deadzoneRatio, (moveSpeed * 0.1f) * Time.deltaTime);
+    }
     private void updateDirection()
     {
+
+        //if the player is within the camera deadzone, don't update direction
+        if(target.position.x < deadzoneRight && target.position.x > deadzoneLeft)
+        {
+           // return;
+        }
+
         if (target.localScale.x < 0)
         {
             direction = -1;
@@ -59,7 +116,8 @@ public class cameraMovement : MonoBehaviour
 
     private void updateLookAheadOffset()
     {
-        lookAheadOffset = new Vector3(lookAheadOffsetX * direction, 0, 0);
+        //slowly updates the lookahead to the direction the player is headed
+        lookAheadOffset = Vector3.MoveTowards(lookAheadOffset, new Vector3(lookAheadOffsetX * direction, 0, 0), directionFlippingMoveSpeed * Time.deltaTime);      
     }
 
     private void updateYOffset()
