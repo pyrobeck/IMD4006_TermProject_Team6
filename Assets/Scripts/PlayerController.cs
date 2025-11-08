@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -18,13 +19,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 6.5F;
 
     [SerializeField] private float jumpHeight = 20F;
+    [SerializeField] private float wallJumpDistance = 5f;
     [SerializeField] private float jumpUpwardsGravity = 5f;
-    [SerializeField] private float fallingGravity  = 7f;
+    [SerializeField] private float fallingGravity = 7f;
     bool isJumping = false;
+    bool isWallJumping = false;
     [SerializeField] float coyoteTime = 0.175f;
     float coyoteTimeCounter;
     float jumpBufferTime = 0.1f;
     float jumpBufferTimer = 0;
+    float wallJumpTimer = 0;
+    float maxWallJumpTime = 0.5f;
 
 
     [SerializeField] private float rollSpeed = 10F;
@@ -52,12 +57,15 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
 
     [SerializeField] public cameraMovement camera;
- 
+
 
 
     private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
     Vector3 directionFacing = new Vector3(1, 0, 0);
+    Vector3 spriteScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f);
+    Vector3 spriteScaleFlipped = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
+
 
     //idle = 0 walking between -1 and 1 running = 1
 
@@ -80,121 +88,82 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-      
+
         coyoteTimer();
         updateJumpBufferTimer();
+        WallJumpTimer();
 
     }
 
     private void FixedUpdate()
     {
         Move();
-        if(isJumping == true)
+        if (isJumping == true)
         {
-            JumpPhysics();
+            JumpMidairPhysics();
         }
 
     }
 
     public void onMoveInput(float horizontal)
     {
-        this.horizontal= horizontal;
-        //Debug.Log(horizontal);
+        this.horizontal = horizontal;
 
-        if (horizontal < 0.8 && horizontal > -0.8 && horizontal!= 0)
-        {
+        SetDirection();
+        SetWalkState();
 
-            //If the stick is not pushed all the way in either direction
-            //(aka the player is not going full speed)
-            //and sets the walkState to Walking accordingly
-            walkState = WalkState.Walking;
-            animator.SetInteger("state", 1);
-            //PlayWalkSound();
-           if (horizontal < 0)
-            {
-                directionFacing = new Vector3(-1, 0, 0);
-                animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f);
-            }else{
-                animator.transform.localScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f);
-                directionFacing = new Vector3(1, 0, 0);
-            }
-
-
-        } else if(horizontal == 1 || horizontal == -1) //help I don't know the absolute function in C#
-        {
-            //if the stick is pushed fully in either direction 
-            //(aka the player is going full speed)
-            //then walkState is set to Running
-            walkState = WalkState.Running;
-            animator.SetInteger("state", 2);
-
-            //PlayRunSound();
-
-            if (horizontal < 0)
-            {
-                directionFacing = new Vector3(-1, 0, 0);
-                animator.transform.localScale = new Vector3(-0.3929782f, 0.3929782f, 0.3929782f); //what in the world do these numbers mean
-            } else {
-                directionFacing = new Vector3(1, 0, 0);
-                animator.transform.localScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f); //maybe make a constant or something
-            }
-        }
-        else if(horizontal == 0)
-        {
-            //if the stick is not pushed at all
-            //(aka the player is not moving)
-            //then walkState is set to Idle
-            walkState = WalkState.Idle;
-            animator.SetInteger("state", 0);
-            //StopSound();
-        }
-        else
-        {
-            //if we somehow get a different input, they're probably moving so let's go with Running
-            walkState = WalkState.Running;
-            animator.SetInteger("state", 2);
-            // PlayRunSound();
-
-        }
-
-       // Debug.Log(walkState);
-       // Debug.Log(horizontal);
     }
 
     public void onJumpInput()
     {
 
-        //checks if they're still within the grace period of jumping
-        if (coyoteTimeCounter > 0)
+        if (IsNextToWall() && IsGrounded() == false)
         {
-            isJumping = true;
-            rigidBody.linearVelocityY = jumpHeight;
+            WallJump();
+            return;
+        }
+        //if player is no longer within the grace period of jumping, store the jump input for a moment to see if they hit the ground
+        if (coyoteTimeCounter <= 0)
+        {
+            jumpBuffer();
             coyoteTimeCounter = -1;
-            animator.SetInteger("state", 3);
-            PlayJumpSound();
+            return;
+        }
 
-        }
-        else //otherwise, store the jump input for a moment to see if they hit ground
-        {
-            jumpBuffer();              
-        }
-            coyoteTimeCounter = -1;
+        Jump();
+        coyoteTimeCounter = -1; //just in case. I don't trust it.
     }
 
     public void onJumpCanceled()
     {
-    
-     //cuts the vertical velocity when they let go of the jump button to shorten the jump
-
-     rigidBody.linearVelocityY = rigidBody.linearVelocityY * 0.3f;
-     isJumping = false;
-       
+        //cuts the vertical velocity when they let go of the jump button to shorten the jump
+        rigidBody.linearVelocityY = rigidBody.linearVelocityY * 0.3f;
+        isJumping = false;
     }
 
-    private void JumpPhysics()
+    private void Jump()
+    {
+        isJumping = true;
+        rigidBody.linearVelocityY = jumpHeight;
+        coyoteTimeCounter = -1;
+        animator.SetInteger("state", 3);
+        PlayJumpSound();
+    }
+
+    private void WallJump()
+    {
+        //adds a force away from the wall they're jumping from
+        rigidBody.linearVelocityX = wallJumpDistance * -directionFacing.x;
+        isWallJumping = true;
+        ResetWallJumpTimer();
+        ReverseDirection();
+        Jump();
+    }
+
+    private void JumpMidairPhysics()
     {
         //if the player is moving upwards
-      if(rigidBody.linearVelocityY > 0)
+        if (rigidBody.linearVelocityY > 0)
         {
             rigidBody.gravityScale = jumpUpwardsGravity;
         }
@@ -225,9 +194,9 @@ public class PlayerController : MonoBehaviour
     //if the player lands on the ground in that time, input the jump
     private void updateJumpBufferTimer()
     {
-        jumpBufferTimer-= Time.deltaTime;
+        jumpBufferTimer -= Time.deltaTime;
 
-        if(jumpBufferTimer > 0 && IsGrounded() == true)
+        if (jumpBufferTimer > 0 && IsGrounded() == true)
         {
             onJumpInput();
             jumpBufferTimer = -1;
@@ -294,19 +263,137 @@ public class PlayerController : MonoBehaviour
         {
             return true;
         }
-            return false;
+        return false;
     }
 
+    private bool IsNextToWall()
+    {
+        Vector2 position = transform.position;
+        Vector2 size = collidor.bounds.size * 0.7f;
+        float angle = 0;
+        Vector2 direction = directionFacing;
+        float distance = 0.5f;
+
+        RaycastHit2D wallCheck = Physics2D.BoxCast(position, size, angle, direction, distance, groundLayer);
+
+        if (wallCheck)
+        {
+            return true;
+        }
+        return false;
+    }
 
     private void Move()
-    {   
+    {
         //avoiding the weird movement when the player is rolling and moving
         if (isRolling) return;
+
+        if (wallJumpTimer > 0 && IsInputDirectionSameAsDirectionFacing() == false)
+        {
+            return;
+        }
 
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
+    private void WallJumpTimer()
+    {
+        //starts a timer whenever the player leaves the ground. Resets it once they return to ground
+        if (isWallJumping == true)
+        {
+            wallJumpTimer -= Time.deltaTime;
+        }
 
+        if (wallJumpTimer <= 0)
+        {
+            isWallJumping = false;
+        }
+    }
+    private void ResetWallJumpTimer()
+    {
+        wallJumpTimer = maxWallJumpTime;
+    }
+    private void SetDirection()
+    {
+        if (horizontal == 0)
+        {
+            return;
+        }
+        if (horizontal > 0)
+        {
+            directionFacing = new Vector3(1, 0, 0);
+            animator.transform.localScale = spriteScale;
+        }
+        if (horizontal < 0)
+        {
+            directionFacing = new Vector3(-1, 0, 0);
+            animator.transform.localScale = spriteScaleFlipped;
+        }
+    }
+    private void SetDirection(int direction)
+    {
+        if (direction == 1)
+        {
+            directionFacing = new Vector3(1, 0, 0);
+            animator.transform.localScale = spriteScale;
+            return;
+        }
+        if (direction == -1)
+        {
+            directionFacing = new Vector3(-1, 0, 0);
+            animator.transform.localScale = spriteScaleFlipped;
+            return;
+        }
+    }
+
+    private void ReverseDirection()
+    {
+        if (directionFacing.x == 1)
+        {
+            SetDirection(-1);
+            return;
+        }
+        if (directionFacing.x == -1)
+        {
+            SetDirection(1);
+            return;
+        }
+    }
+
+    private bool IsInputDirectionSameAsDirectionFacing()
+    {
+        if (horizontal > 0 && directionFacing.x == 1)
+        {
+            return true;
+        }
+        if (horizontal < 0 && directionFacing.x == -1)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    private void SetWalkState()
+    {
+        if (horizontal == 0)
+        {
+            walkState = WalkState.Idle;
+            animator.SetInteger("state", 0);
+            return;
+        }
+        if (horizontal < 0.8 && horizontal > -0.8)
+        {
+            walkState = WalkState.Walking;
+            animator.SetInteger("state", 1);
+            return;
+        }
+        if (horizontal >= 1 || horizontal <= -1) //help I don't know the absolute function in C#
+        {
+            walkState = WalkState.Running;
+            animator.SetInteger("state", 2);
+            return;
+        }
+    }
     private System.Collections.IEnumerator Roll()
     {
         Debug.Log("Rolling!");
@@ -328,8 +415,9 @@ public class PlayerController : MonoBehaviour
 
 
     ///////////////////// Play Music ///////////////////////////////////////////////////////
-    public void StartTracks(){
-             // Start background tracks
+    public void StartTracks()
+    {
+        // Start background tracks
         audioSourceMusic.clip = music;
         audioSourceMusic.volume = 0.5f; // half volume
         audioSourceMusic.loop = true;
@@ -346,17 +434,20 @@ public class PlayerController : MonoBehaviour
         audioSourceDrums.Play();
     }
 
-    public void drumVol(){
+    public void drumVol()
+    {
         audioSourceDrums.volume = Mathf.Abs(horizontal);
     }
 
-    public void PlayJumpSound(){
+    public void PlayJumpSound()
+    {
         //Debug.Log("Enters walksounds function");
         audioSource.PlayOneShot(jumpAudio, 1.0f);
 
     }
-        
-    public void PlayRollSound(){
+
+    public void PlayRollSound()
+    {
         Debug.Log("Enters rollsounds function");
         audioSource.PlayOneShot(rollAudio, 1.0f);
 
@@ -364,7 +455,7 @@ public class PlayerController : MonoBehaviour
 
     /////////////////////Collsion with enemies and check point //////////////////////////////////
 
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemies"))
