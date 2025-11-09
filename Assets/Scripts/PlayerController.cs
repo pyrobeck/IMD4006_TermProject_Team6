@@ -13,23 +13,28 @@ public class PlayerController : MonoBehaviour
         Running, //2
         Jumping, //3
         Rolling, //4
+        WallSliding, //5
     }
 
 
     [SerializeField] private float moveSpeed = 6.5F;
-
     [SerializeField] private float jumpHeight = 20F;
     [SerializeField] private float wallJumpDistance = 5f;
     [SerializeField] private float jumpUpwardsGravity = 5f;
     [SerializeField] private float fallingGravity = 7f;
-    bool isJumping = false;
-    bool isWallJumping = false;
+    [SerializeField] private float wallSlidingGravity = 1.5f;
+    private bool isJumping = false;
+    private bool isWallJumping = false;
+    // private bool isStuckToWall = false;
     [SerializeField] float coyoteTime = 0.175f;
-    float coyoteTimeCounter;
-    float jumpBufferTime = 0.1f;
-    float jumpBufferTimer = 0;
-    float wallJumpTimer = 0;
-    float maxWallJumpTime = 0.5f;
+    private float coyoteTimeCounter;
+    private float jumpBufferTime = 0.1f;
+    private float jumpBufferTimer = 0;
+    private float wallJumpTimer = 0;
+    private float maxWallJumpTime = 0.5f;
+    // private float wallStickTimer = 0;
+    // private float maxWallStickTime = 0.3f;
+
 
 
     [SerializeField] private float rollSpeed = 10F;
@@ -72,6 +77,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 lastCheckpointPosition;
 
 
+    SpriteRenderer temp;
+
     private void Start()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
@@ -81,6 +88,7 @@ public class PlayerController : MonoBehaviour
         Vector3 lastCheckpointPosition = new Vector3(1f, 1f, 1f); // Default position
         coyoteTimeCounter = coyoteTime;
 
+        temp = this.GetComponent<SpriteRenderer>();
 
         StartTracks();
 
@@ -92,13 +100,14 @@ public class PlayerController : MonoBehaviour
         coyoteTimer();
         updateJumpBufferTimer();
         WallJumpTimer();
+        // WallStickTimer();
 
     }
 
     private void FixedUpdate()
     {
         Move();
-        if (isJumping == true)
+        if (IsGrounded() == false)
         {
             JumpMidairPhysics();
         }
@@ -166,10 +175,31 @@ public class PlayerController : MonoBehaviour
         if (rigidBody.linearVelocityY > 0)
         {
             rigidBody.gravityScale = jumpUpwardsGravity;
+            return;
         }
-        else
+
+        // if (isStuckToWall == true)
+        // {
+        //     Debug.Log("Stuck gravity");
+        //     rigidBody.gravityScale = 0;
+        //     // rigidBody.linearVelocityY = 0;
+        //     return;
+        // }
+        // else
+        // {
+        //     rigidBody.gravityScale = fallingGravity; //failsafe from getting trapped midair
+        // }
+
+        if (IsWallSliding() == true)
+        {
+            rigidBody.gravityScale = wallSlidingGravity;
+            return;
+        }
+
+        if (rigidBody.linearVelocityY <= 0)
         {
             rigidBody.gravityScale = fallingGravity;
+            return;
         }
     }
 
@@ -204,7 +234,6 @@ public class PlayerController : MonoBehaviour
     }
     public void onRollInput()
     {
-        Debug.Log("Roll Pressed");
         //Roll code goes in here
         //Remember to connect the player and their functions to
         //the input controller script on the game manager
@@ -278,10 +307,46 @@ public class PlayerController : MonoBehaviour
 
         if (wallCheck)
         {
+            walkState = WalkState.WallSliding;
             return true;
         }
         return false;
     }
+
+
+    private bool IsWallSliding()
+    {
+        if (IsNextToWall() && IsGrounded() == false)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    // private void WallStickTimer()
+    // {
+    //     if (IsWallSliding() == true)
+    //     {
+    //         wallStickTimer -= Time.deltaTime;
+    //     }
+    //     else
+    //     {
+    //         wallStickTimer = maxWallStickTime;
+    //     }
+
+    //     if (wallStickTimer > 0 && wallStickTimer < maxWallStickTime)
+    //     {
+    //         isStuckToWall = true;
+    //     }
+    //     else
+    //     {
+    //         isStuckToWall = false;
+    //     }
+    // }
+
 
     private void Move()
     {
@@ -292,6 +357,11 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+
+        // if (isStuckToWall == true && IsInputDirectionSameAsDirectionFacing() == false)
+        // {
+        //     return;
+        // }
 
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
