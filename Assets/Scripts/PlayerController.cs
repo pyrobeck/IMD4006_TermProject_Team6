@@ -64,10 +64,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] public cameraMovement camera;
 
-    [SerializeField] private GameObject projectilePrefab;
-    private Rigidbody2D projectileRigidbody;
+    [SerializeField] private GameObject heldObjectPrefab;
+    [SerializeField] private GameObject thrownObjectPrefab;
     private bool isHoldingObject = false;
-    [SerializeField] private Vector3 projectileForce = new Vector3(2.5f, 2.5f, 0);
 
     private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
@@ -105,7 +104,7 @@ public class PlayerController : MonoBehaviour
         updateJumpBufferTimer();
         WallJumpTimer();
         // WallStickTimer();
-        HoldProjectile();
+        HoldObject();
 
 
     }
@@ -167,24 +166,25 @@ public class PlayerController : MonoBehaviour
     {
         isHoldingObject = false;
         Debug.Log("thrown");
-
-        projectilePrefab.GetComponent<Rigidbody2D>().gravityScale = 5;
-        projectilePrefab.GetComponent<Rigidbody2D>().AddForce(new Vector2(directionFacing.x * projectileForce.x, directionFacing.y * projectileForce.y));
-
-
+        ThrowObject();
     }
 
     private void PickUpObject()
     {
-        Instantiate(projectilePrefab, (transform.position + directionFacing), Quaternion.identity);
-
-        projectilePrefab.GetComponent<Rigidbody2D>().gravityScale = 0;
-
+        Instantiate(heldObjectPrefab, (transform.position + directionFacing), Quaternion.identity, this.transform);
     }
 
-    private void HoldProjectile()
+    private void HoldObject()
     {
-        projectilePrefab.GetComponent<Rigidbody2D>().transform.position = transform.position + directionFacing;
+        //projectilePrefab.GetComponent<Rigidbody2D>().transform.position = transform.position + directionFacing;
+    }
+
+    private void ThrowObject()
+    {
+        if (transform.GetChild(0).CompareTag("HeldObject")) //IF WE EVER ADD MORE CHILDREN TO THE PLAYER THIS SHOULD CHANGE
+        {
+            Destroy(transform.GetChild(0).gameObject);
+        }
     }
 
     private void Jump()

@@ -5,6 +5,8 @@ public class HeldObject : MonoBehaviour
 
     void Start()
     {
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(5, 5));
+        Destroy(gameObject, 10); //destroy after 10 seconds in case it never hits anything somehow
     }
 
     // Update is called once per frame
