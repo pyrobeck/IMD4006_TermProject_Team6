@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -63,7 +64,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] public cameraMovement camera;
 
-
+    [SerializeField] private GameObject projectilePrefab;
+    private Rigidbody2D projectileRigidbody;
+    private bool isHoldingObject = false;
+    [SerializeField] private Vector3 projectileForce = new Vector3(2.5f, 2.5f, 0);
 
     private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
@@ -101,6 +105,8 @@ public class PlayerController : MonoBehaviour
         updateJumpBufferTimer();
         WallJumpTimer();
         // WallStickTimer();
+        HoldProjectile();
+
 
     }
 
@@ -148,6 +154,37 @@ public class PlayerController : MonoBehaviour
         //cuts the vertical velocity when they let go of the jump button to shorten the jump
         rigidBody.linearVelocityY = rigidBody.linearVelocityY * 0.3f;
         isJumping = false;
+    }
+
+    public void OnPickupPerformed()
+    {
+        Debug.Log("picked up");
+        isHoldingObject = true;
+        PickUpObject();
+    }
+
+    public void OnPickupCancelled()
+    {
+        isHoldingObject = false;
+        Debug.Log("thrown");
+
+        projectilePrefab.GetComponent<Rigidbody2D>().gravityScale = 5;
+        projectilePrefab.GetComponent<Rigidbody2D>().AddForce(new Vector2(directionFacing.x * projectileForce.x, directionFacing.y * projectileForce.y));
+
+
+    }
+
+    private void PickUpObject()
+    {
+        Instantiate(projectilePrefab, (transform.position + directionFacing), Quaternion.identity);
+
+        projectilePrefab.GetComponent<Rigidbody2D>().gravityScale = 0;
+
+    }
+
+    private void HoldProjectile()
+    {
+        projectilePrefab.GetComponent<Rigidbody2D>().transform.position = transform.position + directionFacing;
     }
 
     private void Jump()
@@ -466,7 +503,7 @@ public class PlayerController : MonoBehaviour
     }
     private System.Collections.IEnumerator Roll()
     {
-        Debug.Log("Rolling!");
+        // Debug.Log("Rolling!");
         isRolling = true;
         animator.SetInteger("state", 4);
         PlayRollSound();
@@ -535,4 +572,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public bool GetIsHoldingObject()
+    {
+        return isHoldingObject;
+    }
 }
+

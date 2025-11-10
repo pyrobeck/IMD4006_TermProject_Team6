@@ -3301,6 +3301,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  pickupInputEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1784137063}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnPickupPerformed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  pickupCancelEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1784137063}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnPickupCancelled
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1716297922
 Transform:
   m_ObjectHideFlags: 0
@@ -3904,6 +3934,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   camera: {fileID: 209882065}
+  projectilePrefab: {fileID: 7508869822436165074, guid: 7a00c575b4860da4da720267df7cf603, type: 3}
 --- !u!50 &1784137064
 Rigidbody2D:
   serializedVersion: 5

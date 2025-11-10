@@ -11,7 +11,10 @@ public class JumpInputEvent : UnityEvent { }
 public class JumpCancelEvent : UnityEvent { }
 [Serializable]
 public class RollInputEvent : UnityEvent { }
-
+[Serializable]
+public class PickupInputEvent : UnityEvent { }
+[Serializable]
+public class PickupCancelEvent : UnityEvent { }
 public class InputController : MonoBehaviour
 {
     InputSystem_Actions controls;
@@ -19,6 +22,8 @@ public class InputController : MonoBehaviour
     public JumpInputEvent jumpInputEvent;
     public JumpCancelEvent jumpCancelEvent;
     public RollInputEvent rollInputEvent;
+    public PickupInputEvent pickupInputEvent;
+    public PickupCancelEvent pickupCancelEvent;
 
     private void Awake()
     {
@@ -35,9 +40,9 @@ public class InputController : MonoBehaviour
         controls.Player.Jump.canceled += OnJumpCanceled;
 
         controls.Player.Roll.performed += OnRollPerformed;
-        //if you want something to happen when the player
-        //lets go of the button, add in a .canceled line (like move has)
-        //and create a new OnRollCanceled function
+
+        controls.Player.Pickup.performed += OnPickupPerformed;
+        controls.Player.Pickup.canceled += OnPickupCancelled;
     }
 
     private void OnMovePerformed(InputAction.CallbackContext context)
@@ -60,5 +65,14 @@ public class InputController : MonoBehaviour
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
         rollInputEvent.Invoke();
+    }
+
+    private void OnPickupPerformed(InputAction.CallbackContext context)
+    {
+        pickupInputEvent.Invoke();
+    }
+    private void OnPickupCancelled(InputAction.CallbackContext context)
+    {
+        pickupCancelEvent.Invoke();
     }
 }
