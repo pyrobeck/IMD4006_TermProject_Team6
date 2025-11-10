@@ -1,0 +1,15 @@
+enemy behvaiours
+
+snoomsnox snail
+-walks back and forth
+-turns around when it reaches a cliff edge
+-code to make them bump off other enemies is weird atm, so dont put them on ledges with another enemy, and dont change their layer to enemy
+
+rising star
+-stands in place and shoots at you
+
+beatle
+-thwomp from mario
+-when a player trips the PlayerDetector it goes down
+-you can adjust the PlayerDetector distance, its a raycast down from the empty
+-FloorDetector measures when it reaches the ground and makes it go back up
