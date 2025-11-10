@@ -67,6 +67,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject heldObjectPrefab;
     [SerializeField] private GameObject thrownObjectPrefab;
     private bool isHoldingObject = false;
+    private bool isNearJunkPile = false;
+    private bool isThrowingObject = false;
+    private float throwCooldownTimer = 0;
+    private float maxThrowCooldownTimer = 0.5f;
+
 
     private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
@@ -100,10 +105,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
 
-        coyoteTimer();
-        updateJumpBufferTimer();
-        WallJumpTimer();
-        // WallStickTimer();
+        UpdateTimers();
 
     }
 
@@ -155,16 +157,21 @@ public class PlayerController : MonoBehaviour
 
     public void OnPickupPerformed()
     {
-        Debug.Log("picked up");
-        isHoldingObject = true;
-        PickUpObject();
+        if (isThrowingObject == false && isHoldingObject == false && isNearJunkPile == true)
+        {
+            PickUpObject();
+            isHoldingObject = true;
+        }
     }
 
     public void OnPickupCancelled()
     {
-        isHoldingObject = false;
-        Debug.Log("thrown");
-        ThrowObject();
+        if (isHoldingObject == true)
+        {
+            ThrowObject();
+            isHoldingObject = false;
+            isThrowingObject = true;
+        }
     }
 
     private void PickUpObject()
@@ -199,6 +206,8 @@ public class PlayerController : MonoBehaviour
     }
     // used this code as a refrence https://stackoverflow.com/a/46359133
 
+
+
     private void Jump()
     {
         isJumping = true;
@@ -227,18 +236,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        // if (isStuckToWall == true)
-        // {
-        //     Debug.Log("Stuck gravity");
-        //     rigidBody.gravityScale = 0;
-        //     // rigidBody.linearVelocityY = 0;
-        //     return;
-        // }
-        // else
-        // {
-        //     rigidBody.gravityScale = fallingGravity; //failsafe from getting trapped midair
-        // }
-
         if (IsWallSliding() == true)
         {
             rigidBody.gravityScale = wallSlidingGravity;
@@ -252,35 +249,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void coyoteTimer()
-    {
-        //starts a timer whenever the player leaves the ground. Resets it once they return to ground
-        if (IsGrounded() && isJumping == false)
-        {
-            coyoteTimeCounter = coyoteTime;
-        }
-        else
-        {
-            coyoteTimeCounter -= Time.deltaTime;
-        }
-    }
-
     private void jumpBuffer()
     {
         jumpBufferTimer = jumpBufferTime;
     }
     //when jump input is given while in the air, start a short timer 
     //if the player lands on the ground in that time, input the jump
-    private void updateJumpBufferTimer()
-    {
-        jumpBufferTimer -= Time.deltaTime;
 
-        if (jumpBufferTimer > 0 && IsGrounded() == true)
-        {
-            onJumpInput();
-            jumpBufferTimer = -1;
-        }
-    }
     public void onRollInput()
     {
         //Roll code goes in here
@@ -320,6 +295,28 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
         }
 
+        if (collision.gameObject.CompareTag("JunkPile"))
+        {
+            Debug.Log("entering junk range");
+            isNearJunkPile = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("JunkPile"))
+        {
+            Debug.Log("exiting junk range");
+            isNearJunkPile = false;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemies"))
+        {
+            transform.position = lastCheckpointPosition;
+            camera.SnapToTarget();
+        }
+
     }
 
 
@@ -331,11 +328,7 @@ public class PlayerController : MonoBehaviour
         Vector2 direction = Vector2.down;
         float distance = 0.5f;
 
-
-
-        //oxCast(Vector2 origin, Vector2 size, float angle, Vector2 direction, float distance = Mathf.Infinity, int layerMask = Physics2D.AllLayers, float minDepth = -Mathf.Infinity, float maxDepth = Mathf.Infinity); 
         RaycastHit2D groundCheck = Physics2D.BoxCast(position, size, angle, direction, distance, groundLayer);
-
 
         if (groundCheck)
         {
@@ -375,27 +368,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // private void WallStickTimer()
-    // {
-    //     if (IsWallSliding() == true)
-    //     {
-    //         wallStickTimer -= Time.deltaTime;
-    //     }
-    //     else
-    //     {
-    //         wallStickTimer = maxWallStickTime;
-    //     }
-
-    //     if (wallStickTimer > 0 && wallStickTimer < maxWallStickTime)
-    //     {
-    //         isStuckToWall = true;
-    //     }
-    //     else
-    //     {
-    //         isStuckToWall = false;
-    //     }
-    // }
-
 
     private void Move()
     {
@@ -407,27 +379,10 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        // if (isStuckToWall == true && IsInputDirectionSameAsDirectionFacing() == false)
-        // {
-        //     return;
-        // }
-
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
-    private void WallJumpTimer()
-    {
-        //starts a timer whenever the player leaves the ground. Resets it once they return to ground
-        if (isWallJumping == true)
-        {
-            wallJumpTimer -= Time.deltaTime;
-        }
 
-        if (wallJumpTimer <= 0)
-        {
-            isWallJumping = false;
-        }
-    }
     private void ResetWallJumpTimer()
     {
         wallJumpTimer = maxWallJumpTime;
@@ -532,7 +487,66 @@ public class PlayerController : MonoBehaviour
         animator.SetInteger("state", 0);
     }
 
+    /// Timers
+    private void UpdateTimers()
+    {
+        coyoteTimer();
+        updateJumpBufferTimer();
+        WallJumpTimer();
+        ThrowCooldownTimer();
+    }
 
+    private void coyoteTimer()
+    {
+        //starts a timer whenever the player leaves the ground. Resets it once they return to ground
+        if (IsGrounded() && isJumping == false)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+    }
+    private void updateJumpBufferTimer()
+    {
+        jumpBufferTimer -= Time.deltaTime;
+
+        if (jumpBufferTimer > 0 && IsGrounded() == true)
+        {
+            onJumpInput();
+            jumpBufferTimer = -1;
+        }
+    }
+    private void WallJumpTimer()
+    {
+        //starts a timer whenever the player leaves the ground. Resets it once they return to ground
+        if (isWallJumping == true)
+        {
+            wallJumpTimer -= Time.deltaTime;
+        }
+
+        if (wallJumpTimer <= 0)
+        {
+            isWallJumping = false;
+        }
+    }
+
+    private void ThrowCooldownTimer()
+    {
+        if (isThrowingObject == true)
+        {
+            throwCooldownTimer -= Time.deltaTime;
+        }
+        else
+        {
+            throwCooldownTimer = maxThrowCooldownTimer;
+        }
+        if (throwCooldownTimer <= 0)
+        {
+            isThrowingObject = false;
+        }
+    }
     ///////////////////// Play Music ///////////////////////////////////////////////////////
     public void StartTracks()
     {
@@ -574,15 +588,6 @@ public class PlayerController : MonoBehaviour
 
     /////////////////////Collsion with enemies and check point //////////////////////////////////
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemies"))
-        {
-            transform.position = lastCheckpointPosition;
-            camera.SnapToTarget();
-        }
-    }
 
     public bool GetIsHoldingObject()
     {

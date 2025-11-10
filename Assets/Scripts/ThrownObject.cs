@@ -10,6 +10,7 @@ public class HeldObject : MonoBehaviour
         {
             direction = -1;
         }
+        transform.parent = null;
         GetComponent<Rigidbody2D>().AddForce(new Vector2(800 * direction, 600));
         Destroy(gameObject, 10); //destroy after 10 seconds in case it never hits anything somehow
     }
