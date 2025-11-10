@@ -113,7 +113,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   raycastDistance: 1.5
-  enemyDistance: 1
+  enemyDistance: 2
   bpm: 1
 --- !u!50 &1804037562755542149
 Rigidbody2D:

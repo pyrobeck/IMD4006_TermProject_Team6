@@ -36,12 +36,12 @@ public class PatrolStateSnail : MonoBehaviour
         if (faceRight)
         {
             rb.linearVelocity = new Vector2(bpm, rb.linearVelocity.y);
-            print("right");
+            //print("right");
         }
         else
         {
             rb.linearVelocity = new Vector2(-bpm, rb.linearVelocity.y);
-            print("left");
+            //print("left");
         }
         
     }
@@ -50,6 +50,6 @@ public class PatrolStateSnail : MonoBehaviour
     {
         faceRight = !faceRight;
         transform.Rotate(0, 180, 0);
-        print("rot");
+        //print("rot");
     }
 }
