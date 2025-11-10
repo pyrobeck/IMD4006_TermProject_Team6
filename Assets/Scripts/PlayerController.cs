@@ -104,8 +104,6 @@ public class PlayerController : MonoBehaviour
         updateJumpBufferTimer();
         WallJumpTimer();
         // WallStickTimer();
-        HoldObject();
-
 
     }
 
@@ -174,18 +172,32 @@ public class PlayerController : MonoBehaviour
         Instantiate(heldObjectPrefab, (transform.position + directionFacing), Quaternion.identity, this.transform);
     }
 
-    private void HoldObject()
-    {
-        //projectilePrefab.GetComponent<Rigidbody2D>().transform.position = transform.position + directionFacing;
-    }
-
     private void ThrowObject()
     {
-        if (transform.GetChild(0).CompareTag("HeldObject")) //IF WE EVER ADD MORE CHILDREN TO THE PLAYER THIS SHOULD CHANGE
+        ClearHeldObjectsFromChildren();
+        Instantiate(thrownObjectPrefab, (transform.position + directionFacing), Quaternion.identity, this.transform);
+    }
+
+    private void ClearHeldObjectsFromChildren()
+    {
+        GameObject[] children = new GameObject[transform.childCount];
+        int i = 0;
+        foreach (Transform child in transform)
         {
-            Destroy(transform.GetChild(0).gameObject);
+            children[i] = child.gameObject;
+            i++;
+        }
+        i = 0;
+        foreach (GameObject child in children)
+        {
+            if (transform.GetChild(i).CompareTag("HeldObject"))
+            {
+                Destroy(transform.GetChild(i).gameObject);
+            }
+            i++;
         }
     }
+    // used this code as a refrence https://stackoverflow.com/a/46359133
 
     private void Jump()
     {
