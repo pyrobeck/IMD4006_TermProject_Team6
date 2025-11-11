@@ -3,21 +3,22 @@ using UnityEngine;
 public class BackgroundMovement : MonoBehaviour
 {
     [SerializeField] private Transform cameraTransform;
-    [SerializeField] private float speedBackground = 0.05f;
-
-    private Vector3 startPosition;
+    [SerializeField] private float parallaxFactorX = 0.5f;
+    [SerializeField] private float parallaxFactorY = 0.05f;
+    private Vector3 lastCameraPosition;
 
     private void Start()
     {
-        startPosition = transform.position;
+        if (cameraTransform == null)
+            cameraTransform = Camera.main.transform;
+
+        lastCameraPosition = cameraTransform.position;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
-        if (cameraTransform == null)
-            return;
-
-        Vector3 cameraOffset = cameraTransform.position * speedBackground;
-        transform.position = startPosition + new Vector3(cameraOffset.x, cameraOffset.y, 0);
+        Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
+        transform.position += new Vector3(deltaMovement.x * parallaxFactorX, deltaMovement.y * parallaxFactorY, 0);
+        lastCameraPosition = cameraTransform.position;
     }
 }
