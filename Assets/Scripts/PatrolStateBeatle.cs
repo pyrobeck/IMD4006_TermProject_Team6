@@ -63,7 +63,7 @@ public class PatrolStateBeatle : MonoBehaviour
     void moveUp()
     {
 
-        rb.linearVelocity = new Vector2(0, bpm);
+        rb.linearVelocity = new Vector2(0, (bpm/2));
         stop = true;
             
     }
