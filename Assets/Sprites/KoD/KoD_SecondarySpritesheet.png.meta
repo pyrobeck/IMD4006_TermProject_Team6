@@ -1,0 +1,7189 @@
+fileFormatVersion: 2
+guid: 1f95ada03b75232438f51f73c9363109
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8907485939464177675
+    second: KoD_SecondarySpritesheet_0
+  - first:
+      213: -8666604890516880640
+    second: KoD_SecondarySpritesheet_1
+  - first:
+      213: 6788545016675222710
+    second: KoD_SecondarySpritesheet_2
+  - first:
+      213: 4820472054463837294
+    second: KoD_SecondarySpritesheet_3
+  - first:
+      213: 6258224120044793323
+    second: KoD_SecondarySpritesheet_4
+  - first:
+      213: 6357501518743020396
+    second: KoD_SecondarySpritesheet_5
+  - first:
+      213: 6706612307690534608
+    second: KoD_SecondarySpritesheet_6
+  - first:
+      213: -1317792552509002595
+    second: KoD_SecondarySpritesheet_7
+  - first:
+      213: -4291824117958530587
+    second: KoD_SecondarySpritesheet_8
+  - first:
+      213: 1799801430667759190
+    second: KoD_SecondarySpritesheet_9
+  - first:
+      213: 4512090231957691680
+    second: KoD_SecondarySpritesheet_10
+  - first:
+      213: -5477393411403132257
+    second: KoD_SecondarySpritesheet_11
+  - first:
+      213: -4414345334790699208
+    second: KoD_SecondarySpritesheet_12
+  - first:
+      213: 6981663759831684363
+    second: KoD_SecondarySpritesheet_13
+  - first:
+      213: 1877447258201245445
+    second: KoD_SecondarySpritesheet_14
+  - first:
+      213: -5366533381364873769
+    second: KoD_SecondarySpritesheet_15
+  - first:
+      213: -1294726799496076029
+    second: KoD_SecondarySpritesheet_16
+  - first:
+      213: -3453449566042826777
+    second: KoD_SecondarySpritesheet_17
+  - first:
+      213: -258098179673253264
+    second: KoD_SecondarySpritesheet_18
+  - first:
+      213: -3683478929756517614
+    second: KoD_SecondarySpritesheet_19
+  - first:
+      213: -5867382789626320838
+    second: KoD_SecondarySpritesheet_20
+  - first:
+      213: 61612321460014577
+    second: KoD_SecondarySpritesheet_21
+  - first:
+      213: -7036101938027789341
+    second: KoD_SecondarySpritesheet_22
+  - first:
+      213: 3406396016645310786
+    second: KoD_SecondarySpritesheet_23
+  - first:
+      213: 9006242479123927693
+    second: KoD_SecondarySpritesheet_24
+  - first:
+      213: 4395013885297406562
+    second: KoD_SecondarySpritesheet_25
+  - first:
+      213: -4370826707310065528
+    second: KoD_SecondarySpritesheet_26
+  - first:
+      213: 9052429530068877773
+    second: KoD_SecondarySpritesheet_27
+  - first:
+      213: -8671068810031119886
+    second: KoD_SecondarySpritesheet_28
+  - first:
+      213: -2992191119620033741
+    second: KoD_SecondarySpritesheet_29
+  - first:
+      213: -8975395642603220745
+    second: KoD_SecondarySpritesheet_30
+  - first:
+      213: 8890346470482902686
+    second: KoD_SecondarySpritesheet_31
+  - first:
+      213: -2876029128226408544
+    second: KoD_SecondarySpritesheet_32
+  - first:
+      213: -944591757539300368
+    second: KoD_SecondarySpritesheet_33
+  - first:
+      213: 3520422243463304266
+    second: KoD_SecondarySpritesheet_34
+  - first:
+      213: -5067691661957821096
+    second: KoD_SecondarySpritesheet_35
+  - first:
+      213: -7792419990633842607
+    second: KoD_SecondarySpritesheet_36
+  - first:
+      213: -2578545361476063490
+    second: KoD_SecondarySpritesheet_37
+  - first:
+      213: 4062478695652513474
+    second: KoD_SecondarySpritesheet_38
+  - first:
+      213: 4779527836600778383
+    second: KoD_SecondarySpritesheet_39
+  - first:
+      213: 4137913093032483897
+    second: KoD_SecondarySpritesheet_40
+  - first:
+      213: -7652664485750793590
+    second: KoD_SecondarySpritesheet_41
+  - first:
+      213: 6551876305748521456
+    second: KoD_SecondarySpritesheet_42
+  - first:
+      213: 1560001851205134297
+    second: KoD_SecondarySpritesheet_43
+  - first:
+      213: -8803958255244353591
+    second: KoD_SecondarySpritesheet_44
+  - first:
+      213: -4437909758108860782
+    second: KoD_SecondarySpritesheet_45
+  - first:
+      213: -901334387389193720
+    second: KoD_SecondarySpritesheet_46
+  - first:
+      213: -3557109527652660508
+    second: KoD_SecondarySpritesheet_47
+  - first:
+      213: 7617863341719878003
+    second: KoD_SecondarySpritesheet_48
+  - first:
+      213: -707122770360080963
+    second: KoD_SecondarySpritesheet_49
+  - first:
+      213: -4379059688119425155
+    second: KoD_SecondarySpritesheet_50
+  - first:
+      213: -1057085785518299753
+    second: KoD_SecondarySpritesheet_51
+  - first:
+      213: -6285008071031324527
+    second: KoD_SecondarySpritesheet_52
+  - first:
+      213: -6473199079559627394
+    second: KoD_SecondarySpritesheet_53
+  - first:
+      213: 2943355421882266985
+    second: KoD_SecondarySpritesheet_54
+  - first:
+      213: -6298024944070208662
+    second: KoD_SecondarySpritesheet_55
+  - first:
+      213: 3678611521932735489
+    second: KoD_SecondarySpritesheet_56
+  - first:
+      213: -4755385541040181710
+    second: KoD_SecondarySpritesheet_57
+  - first:
+      213: 4773949685051504207
+    second: KoD_SecondarySpritesheet_58
+  - first:
+      213: -7107745153450361613
+    second: KoD_SecondarySpritesheet_59
+  - first:
+      213: 2792813020690141004
+    second: KoD_SecondarySpritesheet_60
+  - first:
+      213: -2334607202070936432
+    second: KoD_SecondarySpritesheet_61
+  - first:
+      213: -8126676775775988064
+    second: KoD_SecondarySpritesheet_62
+  - first:
+      213: -1475728190196343096
+    second: KoD_SecondarySpritesheet_63
+  - first:
+      213: 5949009979090485405
+    second: KoD_SecondarySpritesheet_64
+  - first:
+      213: -5589575972100538685
+    second: KoD_SecondarySpritesheet_65
+  - first:
+      213: 8795803120870909035
+    second: KoD_SecondarySpritesheet_66
+  - first:
+      213: 7987321482622024144
+    second: KoD_SecondarySpritesheet_67
+  - first:
+      213: 4127639074075191452
+    second: KoD_SecondarySpritesheet_68
+  - first:
+      213: -8911609561136990292
+    second: KoD_SecondarySpritesheet_69
+  - first:
+      213: 6695587031686244513
+    second: KoD_SecondarySpritesheet_70
+  - first:
+      213: 2037013752297126442
+    second: KoD_SecondarySpritesheet_71
+  - first:
+      213: -3162830513590147696
+    second: KoD_SecondarySpritesheet_72
+  - first:
+      213: 189218992930093681
+    second: KoD_SecondarySpritesheet_73
+  - first:
+      213: -1817978059977783011
+    second: KoD_SecondarySpritesheet_74
+  - first:
+      213: -981409183434111228
+    second: KoD_SecondarySpritesheet_75
+  - first:
+      213: 1808281576321727765
+    second: KoD_SecondarySpritesheet_76
+  - first:
+      213: 1167137214793721147
+    second: KoD_SecondarySpritesheet_77
+  - first:
+      213: -1066558390155896020
+    second: KoD_SecondarySpritesheet_78
+  - first:
+      213: 8442366542239618255
+    second: KoD_SecondarySpritesheet_79
+  - first:
+      213: 7238715599926321647
+    second: KoD_SecondarySpritesheet_80
+  - first:
+      213: -8811284722851488109
+    second: KoD_SecondarySpritesheet_81
+  - first:
+      213: -2425452161042642820
+    second: KoD_SecondarySpritesheet_82
+  - first:
+      213: -5818395715694193746
+    second: KoD_SecondarySpritesheet_83
+  - first:
+      213: -154678454192665085
+    second: KoD_SecondarySpritesheet_84
+  - first:
+      213: -1817591075026078789
+    second: KoD_SecondarySpritesheet_85
+  - first:
+      213: -9008553371128564793
+    second: KoD_SecondarySpritesheet_86
+  - first:
+      213: 3681392629207335802
+    second: KoD_SecondarySpritesheet_87
+  - first:
+      213: 8315427529947197101
+    second: KoD_SecondarySpritesheet_88
+  - first:
+      213: 5096986169309167919
+    second: KoD_SecondarySpritesheet_89
+  - first:
+      213: -6506527669978284623
+    second: KoD_SecondarySpritesheet_90
+  - first:
+      213: -1086255800877155583
+    second: KoD_SecondarySpritesheet_91
+  - first:
+      213: -5523671763284742052
+    second: KoD_SecondarySpritesheet_92
+  - first:
+      213: 607360215775738147
+    second: KoD_SecondarySpritesheet_93
+  - first:
+      213: -1987848762358064812
+    second: KoD_SecondarySpritesheet_94
+  - first:
+      213: 6413501116270727013
+    second: KoD_SecondarySpritesheet_95
+  - first:
+      213: 8624541987960066085
+    second: KoD_SecondarySpritesheet_96
+  - first:
+      213: 3461812741471832617
+    second: KoD_SecondarySpritesheet_97
+  - first:
+      213: 7773995571498500036
+    second: KoD_SecondarySpritesheet_98
+  - first:
+      213: -3778943820022123558
+    second: KoD_SecondarySpritesheet_99
+  - first:
+      213: -4264533357439885291
+    second: KoD_SecondarySpritesheet_100
+  - first:
+      213: 7674634845206244388
+    second: KoD_SecondarySpritesheet_101
+  - first:
+      213: 3295268237277574176
+    second: KoD_SecondarySpritesheet_102
+  - first:
+      213: 4945295381380982726
+    second: KoD_SecondarySpritesheet_103
+  - first:
+      213: -6555104782529849998
+    second: KoD_SecondarySpritesheet_104
+  - first:
+      213: 9092244881866830911
+    second: KoD_SecondarySpritesheet_105
+  - first:
+      213: -7254511886710278639
+    second: KoD_SecondarySpritesheet_106
+  - first:
+      213: -7659513360451403440
+    second: KoD_SecondarySpritesheet_107
+  - first:
+      213: 5504857528401680681
+    second: KoD_SecondarySpritesheet_108
+  - first:
+      213: -9057040320703321014
+    second: KoD_SecondarySpritesheet_109
+  - first:
+      213: 5635733738178162678
+    second: KoD_SecondarySpritesheet_110
+  - first:
+      213: 3589869471713065495
+    second: KoD_SecondarySpritesheet_111
+  - first:
+      213: 4042168126578687161
+    second: KoD_SecondarySpritesheet_112
+  - first:
+      213: 7539095995502201280
+    second: KoD_SecondarySpritesheet_113
+  - first:
+      213: 8115544993394956924
+    second: KoD_SecondarySpritesheet_114
+  - first:
+      213: -5329112516791276259
+    second: KoD_SecondarySpritesheet_115
+  - first:
+      213: 1828630367604043367
+    second: KoD_SecondarySpritesheet_116
+  - first:
+      213: -6420138147962906899
+    second: KoD_SecondarySpritesheet_117
+  - first:
+      213: 2335896686604419547
+    second: KoD_SecondarySpritesheet_118
+  - first:
+      213: -4855487270080075486
+    second: KoD_SecondarySpritesheet_119
+  - first:
+      213: -783609034222087650
+    second: KoD_SecondarySpritesheet_120
+  - first:
+      213: 6288824232101658514
+    second: KoD_SecondarySpritesheet_121
+  - first:
+      213: 5043379968281722823
+    second: KoD_SecondarySpritesheet_122
+  - first:
+      213: 7777221778410115969
+    second: KoD_SecondarySpritesheet_123
+  - first:
+      213: -8839753796837308540
+    second: KoD_SecondarySpritesheet_124
+  - first:
+      213: -6977007538824362558
+    second: KoD_SecondarySpritesheet_125
+  - first:
+      213: 6479271506202431992
+    second: KoD_SecondarySpritesheet_126
+  - first:
+      213: 2306859596281068305
+    second: KoD_SecondarySpritesheet_127
+  - first:
+      213: 8857251352699093025
+    second: KoD_SecondarySpritesheet_128
+  - first:
+      213: 1595869216069004309
+    second: KoD_SecondarySpritesheet_129
+  - first:
+      213: 8690514934452075094
+    second: KoD_SecondarySpritesheet_130
+  - first:
+      213: 7315018387095057760
+    second: KoD_SecondarySpritesheet_131
+  - first:
+      213: -7229588702460740229
+    second: KoD_SecondarySpritesheet_132
+  - first:
+      213: 2998675299557023619
+    second: KoD_SecondarySpritesheet_133
+  - first:
+      213: -5043063276064673010
+    second: KoD_SecondarySpritesheet_134
+  - first:
+      213: -173155969610897550
+    second: KoD_SecondarySpritesheet_135
+  - first:
+      213: 5769542125605540427
+    second: KoD_SecondarySpritesheet_136
+  - first:
+      213: -1728033524434534223
+    second: KoD_SecondarySpritesheet_137
+  - first:
+      213: -872368924616048931
+    second: KoD_SecondarySpritesheet_138
+  - first:
+      213: -2026536420571343711
+    second: KoD_SecondarySpritesheet_139
+  - first:
+      213: 3296925683405888780
+    second: KoD_SecondarySpritesheet_140
+  - first:
+      213: -1843140467732108769
+    second: KoD_SecondarySpritesheet_141
+  - first:
+      213: 8144816942373940498
+    second: KoD_SecondarySpritesheet_142
+  - first:
+      213: -3147423046256161113
+    second: KoD_SecondarySpritesheet_143
+  - first:
+      213: -713076559388795154
+    second: KoD_SecondarySpritesheet_144
+  - first:
+      213: 7737014742973337531
+    second: KoD_SecondarySpritesheet_145
+  - first:
+      213: -6885054758915911885
+    second: KoD_SecondarySpritesheet_146
+  - first:
+      213: -8732493742209264076
+    second: KoD_SecondarySpritesheet_147
+  - first:
+      213: -6752437257339762766
+    second: KoD_SecondarySpritesheet_148
+  - first:
+      213: 7791405478428802271
+    second: KoD_SecondarySpritesheet_149
+  - first:
+      213: -4954816065917557969
+    second: KoD_SecondarySpritesheet_150
+  - first:
+      213: 6469854948448851755
+    second: KoD_SecondarySpritesheet_151
+  - first:
+      213: -5061955760512831540
+    second: KoD_SecondarySpritesheet_152
+  - first:
+      213: 4466966935195863406
+    second: KoD_SecondarySpritesheet_153
+  - first:
+      213: -3663791031974153110
+    second: KoD_SecondarySpritesheet_154
+  - first:
+      213: 9133456360716745309
+    second: KoD_SecondarySpritesheet_155
+  - first:
+      213: 6336230096006038365
+    second: KoD_SecondarySpritesheet_156
+  - first:
+      213: -3584058236014447987
+    second: KoD_SecondarySpritesheet_157
+  - first:
+      213: -6382126674675281931
+    second: KoD_SecondarySpritesheet_158
+  - first:
+      213: 4620490697029446192
+    second: KoD_SecondarySpritesheet_159
+  - first:
+      213: -4088390945959250248
+    second: KoD_SecondarySpritesheet_160
+  - first:
+      213: -1363935954233572679
+    second: KoD_SecondarySpritesheet_161
+  - first:
+      213: -2576434325152453586
+    second: KoD_SecondarySpritesheet_162
+  - first:
+      213: 2846781900460284947
+    second: KoD_SecondarySpritesheet_163
+  - first:
+      213: -884092313431682788
+    second: KoD_SecondarySpritesheet_164
+  - first:
+      213: 4180814238498856704
+    second: KoD_SecondarySpritesheet_165
+  - first:
+      213: -4584122591679408417
+    second: KoD_SecondarySpritesheet_166
+  - first:
+      213: -2940379877514720813
+    second: KoD_SecondarySpritesheet_167
+  - first:
+      213: 8056696642555499886
+    second: KoD_SecondarySpritesheet_168
+  - first:
+      213: 6594388065996406307
+    second: KoD_SecondarySpritesheet_169
+  - first:
+      213: 8403634997197157508
+    second: KoD_SecondarySpritesheet_170
+  - first:
+      213: 6790008504456542332
+    second: KoD_SecondarySpritesheet_171
+  - first:
+      213: -3529825419341912395
+    second: KoD_SecondarySpritesheet_172
+  - first:
+      213: -1138456282326820157
+    second: KoD_SecondarySpritesheet_173
+  - first:
+      213: 1483253259627106469
+    second: KoD_SecondarySpritesheet_174
+  - first:
+      213: -5207269932337904846
+    second: KoD_SecondarySpritesheet_175
+  - first:
+      213: -2541224192758097469
+    second: KoD_SecondarySpritesheet_176
+  - first:
+      213: -5257624903570446496
+    second: KoD_SecondarySpritesheet_177
+  - first:
+      213: 7833730614626637097
+    second: KoD_SecondarySpritesheet_178
+  - first:
+      213: -8961317033231330174
+    second: KoD_SecondarySpritesheet_179
+  - first:
+      213: 4844663842600474294
+    second: KoD_SecondarySpritesheet_180
+  - first:
+      213: -4507913704746809684
+    second: KoD_SecondarySpritesheet_181
+  - first:
+      213: -8536571374765027582
+    second: KoD_SecondarySpritesheet_182
+  - first:
+      213: 3137686524776163099
+    second: KoD_SecondarySpritesheet_183
+  - first:
+      213: -290748318401607755
+    second: KoD_SecondarySpritesheet_184
+  - first:
+      213: -7181214977869036212
+    second: KoD_SecondarySpritesheet_185
+  - first:
+      213: 7297548838804302395
+    second: KoD_SecondarySpritesheet_186
+  - first:
+      213: 1577805558277609260
+    second: KoD_SecondarySpritesheet_187
+  - first:
+      213: 2810121262241627291
+    second: KoD_SecondarySpritesheet_188
+  - first:
+      213: 8836805116775187123
+    second: KoD_SecondarySpritesheet_189
+  - first:
+      213: -7843953223885429626
+    second: KoD_SecondarySpritesheet_190
+  - first:
+      213: 5018064998165356485
+    second: KoD_SecondarySpritesheet_191
+  - first:
+      213: -3428903877752859350
+    second: KoD_SecondarySpritesheet_192
+  - first:
+      213: 7477491769298004555
+    second: KoD_SecondarySpritesheet_193
+  - first:
+      213: 6728594400155429961
+    second: KoD_SecondarySpritesheet_194
+  - first:
+      213: 6574532940196287579
+    second: KoD_SecondarySpritesheet_195
+  - first:
+      213: 2116989379645948222
+    second: KoD_SecondarySpritesheet_196
+  - first:
+      213: -522634454867626903
+    second: KoD_SecondarySpritesheet_197
+  - first:
+      213: -8035505273263195554
+    second: KoD_SecondarySpritesheet_198
+  - first:
+      213: -1260877386280525867
+    second: KoD_SecondarySpritesheet_199
+  - first:
+      213: -560820509855898022
+    second: KoD_SecondarySpritesheet_200
+  - first:
+      213: 478079306095592568
+    second: KoD_SecondarySpritesheet_201
+  - first:
+      213: 6823956568263862376
+    second: KoD_SecondarySpritesheet_202
+  - first:
+      213: -4713114629935111108
+    second: KoD_SecondarySpritesheet_203
+  - first:
+      213: 931936041031214702
+    second: KoD_SecondarySpritesheet_204
+  - first:
+      213: 3862357404196258743
+    second: KoD_SecondarySpritesheet_205
+  - first:
+      213: -3120975548626806116
+    second: KoD_SecondarySpritesheet_206
+  - first:
+      213: -6927245018837635000
+    second: KoD_SecondarySpritesheet_207
+  - first:
+      213: -1381693281186742734
+    second: KoD_SecondarySpritesheet_208
+  - first:
+      213: 7555940307992655595
+    second: KoD_SecondarySpritesheet_209
+  - first:
+      213: -8843021277051178953
+    second: KoD_SecondarySpritesheet_210
+  - first:
+      213: 7191808500158492296
+    second: KoD_SecondarySpritesheet_211
+  - first:
+      213: -3715164888699263005
+    second: KoD_SecondarySpritesheet_212
+  - first:
+      213: -5628291680063287020
+    second: KoD_SecondarySpritesheet_213
+  - first:
+      213: 5564026779794826696
+    second: KoD_SecondarySpritesheet_214
+  - first:
+      213: -2262528936856458616
+    second: KoD_SecondarySpritesheet_215
+  - first:
+      213: 3108452113932122511
+    second: KoD_SecondarySpritesheet_216
+  - first:
+      213: 8571266901393213009
+    second: KoD_SecondarySpritesheet_217
+  - first:
+      213: 5386055777237574937
+    second: KoD_SecondarySpritesheet_218
+  - first:
+      213: 3251998010312934580
+    second: KoD_SecondarySpritesheet_219
+  - first:
+      213: 4022169077911229395
+    second: KoD_SecondarySpritesheet_220
+  - first:
+      213: -8771378274593479169
+    second: KoD_SecondarySpritesheet_221
+  - first:
+      213: 5047237127002001695
+    second: KoD_SecondarySpritesheet_222
+  - first:
+      213: -6370692537997461031
+    second: KoD_SecondarySpritesheet_223
+  - first:
+      213: 9026609400894151560
+    second: KoD_SecondarySpritesheet_224
+  - first:
+      213: -4784519549757957270
+    second: KoD_SecondarySpritesheet_225
+  - first:
+      213: 3474641145890796223
+    second: KoD_SecondarySpritesheet_226
+  - first:
+      213: 6096397458891092143
+    second: KoD_SecondarySpritesheet_227
+  - first:
+      213: 5624630354943209374
+    second: KoD_SecondarySpritesheet_228
+  - first:
+      213: 5958660357827343526
+    second: KoD_SecondarySpritesheet_229
+  - first:
+      213: -7038814423705940617
+    second: KoD_SecondarySpritesheet_230
+  - first:
+      213: 4046229117132026472
+    second: KoD_SecondarySpritesheet_231
+  - first:
+      213: -637970990481579101
+    second: KoD_SecondarySpritesheet_232
+  - first:
+      213: 4382274091362725649
+    second: KoD_SecondarySpritesheet_233
+  - first:
+      213: -2263062735857263827
+    second: KoD_SecondarySpritesheet_234
+  - first:
+      213: -8850893366753777868
+    second: KoD_SecondarySpritesheet_235
+  - first:
+      213: -4137658199170585849
+    second: KoD_SecondarySpritesheet_236
+  - first:
+      213: -1332020167719269745
+    second: KoD_SecondarySpritesheet_237
+  - first:
+      213: -6592196426593839912
+    second: KoD_SecondarySpritesheet_238
+  - first:
+      213: 5382399463929294216
+    second: KoD_SecondarySpritesheet_239
+  - first:
+      213: -3118083341049059296
+    second: KoD_SecondarySpritesheet_240
+  - first:
+      213: 165172202264425745
+    second: KoD_SecondarySpritesheet_241
+  - first:
+      213: 7351602237375090891
+    second: KoD_SecondarySpritesheet_242
+  - first:
+      213: -5496451448249954146
+    second: KoD_SecondarySpritesheet_243
+  - first:
+      213: -8597270665893466223
+    second: KoD_SecondarySpritesheet_244
+  - first:
+      213: -7469429412176388354
+    second: KoD_SecondarySpritesheet_245
+  - first:
+      213: -4028474519789975128
+    second: KoD_SecondarySpritesheet_246
+  - first:
+      213: 3841989244053400326
+    second: KoD_SecondarySpritesheet_247
+  - first:
+      213: 9148784136275339132
+    second: KoD_SecondarySpritesheet_248
+  - first:
+      213: -2765874613652502551
+    second: KoD_SecondarySpritesheet_249
+  - first:
+      213: 5402368975482572272
+    second: KoD_SecondarySpritesheet_250
+  - first:
+      213: -8893726193358120625
+    second: KoD_SecondarySpritesheet_251
+  - first:
+      213: 4078762690215427525
+    second: KoD_SecondarySpritesheet_252
+  - first:
+      213: -4237627603608019321
+    second: KoD_SecondarySpritesheet_253
+  - first:
+      213: 2419926754108579628
+    second: KoD_SecondarySpritesheet_254
+  - first:
+      213: 2669841133693411181
+    second: KoD_SecondarySpritesheet_255
+  - first:
+      213: 1024459449981105947
+    second: KoD_SecondarySpritesheet_256
+  - first:
+      213: -6765121093120754941
+    second: KoD_SecondarySpritesheet_257
+  - first:
+      213: 4536382390109042794
+    second: KoD_SecondarySpritesheet_258
+  - first:
+      213: 969601683271305379
+    second: KoD_SecondarySpritesheet_259
+  - first:
+      213: -4294923424703924579
+    second: KoD_SecondarySpritesheet_260
+  - first:
+      213: -2568360157937219723
+    second: KoD_SecondarySpritesheet_261
+  - first:
+      213: 1087395544631637415
+    second: KoD_SecondarySpritesheet_262
+  - first:
+      213: 7147259123710718316
+    second: KoD_SecondarySpritesheet_263
+  - first:
+      213: 2667011230849076255
+    second: KoD_SecondarySpritesheet_264
+  - first:
+      213: 9212242086446398183
+    second: KoD_SecondarySpritesheet_265
+  - first:
+      213: 4756417344629189570
+    second: KoD_SecondarySpritesheet_266
+  - first:
+      213: 8057970478089837710
+    second: KoD_SecondarySpritesheet_267
+  - first:
+      213: 2339842196080249032
+    second: KoD_SecondarySpritesheet_268
+  - first:
+      213: 2706223968494941936
+    second: KoD_SecondarySpritesheet_269
+  - first:
+      213: -4248062794399134407
+    second: KoD_SecondarySpritesheet_270
+  - first:
+      213: -3610303065950342291
+    second: KoD_SecondarySpritesheet_271
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 14164
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f773706bb0426480800000000000000
+      internalID: -8907485939464177675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 14162
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003041c05c80ab780800000000000000
+      internalID: -8666604890516880640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 14159
+        width: 186
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4cca4b9b1c53e50800000000000000
+      internalID: 6788545016675222710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 14158
+        width: 179
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64b3082bc1c5e240800000000000000
+      internalID: 4820472054463837294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 14160
+        width: 168
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed2d000eada9d650800000000000000
+      internalID: 6258224120044793323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 14161
+        width: 168
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c632fa3a2f16a3850800000000000000
+      internalID: 6357501518743020396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 3437
+        y: 14160
+        width: 168
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d638265c5ca21d50800000000000000
+      internalID: 6706612307690534608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 3970
+        y: 14158
+        width: 179
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9cab0cc7a246bde0800000000000000
+      internalID: -1317792552509002595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 4505
+        y: 14159
+        width: 186
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9a0aa24b06074c0800000000000000
+      internalID: -4291824117958530587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 5042
+        y: 14162
+        width: 190
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e013d8ddd2af810800000000000000
+      internalID: 1799801430667759190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 13624
+        width: 192
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d195ee82a2e9e30800000000000000
+      internalID: 4512090231957691680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 13624
+        width: 192
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92504a76b36cf3b0800000000000000
+      internalID: -5477393411403132257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 13620
+        width: 192
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837c5e36e481db2c0800000000000000
+      internalID: -4414345334790699208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 13614
+        width: 189
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b055cf9f23ad3e060800000000000000
+      internalID: 6981663759831684363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 13614
+        width: 182
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507cd9d85580e0a10800000000000000
+      internalID: 1877447258201245445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 13621
+        width: 183
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d58870a25e3685b0800000000000000
+      internalID: -5366533381364873769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 3407
+        y: 13625
+        width: 180
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305abdae5d4380ee0800000000000000
+      internalID: -1294726799496076029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 13620
+        width: 182
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e75a46bae1e210d0800000000000000
+      internalID: -3453449566042826777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 4498
+        y: 13614
+        width: 182
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a9663b21d0b6cf0800000000000000
+      internalID: -258098179673253264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 5038
+        y: 13614
+        width: 190
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b0a36ed67a1ecc0800000000000000
+      internalID: -3683478929756517614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 13080
+        width: 192
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a382517807ed29ea0800000000000000
+      internalID: -5867382789626320838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 13085
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd49667414ead000800000000000000
+      internalID: 61612321460014577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 13084
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e38a64f09eba5e90800000000000000
+      internalID: -7036101938027789341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 13082
+        width: 192
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24903781123f54f20800000000000000
+      internalID: 3406396016645310786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 13078
+        width: 191
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82173151d99cfc70800000000000000
+      internalID: 9006242479123927693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 13081
+        width: 189
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262bf08c7d93efc30800000000000000
+      internalID: 4395013885297406562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 13089
+        width: 208
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8884eff6444b753c0800000000000000
+      internalID: -4370826707310065528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 3956
+        y: 13094
+        width: 214
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1030e12b0b0ad70800000000000000
+      internalID: 9052429530068877773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 13081
+        width: 195
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1402bcbdc2aa780800000000000000
+      internalID: -8671068810031119886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 5059
+        y: 13077
+        width: 187
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33338fea70a9976d0800000000000000
+      internalID: -2992191119620033741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 12537
+        width: 191
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0db0c773df07380800000000000000
+      internalID: -8975395642603220745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 12542
+        width: 191
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ef747030bd06b70800000000000000
+      internalID: 8890346470482902686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 12544
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a77368eeba4618d0800000000000000
+      internalID: -2876029128226408544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 12545
+        width: 191
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbab1a1dc224e2f0800000000000000
+      internalID: -944591757539300368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 12549
+        width: 191
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a449301e06d0bd030800000000000000
+      internalID: 3520422243463304266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 12552
+        width: 190
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d8bc18841fba9b0800000000000000
+      internalID: -5067691661957821096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 3415
+        y: 12553
+        width: 187
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158fd95fd43cbd390800000000000000
+      internalID: -7792419990633842607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 3953
+        y: 12552
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efeecfbc7aa273cd0800000000000000
+      internalID: -2578545361476063490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 4493
+        y: 12550
+        width: 180
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6d5f989d2d06830800000000000000
+      internalID: 4062478695652513474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 5033
+        y: 12548
+        width: 175
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e3eae8e3b445240800000000000000
+      internalID: 4779527836600778383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 12006
+        width: 171
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c93a5d802dc6930800000000000000
+      internalID: 4137913093032483897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 12004
+        width: 169
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a939d12364cc590800000000000000
+      internalID: -7652664485750793590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 12004
+        width: 166
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1707869c0fcea50800000000000000
+      internalID: 6551876305748521456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 12004
+        width: 167
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7a80e1b6d36a510800000000000000
+      internalID: 1560001851205134297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 12003
+        width: 170
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfdacabc9e02d580800000000000000
+      internalID: -8803958255244353591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 12003
+        width: 172
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e7eaa86906962c0800000000000000
+      internalID: -4437909758108860782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 12004
+        width: 176
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802a2df6621dd73f0800000000000000
+      internalID: -901334387389193720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 3946
+        y: 12004
+        width: 180
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea0b112bbb92aec0800000000000000
+      internalID: -3557109527652660508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 4486
+        y: 12005
+        width: 184
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379feae195618b960800000000000000
+      internalID: 7617863341719878003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 5026
+        y: 12007
+        width: 188
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5e81c369bcf26f0800000000000000
+      internalID: -707122770360080963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 11468
+        width: 191
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77a8673a647a33c0800000000000000
+      internalID: -4379059688119425155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 11470
+        width: 194
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7952119241a7451f0800000000000000
+      internalID: -1057085785518299753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 11470
+        width: 193
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19007b3757a27c8a0800000000000000
+      internalID: -6285008071031324527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 11471
+        width: 193
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d767ecbb39a26a0800000000000000
+      internalID: -6473199079559627394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 11471
+        width: 192
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96533016926e8d820800000000000000
+      internalID: 2943355421882266985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 11471
+        width: 188
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6355268eabe898a0800000000000000
+      internalID: -6298024944070208662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 11471
+        width: 187
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104b57760bd0d0330800000000000000
+      internalID: 3678611521932735489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 3977
+        y: 11471
+        width: 183
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e6548ab0a710eb0800000000000000
+      internalID: -4755385541040181710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 4521
+        y: 11471
+        width: 179
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f463511f1f9704240800000000000000
+      internalID: 4773949685051504207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 5065
+        y: 11471
+        width: 176
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc369ef0773c5d90800000000000000
+      internalID: -7107745153450361613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 10931
+        width: 175
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f425635a012c620800000000000000
+      internalID: 2792813020690141004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 10931
+        width: 174
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0944e767e1fc99fd0800000000000000
+      internalID: -2334607202070936432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 10931
+        width: 175
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a69477878e383f80800000000000000
+      internalID: -8126676775775988064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 10930
+        width: 174
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce115e9709258be0800000000000000
+      internalID: -1475728190196343096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 10929
+        width: 175
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9041f88e012f8250800000000000000
+      internalID: 5949009979090485405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 2902
+        y: 10928
+        width: 178
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce73e9a446dd62b0800000000000000
+      internalID: -5589575972100538685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 3437
+        y: 10927
+        width: 183
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6468c51658f01a70800000000000000
+      internalID: 8795803120870909035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 3973
+        y: 10926
+        width: 186
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9388ed19aa8de60800000000000000
+      internalID: 7987321482622024144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 10925
+        width: 188
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9826436ed1584930800000000000000
+      internalID: 4127639074075191452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 5046
+        y: 10925
+        width: 190
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca77473e15a935480800000000000000
+      internalID: -8911609561136990292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 10385
+        width: 191
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8ee5a3ee08bec50800000000000000
+      internalID: 6695587031686244513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 10384
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a7144173de44c10800000000000000
+      internalID: 2037013752297126442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 10385
+        width: 192
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09561b0c76e5b14d0800000000000000
+      internalID: -3162830513590147696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 10385
+        width: 191
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17afa5aebad30a200800000000000000
+      internalID: 189218992930093681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 10384
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d190295269e35c6e0800000000000000
+      internalID: -1817978059977783011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 2882
+        y: 10384
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4078a122c855162f0800000000000000
+      internalID: -981409183434111228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 10384
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d3a82538e481910800000000000000
+      internalID: 1808281576321727765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 3962
+        y: 10384
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b352be3fc11823010800000000000000
+      internalID: 1167137214793721147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 4501
+        y: 10385
+        width: 193
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b9b868bc2d231f0800000000000000
+      internalID: -1066558390155896020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 5042
+        y: 10385
+        width: 191
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4d5ddf3af492570800000000000000
+      internalID: 8442366542239618255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 9846
+        width: 191
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1efab5c75157460800000000000000
+      internalID: 7238715599926321647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 9847
+        width: 191
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e5c9f8a3708b580800000000000000
+      internalID: -8811284722851488109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 9849
+        width: 191
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7889513c10175ed0800000000000000
+      internalID: -2425452161042642820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 9849
+        width: 192
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3946b7ce7e04fa0800000000000000
+      internalID: -5818395715694193746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 2348
+        y: 9848
+        width: 191
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e8073f3c87addf0800000000000000
+      internalID: -154678454192665085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 9847
+        width: 189
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3762a1c8e96c6e0800000000000000
+      internalID: -1817591075026078789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 9846
+        width: 184
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3fbb530703bf280800000000000000
+      internalID: -9008553371128564793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 3984
+        y: 9847
+        width: 183
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7305a6671fe61330800000000000000
+      internalID: 3681392629207335802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 4524
+        y: 9849
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daea10e0845566370800000000000000
+      internalID: 8315427529947197101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 5064
+        y: 9849
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2180ce7ae12cb640800000000000000
+      internalID: 5096986169309167919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 9309
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bdb1b5ae8b24b5a0800000000000000
+      internalID: -6506527669978284623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 9309
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b7285ba18dce0f0800000000000000
+      internalID: -1086255800877155583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 9309
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50be850cc9f753b0800000000000000
+      internalID: -5523671763284742052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 9309
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3297408f5e6cd6800800000000000000
+      internalID: 607360215775738147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 9309
+        width: 184
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459927c251eb964e0800000000000000
+      internalID: -1987848762358064812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 9309
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f43e9f845510950800000000000000
+      internalID: 6413501116270727013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 3443
+        y: 9309
+        width: 184
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5201dc64e3780b770800000000000000
+      internalID: 8624541987960066085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 3984
+        y: 9309
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a895ec854da0030800000000000000
+      internalID: 3461812741471832617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 4523
+        y: 9309
+        width: 184
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfb0aca8c7c2eb60800000000000000
+      internalID: 7773995571498500036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 5064
+        y: 9309
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad37c6d0e9e7e8bc0800000000000000
+      internalID: -3778943820022123558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 8769
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510edf0818551d4c0800000000000000
+      internalID: -4264533357439885291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 8769
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c6a51dab7c18a60800000000000000
+      internalID: 7674634845206244388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 8769
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024be82b0052bbd20800000000000000
+      internalID: 3295268237277574176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 8765
+        width: 183
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7e794b2f731a440800000000000000
+      internalID: 4945295381380982726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 8758
+        width: 183
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27518d34ee69705a0800000000000000
+      internalID: -6555104782529849998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 8755
+        width: 183
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34398a1c842e2e70800000000000000
+      internalID: 9092244881866830911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 8755
+        width: 183
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116f8c500ebc25b90800000000000000
+      internalID: -7254511886710278639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 3984
+        y: 8756
+        width: 183
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0518fe53e21f3b590800000000000000
+      internalID: -7659513360451403440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 4524
+        y: 8754
+        width: 183
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929548f81ce256c40800000000000000
+      internalID: 5504857528401680681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 5064
+        y: 8750
+        width: 183
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ca61880ddee4280800000000000000
+      internalID: -9057040320703321014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 8208
+        width: 183
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff2bc8b9f5263e40800000000000000
+      internalID: 5635733738178162678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 8214
+        width: 183
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71af97bb347c1d130800000000000000
+      internalID: 3589869471713065495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 8229
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcf02bae7aa81830800000000000000
+      internalID: 4042168126578687161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 8229
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c98a733ddf30a860800000000000000
+      internalID: 7539095995502201280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 8230
+        width: 183
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a910a6c2530a070800000000000000
+      internalID: 8115544993394956924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 8229
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d619c96603b06b0800000000000000
+      internalID: -5329112516791276259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 8229
+        width: 183
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ee78e71a9906910800000000000000
+      internalID: 1828630367604043367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 3983
+        y: 8229
+        width: 184
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de69cb9ae5617e6a0800000000000000
+      internalID: -6420138147962906899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 4524
+        y: 8229
+        width: 183
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1811d09a5ca6020800000000000000
+      internalID: 2335896686604419547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 5064
+        y: 8229
+        width: 183
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2292277ad08dd9cb0800000000000000
+      internalID: -4855487270080075486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 7689
+        width: 183
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12d7603cbf0025f0800000000000000
+      internalID: -783609034222087650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 7689
+        width: 184
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fb949c154664750800000000000000
+      internalID: 6288824232101658514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 7686
+        width: 183
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfb0c43c5fadf540800000000000000
+      internalID: 5043379968281722823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 7681
+        width: 183
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1831191800e3eeb60800000000000000
+      internalID: 7777221778410115969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 7678
+        width: 183
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4870a9db1c2e25580800000000000000
+      internalID: -8839753796837308540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 7675
+        width: 183
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5c625fb90bc2f90800000000000000
+      internalID: -6977007538824362558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 7675
+        width: 183
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f191823b1ffae950800000000000000
+      internalID: 6479271506202431992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 3984
+        y: 7677
+        width: 183
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bb80f949c930020800000000000000
+      internalID: 2306859596281068305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 4524
+        y: 7676
+        width: 183
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1204af37d274bea70800000000000000
+      internalID: 8857251352699093025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 5064
+        y: 7672
+        width: 183
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c26c3c89aa52610800000000000000
+      internalID: 1595869216069004309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 7128
+        width: 183
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a3e3fd949ea9870800000000000000
+      internalID: 8690514934452075094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 7134
+        width: 183
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0657048677a248560800000000000000
+      internalID: 7315018387095057760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 7149
+        width: 183
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d76ad01675bab90800000000000000
+      internalID: -7229588702460740229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 7149
+        width: 183
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f95da1c4f6d9920800000000000000
+      internalID: 2998675299557023619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 7149
+        width: 183
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03f8527ba0730ab0800000000000000
+      internalID: -5043063276064673010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 7149
+        width: 183
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277aa942093d89df0800000000000000
+      internalID: -173155969610897550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 7149
+        width: 183
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42de51bef7811050800000000000000
+      internalID: 5769542125605540427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 3984
+        y: 7150
+        width: 183
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b00d104aaac408e0800000000000000
+      internalID: -1728033524434534223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 4524
+        y: 7149
+        width: 183
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddebb27c519b4e3f0800000000000000
+      internalID: -872368924616048931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 5064
+        y: 7149
+        width: 183
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4147fccdb40e3e0800000000000000
+      internalID: -2026536420571343711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 6609
+        width: 184
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d1542f07801cd20800000000000000
+      internalID: 3296925683405888780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 6609
+        width: 183
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a2ead8289db66e0800000000000000
+      internalID: -1843140467732108769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 6609
+        width: 183
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d28c22bd3380170800000000000000
+      internalID: 8144816942373940498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 6609
+        width: 183
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae060a4a6b1254d0800000000000000
+      internalID: -3147423046256161113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 2361
+        y: 6609
+        width: 185
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee19f3b5a4aa16f0800000000000000
+      internalID: -713076559388795154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 6607
+        width: 188
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfc2e09ae56f5b60800000000000000
+      internalID: 7737014742973337531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 3428
+        y: 6606
+        width: 191
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f44b3ec2f5370a0800000000000000
+      internalID: -6885054758915911885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 3964
+        y: 6605
+        width: 191
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4369b4c4533ffc680800000000000000
+      internalID: -8732493742209264076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 4502
+        y: 6605
+        width: 191
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7862427168a42a0800000000000000
+      internalID: -6752437257339762766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 5042
+        y: 6604
+        width: 191
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcf7c28002a02c60800000000000000
+      internalID: 7791405478428802271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 6064
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23e59f2a05fc3bb0800000000000000
+      internalID: -4954816065917557969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 6065
+        width: 192
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27d89efbca89c950800000000000000
+      internalID: 6469854948448851755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 6064
+        width: 192
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfe3e12e0250c9b0800000000000000
+      internalID: -5061955760512831540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 6064
+        width: 192
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69c3c3b2caddfd30800000000000000
+      internalID: 4466966935195863406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 6062
+        width: 191
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a643befc779972dc0800000000000000
+      internalID: -3663791031974153110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 6059
+        width: 192
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5abd004b2e80ce70800000000000000
+      internalID: 9133456360716745309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 6061
+        width: 192
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53449793bfcee750800000000000000
+      internalID: 6336230096006038365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 3954
+        y: 6067
+        width: 192
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82bb04060ed24ec0800000000000000
+      internalID: -3584058236014447987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 6071
+        width: 192
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff4f647a912e67a0800000000000000
+      internalID: -6382126674675281931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 5035
+        y: 6069
+        width: 191
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03aef6cfec74f1040800000000000000
+      internalID: 4620490697029446192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 5524
+        width: 193
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6fc2b881e1347c0800000000000000
+      internalID: -4088390945959250248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 5522
+        width: 193
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2468fd973521de0800000000000000
+      internalID: -1363935954233572679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 5522
+        width: 193
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c2a2eb1aaae3cd0800000000000000
+      internalID: -2576434325152453586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 5523
+        width: 193
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c52f93e0dc18720800000000000000
+      internalID: 2846781900460284947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 5522
+        width: 192
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11504d99b21bb3f0800000000000000
+      internalID: -884092313431682788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 5522
+        width: 192
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f9e95266c350a30800000000000000
+      internalID: 4180814238498856704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 5524
+        width: 192
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd61b146acce160c0800000000000000
+      internalID: -4584122591679408417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 3954
+        y: 5529
+        width: 192
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d94708841ca137d0800000000000000
+      internalID: -2940379877514720813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 5531
+        width: 192
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e655a9209e22fcf60800000000000000
+      internalID: 8056696642555499886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_169
+      rect:
+        serializedVersion: 2
+        x: 5034
+        y: 5529
+        width: 193
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e7ac8e109f38b50800000000000000
+      internalID: 6594388065996406307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_170
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 4984
+        width: 192
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4843afd6185bf9470800000000000000
+      internalID: 8403634997197157508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_171
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 4982
+        width: 192
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78730282c4fa3e50800000000000000
+      internalID: 6790008504456542332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_172
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 4982
+        width: 192
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b62bf0ab7a830fc0800000000000000
+      internalID: -3529825419341912395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_173
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 4983
+        width: 191
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca19930b046330f0800000000000000
+      internalID: -1138456282326820157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_174
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 4982
+        width: 192
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a093042bf2959410800000000000000
+      internalID: 1483253259627106469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_175
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 4982
+        width: 192
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2334d69f59f0cb7b0800000000000000
+      internalID: -5207269932337904846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_176
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 4984
+        width: 193
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c956088f02cbbcd0800000000000000
+      internalID: -2541224192758097469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_177
+      rect:
+        serializedVersion: 2
+        x: 3955
+        y: 4989
+        width: 192
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067af6c910a2907b0800000000000000
+      internalID: -5257624903570446496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_178
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 4991
+        width: 192
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9255ce63d7007bc60800000000000000
+      internalID: 7833730614626637097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_179
+      rect:
+        serializedVersion: 2
+        x: 5034
+        y: 4988
+        width: 193
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284d69a23a103a380800000000000000
+      internalID: -8961317033231330174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_180
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 4441
+        width: 192
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b65162c814bb3340800000000000000
+      internalID: 4844663842600474294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_181
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 4438
+        width: 193
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca683769e5ca071c0800000000000000
+      internalID: -4507913704746809684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_182
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 4442
+        width: 192
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20fcc573091088980800000000000000
+      internalID: -8536571374765027582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_183
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 4445
+        width: 192
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1720d5254d4b8b20800000000000000
+      internalID: 3137686524776163099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_184
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 4444
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b741a2e1fd07fbf0800000000000000
+      internalID: -290748318401607755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_185
+      rect:
+        serializedVersion: 2
+        x: 2882
+        y: 4433
+        width: 191
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45c66c7603375c90800000000000000
+      internalID: -7181214977869036212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_186
+      rect:
+        serializedVersion: 2
+        x: 3426
+        y: 4417
+        width: 187
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3aaefb310a164560800000000000000
+      internalID: 7297548838804302395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_187
+      rect:
+        serializedVersion: 2
+        x: 3971
+        y: 4426
+        width: 180
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2716c1bbcd75e510800000000000000
+      internalID: 1577805558277609260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_188
+      rect:
+        serializedVersion: 2
+        x: 4495
+        y: 4453
+        width: 192
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c3fab366e8ff620800000000000000
+      internalID: 2810121262241627291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_189
+      rect:
+        serializedVersion: 2
+        x: 5030
+        y: 4455
+        width: 195
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b24dbe2f63a2aa70800000000000000
+      internalID: 8836805116775187123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_190
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 3913
+        width: 192
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68467871a1ea42390800000000000000
+      internalID: -7843953223885429626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_191
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 3886
+        width: 180
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf977b678fb3a540800000000000000
+      internalID: 5018064998165356485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_192
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 3877
+        width: 188
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25d49d17161a60d0800000000000000
+      internalID: -3428903877752859350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_193
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 3893
+        width: 192
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a2aef852365c760800000000000000
+      internalID: 7477491769298004555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_194
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 3904
+        width: 190
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c62f215f4c06d50800000000000000
+      internalID: 6728594400155429961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_195
+      rect:
+        serializedVersion: 2
+        x: 2882
+        y: 3905
+        width: 191
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54118030ee6d3b50800000000000000
+      internalID: 6574532940196287579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_196
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 3905
+        width: 192
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31421fdf9e016d10800000000000000
+      internalID: 2116989379645948222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_197
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 3904
+        width: 188
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9643c3a7bba3fb8f0800000000000000
+      internalID: -522634454867626903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_198
+      rect:
+        serializedVersion: 2
+        x: 4503
+        y: 3905
+        width: 179
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a7e5427862c7090800000000000000
+      internalID: -8035505273263195554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_199
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 3907
+        width: 175
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df1d6592b6708ee0800000000000000
+      internalID: -1260877386280525867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_200
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 3368
+        width: 176
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a562947b7b09738f0800000000000000
+      internalID: -560820509855898022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_201
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 3367
+        width: 175
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8740b4e889a72a600800000000000000
+      internalID: 478079306095592568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_202
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 3365
+        width: 178
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868af0e085093be50800000000000000
+      internalID: 6823956568263862376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_203
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 3364
+        width: 189
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3465091737a79eb0800000000000000
+      internalID: -4713114629935111108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_204
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 3364
+        width: 192
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66ac0744e6eeec00800000000000000
+      internalID: 931936041031214702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_205
+      rect:
+        serializedVersion: 2
+        x: 2881
+        y: 3365
+        width: 192
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3c7b07899d99530800000000000000
+      internalID: 3862357404196258743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_206
+      rect:
+        serializedVersion: 2
+        x: 3421
+        y: 3364
+        width: 192
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a5b6f264110b4d0800000000000000
+      internalID: -3120975548626806116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_207
+      rect:
+        serializedVersion: 2
+        x: 3962
+        y: 3362
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840b6148b5b7ddf90800000000000000
+      internalID: -6927245018837635000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_208
+      rect:
+        serializedVersion: 2
+        x: 4503
+        y: 3358
+        width: 192
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ef152084d33dce0800000000000000
+      internalID: -1381693281186742734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_209
+      rect:
+        serializedVersion: 2
+        x: 5043
+        y: 3358
+        width: 192
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be635f15da71cd860800000000000000
+      internalID: 7555940307992655595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_210
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2821
+        width: 190
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730b4283007474580800000000000000
+      internalID: -8843021277051178953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_211
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 2823
+        width: 191
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ee4902abf6ec360800000000000000
+      internalID: 7191808500158492296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_212
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 2818
+        width: 188
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7a31fa735117cc0800000000000000
+      internalID: -3715164888699263005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_213
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 2815
+        width: 184
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4119a85798a44e1b0800000000000000
+      internalID: -5628291680063287020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_214
+      rect:
+        serializedVersion: 2
+        x: 2362
+        y: 2817
+        width: 186
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c56e6270e4673d40800000000000000
+      internalID: 5564026779794826696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_215
+      rect:
+        serializedVersion: 2
+        x: 2902
+        y: 2822
+        width: 174
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ae0a85be1e990e0800000000000000
+      internalID: -2262528936856458616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_216
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 2828
+        width: 147
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f897c347ab0732b20800000000000000
+      internalID: 3108452113932122511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_217
+      rect:
+        serializedVersion: 2
+        x: 3982
+        y: 2831
+        width: 159
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1560b9495d143f670800000000000000
+      internalID: 8571266901393213009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_218
+      rect:
+        serializedVersion: 2
+        x: 4540
+        y: 3061
+        width: 85
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915afae513d1fba40800000000000000
+      internalID: 5386055777237574937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_219
+      rect:
+        serializedVersion: 2
+        x: 5078
+        y: 3062
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4caf6e5fa612d20800000000000000
+      internalID: 3251998010312934580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_220
+      rect:
+        serializedVersion: 2
+        x: 4522
+        y: 2832
+        width: 170
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3957b477d91d730800000000000000
+      internalID: 4022169077911229395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_221
+      rect:
+        serializedVersion: 2
+        x: 5020
+        y: 2835
+        width: 187
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5e6489eedc54680800000000000000
+      internalID: -8771378274593479169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_222
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2524
+        width: 87
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f111e14fc636b0640800000000000000
+      internalID: 5047237127002001695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_223
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 2525
+        width: 87
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9fd6bd3e0c697a0800000000000000
+      internalID: -6370692537997461031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_224
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 2522
+        width: 89
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b5f72dc65f44d70800000000000000
+      internalID: 9026609400894151560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_225
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 2516
+        width: 86
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6bd3c7a1d8f99db0800000000000000
+      internalID: -4784519549757957270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_226
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 2512
+        width: 87
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2f6c676b7683030800000000000000
+      internalID: 3474641145890796223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_227
+      rect:
+        serializedVersion: 2
+        x: 2926
+        y: 2508
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa03cc25031ca9450800000000000000
+      internalID: 6096397458891092143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_228
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 2504
+        width: 86
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fe44bd183be0e40800000000000000
+      internalID: 5624630354943209374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_229
+      rect:
+        serializedVersion: 2
+        x: 4005
+        y: 2502
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4308d660a61b250800000000000000
+      internalID: 5958660357827343526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_230
+      rect:
+        serializedVersion: 2
+        x: 4544
+        y: 2500
+        width: 89
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d8c1b239b115e90800000000000000
+      internalID: -7038814423705940617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_231
+      rect:
+        serializedVersion: 2
+        x: 5014
+        y: 2297
+        width: 183
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8623f76b1f7172830800000000000000
+      internalID: 4046229117132026472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_232
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 2297
+        width: 198
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a36757a3c87527f0800000000000000
+      internalID: -637970990481579101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_233
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 2299
+        width: 167
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fa21c5117f0dc30800000000000000
+      internalID: 4382274091362725649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_234
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2293
+        width: 157
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2bddc49e6cf790e0800000000000000
+      internalID: -2263062735857263827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_235
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 2286
+        width: 202
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437a7c1806f4b2580800000000000000
+      internalID: -8850893366753777868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_236
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 2283
+        width: 189
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b64744ac51496c0800000000000000
+      internalID: -4137658199170585849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_237
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 2286
+        width: 161
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8acf6df6b6b38de0800000000000000
+      internalID: -1332020167719269745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_238
+      rect:
+        serializedVersion: 2
+        x: 3442
+        y: 2291
+        width: 160
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d45647e640d384a0800000000000000
+      internalID: -6592196426593839912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_239
+      rect:
+        serializedVersion: 2
+        x: 3982
+        y: 2293
+        width: 170
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d22c69bcf12ba40800000000000000
+      internalID: 5382399463929294216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_240
+      rect:
+        serializedVersion: 2
+        x: 4496
+        y: 2295
+        width: 164
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02825bcb8b75ab4d0800000000000000
+      internalID: -3118083341049059296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_241
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1752
+        width: 166
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1157dba2e3fca4200800000000000000
+      internalID: 165172202264425745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_242
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1744
+        width: 146
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc095b0d843260660800000000000000
+      internalID: 7351602237375090891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_243
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1741
+        width: 167
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9051ed778ea8b3b0800000000000000
+      internalID: -5496451448249954146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_244
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 1741
+        width: 174
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fa88131eb50b880800000000000000
+      internalID: -8597270665893466223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_245
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 1742
+        width: 185
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe1f5c3681475890800000000000000
+      internalID: -7469429412176388354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_246
+      rect:
+        serializedVersion: 2
+        x: 2873
+        y: 1743
+        width: 191
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9c43d94cbf718c0800000000000000
+      internalID: -4028474519789975128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_247
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 1744
+        width: 191
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bacaa9cdc715530800000000000000
+      internalID: 3841989244053400326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_248
+      rect:
+        serializedVersion: 2
+        x: 3962
+        y: 1745
+        width: 191
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77ab6913b207fe70800000000000000
+      internalID: 9148784136275339132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_249
+      rect:
+        serializedVersion: 2
+        x: 4502
+        y: 1744
+        width: 192
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7c8ff61b3ad99d0800000000000000
+      internalID: -2765874613652502551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_250
+      rect:
+        serializedVersion: 2
+        x: 5063
+        y: 1732
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdca31d5f119fa40800000000000000
+      internalID: 5402368975482572272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_251
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1187
+        width: 187
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f495d4be523239480800000000000000
+      internalID: -8893726193358120625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_252
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1189
+        width: 187
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd38697e0daa9830800000000000000
+      internalID: 4078762690215427525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_253
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1195
+        width: 186
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78edd8c752ce035c0800000000000000
+      internalID: -4237627603608019321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_254
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1203
+        width: 185
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f1b11cf8e459120800000000000000
+      internalID: 2419926754108579628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_255
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 1205
+        width: 184
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f958c9d5e2d0520800000000000000
+      internalID: 2669841133693411181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_256
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 1202
+        width: 184
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b177ae2217c973e00800000000000000
+      internalID: 1024459449981105947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_257
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 1199
+        width: 184
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30bf80e75367d12a0800000000000000
+      internalID: -6765121093120754941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_258
+      rect:
+        serializedVersion: 2
+        x: 3980
+        y: 1195
+        width: 184
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6879cfbfb774fe30800000000000000
+      internalID: 4536382390109042794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_259
+      rect:
+        serializedVersion: 2
+        x: 4520
+        y: 1193
+        width: 185
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8c1010897b47d00800000000000000
+      internalID: 969601683271305379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_260
+      rect:
+        serializedVersion: 2
+        x: 5060
+        y: 1192
+        width: 186
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96b40596ed5564c0800000000000000
+      internalID: -4294923424703924579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_261
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 651
+        width: 186
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577c2ea4b0a5b5cd0800000000000000
+      internalID: -2568360157937219723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_262
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 652
+        width: 187
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a57c109c74371f00800000000000000
+      internalID: 1087395544631637415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_263
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 654
+        width: 188
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6172722e4a203360800000000000000
+      internalID: 7147259123710718316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_264
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 659
+        width: 188
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c8cb28590230520800000000000000
+      internalID: 2667011230849076255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_265
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 657
+        width: 188
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea7a8b7e5578df70800000000000000
+      internalID: 9212242086446398183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_266
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 656
+        width: 188
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb2126df50320240800000000000000
+      internalID: 4756417344629189570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_267
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 657
+        width: 188
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c1125f479a3df60800000000000000
+      internalID: 8057970478089837710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_268
+      rect:
+        serializedVersion: 2
+        x: 3980
+        y: 661
+        width: 188
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c845df841ac87020800000000000000
+      internalID: 2339842196080249032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_269
+      rect:
+        serializedVersion: 2
+        x: 4520
+        y: 667
+        width: 189
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6f9c47c507e8520800000000000000
+      internalID: 2706223968494941936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_270
+      rect:
+        serializedVersion: 2
+        x: 5060
+        y: 673
+        width: 188
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d494c4569db05c0800000000000000
+      internalID: -4248062794399134407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_SecondarySpritesheet_271
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 136
+        width: 189
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63b68e5d70a5edc0800000000000000
+      internalID: -3610303065950342291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KoD_SecondarySpritesheet_0: -8907485939464177675
+      KoD_SecondarySpritesheet_1: -8666604890516880640
+      KoD_SecondarySpritesheet_10: 4512090231957691680
+      KoD_SecondarySpritesheet_100: -4264533357439885291
+      KoD_SecondarySpritesheet_101: 7674634845206244388
+      KoD_SecondarySpritesheet_102: 3295268237277574176
+      KoD_SecondarySpritesheet_103: 4945295381380982726
+      KoD_SecondarySpritesheet_104: -6555104782529849998
+      KoD_SecondarySpritesheet_105: 9092244881866830911
+      KoD_SecondarySpritesheet_106: -7254511886710278639
+      KoD_SecondarySpritesheet_107: -7659513360451403440
+      KoD_SecondarySpritesheet_108: 5504857528401680681
+      KoD_SecondarySpritesheet_109: -9057040320703321014
+      KoD_SecondarySpritesheet_11: -5477393411403132257
+      KoD_SecondarySpritesheet_110: 5635733738178162678
+      KoD_SecondarySpritesheet_111: 3589869471713065495
+      KoD_SecondarySpritesheet_112: 4042168126578687161
+      KoD_SecondarySpritesheet_113: 7539095995502201280
+      KoD_SecondarySpritesheet_114: 8115544993394956924
+      KoD_SecondarySpritesheet_115: -5329112516791276259
+      KoD_SecondarySpritesheet_116: 1828630367604043367
+      KoD_SecondarySpritesheet_117: -6420138147962906899
+      KoD_SecondarySpritesheet_118: 2335896686604419547
+      KoD_SecondarySpritesheet_119: -4855487270080075486
+      KoD_SecondarySpritesheet_12: -4414345334790699208
+      KoD_SecondarySpritesheet_120: -783609034222087650
+      KoD_SecondarySpritesheet_121: 6288824232101658514
+      KoD_SecondarySpritesheet_122: 5043379968281722823
+      KoD_SecondarySpritesheet_123: 7777221778410115969
+      KoD_SecondarySpritesheet_124: -8839753796837308540
+      KoD_SecondarySpritesheet_125: -6977007538824362558
+      KoD_SecondarySpritesheet_126: 6479271506202431992
+      KoD_SecondarySpritesheet_127: 2306859596281068305
+      KoD_SecondarySpritesheet_128: 8857251352699093025
+      KoD_SecondarySpritesheet_129: 1595869216069004309
+      KoD_SecondarySpritesheet_13: 6981663759831684363
+      KoD_SecondarySpritesheet_130: 8690514934452075094
+      KoD_SecondarySpritesheet_131: 7315018387095057760
+      KoD_SecondarySpritesheet_132: -7229588702460740229
+      KoD_SecondarySpritesheet_133: 2998675299557023619
+      KoD_SecondarySpritesheet_134: -5043063276064673010
+      KoD_SecondarySpritesheet_135: -173155969610897550
+      KoD_SecondarySpritesheet_136: 5769542125605540427
+      KoD_SecondarySpritesheet_137: -1728033524434534223
+      KoD_SecondarySpritesheet_138: -872368924616048931
+      KoD_SecondarySpritesheet_139: -2026536420571343711
+      KoD_SecondarySpritesheet_14: 1877447258201245445
+      KoD_SecondarySpritesheet_140: 3296925683405888780
+      KoD_SecondarySpritesheet_141: -1843140467732108769
+      KoD_SecondarySpritesheet_142: 8144816942373940498
+      KoD_SecondarySpritesheet_143: -3147423046256161113
+      KoD_SecondarySpritesheet_144: -713076559388795154
+      KoD_SecondarySpritesheet_145: 7737014742973337531
+      KoD_SecondarySpritesheet_146: -6885054758915911885
+      KoD_SecondarySpritesheet_147: -8732493742209264076
+      KoD_SecondarySpritesheet_148: -6752437257339762766
+      KoD_SecondarySpritesheet_149: 7791405478428802271
+      KoD_SecondarySpritesheet_15: -5366533381364873769
+      KoD_SecondarySpritesheet_150: -4954816065917557969
+      KoD_SecondarySpritesheet_151: 6469854948448851755
+      KoD_SecondarySpritesheet_152: -5061955760512831540
+      KoD_SecondarySpritesheet_153: 4466966935195863406
+      KoD_SecondarySpritesheet_154: -3663791031974153110
+      KoD_SecondarySpritesheet_155: 9133456360716745309
+      KoD_SecondarySpritesheet_156: 6336230096006038365
+      KoD_SecondarySpritesheet_157: -3584058236014447987
+      KoD_SecondarySpritesheet_158: -6382126674675281931
+      KoD_SecondarySpritesheet_159: 4620490697029446192
+      KoD_SecondarySpritesheet_16: -1294726799496076029
+      KoD_SecondarySpritesheet_160: -4088390945959250248
+      KoD_SecondarySpritesheet_161: -1363935954233572679
+      KoD_SecondarySpritesheet_162: -2576434325152453586
+      KoD_SecondarySpritesheet_163: 2846781900460284947
+      KoD_SecondarySpritesheet_164: -884092313431682788
+      KoD_SecondarySpritesheet_165: 4180814238498856704
+      KoD_SecondarySpritesheet_166: -4584122591679408417
+      KoD_SecondarySpritesheet_167: -2940379877514720813
+      KoD_SecondarySpritesheet_168: 8056696642555499886
+      KoD_SecondarySpritesheet_169: 6594388065996406307
+      KoD_SecondarySpritesheet_17: -3453449566042826777
+      KoD_SecondarySpritesheet_170: 8403634997197157508
+      KoD_SecondarySpritesheet_171: 6790008504456542332
+      KoD_SecondarySpritesheet_172: -3529825419341912395
+      KoD_SecondarySpritesheet_173: -1138456282326820157
+      KoD_SecondarySpritesheet_174: 1483253259627106469
+      KoD_SecondarySpritesheet_175: -5207269932337904846
+      KoD_SecondarySpritesheet_176: -2541224192758097469
+      KoD_SecondarySpritesheet_177: -5257624903570446496
+      KoD_SecondarySpritesheet_178: 7833730614626637097
+      KoD_SecondarySpritesheet_179: -8961317033231330174
+      KoD_SecondarySpritesheet_18: -258098179673253264
+      KoD_SecondarySpritesheet_180: 4844663842600474294
+      KoD_SecondarySpritesheet_181: -4507913704746809684
+      KoD_SecondarySpritesheet_182: -8536571374765027582
+      KoD_SecondarySpritesheet_183: 3137686524776163099
+      KoD_SecondarySpritesheet_184: -290748318401607755
+      KoD_SecondarySpritesheet_185: -7181214977869036212
+      KoD_SecondarySpritesheet_186: 7297548838804302395
+      KoD_SecondarySpritesheet_187: 1577805558277609260
+      KoD_SecondarySpritesheet_188: 2810121262241627291
+      KoD_SecondarySpritesheet_189: 8836805116775187123
+      KoD_SecondarySpritesheet_19: -3683478929756517614
+      KoD_SecondarySpritesheet_190: -7843953223885429626
+      KoD_SecondarySpritesheet_191: 5018064998165356485
+      KoD_SecondarySpritesheet_192: -3428903877752859350
+      KoD_SecondarySpritesheet_193: 7477491769298004555
+      KoD_SecondarySpritesheet_194: 6728594400155429961
+      KoD_SecondarySpritesheet_195: 6574532940196287579
+      KoD_SecondarySpritesheet_196: 2116989379645948222
+      KoD_SecondarySpritesheet_197: -522634454867626903
+      KoD_SecondarySpritesheet_198: -8035505273263195554
+      KoD_SecondarySpritesheet_199: -1260877386280525867
+      KoD_SecondarySpritesheet_2: 6788545016675222710
+      KoD_SecondarySpritesheet_20: -5867382789626320838
+      KoD_SecondarySpritesheet_200: -560820509855898022
+      KoD_SecondarySpritesheet_201: 478079306095592568
+      KoD_SecondarySpritesheet_202: 6823956568263862376
+      KoD_SecondarySpritesheet_203: -4713114629935111108
+      KoD_SecondarySpritesheet_204: 931936041031214702
+      KoD_SecondarySpritesheet_205: 3862357404196258743
+      KoD_SecondarySpritesheet_206: -3120975548626806116
+      KoD_SecondarySpritesheet_207: -6927245018837635000
+      KoD_SecondarySpritesheet_208: -1381693281186742734
+      KoD_SecondarySpritesheet_209: 7555940307992655595
+      KoD_SecondarySpritesheet_21: 61612321460014577
+      KoD_SecondarySpritesheet_210: -8843021277051178953
+      KoD_SecondarySpritesheet_211: 7191808500158492296
+      KoD_SecondarySpritesheet_212: -3715164888699263005
+      KoD_SecondarySpritesheet_213: -5628291680063287020
+      KoD_SecondarySpritesheet_214: 5564026779794826696
+      KoD_SecondarySpritesheet_215: -2262528936856458616
+      KoD_SecondarySpritesheet_216: 3108452113932122511
+      KoD_SecondarySpritesheet_217: 8571266901393213009
+      KoD_SecondarySpritesheet_218: 5386055777237574937
+      KoD_SecondarySpritesheet_219: 3251998010312934580
+      KoD_SecondarySpritesheet_22: -7036101938027789341
+      KoD_SecondarySpritesheet_220: 4022169077911229395
+      KoD_SecondarySpritesheet_221: -8771378274593479169
+      KoD_SecondarySpritesheet_222: 5047237127002001695
+      KoD_SecondarySpritesheet_223: -6370692537997461031
+      KoD_SecondarySpritesheet_224: 9026609400894151560
+      KoD_SecondarySpritesheet_225: -4784519549757957270
+      KoD_SecondarySpritesheet_226: 3474641145890796223
+      KoD_SecondarySpritesheet_227: 6096397458891092143
+      KoD_SecondarySpritesheet_228: 5624630354943209374
+      KoD_SecondarySpritesheet_229: 5958660357827343526
+      KoD_SecondarySpritesheet_23: 3406396016645310786
+      KoD_SecondarySpritesheet_230: -7038814423705940617
+      KoD_SecondarySpritesheet_231: 4046229117132026472
+      KoD_SecondarySpritesheet_232: -637970990481579101
+      KoD_SecondarySpritesheet_233: 4382274091362725649
+      KoD_SecondarySpritesheet_234: -2263062735857263827
+      KoD_SecondarySpritesheet_235: -8850893366753777868
+      KoD_SecondarySpritesheet_236: -4137658199170585849
+      KoD_SecondarySpritesheet_237: -1332020167719269745
+      KoD_SecondarySpritesheet_238: -6592196426593839912
+      KoD_SecondarySpritesheet_239: 5382399463929294216
+      KoD_SecondarySpritesheet_24: 9006242479123927693
+      KoD_SecondarySpritesheet_240: -3118083341049059296
+      KoD_SecondarySpritesheet_241: 165172202264425745
+      KoD_SecondarySpritesheet_242: 7351602237375090891
+      KoD_SecondarySpritesheet_243: -5496451448249954146
+      KoD_SecondarySpritesheet_244: -8597270665893466223
+      KoD_SecondarySpritesheet_245: -7469429412176388354
+      KoD_SecondarySpritesheet_246: -4028474519789975128
+      KoD_SecondarySpritesheet_247: 3841989244053400326
+      KoD_SecondarySpritesheet_248: 9148784136275339132
+      KoD_SecondarySpritesheet_249: -2765874613652502551
+      KoD_SecondarySpritesheet_25: 4395013885297406562
+      KoD_SecondarySpritesheet_250: 5402368975482572272
+      KoD_SecondarySpritesheet_251: -8893726193358120625
+      KoD_SecondarySpritesheet_252: 4078762690215427525
+      KoD_SecondarySpritesheet_253: -4237627603608019321
+      KoD_SecondarySpritesheet_254: 2419926754108579628
+      KoD_SecondarySpritesheet_255: 2669841133693411181
+      KoD_SecondarySpritesheet_256: 1024459449981105947
+      KoD_SecondarySpritesheet_257: -6765121093120754941
+      KoD_SecondarySpritesheet_258: 4536382390109042794
+      KoD_SecondarySpritesheet_259: 969601683271305379
+      KoD_SecondarySpritesheet_26: -4370826707310065528
+      KoD_SecondarySpritesheet_260: -4294923424703924579
+      KoD_SecondarySpritesheet_261: -2568360157937219723
+      KoD_SecondarySpritesheet_262: 1087395544631637415
+      KoD_SecondarySpritesheet_263: 7147259123710718316
+      KoD_SecondarySpritesheet_264: 2667011230849076255
+      KoD_SecondarySpritesheet_265: 9212242086446398183
+      KoD_SecondarySpritesheet_266: 4756417344629189570
+      KoD_SecondarySpritesheet_267: 8057970478089837710
+      KoD_SecondarySpritesheet_268: 2339842196080249032
+      KoD_SecondarySpritesheet_269: 2706223968494941936
+      KoD_SecondarySpritesheet_27: 9052429530068877773
+      KoD_SecondarySpritesheet_270: -4248062794399134407
+      KoD_SecondarySpritesheet_271: -3610303065950342291
+      KoD_SecondarySpritesheet_28: -8671068810031119886
+      KoD_SecondarySpritesheet_29: -2992191119620033741
+      KoD_SecondarySpritesheet_3: 4820472054463837294
+      KoD_SecondarySpritesheet_30: -8975395642603220745
+      KoD_SecondarySpritesheet_31: 8890346470482902686
+      KoD_SecondarySpritesheet_32: -2876029128226408544
+      KoD_SecondarySpritesheet_33: -944591757539300368
+      KoD_SecondarySpritesheet_34: 3520422243463304266
+      KoD_SecondarySpritesheet_35: -5067691661957821096
+      KoD_SecondarySpritesheet_36: -7792419990633842607
+      KoD_SecondarySpritesheet_37: -2578545361476063490
+      KoD_SecondarySpritesheet_38: 4062478695652513474
+      KoD_SecondarySpritesheet_39: 4779527836600778383
+      KoD_SecondarySpritesheet_4: 6258224120044793323
+      KoD_SecondarySpritesheet_40: 4137913093032483897
+      KoD_SecondarySpritesheet_41: -7652664485750793590
+      KoD_SecondarySpritesheet_42: 6551876305748521456
+      KoD_SecondarySpritesheet_43: 1560001851205134297
+      KoD_SecondarySpritesheet_44: -8803958255244353591
+      KoD_SecondarySpritesheet_45: -4437909758108860782
+      KoD_SecondarySpritesheet_46: -901334387389193720
+      KoD_SecondarySpritesheet_47: -3557109527652660508
+      KoD_SecondarySpritesheet_48: 7617863341719878003
+      KoD_SecondarySpritesheet_49: -707122770360080963
+      KoD_SecondarySpritesheet_5: 6357501518743020396
+      KoD_SecondarySpritesheet_50: -4379059688119425155
+      KoD_SecondarySpritesheet_51: -1057085785518299753
+      KoD_SecondarySpritesheet_52: -6285008071031324527
+      KoD_SecondarySpritesheet_53: -6473199079559627394
+      KoD_SecondarySpritesheet_54: 2943355421882266985
+      KoD_SecondarySpritesheet_55: -6298024944070208662
+      KoD_SecondarySpritesheet_56: 3678611521932735489
+      KoD_SecondarySpritesheet_57: -4755385541040181710
+      KoD_SecondarySpritesheet_58: 4773949685051504207
+      KoD_SecondarySpritesheet_59: -7107745153450361613
+      KoD_SecondarySpritesheet_6: 6706612307690534608
+      KoD_SecondarySpritesheet_60: 2792813020690141004
+      KoD_SecondarySpritesheet_61: -2334607202070936432
+      KoD_SecondarySpritesheet_62: -8126676775775988064
+      KoD_SecondarySpritesheet_63: -1475728190196343096
+      KoD_SecondarySpritesheet_64: 5949009979090485405
+      KoD_SecondarySpritesheet_65: -5589575972100538685
+      KoD_SecondarySpritesheet_66: 8795803120870909035
+      KoD_SecondarySpritesheet_67: 7987321482622024144
+      KoD_SecondarySpritesheet_68: 4127639074075191452
+      KoD_SecondarySpritesheet_69: -8911609561136990292
+      KoD_SecondarySpritesheet_7: -1317792552509002595
+      KoD_SecondarySpritesheet_70: 6695587031686244513
+      KoD_SecondarySpritesheet_71: 2037013752297126442
+      KoD_SecondarySpritesheet_72: -3162830513590147696
+      KoD_SecondarySpritesheet_73: 189218992930093681
+      KoD_SecondarySpritesheet_74: -1817978059977783011
+      KoD_SecondarySpritesheet_75: -981409183434111228
+      KoD_SecondarySpritesheet_76: 1808281576321727765
+      KoD_SecondarySpritesheet_77: 1167137214793721147
+      KoD_SecondarySpritesheet_78: -1066558390155896020
+      KoD_SecondarySpritesheet_79: 8442366542239618255
+      KoD_SecondarySpritesheet_8: -4291824117958530587
+      KoD_SecondarySpritesheet_80: 7238715599926321647
+      KoD_SecondarySpritesheet_81: -8811284722851488109
+      KoD_SecondarySpritesheet_82: -2425452161042642820
+      KoD_SecondarySpritesheet_83: -5818395715694193746
+      KoD_SecondarySpritesheet_84: -154678454192665085
+      KoD_SecondarySpritesheet_85: -1817591075026078789
+      KoD_SecondarySpritesheet_86: -9008553371128564793
+      KoD_SecondarySpritesheet_87: 3681392629207335802
+      KoD_SecondarySpritesheet_88: 8315427529947197101
+      KoD_SecondarySpritesheet_89: 5096986169309167919
+      KoD_SecondarySpritesheet_9: 1799801430667759190
+      KoD_SecondarySpritesheet_90: -6506527669978284623
+      KoD_SecondarySpritesheet_91: -1086255800877155583
+      KoD_SecondarySpritesheet_92: -5523671763284742052
+      KoD_SecondarySpritesheet_93: 607360215775738147
+      KoD_SecondarySpritesheet_94: -1987848762358064812
+      KoD_SecondarySpritesheet_95: 6413501116270727013
+      KoD_SecondarySpritesheet_96: 8624541987960066085
+      KoD_SecondarySpritesheet_97: 3461812741471832617
+      KoD_SecondarySpritesheet_98: 7773995571498500036
+      KoD_SecondarySpritesheet_99: -3778943820022123558
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

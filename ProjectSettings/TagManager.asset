@@ -9,6 +9,7 @@ TagManager:
   - BGElements
   - HeldObject
   - JunkPile
+  - ThrownObject
   layers:
   - Default
   - TransparentFX
