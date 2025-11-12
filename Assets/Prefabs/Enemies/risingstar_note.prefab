@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4100286598650709315}
   m_Layer: 0
   m_Name: risingstar_note
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.79, y: 0.87}
+    oldSize: {x: 0.52666664, y: 0.58}
     newSize: {x: 0.79, y: 0.87}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
