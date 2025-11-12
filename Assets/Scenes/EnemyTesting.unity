@@ -744,6 +744,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  jumpCancelEvent:
+    m_PersistentCalls:
+      m_Calls: []
   rollInputEvent:
     m_PersistentCalls:
       m_Calls:
@@ -759,6 +762,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  pickupInputEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  pickupCancelEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1125565414
 Transform:
   m_ObjectHideFlags: 0
@@ -1504,10 +1513,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 6.5
   jumpHeight: 20
+  wallJumpDistance: 5
+  jumpUpwardsGravity: 5
+  fallingGravity: 7
+  wallSlidingGravity: 1.5
+  coyoteTime: 0.175
   rollSpeed: 10
   rollDuration: 0.6
   rigidBody: {fileID: 2142339752}
-  groundCheckCol: {fileID: 0}
+  collidor: {fileID: 0}
   animator: {fileID: 2142339750}
   audioSource: {fileID: 2142339748}
   audioSourceMusic: {fileID: 2142339745}
@@ -1519,6 +1533,12 @@ MonoBehaviour:
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
   volume: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  camera: {fileID: 0}
+  heldObjectPrefab: {fileID: 0}
+  thrownObjectPrefab: {fileID: 0}
 --- !u!50 &2142339752
 Rigidbody2D:
   serializedVersion: 5
@@ -1669,6 +1689,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beatle
       objectReference: {fileID: 0}
+    - target: {fileID: 8009411637340543466, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4564328
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009411637340543466, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8022928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009411637340543466, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0011994839
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009411637340543466, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.017243385
+      objectReference: {fileID: 0}
     - target: {fileID: 8163264342538288697, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -1686,6 +1722,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1754754322997809416, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 824aafc50ffe8e34084413a56e9eae21, type: 2}
+    - target: {fileID: 2243343722233662888, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5535015
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243343722233662888, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.046166003
+      objectReference: {fileID: 0}
     - target: {fileID: 5479452921825548939, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Name
       value: Snail

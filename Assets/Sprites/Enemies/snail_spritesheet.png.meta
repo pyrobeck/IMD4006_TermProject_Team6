@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0acb1436770e97647b2153af84e5be1c
+guid: 18a8bd0e95d46d141b88b56f45a65054
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -189,7 +189,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -242,9 +242,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 988
-        width: 292
-        height: 164
+        y: 3240
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: snail_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 292
-        y: 988
-        width: 292
-        height: 164
+        x: 960
+        y: 3240
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: snail_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 584
-        y: 988
-        width: 292
-        height: 164
+        x: 1920
+        y: 3240
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: snail_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 876
-        y: 988
-        width: 292
-        height: 164
+        x: 2880
+        y: 3240
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +329,10 @@ TextureImporter:
       name: snail_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 988
-        width: 292
-        height: 164
+        x: 3840
+        y: 3240
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +351,10 @@ TextureImporter:
       name: snail_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 988
-        width: 292
-        height: 164
+        x: 4800
+        y: 3240
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: snail_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 988
-        width: 292
-        height: 164
+        x: 5760
+        y: 3240
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,9 +396,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 824
-        width: 292
-        height: 164
+        y: 2700
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,10 +417,10 @@ TextureImporter:
       name: snail_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 292
-        y: 824
-        width: 292
-        height: 164
+        x: 960
+        y: 2700
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +439,10 @@ TextureImporter:
       name: snail_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 584
-        y: 824
-        width: 292
-        height: 164
+        x: 1920
+        y: 2700
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,10 +461,10 @@ TextureImporter:
       name: snail_spritesheet_10
       rect:
         serializedVersion: 2
-        x: 876
-        y: 824
-        width: 292
-        height: 164
+        x: 2880
+        y: 2700
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +483,10 @@ TextureImporter:
       name: snail_spritesheet_11
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 824
-        width: 292
-        height: 164
+        x: 3840
+        y: 2700
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +505,10 @@ TextureImporter:
       name: snail_spritesheet_12
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 824
-        width: 292
-        height: 164
+        x: 4800
+        y: 2700
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,10 +527,10 @@ TextureImporter:
       name: snail_spritesheet_13
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 824
-        width: 292
-        height: 164
+        x: 5760
+        y: 2700
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,9 +550,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 660
-        width: 292
-        height: 164
+        y: 2160
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,10 +571,10 @@ TextureImporter:
       name: snail_spritesheet_15
       rect:
         serializedVersion: 2
-        x: 292
-        y: 660
-        width: 292
-        height: 164
+        x: 960
+        y: 2160
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +593,10 @@ TextureImporter:
       name: snail_spritesheet_16
       rect:
         serializedVersion: 2
-        x: 584
-        y: 660
-        width: 292
-        height: 164
+        x: 1920
+        y: 2160
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +615,10 @@ TextureImporter:
       name: snail_spritesheet_17
       rect:
         serializedVersion: 2
-        x: 876
-        y: 660
-        width: 292
-        height: 164
+        x: 2880
+        y: 2160
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,10 +637,10 @@ TextureImporter:
       name: snail_spritesheet_18
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 660
-        width: 292
-        height: 164
+        x: 3840
+        y: 2160
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +659,10 @@ TextureImporter:
       name: snail_spritesheet_19
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 660
-        width: 292
-        height: 164
+        x: 4800
+        y: 2160
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,10 +681,10 @@ TextureImporter:
       name: snail_spritesheet_20
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 660
-        width: 292
-        height: 164
+        x: 5760
+        y: 2160
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,9 +704,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 496
-        width: 292
-        height: 164
+        y: 1620
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,10 +725,10 @@ TextureImporter:
       name: snail_spritesheet_22
       rect:
         serializedVersion: 2
-        x: 292
-        y: 496
-        width: 292
-        height: 164
+        x: 960
+        y: 1620
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -747,10 +747,10 @@ TextureImporter:
       name: snail_spritesheet_23
       rect:
         serializedVersion: 2
-        x: 584
-        y: 496
-        width: 292
-        height: 164
+        x: 1920
+        y: 1620
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,10 +769,10 @@ TextureImporter:
       name: snail_spritesheet_24
       rect:
         serializedVersion: 2
-        x: 876
-        y: 496
-        width: 292
-        height: 164
+        x: 2880
+        y: 1620
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -791,10 +791,10 @@ TextureImporter:
       name: snail_spritesheet_25
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 496
-        width: 292
-        height: 164
+        x: 3840
+        y: 1620
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -813,10 +813,10 @@ TextureImporter:
       name: snail_spritesheet_26
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 496
-        width: 292
-        height: 164
+        x: 4800
+        y: 1620
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,10 +835,10 @@ TextureImporter:
       name: snail_spritesheet_27
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 496
-        width: 292
-        height: 164
+        x: 5760
+        y: 1620
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,9 +858,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 332
-        width: 292
-        height: 164
+        y: 1080
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -879,10 +879,10 @@ TextureImporter:
       name: snail_spritesheet_29
       rect:
         serializedVersion: 2
-        x: 292
-        y: 332
-        width: 292
-        height: 164
+        x: 960
+        y: 1080
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,10 +901,10 @@ TextureImporter:
       name: snail_spritesheet_30
       rect:
         serializedVersion: 2
-        x: 584
-        y: 332
-        width: 292
-        height: 164
+        x: 1920
+        y: 1080
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -923,10 +923,10 @@ TextureImporter:
       name: snail_spritesheet_31
       rect:
         serializedVersion: 2
-        x: 876
-        y: 332
-        width: 292
-        height: 164
+        x: 2880
+        y: 1080
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -945,10 +945,10 @@ TextureImporter:
       name: snail_spritesheet_32
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 332
-        width: 292
-        height: 164
+        x: 3840
+        y: 1080
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -967,10 +967,10 @@ TextureImporter:
       name: snail_spritesheet_33
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 332
-        width: 292
-        height: 164
+        x: 4800
+        y: 1080
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -989,10 +989,10 @@ TextureImporter:
       name: snail_spritesheet_34
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 332
-        width: 292
-        height: 164
+        x: 5760
+        y: 1080
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1012,9 +1012,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 168
-        width: 292
-        height: 164
+        y: 540
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1033,10 +1033,10 @@ TextureImporter:
       name: snail_spritesheet_36
       rect:
         serializedVersion: 2
-        x: 292
-        y: 168
-        width: 292
-        height: 164
+        x: 960
+        y: 540
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1055,10 +1055,10 @@ TextureImporter:
       name: snail_spritesheet_37
       rect:
         serializedVersion: 2
-        x: 584
-        y: 168
-        width: 292
-        height: 164
+        x: 1920
+        y: 540
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,10 +1077,10 @@ TextureImporter:
       name: snail_spritesheet_38
       rect:
         serializedVersion: 2
-        x: 876
-        y: 168
-        width: 292
-        height: 164
+        x: 2880
+        y: 540
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1099,10 +1099,10 @@ TextureImporter:
       name: snail_spritesheet_39
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 168
-        width: 292
-        height: 164
+        x: 3840
+        y: 540
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,10 +1121,10 @@ TextureImporter:
       name: snail_spritesheet_40
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 168
-        width: 292
-        height: 164
+        x: 4800
+        y: 540
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1143,10 +1143,10 @@ TextureImporter:
       name: snail_spritesheet_41
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 168
-        width: 292
-        height: 164
+        x: 5760
+        y: 540
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1166,9 +1166,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 292
-        height: 164
+        y: 0
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1187,10 +1187,10 @@ TextureImporter:
       name: snail_spritesheet_43
       rect:
         serializedVersion: 2
-        x: 292
-        y: 4
-        width: 292
-        height: 164
+        x: 960
+        y: 0
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1209,10 +1209,10 @@ TextureImporter:
       name: snail_spritesheet_44
       rect:
         serializedVersion: 2
-        x: 584
-        y: 4
-        width: 292
-        height: 164
+        x: 1920
+        y: 0
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1231,10 +1231,10 @@ TextureImporter:
       name: snail_spritesheet_45
       rect:
         serializedVersion: 2
-        x: 876
-        y: 4
-        width: 292
-        height: 164
+        x: 2880
+        y: 0
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1253,10 +1253,10 @@ TextureImporter:
       name: snail_spritesheet_46
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 4
-        width: 292
-        height: 164
+        x: 3840
+        y: 0
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1275,7 +1275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c84f0ea03e347d840bf370e5d36edb07
+    spriteID: ce5df5a581f2b7d43b759254f359baf0
     internalID: 0
     vertices: []
     indices: 
