@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6381bde358728404c8acbedda21356c1
+guid: 16253de3b874b2e448f1608668e6d66e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7336865020082234916
-    second: snailpng_0
+      213: 353058037705197759
+    second: temp-projectile-kod_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: snailpng_0
+      name: temp-projectile-kod_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 225
-        height: 208
+        x: 153
+        y: 8
+        width: 199
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd95209f2283e2a90800000000000000
-      internalID: -7336865020082234916
+      spriteID: fb8c38a2a6056e400800000000000000
+      internalID: 353058037705197759
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      snailpng_0: -7336865020082234916
+      temp-projectile-kod_0: 353058037705197759
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

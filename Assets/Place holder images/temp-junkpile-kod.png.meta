@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e953ced8def7ea549b8add191870dc4a
+guid: 3f3e4132b67a09440aa120b26ca8e7c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3873792562365237011
-    second: firstbackground_attempt1_0
+      213: 2643938352100472515
+    second: temp-junkpile-kod_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: firstbackground_attempt1_0
+      name: temp-junkpile-kod_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 4000
-        height: 2000
+        x: 40
+        y: 54
+        width: 426
+        height: 272
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de87ba250368d3ac0800000000000000
-      internalID: -3873792562365237011
+      spriteID: 3c6fafc4ce721b420800000000000000
+      internalID: 2643938352100472515
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      firstbackground_attempt1_0: -3873792562365237011
+      temp-junkpile-kod_0: 2643938352100472515
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

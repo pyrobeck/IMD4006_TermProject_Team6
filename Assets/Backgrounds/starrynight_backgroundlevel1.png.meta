@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 845cfd87c4cd02d40bf274004f963830
+guid: b3ab263f0b8a39a48a0c811e512c3428
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4451602038432571588
-    second: firstbackground_attempt2_0
+      213: 5643571387350427443
+    second: starrynight_backgroundlevel1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: firstbackground_attempt2_0
+      name: starrynight_backgroundlevel1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3f52d9188bb832c0800000000000000
-      internalID: -4451602038432571588
+      spriteID: 337a49f964ef15e40800000000000000
+      internalID: 5643571387350427443
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      firstbackground_attempt2_0: -4451602038432571588
+      starrynight_backgroundlevel1_0: 5643571387350427443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

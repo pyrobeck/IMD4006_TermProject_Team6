@@ -1,59 +1,168 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class cameraMovement : MonoBehaviour
 {
     [SerializeField] Transform target;
-    [SerializeField] float moveSpeed = 5f;
-    [SerializeField] float zoom = 7f;
-    [SerializeField] float verticalFollowSmoothness = 3f; // Smooth damp for Y tracking
+    float moveSpeed = 20;
+    float directionFlippingMoveSpeed = 10;
+
 
     Vector3 zOffset = new Vector3(0, 0, -10);
-    Vector3 lookAheadOffset;
-    float lookAheadOffsetX;
+    Vector3 lookAheadOffset = new Vector3(3, 0, 0);
     int direction = 1;
+    float lookAheadOffsetX;
+    Vector3 yOffset;
+    Vector3 targetX;
 
-    float currentYVelocity; // Used for smooth damping
+    Vector3 cameraTarget;
+    Vector3 cameraTargetXRecord;
+
+
+    [SerializeField] float zoom = 7;
+
+    float screenUpperLimit;
+    float screenLowerLimit;
+
+    float deadzoneRight;
+    float deadzoneLeft;
+
+    float deadzoneRatio;
+
 
     void Start()
     {
-        Camera cam = GetComponent<Camera>();
-        cam.orthographicSize = zoom;
+        this.GetComponent<Camera>().orthographicSize = zoom;
+        yOffset = new Vector3(0, (float)(zoom * 0.5f), 0);  //player will always be in the bottom quarter or so of the screen
 
-        lookAheadOffsetX = (zoom / 3f) + zoom; // forward view distance
+        lookAheadOffsetX = (float)zoom/3; //player will always have about 80% of the screen in front of them
+
+        screenUpperLimit = zoom  + yOffset.y;
+        screenLowerLimit = -zoom + zoom / 5 + yOffset.y;
+
+        deadzoneRatio = zoom / 5;
+        deadzoneRight = deadzoneRatio;
+        deadzoneLeft = -deadzoneRatio;
     }
 
+    // Update is called once per frame
     void Update()
     {
-        UpdateDirection();
-        UpdateLookAheadOffset();
+        //uncomment these if you need to see the screen limits for level design
+        //Debug.DrawRay(new Vector3(0,screenUpperLimit,0), Vector3.right * 1000);
+        //Debug.DrawRay(new Vector3(0, screenLowerLimit, 0), Vector3.right * 1000);
+        //and these for the camera movement deadzone
+        Debug.DrawRay(new Vector3(deadzoneRight, 0, 0), Vector3.up * 500);
+        Debug.DrawRay(new Vector3(deadzoneLeft, 0, 0), Vector3.up * 500);
 
-        // Smoothly follow player Y position
-        float targetY = Mathf.SmoothDamp(transform.position.y, target.position.y + zoom / 3f, ref currentYVelocity, 1f / verticalFollowSmoothness);
+        targetX = new Vector3(target.position.x, 0, 0);
+        updateDirection();
+        updateLookAheadOffset();
+        updateYOffset();
 
-        // Target X position follows player, Y follows smoothly, Z stays fixed
-        Vector3 targetPos = new Vector3(target.position.x, targetY, 0) + lookAheadOffset + zOffset;
+        updateCameraPosition();
 
-        transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+        updateDeadzonePosition();
     }
 
-    private void UpdateDirection()
+    private void updateCameraPosition()
     {
-        // Flip lookahead depending on player facing direction
-        direction = target.localScale.x < 0 ? -1 : 1;
+      
+
+        //only update the camera target if the player is outside the camera deadzone
+        //this is so the camera smoothly stops following the player's slight horizontal adjustments, but still follows them jumping or falling
+        if (!(target.position.x < deadzoneRight && target.position.x > deadzoneLeft))
+        {
+            cameraTarget = targetX + lookAheadOffset + yOffset + zOffset;
+            cameraTargetXRecord = new Vector3(cameraTarget.x, 0, 0); //keep a record of the last horizontal target while the player was outside the deadzone
+        }
+        else
+        {
+            cameraTarget = cameraTargetXRecord + yOffset + zOffset;
+        }
+
+
+            transform.position = Vector3.MoveTowards(this.transform.position, cameraTarget, moveSpeed * Time.deltaTime);
     }
 
-    private void UpdateLookAheadOffset()
+    private void updateDeadzonePosition()
     {
-        lookAheadOffset = new Vector3(lookAheadOffsetX * direction, 0, 0);
+        //if the player is within the camera deadzone, don't move it
+        if (target.position.x < deadzoneRight && target.position.x > deadzoneLeft)
+        {
+            return;
+        }
+       deadzoneRight = Mathf.Lerp(deadzoneRight, target.position.x + deadzoneRatio, (moveSpeed*0.1f) * Time.deltaTime);
+       deadzoneLeft = Mathf.Lerp(deadzoneLeft, target.position.x - deadzoneRatio, (moveSpeed * 0.1f) * Time.deltaTime);
+    }
+    private void updateDirection()
+    {
+
+        //if the player is within the camera deadzone, don't update direction
+        if(target.position.x < deadzoneRight && target.position.x > deadzoneLeft)
+        {
+           // return;
+        }
+
+        if (target.localScale.x < 0)
+        {
+            direction = -1;
+        }
+        else
+        {
+            direction = 1;
+        }
     }
 
-       public void SnapToTarget()
+    private void updateLookAheadOffset()
     {
-        UpdateDirection();
-        UpdateLookAheadOffset();
+        //slowly updates the lookahead to the direction the player is headed
+        lookAheadOffset = Vector3.MoveTowards(lookAheadOffset, new Vector3(lookAheadOffsetX * direction, 0, 0), directionFlippingMoveSpeed * Time.deltaTime);      
+    }
 
-        // Instantly set camera position to target’s location
-        Vector3 snapPos = new Vector3(target.position.x, target.position.y + zoom / 3f, 0) + lookAheadOffset + zOffset;
+    private void updateYOffset()
+    {
+        if (target.position.y > screenUpperLimit)
+        {
+            while(target.position.y > screenUpperLimit)
+            {
+                yOffset.y = yOffset.y + (float)(zoom * 1.5);
+                screenUpperLimit = screenUpperLimit + (float)(zoom * 1.5);
+                screenLowerLimit = screenLowerLimit + (float)(zoom * 1.5);
+            }
+
+        }
+        if (target.position.y < screenLowerLimit)
+        {
+            while(target.position.y < screenLowerLimit)
+            {
+                yOffset.y = yOffset.y - (float)(zoom * 1.5);
+                screenUpperLimit = screenUpperLimit - (float)(zoom * 1.5);
+                screenLowerLimit = screenLowerLimit - (float)(zoom * 1.5);
+            }
+     
+        }
+    }
+
+
+    public void SnapToTarget()
+    {
+        updateDirection();
+        updateLookAheadOffset();
+        updateYOffset();
+
+
+
+        Vector3 snapPos = new Vector3(target.position.x, target.position.y, 0) + lookAheadOffset + yOffset + zOffset;
+
         transform.position = snapPos;
+       
     }
+
 }
+
+
+
+
+//using these tutorials for help
+//https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.MoveTowards.html

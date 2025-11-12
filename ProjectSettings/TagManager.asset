@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Enemies
   - BGElements
+  - HeldObject
+  - JunkPile
   layers:
   - Default
   - TransparentFX

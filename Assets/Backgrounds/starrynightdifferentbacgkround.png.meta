@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e691fb2b88af61140a4c80447a86ce36
+guid: 36e4e18b03ed3c34a8b0b2b154cfbee6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5330443447985545835
-    second: rising star_0
+      213: -8903397327004030387
+    second: starrynightdifferentbacgkround_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rising star_0
+      name: starrynightdifferentbacgkround_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 280
-        height: 251
+        width: 1000
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b62ac74f21a89f940800000000000000
-      internalID: 5330443447985545835
+      spriteID: d4a23c5ad47c07480800000000000000
+      internalID: -8903397327004030387
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      rising star_0: 5330443447985545835
+      starrynightdifferentbacgkround_0: -8903397327004030387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

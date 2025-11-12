@@ -8,14 +8,22 @@ public class MoveInputEvent : UnityEvent<float> { }
 [Serializable]
 public class JumpInputEvent : UnityEvent { }
 [Serializable]
+public class JumpCancelEvent : UnityEvent { }
+[Serializable]
 public class RollInputEvent : UnityEvent { }
-
+[Serializable]
+public class PickupInputEvent : UnityEvent { }
+[Serializable]
+public class PickupCancelEvent : UnityEvent { }
 public class InputController : MonoBehaviour
 {
     InputSystem_Actions controls;
     public MoveInputEvent moveInputEvent;
     public JumpInputEvent jumpInputEvent;
+    public JumpCancelEvent jumpCancelEvent;
     public RollInputEvent rollInputEvent;
+    public PickupInputEvent pickupInputEvent;
+    public PickupCancelEvent pickupCancelEvent;
 
     private void Awake()
     {
@@ -29,11 +37,12 @@ public class InputController : MonoBehaviour
         controls.Player.Move.canceled += OnMovePerformed;
 
         controls.Player.Jump.performed += OnJumpPerformed;
+        controls.Player.Jump.canceled += OnJumpCanceled;
 
         controls.Player.Roll.performed += OnRollPerformed;
-        //if you want something to happen when the player
-        //lets go of the button, add in a .canceled line (like move has)
-        //and create a new OnRollCanceled function
+
+        controls.Player.Pickup.performed += OnPickupPerformed;
+        controls.Player.Pickup.canceled += OnPickupCancelled;
     }
 
     private void OnMovePerformed(InputAction.CallbackContext context)
@@ -48,8 +57,22 @@ public class InputController : MonoBehaviour
         jumpInputEvent.Invoke();
     }
 
+    private void OnJumpCanceled(InputAction.CallbackContext context)
+    {
+        jumpCancelEvent.Invoke();
+    }
+
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
         rollInputEvent.Invoke();
+    }
+
+    private void OnPickupPerformed(InputAction.CallbackContext context)
+    {
+        pickupInputEvent.Invoke();
+    }
+    private void OnPickupCancelled(InputAction.CallbackContext context)
+    {
+        pickupCancelEvent.Invoke();
     }
 }
