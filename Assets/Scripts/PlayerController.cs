@@ -60,6 +60,12 @@ public class PlayerController : MonoBehaviour
     public AudioClip rollAudio;
     public float volume = 1.0f;
 
+    [SerializeField] private float minX = -50f;
+    [SerializeField] private float maxX = 350f;
+    [SerializeField] private float minVolume = 0f;
+    [SerializeField] private float maxVolume = 0.8f;
+
+
     public LayerMask groundLayer;
 
     [SerializeField] public cameraMovement camera;
@@ -106,6 +112,8 @@ public class PlayerController : MonoBehaviour
     {
 
         UpdateTimers();
+        UpdateBassVolume();
+        UpdateDrumTrack();
 
     }
 
@@ -550,6 +558,10 @@ public class PlayerController : MonoBehaviour
     ///////////////////// Play Music ///////////////////////////////////////////////////////
     public void StartTracks()
     {
+        audioSourceMusic.clip = music;
+        audioSourceBass.clip = bass;
+        audioSourceDrums.clip = drums;
+
         // Start background tracks
         audioSourceMusic.clip = music;
         audioSourceMusic.volume = 0.5f; // half volume
@@ -562,7 +574,7 @@ public class PlayerController : MonoBehaviour
         audioSourceBass.Play();
 
         audioSourceDrums.clip = drums; //Horizontal movement
-        audioSourceDrums.volume = 0f; // start silent
+        audioSourceDrums.volume = 1f; // start silent
         audioSourceDrums.loop = true;
         audioSourceDrums.Play();
     }
@@ -585,6 +597,50 @@ public class PlayerController : MonoBehaviour
         audioSource.PlayOneShot(rollAudio, 1.0f);
 
     }
+
+    private void UpdateBassVolume()
+    {
+        float xPos = transform.position.x;
+
+        // Clamp X between minX and maxX
+        float clampedX = Mathf.Clamp(xPos, minX, maxX);
+
+        // Map X position to 0–1
+        float t = Mathf.InverseLerp(minX, maxX, clampedX);
+
+        // Map t to volume range
+        float newVolume = Mathf.Lerp(minVolume, maxVolume, t);
+
+        // Apply to the bass AudioSource
+        audioSourceBass.volume = newVolume;
+    }
+
+    private void UpdateDrumTrack()
+    {
+        // Only play drums when walking or running
+        if (walkState == WalkState.Walking || walkState == WalkState.Running)
+        {
+            // Smoothly fade in if not already audible
+            audioSourceDrums.volume = Mathf.Lerp(audioSourceDrums.volume, 1f, Time.deltaTime * 5f);
+
+            if (!audioSourceDrums.isPlaying)
+            {
+                audioSourceDrums.Play();
+            }
+        }
+        else
+        {
+            // Smoothly fade out when not walking/running
+            audioSourceDrums.volume = Mathf.Lerp(audioSourceDrums.volume, 0f, Time.deltaTime * 5f);
+
+            // Optionally stop when fully silent (to save CPU)
+            if (audioSourceDrums.volume < 0.01f && audioSourceDrums.isPlaying)
+            {
+                audioSourceDrums.Stop();
+            }
+        }
+    }
+
 
     /////////////////////Collsion with enemies and check point //////////////////////////////////
 
