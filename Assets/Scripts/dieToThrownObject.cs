@@ -18,7 +18,7 @@ public class dieToThrownObject : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ThrownObject"))
         {
-            Destroy(gameObject, 0.15f);
+            Destroy(gameObject, 0.1f);
         }
     }
 }
