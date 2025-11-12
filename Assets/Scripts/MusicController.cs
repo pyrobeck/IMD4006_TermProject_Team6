@@ -15,23 +15,44 @@ public class MusicController : MonoBehaviour
     public AudioClip rollAudio;
 
     public float volume = 1.0f;
+    private const float defaultBPM = 131f;
+
+    private void OnEnable()
+    {
+        TapBPM.BPMUpdated += OnBPMChanged;
+    }
+
+    private void OnDisable()
+    {
+        TapBPM.BPMUpdated -= OnBPMChanged;
+    }
 
     public void StartTracks()
     {
-        audioSourceMusic.clip = music;
-        audioSourceMusic.volume = 0.5f;
-        audioSourceMusic.loop = true;
-        audioSourceMusic.Play();
+        SetupAndPlay(audioSourceMusic, music, 0.5f);
+        SetupAndPlay(audioSourceBass, bass, 0f);
+        SetupAndPlay(audioSourceDrums, drums, 0f);
+    }
 
-        audioSourceBass.clip = bass;
-        audioSourceBass.volume = 0f;
-        audioSourceBass.loop = true;
-        audioSourceBass.Play();
+    private void SetupAndPlay(AudioSource source, AudioClip clip, float volume)
+    {
+        source.clip = clip;
+        source.volume = volume;
+        source.loop = true;
+        source.pitch = 1f; // normal speed
+        source.Play();
+    }
 
-        audioSourceDrums.clip = drums;
-        audioSourceDrums.volume = 0f;
-        audioSourceDrums.loop = true;
-        audioSourceDrums.Play();
+    private void OnBPMChanged(int newBPM)
+    {
+        // Adjust playback speed relative to 131 BPM
+        float pitchMultiplier = newBPM / defaultBPM;
+
+        audioSourceMusic.pitch = pitchMultiplier;
+        audioSourceBass.pitch = pitchMultiplier;
+        audioSourceDrums.pitch = pitchMultiplier;
+
+        Debug.Log($"[MusicController] Adjusted pitch to {pitchMultiplier:F2}x for BPM {newBPM}");
     }
 
     public void SetDrumVolume(float value)
