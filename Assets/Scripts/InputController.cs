@@ -15,6 +15,10 @@ public class RollInputEvent : UnityEvent { }
 public class PickupInputEvent : UnityEvent { }
 [Serializable]
 public class PickupCancelEvent : UnityEvent { }
+[Serializable]
+public class DanceInputEvent : UnityEvent<Vector2> { }
+[Serializable]
+public class DanceCancelEvent : UnityEvent { }
 public class InputController : MonoBehaviour
 {
     InputSystem_Actions controls;
@@ -24,6 +28,8 @@ public class InputController : MonoBehaviour
     public RollInputEvent rollInputEvent;
     public PickupInputEvent pickupInputEvent;
     public PickupCancelEvent pickupCancelEvent;
+    public DanceInputEvent danceInputEvent;
+    public DanceCancelEvent danceCancelEvent;
 
     private void Awake()
     {
@@ -43,6 +49,9 @@ public class InputController : MonoBehaviour
 
         controls.Player.Pickup.performed += OnPickupPerformed;
         controls.Player.Pickup.canceled += OnPickupCancelled;
+
+        controls.Player.Dance.performed += OnDancePerformed;
+        controls.Player.Dance.canceled += OnDanceCancelled;
     }
 
     private void OnMovePerformed(InputAction.CallbackContext context)
@@ -74,5 +83,14 @@ public class InputController : MonoBehaviour
     private void OnPickupCancelled(InputAction.CallbackContext context)
     {
         pickupCancelEvent.Invoke();
+    }
+    private void OnDancePerformed(InputAction.CallbackContext context)
+    {
+        Vector2 danceInput = context.ReadValue<Vector2>();
+        danceInputEvent.Invoke(danceInput);
+    }
+    private void OnDanceCancelled(InputAction.CallbackContext context)
+    {
+        danceCancelEvent.Invoke();
     }
 }

@@ -174,6 +174,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnDancePerformed(Vector2 stickDirection)
+    {
+        Debug.Log("Dance performed");
+        Debug.Log("Right stick direction: " + stickDirection);
+    }
+
+    public void OnDanceCancelled()
+    {
+        Debug.Log("Dance cancelled");
+    }
     private void PickUpObject()
     {
         Instantiate(heldObjectPrefab, (transform.position + directionFacing), Quaternion.identity, this.transform);
