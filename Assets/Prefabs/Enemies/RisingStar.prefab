@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1143988408604690770}
   - component: {fileID: 6376302751431506889}
   - component: {fileID: 3611108630809142690}
+  - component: {fileID: 824114889438543156}
   m_Layer: 7
   m_Name: RisingStar
   m_TagString: Enemies
@@ -216,6 +217,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.783753, y: 0.47787094}
   m_EdgeRadius: 0
+--- !u!114 &824114889438543156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195322087018415868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be90b026551d51044b39bc302df047ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7032735310602441096
 GameObject:
   m_ObjectHideFlags: 0

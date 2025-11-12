@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4499116822936708725}
   - component: {fileID: 8009411637340543466}
   - component: {fileID: 8163264342538288697}
+  - component: {fileID: 3424064654677332279}
   m_Layer: 7
   m_Name: Beatle
   m_TagString: Enemies
@@ -185,7 +186,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.16, y: 1.35}
+    oldSize: {x: 1.44, y: 0.9}
     newSize: {x: 2.16, y: 1.35}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -220,6 +221,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3424064654677332279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039881666830438050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be90b026551d51044b39bc302df047ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7404412486726835094
 GameObject:
   m_ObjectHideFlags: 0

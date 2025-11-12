@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Place holder images/temp-projectile-kod.png.meta
 guid: 16253de3b874b2e448f1608668e6d66e
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 353058037705197759
     second: temp-projectile-kod_0
-========
-guid: db3b9748649587c428a76fb85e098a5e
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2570172358711128113
-    second: beatle_0
->>>>>>>> 61ca0d4670f2a1d15072eb0fef2ee895f4e1bd2e:Assets/Sprites/beatle.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,7 +100,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Place holder images/temp-projectile-kod.png.meta
       name: temp-projectile-kod_0
       rect:
         serializedVersion: 2
@@ -117,15 +107,6 @@ TextureImporter:
         y: 8
         width: 199
         height: 388
-========
-      name: beatle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 167
-        height: 100
->>>>>>>> 61ca0d4670f2a1d15072eb0fef2ee895f4e1bd2e:Assets/Sprites/beatle.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,13 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Place holder images/temp-projectile-kod.png.meta
       spriteID: fb8c38a2a6056e400800000000000000
       internalID: 353058037705197759
-========
-      spriteID: 130318494261ba320800000000000000
-      internalID: 2570172358711128113
->>>>>>>> 61ca0d4670f2a1d15072eb0fef2ee895f4e1bd2e:Assets/Sprites/beatle.png.meta
       vertices: []
       indices: 
       edges: []
@@ -159,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Place holder images/temp-projectile-kod.png.meta
       temp-projectile-kod_0: 353058037705197759
-========
-      beatle_0: 2570172358711128113
->>>>>>>> 61ca0d4670f2a1d15072eb0fef2ee895f4e1bd2e:Assets/Sprites/beatle.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
