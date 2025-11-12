@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/JunkPile.prefab.meta
 guid: 171890e68d058ce4f9c49a97e379b3d4
 PrefabImporter:
+========
+guid: 3ff318e4db49b0741ba85560fc01fdbd
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> 61ca0d4670f2a1d15072eb0fef2ee895f4e1bd2e:Assets/Prefabs/Enemies.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
