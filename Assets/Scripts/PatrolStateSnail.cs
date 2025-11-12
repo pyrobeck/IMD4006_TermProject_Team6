@@ -9,7 +9,7 @@ public class PatrolStateSnail : MonoBehaviour
     public LayerMask groundLayer, enemyLayer;
 
     
-    public float raycastDistance, enemyDistance;
+    public float raycastDistance, enemyDistance, wallDistance;
     public float bpm;
     private bool faceRight = false;
 
@@ -22,9 +22,11 @@ public class PatrolStateSnail : MonoBehaviour
     {
 
         RaycastHit2D hit = Physics2D.Raycast(ledgeDetector.position, Vector2.down, raycastDistance, groundLayer);
+        RaycastHit2D hitWallL = Physics2D.Raycast(ledgeDetector.position, Vector2.left, wallDistance, groundLayer);
+        RaycastHit2D hitWallR = Physics2D.Raycast(ledgeDetector.position, Vector2.right, wallDistance, groundLayer);
         RaycastHit2D hitEnemy = Physics2D.Raycast(ledgeDetector.position, Vector2.left, enemyDistance, enemyLayer);
 
-        if (hit.collider == null | hitEnemy.collider == true)
+        if (hit.collider == null | hitEnemy.collider == true | hitWallR.collider == true | hitWallL.collider == true)
         {
             Rotate();
 
