@@ -65,6 +65,7 @@ public class InputController : MonoBehaviour
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
         rollInputEvent.Invoke();
+        Debug.Log(rollInput);
     }
 
     private void OnPickupPerformed(InputAction.CallbackContext context)
