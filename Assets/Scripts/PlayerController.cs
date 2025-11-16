@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField] private float moveSpeed = 6.5F;
-    [SerializeField] private float rollSpeed = 10F;
+    private float rollSpeed = 20F;
     [SerializeField] private float jumpHeight = 20F;
     [SerializeField] private float wallJumpDistance = 5f;
     [SerializeField] private float jumpUpwardsGravity = 5f;
