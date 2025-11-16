@@ -40,14 +40,14 @@ public class cameraMovement : MonoBehaviour
         screenWidth = zoom * 3.6f;
         screenHeight = zoom * 2;
 
-        yOffset = new Vector3(0, (float)(zoom * 0.5f), 0);  //player will always be in the bottom quarter or so of the screen
+        yOffset = new Vector3(0, (float)((screenHeight / 5)), 0);  //player will always be in the bottom bit of the screen
 
-        lookAheadOffsetX = (float)zoom / 3; //player will always have about 80% of the screen in front of them
+        lookAheadOffsetX = (float)screenWidth / 6; //player will always have about 60% of the screen in front of them
 
-        screenUpperLimit = zoom + yOffset.y;
-        screenLowerLimit = -zoom + zoom / 5 + yOffset.y;
+        screenUpperLimit = (screenHeight / 2 + yOffset.y);
+        screenLowerLimit = (-screenHeight / 2 + yOffset.y) + (screenHeight / 10);
 
-        deadzoneRatio = zoom / 5;
+        deadzoneRatio = screenWidth / 12;
         deadzoneRight = deadzoneRatio;
         deadzoneLeft = -deadzoneRatio;
     }
@@ -56,12 +56,11 @@ public class cameraMovement : MonoBehaviour
     void Update()
     {
         //uncomment these if you need to see the screen limits for level design
-        //Debug.DrawRay(new Vector3(0,screenUpperLimit,0), Vector3.right * 1000);
+        //Debug.DrawRay(new Vector3(0, screenUpperLimit, 0), Vector3.right * 1000);
         //Debug.DrawRay(new Vector3(0, screenLowerLimit, 0), Vector3.right * 1000);
         //and these for the camera movement deadzone
-        //Debug.DrawRay(new Vector3(deadzoneRight, 0, 0), Vector3.up * 500);
-        //Debug.DrawRay(new Vector3(deadzoneLeft, 0, 0), Vector3.up * 500);
-        Debug.DrawRay(new Vector3(0, -zoom / 2, 0), Vector3.up * zoom * 2);
+        Debug.DrawRay(new Vector3(deadzoneRight, 0, 0), Vector3.up * 500);
+        Debug.DrawRay(new Vector3(deadzoneLeft, 0, 0), Vector3.up * 500);
 
         targetX = new Vector3(target.position.x, 0, 0);
         updateDirection();
@@ -136,9 +135,9 @@ public class cameraMovement : MonoBehaviour
         {
             while (target.position.y < screenLowerLimit)
             {
-                yOffset.y = yOffset.y - (float)(zoom * 1.5);
-                screenUpperLimit = screenUpperLimit - (float)(zoom * 1.5);
-                screenLowerLimit = screenLowerLimit - (float)(zoom * 1.5);
+                yOffset.y = yOffset.y - (float)(screenHeight * 0.9);
+                screenUpperLimit = screenUpperLimit - (float)(screenHeight * 0.9);
+                screenLowerLimit = screenLowerLimit - (float)(screenHeight * 0.9);
             }
 
         }
@@ -151,9 +150,9 @@ public class cameraMovement : MonoBehaviour
         {
             while (target.position.y > screenUpperLimit)
             {
-                yOffset.y = yOffset.y + (float)(zoom * 1.5);
-                screenUpperLimit = screenUpperLimit + (float)(zoom * 1.5);
-                screenLowerLimit = screenLowerLimit + (float)(zoom * 1.5);
+                yOffset.y = yOffset.y + (float)(screenHeight * 0.9);
+                screenUpperLimit = screenUpperLimit + (float)(screenHeight * 0.9);
+                screenLowerLimit = screenLowerLimit + (float)(screenHeight * 0.9);
             }
 
         }
@@ -161,11 +160,11 @@ public class cameraMovement : MonoBehaviour
 
     private void checkPlayerDistance()
     {
-        if (Mathf.Abs(target.position.x - transform.position.x) <= zoom * 2)
+        if (Mathf.Abs(target.position.x - transform.position.x) <= screenWidth * 1.5)
         {
             return;
         }
-        if (Mathf.Abs(target.position.y - transform.position.y) <= zoom * 2)
+        if (Mathf.Abs(target.position.y - transform.position.y) <= screenHeight * 1.5)
         {
             return;
         }
