@@ -638,10 +638,20 @@ public class PlayerController : MonoBehaviour
 
     /////////////////////Collsion with enemies and check point //////////////////////////////////
 
-
+    //Get functions
     public bool GetIsHoldingObject()
     {
         return isHoldingObject;
+    }
+
+    public bool GetIsGrounded()
+    {
+        return IsGrounded();
+    }
+
+    public float GetLinearVelocityY()
+    {
+        return rigidBody.linearVelocityY;
     }
 }
 
