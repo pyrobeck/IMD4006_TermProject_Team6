@@ -5,8 +5,10 @@ public class cameraMovement : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] PlayerController targetScript;
-    float moveSpeed = 20;
-    float standardMoveSpeed = 20;
+    float moveSpeedX = 20;
+    float moveSpeedY = 15;
+    float standardMoveSpeedX = 20;
+    float standardMoveSpeedY = 15;
     float directionFlippingMoveSpeed = 10;
 
 
@@ -16,8 +18,11 @@ public class cameraMovement : MonoBehaviour
     float lookAheadOffsetX;
     Vector3 yOffset;
     Vector3 targetX;
+    Vector3 targetY;
 
     Vector3 cameraTarget;
+    float cameraTargetX;
+    float cameraTargetY;
     Vector3 cameraTargetXRecord;
 
 
@@ -62,7 +67,6 @@ public class cameraMovement : MonoBehaviour
         Debug.DrawRay(new Vector3(deadzoneRight, 0, 0), Vector3.up * 500);
         Debug.DrawRay(new Vector3(deadzoneLeft, 0, 0), Vector3.up * 500);
 
-        targetX = new Vector3(target.position.x, 0, 0);
         updateDirection();
         updateLookAheadOffset();
         updateYOffset();
@@ -74,21 +78,35 @@ public class cameraMovement : MonoBehaviour
 
     private void updateCameraPosition()
     {
+        UpdateXCameraPosition();
+        UpdateYCameraPosition();
+
+        cameraTargetX = Mathf.MoveTowards(this.transform.position.x, targetX.x, moveSpeedX * Time.deltaTime);
+        cameraTargetY = Mathf.MoveTowards(this.transform.position.y, targetY.y, moveSpeedY * Time.deltaTime);
+
+        cameraTarget = new Vector3(cameraTargetX, cameraTargetY, zOffset.z);
+
+        transform.position = cameraTarget;
+    }
+
+    private void UpdateXCameraPosition()
+    {
         //only update the camera target if the player is outside the camera deadzone
         //this is so the camera smoothly stops following the player's slight horizontal adjustments, but still follows them jumping or falling
         if (!(target.position.x < deadzoneRight && target.position.x > deadzoneLeft))
         {
-            cameraTarget = targetX + lookAheadOffset + yOffset + zOffset;
-            cameraTargetXRecord = new Vector3(cameraTarget.x, 0, 0); //keep a record of the last horizontal target while the player was outside the deadzone
+            targetX = new Vector3(target.position.x, 0, 0) + lookAheadOffset;
+            cameraTargetXRecord = targetX; //keep a record of the last horizontal target while the player was outside the deadzone
         }
         else
         {
-            cameraTarget = cameraTargetXRecord + yOffset + zOffset;
+            targetX = cameraTargetXRecord;
         }
-
-        transform.position = Vector3.MoveTowards(this.transform.position, cameraTarget, moveSpeed * Time.deltaTime);
     }
-
+    private void UpdateYCameraPosition()
+    {
+        targetY = yOffset;
+    }
     private void updateDeadzonePosition()
     {
         //if the player is within the camera deadzone, don't move it
@@ -96,8 +114,8 @@ public class cameraMovement : MonoBehaviour
         {
             return;
         }
-        deadzoneRight = Mathf.Lerp(deadzoneRight, target.position.x + deadzoneRatio, (moveSpeed * 0.1f) * Time.deltaTime);
-        deadzoneLeft = Mathf.Lerp(deadzoneLeft, target.position.x - deadzoneRatio, (moveSpeed * 0.1f) * Time.deltaTime);
+        deadzoneRight = Mathf.Lerp(deadzoneRight, target.position.x + deadzoneRatio, (moveSpeedX * 0.1f) * Time.deltaTime);
+        deadzoneLeft = Mathf.Lerp(deadzoneLeft, target.position.x - deadzoneRatio, (moveSpeedX * 0.1f) * Time.deltaTime);
     }
     private void updateDirection()
     {
@@ -169,6 +187,7 @@ public class cameraMovement : MonoBehaviour
             return;
         }
     }
+
 
     public void SnapToTarget()
     {
