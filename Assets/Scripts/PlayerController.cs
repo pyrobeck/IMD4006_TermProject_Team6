@@ -2,6 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Pool;
 using UnityEngine.UIElements;
 using static UnityEngine.UI.Image;
 
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField] private float moveSpeed = 6.5F;
+    [SerializeField] private float rollSpeed = 10F;
     [SerializeField] private float jumpHeight = 20F;
     [SerializeField] private float wallJumpDistance = 5f;
     [SerializeField] private float jumpUpwardsGravity = 5f;
@@ -26,16 +28,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float wallSlidingGravity = 1.5f;
     private bool isJumping = false;
     private bool isWallJumping = false;
+    private bool isRolling = false;
     [SerializeField] float coyoteTime = 0.175f;
     private float coyoteTimeCounter;
     private float jumpBufferTime = 0.1f;
     private float jumpBufferTimer = 0;
     private float wallJumpTimer = 0;
     private float maxWallJumpTime = 0.5f;
+    private float rollDuration = 0.6F;
+    private float rollTimer = 0;
 
 
-    [SerializeField] private float rollSpeed = 10F;
-    [SerializeField] private float rollDuration = 0.6F;
+
 
     float horizontal;
 
@@ -75,7 +79,6 @@ public class PlayerController : MonoBehaviour
     private float maxThrowCooldownTimer = 0.5f;
 
 
-    private bool isRolling = false;
     WalkState walkState = WalkState.Idle;
     Vector3 directionFacing = new Vector3(1, 0, 0);
     Vector3 spriteScale = new Vector3(0.3929782f, 0.3929782f, 0.3929782f);
@@ -106,11 +109,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-
         UpdateTimers();
         UpdateBassVolume();
         UpdateDrumTrack();
-
     }
 
     private void FixedUpdate()
@@ -132,9 +133,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
     public void onJumpInput()
     {
-
         if (IsNextToWall() && IsGrounded() == false)
         {
             WallJump();
@@ -210,10 +211,30 @@ public class PlayerController : MonoBehaviour
     }
     // used this code as a refrence https://stackoverflow.com/a/46359133
 
+    public void onRollInput()
+    {
+        if (isRolling == true)
+        {
+            return;
+        }
 
+        Roll();
+    }
+
+    private void Roll()
+    {
+        isRolling = true;
+        rigidBody.linearVelocityX = rollSpeed * directionFacing.x;
+        animator.SetInteger("state", 4);
+        walkState = WalkState.Rolling;
+    }
 
     private void Jump()
     {
+        if (isRolling == true)
+        {
+            isRolling = false;
+        }
         isJumping = true;
         rigidBody.linearVelocityY = jumpHeight;
         coyoteTimeCounter = -1;
@@ -223,6 +244,10 @@ public class PlayerController : MonoBehaviour
 
     private void WallJump()
     {
+        if (isRolling) //idk how they'd do this one but I think it should cancel the roll anyway
+        {
+            isRolling = false;
+        }
         //adds a force away from the wall they're jumping from
         rigidBody.linearVelocityX = wallJumpDistance * -directionFacing.x;
         isWallJumping = true;
@@ -233,6 +258,10 @@ public class PlayerController : MonoBehaviour
 
     private void JumpMidairPhysics()
     {
+        if (rigidBody.linearVelocityY < -20) //stop the player from falling too fast
+        {
+            rigidBody.linearVelocityY = -20;
+        }
         //if the player is moving upwards
         if (rigidBody.linearVelocityY > 0)
         {
@@ -260,18 +289,6 @@ public class PlayerController : MonoBehaviour
     //when jump input is given while in the air, start a short timer 
     //if the player lands on the ground in that time, input the jump
 
-    public void onRollInput()
-    {
-        //Roll code goes in here
-        //Remember to connect the player and their functions to
-        //the input controller script on the game manager
-        if (!isRolling && IsGrounded())
-        {
-            PlayRollSound();
-            StartCoroutine(Roll());
-        }
-
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -320,8 +337,6 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
-
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
@@ -356,8 +371,6 @@ public class PlayerController : MonoBehaviour
         }
         return false;
     }
-
-
     private bool IsWallSliding()
     {
         if (IsNextToWall() && IsGrounded() == false)
@@ -369,7 +382,6 @@ public class PlayerController : MonoBehaviour
             return false;
         }
     }
-
 
     private void Move()
     {
@@ -383,11 +395,6 @@ public class PlayerController : MonoBehaviour
 
         Vector3 moveDirection = Vector3.right * horizontal;
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
-    }
-
-    private void ResetWallJumpTimer()
-    {
-        wallJumpTimer = maxWallJumpTime;
     }
     private void SetDirection()
     {
@@ -421,7 +428,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
     }
-
     private void ReverseDirection()
     {
         if (directionFacing.x == 1)
@@ -435,7 +441,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
     }
-
     private bool IsInputDirectionSameAsDirectionFacing()
     {
         if (horizontal > 0 && directionFacing.x == 1)
@@ -448,7 +453,6 @@ public class PlayerController : MonoBehaviour
         }
         return false;
     }
-
     private void SetWalkState()
     {
         if (horizontal == 0)
@@ -470,24 +474,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
     }
-    private System.Collections.IEnumerator Roll()
-    {
-        // Debug.Log("Rolling!");
-        isRolling = true;
-        animator.SetInteger("state", 4);
-        PlayRollSound();
-
-        //in case we want the roll to be smoother
-        //rigidBody.linearVelocity = new Vector2(0, 0);
-
-        //pushing the roll once
-        rigidBody.AddForce(directionFacing * rollSpeed, ForceMode2D.Impulse);
-
-        yield return new WaitForSeconds(rollDuration);
-
-        isRolling = false;
-        animator.SetInteger("state", 0);
-    }
 
     /// Timers
     private void UpdateTimers()
@@ -496,8 +482,8 @@ public class PlayerController : MonoBehaviour
         updateJumpBufferTimer();
         WallJumpTimer();
         ThrowCooldownTimer();
+        RollTimer();
     }
-
     private void coyoteTimer()
     {
         //starts a timer whenever the player leaves the ground. Resets it once they return to ground
@@ -533,7 +519,6 @@ public class PlayerController : MonoBehaviour
             isWallJumping = false;
         }
     }
-
     private void ThrowCooldownTimer()
     {
         if (isThrowingObject == true)
@@ -548,6 +533,27 @@ public class PlayerController : MonoBehaviour
         {
             isThrowingObject = false;
         }
+    }
+    private void RollTimer()
+    {
+        if (isRolling == true)
+        {
+            rollTimer -= Time.deltaTime;
+        }
+        else if (rollTimer != rollDuration)
+        {
+            rollTimer = rollDuration;
+        }
+        if (rollTimer <= 0)
+        {
+            isRolling = false;
+            walkState = WalkState.Idle;
+            animator.SetInteger("state", 0);
+        }
+    }
+    private void ResetWallJumpTimer()
+    {
+        wallJumpTimer = maxWallJumpTime;
     }
     ///////////////////// Play Music ///////////////////////////////////////////////////////
     public void StartTracks()
@@ -587,9 +593,7 @@ public class PlayerController : MonoBehaviour
 
     public void PlayRollSound()
     {
-        Debug.Log("Enters rollsounds function");
         audioSource.PlayOneShot(rollAudio, 1.0f);
-
     }
 
     private void UpdateBassVolume()
@@ -637,7 +641,6 @@ public class PlayerController : MonoBehaviour
 
 
     /////////////////////Collsion with enemies and check point //////////////////////////////////
-
 
     public bool GetIsHoldingObject()
     {
