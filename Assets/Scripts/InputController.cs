@@ -49,7 +49,6 @@ public class InputController : MonoBehaviour
     {
         Vector2 moveInput = context.ReadValue<Vector2>();
         moveInputEvent.Invoke(moveInput.x);
-        //Debug.Log(moveInput);
     }
 
     private void OnJumpPerformed(InputAction.CallbackContext context)
@@ -65,7 +64,6 @@ public class InputController : MonoBehaviour
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
         rollInputEvent.Invoke();
-        Debug.Log(rollInput);
     }
 
     private void OnPickupPerformed(InputAction.CallbackContext context)

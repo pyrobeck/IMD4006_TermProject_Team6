@@ -26,16 +26,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float wallSlidingGravity = 1.5f;
     private bool isJumping = false;
     private bool isWallJumping = false;
-    // private bool isStuckToWall = false;
     [SerializeField] float coyoteTime = 0.175f;
     private float coyoteTimeCounter;
     private float jumpBufferTime = 0.1f;
     private float jumpBufferTimer = 0;
     private float wallJumpTimer = 0;
     private float maxWallJumpTime = 0.5f;
-    // private float wallStickTimer = 0;
-    // private float maxWallStickTime = 0.3f;
-
 
 
     [SerializeField] private float rollSpeed = 10F;
@@ -305,7 +301,6 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("JunkPile"))
         {
-            Debug.Log("entering junk range");
             isNearJunkPile = true;
         }
     }
@@ -313,7 +308,6 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("JunkPile"))
         {
-            Debug.Log("exiting junk range");
             isNearJunkPile = false;
         }
     }
