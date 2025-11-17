@@ -562,6 +562,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1784137067}
   targetScript: {fileID: 1784137063}
+  moveSpeedY: 3
+  fallingMoveSpeedY: 10
+  fastMoveSpeedY: 20
   zoom: 7
 --- !u!114 &209882066
 MonoBehaviour:
