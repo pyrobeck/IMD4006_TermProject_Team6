@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2243343722233662888}
   - component: {fileID: 1754754322997809416}
   - component: {fileID: 3495548251865977157}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Snail
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   raycastDistance: 1
-  enemyDistance: 1
+  enemyDistance: 0.1
   wallDistance: 0.25
   bpm: 2
 --- !u!50 &1804037562755542149
@@ -249,7 +249,7 @@ Transform:
   m_GameObject: {fileID: 7693612009099610593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
