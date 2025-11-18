@@ -9,8 +9,8 @@ public class MoveInputEvent : UnityEvent<float> { }
 public class JumpInputEvent : UnityEvent { }
 [Serializable]
 public class JumpCancelEvent : UnityEvent { }
-[Serializable]
-public class RollInputEvent : UnityEvent { }
+//[Serializable]
+//public class RollInputEvent : UnityEvent { }
 [Serializable]
 public class PickupInputEvent : UnityEvent { }
 [Serializable]
@@ -21,7 +21,7 @@ public class InputController : MonoBehaviour
     public MoveInputEvent moveInputEvent;
     public JumpInputEvent jumpInputEvent;
     public JumpCancelEvent jumpCancelEvent;
-    public RollInputEvent rollInputEvent;
+   // public RollInputEvent rollInputEvent;
     public PickupInputEvent pickupInputEvent;
     public PickupCancelEvent pickupCancelEvent;
 
@@ -39,7 +39,7 @@ public class InputController : MonoBehaviour
         controls.Player.Jump.performed += OnJumpPerformed;
         controls.Player.Jump.canceled += OnJumpCanceled;
 
-        controls.Player.Roll.performed += OnRollPerformed;
+      //  controls.Player.Roll.performed += OnRollPerformed;
 
         controls.Player.Pickup.performed += OnPickupPerformed;
         controls.Player.Pickup.canceled += OnPickupCancelled;
@@ -62,11 +62,11 @@ public class InputController : MonoBehaviour
         jumpCancelEvent.Invoke();
     }
 
-    private void OnRollPerformed(InputAction.CallbackContext context)
-    {
-        rollInputEvent.Invoke();
-        Debug.Log(rollInput);
-    }
+    // private void OnRollPerformed(InputAction.CallbackContext context)
+    // {
+    //     rollInputEvent.Invoke();
+    //     Debug.Log(rollInput);
+    // }
 
     private void OnPickupPerformed(InputAction.CallbackContext context)
     {
