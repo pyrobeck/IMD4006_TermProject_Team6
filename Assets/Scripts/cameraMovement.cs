@@ -11,7 +11,7 @@ public class cameraMovement : MonoBehaviour
     [SerializeField] float moveSpeedY = 3;
     float standardMoveSpeedX = 20;
     float standardMoveSpeedY = 3;
-    [SerializeField] float fallingMoveSpeedY = 20;
+    [SerializeField] float fallingMoveSpeedY = 30;
     [SerializeField] float fastMoveSpeedY = 20;
     float directionFlippingMoveSpeed = 10;
 
@@ -22,6 +22,7 @@ public class cameraMovement : MonoBehaviour
     float lookAheadOffsetX;
     Vector3 yOffset;
     Vector3 naturalYOffset;
+    float cameraBaseline;
     Vector3 targetX;
     Vector3 targetY;
 
@@ -55,19 +56,16 @@ public class cameraMovement : MonoBehaviour
         screenWidth = zoom * 3.6f;
         screenHeight = zoom * 2;
 
-        naturalYOffset = new Vector3(0, (float)((screenHeight / 5)), 0);  //player will always be in the bottom bit of the screen
-        yOffset = naturalYOffset;
-
         lookAheadOffsetX = (float)screenWidth / 6; //player will always have about 60% of the screen in front of them
 
-        // screenUpperLimit = (screenHeight / 2 + yOffset.y);
-        // screenLowerLimit = (-screenHeight / 2 + yOffset.y) + (screenHeight / 10);
 
-        screenUpperLimit = (screenHeight / 5 + yOffset.y);
-        screenLowerLimit = (-screenHeight / 2 + yOffset.y) + (screenHeight / 10);
+        cameraBaseline = target.position.y;
+
+        screenUpperLimit = cameraBaseline + (screenHeight * (4f / 6f));
+        screenLowerLimit = cameraBaseline - (screenHeight * (1f / 6f));
         screenLimitDistance = MathF.Abs(screenLowerLimit - screenUpperLimit);
-        topOfScreen = (screenHeight / 2 + yOffset.y);
-        bottomOfScreen = (-screenHeight / 2 + yOffset.y);
+        yOffset.y = screenLowerLimit + (screenLimitDistance * 0.6f);
+
 
         deadzoneRatio = screenWidth / 12;
         deadzoneRight = deadzoneRatio;
@@ -80,19 +78,21 @@ public class cameraMovement : MonoBehaviour
     void Update()
     {
         //uncomment these if you need to see the screen limits for level design
-        Debug.DrawRay(new Vector3(0, screenUpperLimit, 0), Vector3.right * 1000);
-        Debug.DrawRay(new Vector3(0, screenLowerLimit, 0), Vector3.right * 1000);
+        Debug.DrawRay(new Vector3(0, screenUpperLimit, 0), Vector3.right * 1000, Color.red);
+        Debug.DrawRay(new Vector3(0, screenLowerLimit, 0), Vector3.right * 1000, Color.blue);
+        //Debug.DrawRay(new Vector3(0, cameraBaseline, 0), Vector3.right * 1000, Color.gray);
+        Debug.DrawRay(yOffset, Vector3.right * 1000, Color.yellow);
         //and these for the camera movement deadzone
         //Debug.DrawRay(new Vector3(deadzoneRight, 0, 0), Vector3.up * 500);
         //Debug.DrawRay(new Vector3(deadzoneLeft, 0, 0), Vector3.up * 500);
 
-        updateDirection();
-        updateLookAheadOffset();
-        updateYOffset();
-
+        UpdateDirection();
+        UpdateLookAheadOffset();
+        UpdateScreenBoundaries();
+        UpdateMoveSpeedY();
         updateCameraPosition();
 
-        updateDeadzonePosition();
+        UpdateDeadzonePosition();
     }
 
     private void updateCameraPosition()
@@ -107,7 +107,6 @@ public class cameraMovement : MonoBehaviour
 
         transform.position = cameraTarget;
     }
-
     private void UpdateXCameraPosition()
     {
         //only update the camera target if the player is outside the camera deadzone
@@ -126,7 +125,7 @@ public class cameraMovement : MonoBehaviour
     {
         targetY = yOffset;
     }
-    private void updateDeadzonePosition()
+    private void UpdateDeadzonePosition()
     {
         //if the player is within the camera deadzone, don't move it
         if (target.position.x < deadzoneRight && target.position.x > deadzoneLeft)
@@ -136,7 +135,7 @@ public class cameraMovement : MonoBehaviour
         deadzoneRight = Mathf.Lerp(deadzoneRight, target.position.x + deadzoneRatio, (moveSpeedX * 0.1f) * Time.deltaTime);
         deadzoneLeft = Mathf.Lerp(deadzoneLeft, target.position.x - deadzoneRatio, (moveSpeedX * 0.1f) * Time.deltaTime);
     }
-    private void updateDirection()
+    private void UpdateDirection()
     {
         //if the player is within the camera deadzone, don't update direction
         if (target.position.x < deadzoneRight && target.position.x > deadzoneLeft)
@@ -154,135 +153,70 @@ public class cameraMovement : MonoBehaviour
         }
     }
 
-    private void updateLookAheadOffset()
+    private void UpdateLookAheadOffset()
     {
         //slowly updates the lookahead to the direction the player is headed
         lookAheadOffset = Vector3.MoveTowards(lookAheadOffset, new Vector3(lookAheadOffsetX * direction, 0, 0), directionFlippingMoveSpeed * Time.deltaTime);
     }
 
-    private void updateYOffset()
+    private void UpdateYOffset()
     {
+        yOffset.y = screenLowerLimit + screenLimitDistance * 0.6f;
+    }
 
+
+    private void UpdateScreenBoundaries()
+    {
+        if (target.position.y < screenUpperLimit && target.position.y > screenLowerLimit)
+        {
+            screenUpperLimit = cameraBaseline + (screenHeight * (4f / 6f));
+            screenLowerLimit = cameraBaseline - (screenHeight * (1f / 6f));
+            UpdateYOffset();
+        }
         if (target.position.y > screenUpperLimit)
         {
             screenUpperLimit = target.position.y;
             screenLowerLimit = screenUpperLimit - screenLimitDistance;
-        }
-
-        if (target.position.y - 1 < screenLowerLimit)
-        {
-            screenLowerLimit = target.position.y - 1;
-            screenUpperLimit = screenLowerLimit + screenLimitDistance;
-        }
-        naturalYOffset.y = screenLowerLimit + screenHeight / 5;
-        if (targetScript.GetIsGrounded() == false)
-        {
-            return;
-        }
-
-        yOffset.y = Mathf.MoveTowards(yOffset.y, naturalYOffset.y + (screenHeight / 5), fastMoveSpeedY * Time.deltaTime);
-    }
-    private void updateYOffsetFailure()
-    {
-        Debug.Log("why the HELL are you running");
-
-        if (target.position.y > screenUpperLimit && targetScript.GetIsGrounded())
-        {
-            yOffset.y = Mathf.MoveTowards(yOffset.y, target.position.y + (screenHeight / 5), moveSpeedY * Time.deltaTime);
-        }
-
-        if (target.position.y < screenUpperLimit)
-        {
-            yOffset.y = Mathf.MoveTowards(yOffset.y, naturalYOffset.y, moveSpeedY * Time.deltaTime);
-        }
-
-        if (targetScript.GetLinearVelocityY() < 0 && target.position.y < screenLowerLimit)
-        {
-            moveSpeedY = fallingMoveSpeedY;
-            isFalling = true;
-        }
-
-
-    }
-
-    private void SetScreenBoundaries()
-    {
-        if (target.position.y > topOfScreen)
-        {
-            naturalYOffset.y = naturalYOffset.y + screenHeight;
-
-            topOfScreen = topOfScreen + screenHeight;
-            bottomOfScreen = bottomOfScreen + screenHeight;
-            screenUpperLimit = screenUpperLimit + screenHeight;
-            screenLowerLimit = screenLowerLimit + screenHeight;
-        }
-        if (target.position.y < bottomOfScreen)
-        {
-            naturalYOffset.y = naturalYOffset.y - screenHeight;
-            topOfScreen = topOfScreen - screenHeight;
-            bottomOfScreen = bottomOfScreen - screenHeight;
-            screenUpperLimit = screenUpperLimit - screenHeight;
-            screenLowerLimit = screenLowerLimit - screenHeight;
-        }
-    }
-    private void resetYOffset()
-    {
-        yOffset = naturalYOffset;
-    }
-    private void updateYOffsetOld()
-    {
-        Debug.Log("why the HELL are you running");
-        //don't update camera vertically unless player is either grounded or falling
-        if (targetScript.GetIsGrounded() == false && targetScript.GetLinearVelocityY() >= 0)
-        {
-            return;
+            UpdateYOffset();
         }
 
         if (target.position.y < screenLowerLimit)
         {
-            while (target.position.y < screenLowerLimit)
-            {
-                yOffset.y = yOffset.y - (float)(screenHeight * 0.9);
-                screenUpperLimit = screenUpperLimit - (float)(screenHeight * 0.9);
-                screenLowerLimit = screenLowerLimit - (float)(screenHeight * 0.9);
-            }
+            screenLowerLimit = target.position.y;
+            screenUpperLimit = screenLowerLimit + screenLimitDistance;
+            UpdateYOffset();
+        }
 
-        }
-        // if the player is falling, then don't move the camera upwards
-        if (targetScript.GetLinearVelocityY() < 0)
-        {
-            return;
-        }
-        if (target.position.y > screenUpperLimit)
-        {
-            while (target.position.y > screenUpperLimit)
-            {
-                yOffset.y = yOffset.y + (float)(screenHeight * 0.9);
-                screenUpperLimit = screenUpperLimit + (float)(screenHeight * 0.9);
-                screenLowerLimit = screenLowerLimit + (float)(screenHeight * 0.9);
-            }
 
-        }
+    }
+    private void ResetYOffset()
+    {
+        yOffset.y = screenLowerLimit + screenLimitDistance * 0.6f;
     }
 
-    private void checkPlayerDistance()
+    private void UpdateMoveSpeedY()
     {
-        if (Mathf.Abs(target.position.x - transform.position.x) <= screenWidth * 1.5)
+        if (moveSpeedY > standardMoveSpeedY)
         {
-            return;
+            moveSpeedY = moveSpeedY + 2;
+            if (target.position.y > transform.position.y - screenHeight * (1f / 6f))
+            {
+                moveSpeedY = standardMoveSpeedY;
+            }
         }
-        if (Mathf.Abs(target.position.y - transform.position.y) <= screenHeight * 1.5)
+        if (target.position.y < transform.position.y - screenHeight / 2)
         {
-            return;
+            moveSpeedY = fallingMoveSpeedY;
         }
+
     }
 
 
     public void SnapToTarget()
     {
-        updateDirection();
-        updateLookAheadOffset();
-        resetYOffset();
+        UpdateDirection();
+        UpdateLookAheadOffset();
+        ResetYOffset();
         UpdateXCameraPosition();
         UpdateYCameraPosition();
 
