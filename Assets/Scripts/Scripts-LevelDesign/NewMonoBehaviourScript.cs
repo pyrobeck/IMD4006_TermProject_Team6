@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class PlatformMoveWithBPMBounce : MonoBehaviour
+public class PlatformMoveWithBPMY : MonoBehaviour
 {
     public Transform platform;       // Object to move
-    public float minSpeed = 0.1f;    // speed at BPM 1
-    public float maxSpeed = 2f;      // speed at BPM 800
-    public float minX = -20f;        // left boundary
-    public float maxX = 20f;         // right boundary
+    public float minSpeed = 1f;    // speed at BPM 1
+    public float maxSpeed = 4f;      // speed at BPM 800
+    public float minY = -20f;        // left boundary
+    public float maxY = 20f;         // right boundary
 
-    private float currentSpeed = 0.1f;
+    private float currentSpeed = 1.0f;
     private int direction = 1;       // 1 = right, -1 = left
 
     void Start()
@@ -26,19 +26,19 @@ public class PlatformMoveWithBPMBounce : MonoBehaviour
 
     void Update()
     {
-        // Move platform along X
+        // Move platform along y
         Vector3 pos = platform.position;
-        pos.x += currentSpeed * direction * Time.deltaTime;
+        pos.y += currentSpeed * direction * Time.deltaTime;
 
         // Check boundaries and flip direction
-        if (pos.x >= maxX)
+        if (pos.y >= maxY)
         {
-            pos.x = maxX;
+            pos.y = maxY;
             direction = -1;
         }
-        else if (pos.x <= minX)
+        else if (pos.y <= minY)
         {
-            pos.x = minX;
+            pos.y = minY;
             direction = 1;
         }
 
