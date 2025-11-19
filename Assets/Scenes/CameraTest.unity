@@ -4141,14 +4141,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6.5
+  rollSpeed: 20
   jumpHeight: 20
   wallJumpDistance: 5
   jumpUpwardsGravity: 5
   fallingGravity: 7
   wallSlidingGravity: 2
   coyoteTime: 0.175
-  rollSpeed: 10
-  rollDuration: 0.6
   rigidBody: {fileID: 0}
   collidor: {fileID: 0}
   animator: {fileID: 1784137062}
