@@ -65,6 +65,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float minVolume = 0f;
     [SerializeField] private float maxVolume = 0.8f;
 
+    private PlatformMoveWithBPMBounce currentPlatform;
+
+
 
     public LayerMask groundLayer;
 
@@ -125,6 +128,14 @@ public class PlayerController : MonoBehaviour
             JumpMidairPhysics();
         }
 
+    }
+
+    private void LateUpdate()
+    {
+        if (currentPlatform != null)
+        {
+            transform.position += currentPlatform.DeltaPosition;
+        }
     }
 
     public void onMoveInput(float horizontal)
@@ -292,8 +303,6 @@ public class PlayerController : MonoBehaviour
             Checkpoint thisCheckpoint = collision.GetComponent<Checkpoint>();
             if (thisCheckpoint != null)
                 thisCheckpoint.SetActive();
-
-
         }
 
         if (collision.CompareTag("Enemies"))
@@ -309,6 +318,7 @@ public class PlayerController : MonoBehaviour
             isNearJunkPile = true;
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("JunkPile"))
@@ -317,6 +327,7 @@ public class PlayerController : MonoBehaviour
             isNearJunkPile = false;
         }
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemies"))
@@ -327,6 +338,24 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        // Check if touching platform
+        var platform = collision.gameObject.GetComponent<PlatformMoveWithBPMBounce>();
+        if (platform != null && IsGrounded())
+        {
+            currentPlatform = platform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<PlatformMoveWithBPMBounce>() != null)
+        {
+            currentPlatform = null;
+        }
+    }
 
     private bool IsGrounded()
     {
