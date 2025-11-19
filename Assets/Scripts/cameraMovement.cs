@@ -58,14 +58,7 @@ public class cameraMovement : MonoBehaviour
 
         lookAheadOffsetX = (float)screenWidth / 6; //player will always have about 60% of the screen in front of them
 
-
-        cameraBaseline = target.position.y;
-
-        screenUpperLimit = cameraBaseline + (screenHeight * (4f / 6f));
-        screenLowerLimit = cameraBaseline - (screenHeight * (1f / 6f));
-        screenLimitDistance = MathF.Abs(screenLowerLimit - screenUpperLimit);
-        yOffset.y = screenLowerLimit + (screenLimitDistance * 0.6f);
-
+        SetNewCameraBaseline();
 
         deadzoneRatio = screenWidth / 12;
         deadzoneRight = deadzoneRatio;
@@ -161,7 +154,7 @@ public class cameraMovement : MonoBehaviour
 
     private void UpdateYOffset()
     {
-        yOffset.y = screenLowerLimit + screenLimitDistance * 0.6f;
+        yOffset.y = screenLowerLimit + screenLimitDistance * 0.5f;
     }
 
 
@@ -169,7 +162,7 @@ public class cameraMovement : MonoBehaviour
     {
         if (target.position.y < screenUpperLimit && target.position.y > screenLowerLimit)
         {
-            screenUpperLimit = cameraBaseline + (screenHeight * (4f / 6f));
+            screenUpperLimit = cameraBaseline + (screenHeight * (3f / 6f));
             screenLowerLimit = cameraBaseline - (screenHeight * (1f / 6f));
             UpdateYOffset();
         }
@@ -192,6 +185,13 @@ public class cameraMovement : MonoBehaviour
     private void ResetYOffset()
     {
         yOffset.y = screenLowerLimit + screenLimitDistance * 0.6f;
+    }
+
+    private void ResetScreenBoundaries()
+    {
+        screenUpperLimit = cameraBaseline + (screenHeight * (3f / 6f));
+        screenLowerLimit = cameraBaseline - (screenHeight * (1f / 6f));
+        screenLimitDistance = MathF.Abs(screenLowerLimit - screenUpperLimit);
     }
 
     private void UpdateMoveSpeedY()
@@ -225,6 +225,11 @@ public class cameraMovement : MonoBehaviour
         transform.position = snapPos;
     }
 
+    public void SetNewCameraBaseline()
+    {
+        cameraBaseline = target.position.y;
+        ResetScreenBoundaries();
+    }
 }
 
 

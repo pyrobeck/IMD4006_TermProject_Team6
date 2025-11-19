@@ -10,6 +10,7 @@ TagManager:
   - HeldObject
   - JunkPile
   - ThrownObject
+  - Baseline
   layers:
   - Default
   - TransparentFX

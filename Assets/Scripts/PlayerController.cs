@@ -332,7 +332,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         // Check if touching platform
@@ -361,11 +361,17 @@ public class PlayerController : MonoBehaviour
 
         RaycastHit2D groundCheck = Physics2D.BoxCast(position, size, angle, direction, distance, groundLayer);
 
-        if (groundCheck)
+        if (!groundCheck)
         {
-            return true;
+            return false;
         }
-        return false;
+
+        if (groundCheck.collider.CompareTag("Baseline"))
+        {
+            camera.SetNewCameraBaseline();
+        }
+
+        return true;
     }
 
     private bool IsNextToWall()

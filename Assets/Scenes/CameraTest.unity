@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 275534701}
   m_Layer: 6
   m_Name: floor (33)
-  m_TagString: Ground
+  m_TagString: Baseline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -757,7 +757,7 @@ GameObject:
   - component: {fileID: 321301361}
   m_Layer: 6
   m_Name: floor (32)
-  m_TagString: Ground
+  m_TagString: Baseline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2643,7 +2643,7 @@ GameObject:
   - component: {fileID: 1352499267}
   m_Layer: 6
   m_Name: floor
-  m_TagString: Ground
+  m_TagString: Baseline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
