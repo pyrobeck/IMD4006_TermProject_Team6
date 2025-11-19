@@ -71,10 +71,10 @@ public class cameraMovement : MonoBehaviour
     void Update()
     {
         //uncomment these if you need to see the screen limits for level design
-        Debug.DrawRay(new Vector3(0, screenUpperLimit, 0), Vector3.right * 1000, Color.red);
-        Debug.DrawRay(new Vector3(0, screenLowerLimit, 0), Vector3.right * 1000, Color.blue);
+        //Debug.DrawRay(new Vector3(0, screenUpperLimit, 0), Vector3.right * 1000, Color.red);
+        // Debug.DrawRay(new Vector3(0, screenLowerLimit, 0), Vector3.right * 1000, Color.blue);
         //Debug.DrawRay(new Vector3(0, cameraBaseline, 0), Vector3.right * 1000, Color.gray);
-        Debug.DrawRay(yOffset, Vector3.right * 1000, Color.yellow);
+        //Debug.DrawRay(yOffset, Vector3.right * 1000, Color.yellow);
         //and these for the camera movement deadzone
         //Debug.DrawRay(new Vector3(deadzoneRight, 0, 0), Vector3.up * 500);
         //Debug.DrawRay(new Vector3(deadzoneLeft, 0, 0), Vector3.up * 500);
