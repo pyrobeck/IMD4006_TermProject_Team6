@@ -3,12 +3,12 @@ using UnityEngine;
 public class PlatformMoveWithBPMBounce : MonoBehaviour
 {
     public Transform platform;       // Object to move
-    public float minSpeed = 1f;    // speed at BPM 1
-    public float maxSpeed = 2f;      // speed at BPM 800
+    public float minSpeed;    // speed at BPM 1
+    public float maxSpeed;      // speed at BPM 800
     public float minX = -20f;        // left boundary
     public float maxX = 20f;         // right boundary
 
-    private float currentSpeed = 1f;
+    private float currentSpeed = 3f;
     private int direction = 1;       // 1 = right, -1 = left
 
     public Vector3 DeltaPosition { get; private set; }
