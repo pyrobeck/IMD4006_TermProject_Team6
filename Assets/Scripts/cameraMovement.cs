@@ -8,9 +8,9 @@ public class cameraMovement : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] PlayerController targetScript;
     float moveSpeedX = 20;
-    [SerializeField] float moveSpeedY = 3;
+    [SerializeField] float moveSpeedY = 5;
     float standardMoveSpeedX = 20;
-    float standardMoveSpeedY = 3;
+    float standardMoveSpeedY = 5;
     [SerializeField] float fallingMoveSpeedY = 30;
     [SerializeField] float fastMoveSpeedY = 20;
     float directionFlippingMoveSpeed = 10;
@@ -154,7 +154,7 @@ public class cameraMovement : MonoBehaviour
 
     private void UpdateYOffset()
     {
-        if (targetScript.GetIsGrounded() == false)
+        if (targetScript.GetIsGrounded() == false && isFalling == false)
         {
             return;
         }
@@ -205,11 +205,13 @@ public class cameraMovement : MonoBehaviour
             moveSpeedY = moveSpeedY + 2;
             if (target.position.y > transform.position.y - screenHeight * (1f / 6f))
             {
+                isFalling = false;
                 moveSpeedY = standardMoveSpeedY;
             }
         }
         if (target.position.y < transform.position.y - screenHeight / 2)
         {
+            isFalling = true;
             moveSpeedY = fallingMoveSpeedY;
         }
 
