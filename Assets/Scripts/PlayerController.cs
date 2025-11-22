@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField] private float moveSpeed = 6.5F;
-    private float rollSpeed = 20F;
+    [SerializeField] private float rollSpeed = 20F;
     [SerializeField] private float jumpHeight = 20F;
     [SerializeField] private float wallJumpDistance = 5f;
     [SerializeField] private float jumpUpwardsGravity = 5f;
@@ -103,6 +103,8 @@ public class PlayerController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         Vector3 lastCheckpointPosition = new Vector3(1f, 1f, 1f); // Default position
         coyoteTimeCounter = coyoteTime;
+        spriteScale = this.transform.localScale;
+        spriteScaleFlipped = new Vector3(-spriteScale.x, spriteScale.y, spriteScale.z);
 
         temp = this.GetComponent<SpriteRenderer>();
 
@@ -372,7 +374,7 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
-        Vector2 size = collidor.bounds.size * 0.7f;
+        Vector2 size = collidor.bounds.size * 1.3f;
         float angle = 0;
         Vector2 direction = Vector2.down;
         float distance = 0.5f;
