@@ -154,6 +154,10 @@ public class cameraMovement : MonoBehaviour
 
     private void UpdateYOffset()
     {
+        if (targetScript.GetIsGrounded() == false)
+        {
+            return;
+        }
         yOffset.y = screenLowerLimit + screenLimitDistance * 0.5f;
     }
 
