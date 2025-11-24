@@ -114,6 +114,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+
+        //Debug.Log(directionFacing);
         UpdateTimers();
         UpdateBassVolume();
         UpdateDrumTrack();
@@ -374,7 +376,7 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
-        Vector2 size = collidor.bounds.size * 1.3f;
+        Vector2 size = new Vector2(collidor.bounds.size.x * 0.8f, collidor.bounds.size.y);
         float angle = 0;
         Vector2 direction = Vector2.down;
         float distance = 0.5f;

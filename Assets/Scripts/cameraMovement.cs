@@ -222,6 +222,7 @@ public class cameraMovement : MonoBehaviour
     {
         UpdateDirection();
         UpdateLookAheadOffset();
+        ResetScreenBoundaries();
         ResetYOffset();
         UpdateXCameraPosition();
         UpdateYCameraPosition();
