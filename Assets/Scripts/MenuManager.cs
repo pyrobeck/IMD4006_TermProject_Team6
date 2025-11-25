@@ -7,6 +7,8 @@ public class MenuManager : MonoBehaviour
     public GameObject controlsPanel; 
     public GameObject creditsPanel;  
     public GameObject levelsPanel;  
+    public GameObject mainPanel;  
+
 
     public AudioClip backgroundMusic; 
     private AudioSource musicSource;
@@ -16,6 +18,8 @@ public class MenuManager : MonoBehaviour
         controlsPanel.SetActive(false);
         creditsPanel.SetActive(false);        
         levelsPanel.SetActive(false);
+        mainPanel.SetActive(true);
+
 
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.clip = backgroundMusic;
@@ -42,17 +46,23 @@ public class MenuManager : MonoBehaviour
     public void HideLevels()
     {
         levelsPanel.SetActive(false);
+                mainPanel.SetActive(true);
+
     }
 
     // Show Controls Image
     public void ShowControls()
     {
         controlsPanel.SetActive(true);
+        mainPanel.SetActive(false);
+
     }
 
     public void HideControls()
     {
         controlsPanel.SetActive(false);
+                mainPanel.SetActive(true);
+
     }
 
     // Show Credits
@@ -64,6 +74,8 @@ public class MenuManager : MonoBehaviour
     public void HideCredits()
     {
         creditsPanel.SetActive(false);
+                mainPanel.SetActive(true);
+
     }
 
     // Level buttons
@@ -78,14 +90,14 @@ public class MenuManager : MonoBehaviour
     {
         StopMusic();
         Debug.Log("Load Level 2");
-        //SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level_2");
     }
 
     public void LoadLevel3()
     {
         StopMusic();
         Debug.Log("Load Level 3");
-        //SceneManager.LoadScene("Level3");
+        SceneManager.LoadScene("Level_3");
     }
 
     private void StopMusic()
