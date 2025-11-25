@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NewCheckpoint : MonoBehaviour
 {
-// [Header("Object to show when checkpoint activates")]
+    // [Header("Object to show when checkpoint activates")]
     public GameObject targetObject;
 
     private bool isActive = false;
@@ -21,13 +21,15 @@ public class NewCheckpoint : MonoBehaviour
             ActivateCheckpoint();
         }
     }
-    public void SetActive() { 
-        isActive = true; 
-        } 
-    
-    public void SetInactive() { 
-        isActive = false; 
-    } 
+    public void SetActive()
+    {
+        isActive = true;
+    }
+
+    public void SetInactive()
+    {
+        isActive = false;
+    }
 
     private void ActivateCheckpoint()
     {
@@ -38,5 +40,10 @@ public class NewCheckpoint : MonoBehaviour
             targetObject.SetActive(true);
 
         Debug.Log("Checkpoint Activated!");
+    }
+
+    public bool GetIsActive()
+    {
+        return isActive;
     }
 }
