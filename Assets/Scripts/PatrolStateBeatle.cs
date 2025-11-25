@@ -18,7 +18,7 @@ public class PatrolStateBeatle : MonoBehaviour
 
     void Start()
     {
-        print(gameObject.name);
+      //  print(gameObject.name);
         startPos = gameObject.transform.position;
     }
 

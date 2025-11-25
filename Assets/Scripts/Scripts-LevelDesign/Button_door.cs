@@ -4,9 +4,9 @@ public class Button_door : MonoBehaviour
 {
     [SerializeField] private GameObject targetToDelete;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("ThrownObject"))
+        if (other.CompareTag("ThrownObject"))
         {
             if (targetToDelete != null)
             {
