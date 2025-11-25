@@ -16,6 +16,13 @@ public class PlayerController : MonoBehaviour
         Jumping, //3
         Rolling, //4
         WallSliding, //5
+        Dance1, //6
+        Dance2, //7
+        Dance3, //8
+        Dance4, //9
+        Idle1, //10
+        Idle2, //11
+        Moonwalk //12
     }
 
 
