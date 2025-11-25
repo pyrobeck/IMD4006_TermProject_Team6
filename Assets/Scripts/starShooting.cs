@@ -5,6 +5,7 @@ public class starShooting : MonoBehaviour
     public GameObject note;
     public Transform notePos;
     public float bpm;
+    public AudioSource starSound;
 
     private float timer;
     private GameObject player;
@@ -43,5 +44,8 @@ public class starShooting : MonoBehaviour
     void shoot()
     {
         Instantiate(note, notePos.position, Quaternion.identity);
+         if (starSound != null)
+            starSound.Play();
+    
     }
 }
