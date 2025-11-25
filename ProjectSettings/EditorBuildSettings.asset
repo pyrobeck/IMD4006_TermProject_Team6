@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenuScene.unity
     guid: 38bc5897e9a46d4429377ef526460af5
   - enabled: 1
+    path: Assets/Scenes/FirstComic.unity
+    guid: ad1d16dc7908f004b97cba08c09abeff
+  - enabled: 1
+    path: Assets/Scenes/FirstComic 2.unity
+    guid: 5e7340f620892cd4ba6eb6872d653359
+  - enabled: 1
     path: Assets/Scenes/Level_1.unity
     guid: 022d0e816533fb74eb87c7ce2c5a02d3
   m_configObjects:
