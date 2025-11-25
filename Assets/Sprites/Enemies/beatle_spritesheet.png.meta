@@ -1,0 +1,421 @@
+fileFormatVersion: 2
+guid: 2085b3a74f8967c4ebf516ba5c295706
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4007890300346911232
+    second: beatle_spritesheet_0
+  - first:
+      213: 6675227751196998995
+    second: beatle_spritesheet_1
+  - first:
+      213: -2549490327872222948
+    second: beatle_spritesheet_2
+  - first:
+      213: 8198906830188832540
+    second: beatle_spritesheet_3
+  - first:
+      213: 11599442548444416
+    second: beatle_spritesheet_4
+  - first:
+      213: 1943865089253138497
+    second: beatle_spritesheet_5
+  - first:
+      213: -9105579451718721752
+    second: beatle_spritesheet_6
+  - first:
+      213: 2450384776300968562
+    second: beatle_spritesheet_7
+  - first:
+      213: -8326652649462935733
+    second: beatle_spritesheet_8
+  - first:
+      213: 2418871081575359092
+    second: beatle_spritesheet_9
+  - first:
+      213: 663815943148290704
+    second: beatle_spritesheet_10
+  - first:
+      213: 5057883870571276581
+    second: beatle_spritesheet_11
+  - first:
+      213: -5183676531350121506
+    second: beatle_spritesheet_12
+  - first:
+      213: -4822346248304999909
+    second: beatle_spritesheet_13
+  - first:
+      213: 8463724642903316407
+    second: beatle_spritesheet_14
+  - first:
+      213: -3002811461009764568
+    second: beatle_spritesheet_15
+  - first:
+      213: -3778400872910999808
+    second: beatle_spritesheet_16
+  - first:
+      213: 4950642605008076812
+    second: beatle_spritesheet_17
+  - first:
+      213: 6444880945266298926
+    second: beatle_spritesheet_18
+  - first:
+      213: -3931336937824403753
+    second: beatle_spritesheet_19
+  - first:
+      213: -9070481629576326800
+    second: beatle_spritesheet_20
+  - first:
+      213: -1690854502530736414
+    second: beatle_spritesheet_21
+  - first:
+      213: 7133800536762190949
+    second: beatle_spritesheet_22
+  - first:
+      213: 9063692657163537021
+    second: beatle_spritesheet_23
+  - first:
+      213: -4115536111400926095
+    second: beatle_spritesheet_24
+  - first:
+      213: -3658746943624334547
+    second: beatle_spritesheet_25
+  - first:
+      213: -4373617219351639220
+    second: beatle_spritesheet_26
+  - first:
+      213: -1170717526443718195
+    second: beatle_spritesheet_27
+  - first:
+      213: 1913441098445772354
+    second: beatle_spritesheet_28
+  - first:
+      213: 5343538424125582466
+    second: beatle_spritesheet_29
+  - first:
+      213: 4088152676589889573
+    second: beatle_spritesheet_30
+  - first:
+      213: 6468222580996880694
+    second: beatle_spritesheet_31
+  - first:
+      213: -2959126204191210006
+    second: beatle_spritesheet_32
+  - first:
+      213: 4596246775681252569
+    second: beatle_spritesheet_33
+  - first:
+      213: 3894618543477624968
+    second: beatle_spritesheet_34
+  - first:
+      213: 1417240850507604333
+    second: beatle_spritesheet_35
+  - first:
+      213: -4641534718680064685
+    second: beatle_spritesheet_36
+  - first:
+      213: 31748121735177900
+    second: beatle_spritesheet_37
+  - first:
+      213: 1502305550712984311
+    second: beatle_spritesheet_38
+  - first:
+      213: -1159272857658470265
+    second: beatle_spritesheet_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: beatle_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006b61da10d1168c0800000000000000
+      internalID: -4007890300346911232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beatle_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d3de8d54c23ac50800000000000000
+      internalID: 6675227751196998995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beatle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19c1e8fd046e9cd0800000000000000
+      internalID: -2549490327872222948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beatle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17ede7825e58c170800000000000000
+      internalID: 8198906830188832540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beatle_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d41bca1a5392000800000000000000
+      internalID: 11599442548444416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beatle_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1406738effef9fa10800000000000000
+      internalID: 1943865089253138497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beatle_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f953a6bbb72a180800000000000000
+      internalID: -9105579451718721752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beatle_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ab17aa8f3810220800000000000000
+      internalID: 2450384776300968562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f22410866b993a44cac3306e0b0bd42d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      beatle_spritesheet_0: -4007890300346911232
+      beatle_spritesheet_1: 6675227751196998995
+      beatle_spritesheet_2: -2549490327872222948
+      beatle_spritesheet_3: 8198906830188832540
+      beatle_spritesheet_4: 11599442548444416
+      beatle_spritesheet_5: 1943865089253138497
+      beatle_spritesheet_6: -9105579451718721752
+      beatle_spritesheet_7: 2450384776300968562
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
