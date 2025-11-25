@@ -7,60 +7,41 @@ public class BackgroundParallax : MonoBehaviour
     [SerializeField] private float parallaxFactorY = 1;
 
     private SpriteRenderer spriteRenderer;
-    private float spriteLength;
-    private float spriteHeight;
     Vector2 spriteSize;
-    private float startPosX;
-    private float startPosY;
-
     private Vector2 startPos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteLength = spriteRenderer.bounds.size.x;
-        spriteHeight = spriteRenderer.bounds.size.y;
-        startPosX = transform.position.x;
-        startPosY = transform.position.y;
         startPos = transform.position;
         spriteSize = spriteRenderer.bounds.size;
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        Vector2 cameraPosition = camera.transform.position;
-
-        float distanceX = cameraPosition.x * parallaxFactorX;
-        float tempX = cameraPosition.x - distanceX;
-
-        float newBackgroundPositionX = startPos.x + distanceX;
-
-        float distanceY = cameraPosition.y * parallaxFactorY;
-        float tempY = cameraPosition.y - distanceY;
-
-        float newBackgroundPositionY = startPos.y + distanceY;
+        Vector3 cameraPosition = camera.transform.position;
+        float relativePosition = cameraPosition.x * parallaxFactorX;
+        float distanceBetweenCameraAndRelativePosition = cameraPosition.x - relativePosition;
 
 
-        transform.position = new Vector3(newBackgroundPositionX, newBackgroundPositionY, 100);
+        Vector3 NewPosition = new Vector3(startPos.x + relativePosition, transform.position.y, transform.position.z);
 
-        if (tempX > startPosX + spriteSize.x)
-        {
-            startPosX = startPosX + spriteSize.x;
-        }
-        else if (tempX < startPosX - spriteSize.x)
-        {
-            startPosX = startPosX - spriteSize.x;
-        }
+        transform.position = NewPosition;
 
-        if (tempY > startPosY + spriteHeight)
-        {
-            startPosY = startPosY + spriteHeight;
-        }
-        else if (tempY < startPosY - spriteHeight)
-        {
-            startPosY = startPosY - spriteHeight;
-        }
+
+
+
+        //I don't know why nothing works
+        // if (distanceBetweenCameraAndRelativePosition > spriteSize.x)
+        // {
+        //     startPos.x += spriteSize.x;
+        // }
+        // else if (distanceBetweenCameraAndRelativePosition < -spriteSize.x)
+        // {
+        //     startPos.x -= spriteSize.x;
+        // }
     }
-
+    //most tutorials are basically the same but I leaned most heavily on this tutorial
+    //https://blog.yarsalabs.com/parallax-effect-in-unity-2d/
 }
