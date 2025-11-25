@@ -1,0 +1,976 @@
+fileFormatVersion: 2
+guid: a3964676bdc58124294950223eba5bc4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3226613116911253977
+    second: KoD_Dance4_Spritesheet_0
+  - first:
+      213: -6185310563380450168
+    second: KoD_Dance4_Spritesheet_1
+  - first:
+      213: 3825747737410296300
+    second: KoD_Dance4_Spritesheet_2
+  - first:
+      213: -805065430367757866
+    second: KoD_Dance4_Spritesheet_3
+  - first:
+      213: -5979836413491648436
+    second: KoD_Dance4_Spritesheet_4
+  - first:
+      213: 4310585997631770768
+    second: KoD_Dance4_Spritesheet_5
+  - first:
+      213: 7751565002030935219
+    second: KoD_Dance4_Spritesheet_6
+  - first:
+      213: 613142037177240702
+    second: KoD_Dance4_Spritesheet_7
+  - first:
+      213: 3691601921162377333
+    second: KoD_Dance4_Spritesheet_8
+  - first:
+      213: 8608349662278922736
+    second: KoD_Dance4_Spritesheet_9
+  - first:
+      213: -4302430138661985876
+    second: KoD_Dance4_Spritesheet_10
+  - first:
+      213: -6685937613880460862
+    second: KoD_Dance4_Spritesheet_11
+  - first:
+      213: 5256222338918389465
+    second: KoD_Dance4_Spritesheet_12
+  - first:
+      213: -4814147761933712468
+    second: KoD_Dance4_Spritesheet_13
+  - first:
+      213: -5800699598026692117
+    second: KoD_Dance4_Spritesheet_14
+  - first:
+      213: 8906493256545222033
+    second: KoD_Dance4_Spritesheet_15
+  - first:
+      213: 7785210579067142005
+    second: KoD_Dance4_Spritesheet_16
+  - first:
+      213: 8904842381360959516
+    second: KoD_Dance4_Spritesheet_17
+  - first:
+      213: 7122142862727572620
+    second: KoD_Dance4_Spritesheet_18
+  - first:
+      213: -4243289305525064603
+    second: KoD_Dance4_Spritesheet_19
+  - first:
+      213: -4586172532446368213
+    second: KoD_Dance4_Spritesheet_20
+  - first:
+      213: 4555224796461152261
+    second: KoD_Dance4_Spritesheet_21
+  - first:
+      213: -7774471861439732349
+    second: KoD_Dance4_Spritesheet_22
+  - first:
+      213: 9038118951183600000
+    second: KoD_Dance4_Spritesheet_23
+  - first:
+      213: 4263517780808698703
+    second: KoD_Dance4_Spritesheet_24
+  - first:
+      213: -1960819290510458424
+    second: KoD_Dance4_Spritesheet_25
+  - first:
+      213: 379309288362143385
+    second: KoD_Dance4_Spritesheet_26
+  - first:
+      213: 1744714462575147418
+    second: KoD_Dance4_Spritesheet_27
+  - first:
+      213: 4560912569005433386
+    second: KoD_Dance4_Spritesheet_28
+  - first:
+      213: 2981994682152648186
+    second: KoD_Dance4_Spritesheet_29
+  - first:
+      213: -6300233048157503983
+    second: KoD_Dance4_Spritesheet_30
+  - first:
+      213: 466230714197487991
+    second: KoD_Dance4_Spritesheet_31
+  - first:
+      213: 6243932018896440001
+    second: KoD_Dance4_Spritesheet_32
+  - first:
+      213: -248961001287014304
+    second: KoD_Dance4_Spritesheet_33
+  - first:
+      213: -4822991467261822185
+    second: KoD_Dance4_Spritesheet_34
+  - first:
+      213: -4322424238684378881
+    second: KoD_Dance4_Spritesheet_35
+  - first:
+      213: 3223945927331882585
+    second: KoD_Dance4_Spritesheet_36
+  - first:
+      213: -8392632020219425596
+    second: KoD_Dance4_Spritesheet_37
+  - first:
+      213: 1575192255844192798
+    second: KoD_Dance4_Spritesheet_38
+  - first:
+      213: 4209395827003312773
+    second: KoD_Dance4_Spritesheet_39
+  - first:
+      213: -6024271416932145628
+    second: KoD_Dance4_Spritesheet_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d97c15d88b37cc20800000000000000
+      internalID: 3226613116911253977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cac3450dc592aa0800000000000000
+      internalID: -6185310563380450168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce958982c49c71530800000000000000
+      internalID: 3825747737410296300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d99bf9a145d3d4f0800000000000000
+      internalID: -805065430367757866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4862e6e67a530da0800000000000000
+      internalID: -5979836413491648436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0905d9a502742db30800000000000000
+      internalID: 4310585997631770768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc676fbc47139b60800000000000000
+      internalID: 7751565002030935219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c0fca2f61528800800000000000000
+      internalID: 613142037177240702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 683
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578780b63643b3330800000000000000
+      internalID: 3691601921162377333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f13d7aa860077770800000000000000
+      internalID: 8608349662278922736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca12e1a8592ba44c0800000000000000
+      internalID: -4302430138661985876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c97b3ee927c633a0800000000000000
+      internalID: -6685937613880460862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d614bb5e5ad1f840800000000000000
+      internalID: 5256222338918389465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca303b1fd16b03db0800000000000000
+      internalID: -4814147761933712468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be92ed2f276cf7fa0800000000000000
+      internalID: -5800699598026692117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d3ace9d683a9b70800000000000000
+      internalID: 8906493256545222033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ff8ea16cf9a0c60800000000000000
+      internalID: 7785210579067142005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 456
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c101dd947fa549b70800000000000000
+      internalID: 8904842381360959516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ce57ce23fe6d260800000000000000
+      internalID: 7122142862727572620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ce6f8cbdecc15c0800000000000000
+      internalID: -4243289305525064603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e61ec5164aa50c0800000000000000
+      internalID: -4586172532446368213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5083e1951d8673f30800000000000000
+      internalID: 4555224796461152261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3856d9e68078b1490800000000000000
+      internalID: -7774471861439732349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0894603dc49dd6d70800000000000000
+      internalID: 9038118951183600000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b0aa225de0b2b30800000000000000
+      internalID: 4263517780808698703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c104608e35c9c4e0800000000000000
+      internalID: -1960819290510458424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 229
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ee4d0c9c3934500800000000000000
+      internalID: 379309288362143385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9937405f88763810800000000000000
+      internalID: 1744714462575147418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 2
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22ee2711dd9b4f30800000000000000
+      internalID: 4560912569005433386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 2
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afdffc73d5c226920800000000000000
+      internalID: 2981994682152648186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 2
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e356a3c631198a0800000000000000
+      internalID: -6300233048157503983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoD_Dance4_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 2
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7713e174d52687600800000000000000
+      internalID: 466230714197487991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b3be8d597a339ef45b519d6673a12fb9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KoD_Dance4_Spritesheet_0: 3226613116911253977
+      KoD_Dance4_Spritesheet_1: -6185310563380450168
+      KoD_Dance4_Spritesheet_10: -4302430138661985876
+      KoD_Dance4_Spritesheet_11: -6685937613880460862
+      KoD_Dance4_Spritesheet_12: 5256222338918389465
+      KoD_Dance4_Spritesheet_13: -4814147761933712468
+      KoD_Dance4_Spritesheet_14: -5800699598026692117
+      KoD_Dance4_Spritesheet_15: 8906493256545222033
+      KoD_Dance4_Spritesheet_16: 7785210579067142005
+      KoD_Dance4_Spritesheet_17: 8904842381360959516
+      KoD_Dance4_Spritesheet_18: 7122142862727572620
+      KoD_Dance4_Spritesheet_19: -4243289305525064603
+      KoD_Dance4_Spritesheet_2: 3825747737410296300
+      KoD_Dance4_Spritesheet_20: -4586172532446368213
+      KoD_Dance4_Spritesheet_21: 4555224796461152261
+      KoD_Dance4_Spritesheet_22: -7774471861439732349
+      KoD_Dance4_Spritesheet_23: 9038118951183600000
+      KoD_Dance4_Spritesheet_24: 4263517780808698703
+      KoD_Dance4_Spritesheet_25: -1960819290510458424
+      KoD_Dance4_Spritesheet_26: 379309288362143385
+      KoD_Dance4_Spritesheet_27: 1744714462575147418
+      KoD_Dance4_Spritesheet_28: 4560912569005433386
+      KoD_Dance4_Spritesheet_29: 2981994682152648186
+      KoD_Dance4_Spritesheet_3: -805065430367757866
+      KoD_Dance4_Spritesheet_30: -6300233048157503983
+      KoD_Dance4_Spritesheet_31: 466230714197487991
+      KoD_Dance4_Spritesheet_4: -5979836413491648436
+      KoD_Dance4_Spritesheet_5: 4310585997631770768
+      KoD_Dance4_Spritesheet_6: 7751565002030935219
+      KoD_Dance4_Spritesheet_7: 613142037177240702
+      KoD_Dance4_Spritesheet_8: 3691601921162377333
+      KoD_Dance4_Spritesheet_9: 8608349662278922736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
