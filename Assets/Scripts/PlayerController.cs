@@ -155,6 +155,29 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void OnDanceInput(Vector2 stickInput)
+    {
+        Debug.Log(stickInput);
+
+        if (stickInput.x >= -0.5 && stickInput.x <= 0.5 && stickInput.y >= 0.5) //up
+        {
+            walkState = WalkState.Dance1;
+        }
+        if (stickInput.x >= 0.5 && stickInput.y <= 0.5 && stickInput.y >= -0.5)//right
+        {
+            walkState = WalkState.Dance2;
+        }
+        if (stickInput.x >= -0.5 && stickInput.x <= 0.5 && stickInput.y <= -0.5) //down
+        {
+            walkState = WalkState.Dance3;
+        }
+        if (stickInput.x <= -0.5 && stickInput.y >= -0.5 && stickInput.y <= 0.5)
+        {
+            walkState = WalkState.Dance4;
+        }
+
+        //Debug.Log(walkState);
+    }
 
     public void onJumpInput()
     {
