@@ -18360,6 +18360,7 @@ GameObject:
   - component: {fileID: 319334637}
   - component: {fileID: 319334636}
   - component: {fileID: 319334635}
+  - component: {fileID: 319334639}
   m_Layer: 0
   m_Name: CP-Trigger-Final
   m_TagString: Respawn
@@ -18497,6 +18498,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 883489842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &319334639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319334634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299a9a3c32eab2c4eb8a87ba4f13af5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &321263727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8181474285197410126, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
@@ -93536,19 +93549,7 @@ MonoBehaviour:
         m_CallState: 2
   rollInputEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 419141056}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: onRollInput
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   pickupInputEvent:
     m_PersistentCalls:
       m_Calls:
@@ -105621,7 +105622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 419141055}
-  targetScript: {fileID: 419141056}
+  targetScript: {fileID: 0}
   moveSpeedY: 5
   fallingMoveSpeedY: 30
   fastMoveSpeedY: 20
