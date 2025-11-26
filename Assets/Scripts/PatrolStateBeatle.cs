@@ -8,6 +8,10 @@ public class PatrolStateBeatle : MonoBehaviour
     public Transform PlayerDetector, FloorDetector;
     public LayerMask groundLayer, playerLayer;
 
+    public AudioSource audioSource;
+    public AudioClip Fall;
+    public AudioClip Hit;
+
     Vector2 startPos;
     Vector2 currentPos;
 
@@ -38,6 +42,9 @@ public class PatrolStateBeatle : MonoBehaviour
             print("player");
             rb.linearVelocity = new Vector2(bpm, rb.linearVelocity.x);
             moveDown();
+            if (audioSource != null)
+            audioSource.PlayOneShot(Hit, 0.05f);
+
         }
 
         if (hitFloor.collider == true)
@@ -58,6 +65,8 @@ public class PatrolStateBeatle : MonoBehaviour
     void moveDown()
     {
         rb.linearVelocity = new Vector2(0, -bpm);
+        if (audioSource != null)
+            audioSource.PlayOneShot(Fall, 0.05f);
     }
 
     void moveUp()
