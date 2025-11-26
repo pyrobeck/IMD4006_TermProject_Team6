@@ -8,6 +8,11 @@ public class PatrolStateSnail : MonoBehaviour
     public Transform ledgeDetector;
     public LayerMask groundLayer, enemyLayer;
 
+    public AudioSource snailSound;        
+    public float volume = 0.05f;
+
+
+
     
     public float raycastDistance, enemyDistance, wallDistance;
     public float bpm;
@@ -15,7 +20,7 @@ public class PatrolStateSnail : MonoBehaviour
 
     void Start()
     {
-
+        snailSound.volume = 0.05f; 
     }
 
     private void Update()
@@ -53,5 +58,8 @@ public class PatrolStateSnail : MonoBehaviour
         faceRight = !faceRight;
         transform.Rotate(0, 180, 0);
         //print("rot");
+        //if (snailSound != null)
+        //    snailSound.Play();
+    
     }
 }

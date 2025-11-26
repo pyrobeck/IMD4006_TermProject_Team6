@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
     public AudioClip jumpAudio;
     public AudioClip rollAudio;
-    public float volume = 1.0f;
+    public float volume = 0.5f;
 
     [SerializeField] private float minX = -50f;
     [SerializeField] private float maxX = 350f;
@@ -613,7 +613,7 @@ public class PlayerController : MonoBehaviour
 
         // Start background tracks
         audioSourceMusic.clip = music;
-        audioSourceMusic.volume = 0.5f; // half volume
+        audioSourceMusic.volume = 0.2f; // half volume
         audioSourceMusic.loop = true;
         audioSourceMusic.Play();
 
@@ -623,7 +623,7 @@ public class PlayerController : MonoBehaviour
         audioSourceBass.Play();
 
         audioSourceDrums.clip = drums; //Horizontal movement
-        audioSourceDrums.volume = 1f; // start silent
+        audioSourceDrums.volume = 0.8f; // start silent
         audioSourceDrums.loop = true;
         audioSourceDrums.Play();
     }
@@ -636,13 +636,13 @@ public class PlayerController : MonoBehaviour
     public void PlayJumpSound()
     {
         //Debug.Log("Enters walksounds function");
-        audioSource.PlayOneShot(jumpAudio, 1.0f);
+        audioSource.PlayOneShot(jumpAudio, 0.8f);
 
     }
 
     public void PlayRollSound()
     {
-        audioSource.PlayOneShot(rollAudio, 1.0f);
+        audioSource.PlayOneShot(rollAudio, 0.8f);
     }
 
     private void UpdateBassVolume()
@@ -668,7 +668,7 @@ public class PlayerController : MonoBehaviour
         if (walkState == WalkState.Walking || walkState == WalkState.Running)
         {
             // Smoothly fade in if not already audible
-            audioSourceDrums.volume = Mathf.Lerp(audioSourceDrums.volume, 1f, Time.deltaTime * 5f);
+            audioSourceDrums.volume = Mathf.Lerp(audioSourceDrums.volume, 0.8f, Time.deltaTime * 5f);
 
             if (!audioSourceDrums.isPlaying)
             {
