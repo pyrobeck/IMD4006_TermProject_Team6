@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private bool isJumping = false;
     private bool isWallJumping = false;
     private bool isRolling = false;
+    private bool isDancing = false;
     [SerializeField] float coyoteTime = 0.175f;
     private float coyoteTimeCounter;
     private float jumpBufferTime = 0.1f;
@@ -122,7 +123,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
 
-        //Debug.Log(directionFacing);
+        Debug.Log(walkState);
         UpdateTimers();
         UpdateBassVolume();
         UpdateDrumTrack();
@@ -155,9 +156,43 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void OnDanceInput(Vector2 stickInput)
+    {
+        //Debug.Log(stickInput);
+        isDancing = true;
+        if (stickInput.x >= -0.5 && stickInput.x <= 0.5 && stickInput.y <= -0.5) //down
+        {
+            walkState = WalkState.Dance1;
+            animator.SetInteger("state", 6);
+        }
+        if (stickInput.x <= -0.5 && stickInput.y >= -0.5 && stickInput.y <= 0.5)//left
+        {
+            walkState = WalkState.Dance2;
+            animator.SetInteger("state", 7);
+        }
+        if (stickInput.x >= -0.5 && stickInput.x <= 0.5 && stickInput.y >= 0.5) //up
+        {
+            walkState = WalkState.Dance3;
+            animator.SetInteger("state", 8);
+        }
+        if (stickInput.x >= 0.5 && stickInput.y <= 0.5 && stickInput.y >= -0.5) //right
+        {
+            walkState = WalkState.Dance4;
+            animator.SetInteger("state", 9);
+        }
 
+        //Debug.Log(walkState);
+    }
+
+    public void OnDanceCancelled()
+    {
+        isDancing = false;
+        walkState = WalkState.Idle;
+        animator.SetInteger("state", 0);
+    }
     public void onJumpInput()
     {
+        if (isDancing) return;
         if (IsNextToWall() && IsGrounded() == false)
         {
             WallJump();
@@ -436,7 +471,7 @@ public class PlayerController : MonoBehaviour
     {
         //avoiding the weird movement when the player is rolling and moving
         if (isRolling) return;
-
+        if (isDancing) return;
         if (wallJumpTimer > 0 && IsInputDirectionSameAsDirectionFacing() == false)
         {
             return;
