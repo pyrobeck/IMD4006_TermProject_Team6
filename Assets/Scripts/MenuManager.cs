@@ -82,8 +82,8 @@ public class MenuManager : MonoBehaviour
     public void LoadLevel1()
     {
         StopMusic();
-        Debug.Log("Load Level 1");
-                SceneManager.LoadScene("Level_1");
+        Debug.Log("Load Level 1 - comic");
+                SceneManager.LoadScene("FirstComic");
     }
 
     public void LoadLevel2()
