@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 98f1096369d20024f9428e4685fd9c9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8143799195733473789
+    second: 2025_11_26_0lx_Kleki_0
+  - first:
+      213: -51919022483222506
+    second: 2025_11_26_0lx_Kleki_1
+  - first:
+      213: -8137054964269990557
+    second: 2025_11_26_0lx_Kleki_2
+  - first:
+      213: -5256479016047728153
+    second: 2025_11_26_0lx_Kleki_3
+  - first:
+      213: 8691129159911857381
+    second: 2025_11_26_0lx_Kleki_4
+  - first:
+      213: -173225219580656546
+    second: 2025_11_26_0lx_Kleki_5
+  - first:
+      213: 8663428015653746731
+    second: 2025_11_26_0lx_Kleki_6
+  - first:
+      213: 4623614324717631644
+    second: 2025_11_26_0lx_Kleki_7
+  - first:
+      213: -4766348641830694813
+    second: 2025_11_26_0lx_Kleki_8
+  - first:
+      213: -2442264000346286838
+    second: 2025_11_26_0lx_Kleki_9
+  - first:
+      213: 8365098143732271846
+    second: 2025_11_26_0lx_Kleki_10
+  - first:
+      213: 4409005085778879263
+    second: 2025_11_26_0lx_Kleki_11
+  - first:
+      213: 7118080060208521552
+    second: 2025_11_26_0lx_Kleki_12
+  - first:
+      213: -2849111812861903514
+    second: 2025_11_26_0lx_Kleki_13
+  - first:
+      213: 4310259012761025986
+    second: 2025_11_26_0lx_Kleki_14
+  - first:
+      213: -1437202391407390881
+    second: 2025_11_26_0lx_Kleki_15
+  - first:
+      213: 7767035067906233792
+    second: 2025_11_26_0lx_Kleki_16
+  - first:
+      213: -7010878684767642815
+    second: 2025_11_26_0lx_Kleki_17
+  - first:
+      213: -1827353802914712008
+    second: 2025_11_26_0lx_Kleki_18
+  - first:
+      213: 1831789337807761014
+    second: 2025_11_26_0lx_Kleki_19
+  - first:
+      213: 7687921181499048636
+    second: 2025_11_26_0lx_Kleki_20
+  - first:
+      213: 3140752820908788213
+    second: 2025_11_26_0lx_Kleki_21
+  - first:
+      213: 574488581645683853
+    second: 2025_11_26_0lx_Kleki_22
+  - first:
+      213: 8300119189371795046
+    second: 2025_11_26_0lx_Kleki_23
+  - first:
+      213: -2071982347513596006
+    second: 2025_11_26_0lx_Kleki_24
+  - first:
+      213: 7650834157785730439
+    second: 2025_11_26_0lx_Kleki_25
+  - first:
+      213: 6846208663497081942
+    second: 2025_11_26_0lx_Kleki_26
+  - first:
+      213: -5628288268419138692
+    second: 2025_11_26_0lx_Kleki_27
+  - first:
+      213: 2230735196064926465
+    second: 2025_11_26_0lx_Kleki_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 578
+        width: 121
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306c13877c96bfe80800000000000000
+      internalID: -8143799195733473789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 578
+        width: 92
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6105dc39ceb874ff0800000000000000
+      internalID: -51919022483222506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 578
+        width: 63
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dbbd83f9f531f80800000000000000
+      internalID: -8137054964269990557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_3
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 577
+        width: 104
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e92e275f2c3d07b0800000000000000
+      internalID: -5256479016047728153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_4
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 578
+        width: 149
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecd5916ce71d9870800000000000000
+      internalID: 8691129159911857381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_5
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 578
+        width: 58
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5481c0a494989df0800000000000000
+      internalID: -173225219580656546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_6
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 578
+        width: 63
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28753221edaa3870800000000000000
+      internalID: 8663428015653746731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_7
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 577
+        width: 103
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98b33b3bb06a2040800000000000000
+      internalID: 4623614324717631644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_8
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 577
+        width: 93
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3601408d9278addb0800000000000000
+      internalID: -4766348641830694813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_9
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 578
+        width: 91
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0592a3d4d55b1ed0800000000000000
+      internalID: -2442264000346286838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_10
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 577
+        width: 103
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea0178017cc61470800000000000000
+      internalID: 8365098143732271846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_11
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 578
+        width: 58
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13adbef3ceef2d30800000000000000
+      internalID: 4409005085778879263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 377
+        width: 97
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051258ff91088c260800000000000000
+      internalID: 7118080060208521552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_13
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 377
+        width: 91
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d3ff4c6ebe578d0800000000000000
+      internalID: -2849111812861903514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 378
+        width: 58
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cdfb814cbd11db30800000000000000
+      internalID: 4310259012761025986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_15
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 378
+        width: 58
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f02d52a080e0ce0800000000000000
+      internalID: -1437202391407390881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_16
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 377
+        width: 104
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c59d842e3d0acb60800000000000000
+      internalID: 7767035067906233792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_17
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 378
+        width: 91
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b111f3bfa54be90800000000000000
+      internalID: -7010878684767642815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_18
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 378
+        width: 57
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8363f42e56fe3a6e0800000000000000
+      internalID: -1827353802914712008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_19
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 377
+        width: 104
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e216f82b2db6910800000000000000
+      internalID: 1831789337807761014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_20
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 377
+        width: 103
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2c37c059bf0ba60800000000000000
+      internalID: 7687921181499048636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_21
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 339
+        width: 97
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f90399dc02369b20800000000000000
+      internalID: 3140752820908788213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_22
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 377
+        width: 102
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c428c325ef8f700800000000000000
+      internalID: 574488581645683853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_23
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 378
+        width: 92
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666b8e34d62ff2370800000000000000
+      internalID: 8300119189371795046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_24
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 177
+        width: 97
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9772936807de33e0800000000000000
+      internalID: -2071982347513596006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_25
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 177
+        width: 104
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d4e3271293d2a60800000000000000
+      internalID: 7650834157785730439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_26
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 177
+        width: 104
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65402f5b18e920f50800000000000000
+      internalID: 6846208663497081942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_27
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 178
+        width: 63
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bf06bc3ad44e1b0800000000000000
+      internalID: -5628288268419138692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025_11_26_0lx_Kleki_28
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 177
+        width: 92
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b496587d925fe10800000000000000
+      internalID: 2230735196064926465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      2025_11_26_0lx_Kleki_0: -8143799195733473789
+      2025_11_26_0lx_Kleki_1: -51919022483222506
+      2025_11_26_0lx_Kleki_10: 8365098143732271846
+      2025_11_26_0lx_Kleki_11: 4409005085778879263
+      2025_11_26_0lx_Kleki_12: 7118080060208521552
+      2025_11_26_0lx_Kleki_13: -2849111812861903514
+      2025_11_26_0lx_Kleki_14: 4310259012761025986
+      2025_11_26_0lx_Kleki_15: -1437202391407390881
+      2025_11_26_0lx_Kleki_16: 7767035067906233792
+      2025_11_26_0lx_Kleki_17: -7010878684767642815
+      2025_11_26_0lx_Kleki_18: -1827353802914712008
+      2025_11_26_0lx_Kleki_19: 1831789337807761014
+      2025_11_26_0lx_Kleki_2: -8137054964269990557
+      2025_11_26_0lx_Kleki_20: 7687921181499048636
+      2025_11_26_0lx_Kleki_21: 3140752820908788213
+      2025_11_26_0lx_Kleki_22: 574488581645683853
+      2025_11_26_0lx_Kleki_23: 8300119189371795046
+      2025_11_26_0lx_Kleki_24: -2071982347513596006
+      2025_11_26_0lx_Kleki_25: 7650834157785730439
+      2025_11_26_0lx_Kleki_26: 6846208663497081942
+      2025_11_26_0lx_Kleki_27: -5628288268419138692
+      2025_11_26_0lx_Kleki_28: 2230735196064926465
+      2025_11_26_0lx_Kleki_3: -5256479016047728153
+      2025_11_26_0lx_Kleki_4: 8691129159911857381
+      2025_11_26_0lx_Kleki_5: -173225219580656546
+      2025_11_26_0lx_Kleki_6: 8663428015653746731
+      2025_11_26_0lx_Kleki_7: 4623614324717631644
+      2025_11_26_0lx_Kleki_8: -4766348641830694813
+      2025_11_26_0lx_Kleki_9: -2442264000346286838
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
