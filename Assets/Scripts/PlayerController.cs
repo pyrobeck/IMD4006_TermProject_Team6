@@ -122,8 +122,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-
-        Debug.Log(walkState);
         UpdateTimers();
         UpdateBassVolume();
         UpdateDrumTrack();
@@ -735,6 +733,11 @@ public class PlayerController : MonoBehaviour
     public bool GetIsGrounded()
     {
         return IsGrounded();
+    }
+
+    public bool GetIsWallJumping()
+    {
+        return isWallJumping;
     }
 
     public float GetLinearVelocityY()

@@ -48,7 +48,8 @@ public class cameraMovement : MonoBehaviour
     float deadzoneRatio;
 
     bool isFalling = false;
-    bool isAboveScren = false;
+    bool isOffScreen = false;
+    bool isWallJumping = false;
 
     void Start()
     {
@@ -152,9 +153,14 @@ public class cameraMovement : MonoBehaviour
         lookAheadOffset = Vector3.MoveTowards(lookAheadOffset, new Vector3(lookAheadOffsetX * direction, 0, 0), directionFlippingMoveSpeed * Time.deltaTime);
     }
 
+    private void ResetLookAheadOffset()
+    {
+        lookAheadOffset = new Vector3(lookAheadOffsetX * direction, 0, 0);
+    }
+
     private void UpdateYOffset()
     {
-        if (targetScript.GetIsGrounded() == false && isFalling == false)
+        if (targetScript.GetIsGrounded() == false && isFalling == false && targetScript.GetIsWallJumping() == false && isOffScreen == false)
         {
             return;
         }
@@ -200,14 +206,51 @@ public class cameraMovement : MonoBehaviour
 
     private void UpdateMoveSpeedY()
     {
-        if (moveSpeedY > standardMoveSpeedY)
+
+        if (target.position.y > transform.position.y + screenHeight / 2 || Mathf.Abs(target.position.x - transform.position.x) > screenWidth)
         {
-            moveSpeedY = moveSpeedY + 2;
-            if (target.position.y > transform.position.y - screenHeight * (1f / 6f))
+            isOffScreen = true;
+        }
+
+        if (isOffScreen == true)
+        {
+            moveSpeedY += 4;
+            moveSpeedX += 4;
+
+            if (target.position.y >= transform.position.y - screenHeight / 2 && Mathf.Abs(target.position.x - transform.position.x) <= screenWidth / 2)
+            {
+                isOffScreen = false;
+                moveSpeedY = standardMoveSpeedY;
+                moveSpeedX = standardMoveSpeedX;
+            }
+            return;
+        }
+
+
+        if (targetScript.GetIsWallJumping())
+        {
+            isWallJumping = true;
+            moveSpeedY = fastMoveSpeedY;
+        }
+        if (isWallJumping == true)
+        {
+            if (targetScript.GetIsGrounded() == true)
+            {
+                isWallJumping = false;
+            }
+            return;
+        }
+
+
+        if (isFalling == true)
+        {
+            moveSpeedY += 2;
+            if (target.position.y >= transform.position.y - screenHeight / 6)
             {
                 isFalling = false;
                 moveSpeedY = standardMoveSpeedY;
             }
+            return;
         }
         if (target.position.y < transform.position.y - screenHeight / 2)
         {
@@ -221,7 +264,7 @@ public class cameraMovement : MonoBehaviour
     public void SnapToTarget()
     {
         UpdateDirection();
-        UpdateLookAheadOffset();
+        ResetLookAheadOffset();
         ResetScreenBoundaries();
         ResetYOffset();
         UpdateXCameraPosition();
