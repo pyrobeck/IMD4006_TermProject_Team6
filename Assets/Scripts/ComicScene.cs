@@ -4,28 +4,37 @@ using UnityEngine.InputSystem;
 
 public class ComicSceneManager : MonoBehaviour
 {
-    public string[] allowedScenes;   
+    public string[] allowedScenes;
 
-    private InputSystem_Actions input;
+    private InputAction anyInputAction;
 
     private void Awake()
     {
-        input = new InputSystem_Actions();
+        anyInputAction = new InputAction(
+            type: InputActionType.Button,
+            binding: "*/<Button>",
+            interactions: "press"
+        );
+
+        anyInputAction.performed += OnAnyInput;
     }
 
     private void OnEnable()
     {
-        input.Player.Enable();
-        input.Player.Roll.performed += OnRollPressed;
+        anyInputAction.Enable();
     }
 
     private void OnDisable()
     {
-        input.Player.Roll.performed -= OnRollPressed;
-        input.Player.Disable();
+        anyInputAction.Disable();
     }
 
-    private void OnRollPressed(InputAction.CallbackContext ctx)
+    private void OnAnyInput(InputAction.CallbackContext ctx)
+    {
+        TryAdvanceScene();
+    }
+
+    private void TryAdvanceScene()
     {
         string current = SceneManager.GetActiveScene().name;
 
