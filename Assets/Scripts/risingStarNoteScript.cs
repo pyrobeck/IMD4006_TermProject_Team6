@@ -37,5 +37,7 @@ public class risingStarNoteScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Destroy(gameObject);
     }
 }

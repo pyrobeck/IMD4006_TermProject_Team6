@@ -3,12 +3,14 @@ using UnityEngine;
 using System.Collections;
 public class moveToBeat : MonoBehaviour
 {
-    const int BEATS_BETWEEN_MOVEMENT = 3;
+
     [SerializeField] bpmCounter bpmCounter;
     private float startPosition;
     [SerializeField] private float maxHeight = 3;
     private float moveIncrements = 5;
-    [SerializeField] private int beatOffset = 0;
+    [SerializeField] private int beatOffset = 1;
+    [SerializeField] private bool isDoubleTime = false;
+    private int bonusBeat;
     private bool isUp = false;
     private bool isMoving;
     private float lastBeatTime;
@@ -21,6 +23,18 @@ public class moveToBeat : MonoBehaviour
 
         lastBeatTime = bpmCounter.GetSongPosition();
 
+        if (isDoubleTime == true)
+        {
+            bonusBeat = (beatOffset + 2) % 4;
+            if (bonusBeat == 0)
+            {
+                bonusBeat = 4;
+            }
+        }
+        else
+        {
+            bonusBeat = beatOffset;
+        }
     }
 
 
@@ -44,7 +58,7 @@ public class moveToBeat : MonoBehaviour
         }
 
         lastBeatTime += bpmCounter.GetTimeBetweenBeats();
-        if (bpmCounter.GetCurrentBeat() == 4)
+        if (bpmCounter.GetCurrentBeat() == beatOffset || bpmCounter.GetCurrentBeat() == bonusBeat)
         {
             isMoving = true;
             SetTargetPosition();

@@ -33,5 +33,7 @@ public class Button_door : MonoBehaviour
         animator.SetInteger("state", 1);
         yield return new WaitForSeconds(0.5f);
         animator.SetInteger("state", 2);
+        //this can be deleted once we have an actual "activated" sprite/animation
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }
