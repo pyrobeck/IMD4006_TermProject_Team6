@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float minVolume = 0f;
     [SerializeField] private float maxVolume = 0.8f;
 
-    private PlatformMoveWithBPMBounce currentPlatform;
+    private Transform currentPlatform;
 
 
 
@@ -139,10 +139,10 @@ public class PlayerController : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (currentPlatform != null)
-        {
-            transform.position += currentPlatform.DeltaPosition;
-        }
+        // if (currentPlatform != null)
+        // {
+        //     transform.position += currentPlatform.DeltaPosition;
+        // }
     }
 
     public void onMoveInput(float horizontal)
@@ -398,18 +398,29 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collision)
     {
         // Check if touching platform
-        var platform = collision.gameObject.GetComponent<PlatformMoveWithBPMBounce>();
-        if (platform != null && IsGrounded())
+        // var platform = collision.gameObject.GetComponent<stickPlayerToPlatform>();
+        // if (platform != null && IsGrounded())
+        // {
+        //     currentPlatform = platform;
+        // }
+
+        if (collision.gameObject.CompareTag("MovingPlatform"))
         {
-            currentPlatform = platform;
+            currentPlatform = collision.gameObject.transform.parent.gameObject.transform; //the parent of the platform they're colliding with lol (to fix scaling issues with parenting)
+            if (currentPlatform == null)
+            {
+                return;
+            }
+            this.gameObject.transform.SetParent(currentPlatform);
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<PlatformMoveWithBPMBounce>() != null)
+        if (collision.gameObject.CompareTag("MovingPlatform"))
         {
             currentPlatform = null;
+            this.gameObject.transform.SetParent(null);
         }
     }
 

@@ -11,6 +11,7 @@ TagManager:
   - JunkPile
   - ThrownObject
   - Baseline
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

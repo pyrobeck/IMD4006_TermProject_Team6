@@ -71,3 +71,6 @@ public class bpmCounter : MonoBehaviour
     }
 
 }
+
+//refrenced this article to help iron out my ideas
+//https://web.archive.org/web/20210225110635/http://ludumdare.com/compo/2014/09/09/an-ld48-rhythm-game-part-2/
