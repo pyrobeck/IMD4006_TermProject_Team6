@@ -1,24 +1,24 @@
 using Unity.VisualScripting;
 using UnityEngine;
-
+using System.Collections;
 public class moveToBeat : MonoBehaviour
 {
     const int BEATS_BETWEEN_MOVEMENT = 3;
     [SerializeField] bpmCounter bpmCounter;
     private float startPosition;
     [SerializeField] private float maxHeight = 3;
-    private float moveSpeed;
+    private float moveIncrements = 5;
     [SerializeField] private int beatOffset = 0;
     private bool isUp = false;
     private bool isMoving;
     private float lastBeatTime;
     private Vector3 targetPosition;
+    private Vector3 currentPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         startPosition = transform.position.y;
 
-        moveSpeed = maxHeight / bpmCounter.GetTimeBetweenBeats();
         lastBeatTime = bpmCounter.GetSongPosition();
 
     }
@@ -34,8 +34,6 @@ public class moveToBeat : MonoBehaviour
         }
 
         CheckCurrentBeat();
-
-        Move();
     }
 
     private void CheckCurrentBeat()
@@ -50,26 +48,29 @@ public class moveToBeat : MonoBehaviour
         {
             isMoving = true;
             SetTargetPosition();
+            StartCoroutine(Move());
         }
     }
 
-    private void Move()
+
+    private IEnumerator Move()
     {
         if (isMoving == false)
         {
-            return;
+            yield break;
         }
-
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, maxHeight / moveSpeed);
-
-        if (transform.position.y == targetPosition.y)
+        for (float t = 0; t < 1; t += Time.deltaTime / bpmCounter.GetTimeBetweenBeats())
         {
-            isMoving = false;
+            transform.position = Vector3.Lerp(currentPosition, targetPosition, t);
+            yield return null;
         }
+        isMoving = false;
     }
+    //https://stackoverflow.com/a/65814734
 
     private void SetTargetPosition()
     {
+        currentPosition = transform.position;
         targetPosition = new Vector3(transform.position.x, 0, transform.position.z);
 
         if (isUp)
