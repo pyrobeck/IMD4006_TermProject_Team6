@@ -7,7 +7,6 @@ public class moveToBeat : MonoBehaviour
     [SerializeField] bpmCounter bpmCounter;
     private float startPosition;
     [SerializeField] private float maxHeight = 3;
-    private float moveIncrements = 5;
     [SerializeField] private int beatOffset = 1;
     [SerializeField] private bool isDoubleTime = false;
     private int bonusBeat;
