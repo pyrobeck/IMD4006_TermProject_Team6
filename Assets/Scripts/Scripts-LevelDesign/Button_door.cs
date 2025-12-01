@@ -12,7 +12,7 @@ public class Button_door : MonoBehaviour
         animator = GetComponent<Animator>();
         if (animator == null)
         {
-            Debug.Log("well that would explain it");
+            //Debug.Log("well that would explain it");
         }
     }
 
