@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEngine.UIElements;
 
 public class conveyorBeltObject : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class conveyorBeltObject : MonoBehaviour
         AboutToFall
 
     }
+    const float DISTANCE_BETWEEN_SOUCE_AND_BELT = 1.5f;
     [SerializeField] bpmCounter bpmCounter;
     [SerializeField] int speed; //1, 2, or 4
     [SerializeField] Transform sourcePosition;
@@ -168,7 +170,7 @@ public class conveyorBeltObject : MonoBehaviour
                 targetPosition.y = transform.position.y - transform.GetChild(0).transform.localScale.y;
                 break;
             case State.Spawning:
-                targetPosition.y = transform.position.y + transform.GetChild(0).transform.localScale.y;
+                targetPosition.y = transform.position.y + transform.GetChild(0).transform.localScale.y + DISTANCE_BETWEEN_SOUCE_AND_BELT;
                 break;
             default:
                 targetPosition.x = transform.position.x;
@@ -178,14 +180,16 @@ public class conveyorBeltObject : MonoBehaviour
 
     private void ResetPositionToSource()
     {
-        transform.position = sourcePosition.position;
+        Vector3 newPosition = sourcePosition.position;
+        newPosition.y -= transform.GetChild(0).transform.localScale.y / 2;
+        transform.position = newPosition;
     }
 
     private void SetStartPosition()
     {
         if (startPosition == 0)
         {
-            transform.position = sourcePosition.position;
+            ResetPositionToSource();
             state = State.AboutToSpawn;
             return;
         }
