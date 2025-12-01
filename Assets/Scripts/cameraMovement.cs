@@ -25,6 +25,8 @@ public class cameraMovement : MonoBehaviour
     float cameraBaseline;
     Vector3 targetX;
     Vector3 targetY;
+    Vector3 additionalYOffset = new Vector3(0, 0, 0);
+    Vector3 additionalXOffset = new Vector3(0, 0, 0);
 
     Vector3 cameraTarget;
     float cameraTargetX;
@@ -51,6 +53,8 @@ public class cameraMovement : MonoBehaviour
     bool isOffScreen = false;
     bool isWallJumping = false;
 
+
+    private int numberOfOverlappingZones = 0;
     void Start()
     {
         this.GetComponent<Camera>().orthographicSize = zoom;
@@ -114,10 +118,11 @@ public class cameraMovement : MonoBehaviour
         {
             targetX = cameraTargetXRecord;
         }
+        targetX += additionalXOffset;
     }
     private void UpdateYCameraPosition()
     {
-        targetY = yOffset;
+        targetY = yOffset + additionalYOffset;
     }
     private void UpdateDeadzonePosition()
     {
@@ -279,6 +284,24 @@ public class cameraMovement : MonoBehaviour
     {
         cameraBaseline = target.position.y;
         ResetScreenBoundaries();
+    }
+
+    public void SpecialCameraZone(Vector2 extraCameraMovement)
+    {
+        numberOfOverlappingZones++;
+        additionalXOffset = new Vector3(extraCameraMovement.x, 0, 0);
+        additionalYOffset = new Vector3(0, extraCameraMovement.y, 0);
+    }
+
+    public void SpecialCameraZoneExit()
+    {
+        numberOfOverlappingZones--;
+        if (numberOfOverlappingZones == 0)
+        {
+            additionalXOffset = new Vector3(0, 0, 0);
+            additionalYOffset = new Vector3(0, 0, 0);
+        }
+
     }
 }
 

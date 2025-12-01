@@ -349,7 +349,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Respawn"))
         {
             lastCheckpointPosition = new Vector3(collision.transform.position.x, collision.transform.position.y, transform.position.z);
-            Debug.Log("Checkpoint reached at: " + lastCheckpointPosition);
+            //Debug.Log("Checkpoint reached at: " + lastCheckpointPosition);
 
             foreach (Checkpoint cp in FindObjectsOfType<Checkpoint>())
                 cp.SetInactive();
@@ -363,7 +363,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = lastCheckpointPosition;
             camera.SnapToTarget();
-            Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
+            // Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
         }
 
         if (collision.gameObject.CompareTag("JunkPile"))

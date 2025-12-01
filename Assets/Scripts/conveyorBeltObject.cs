@@ -189,7 +189,7 @@ public class conveyorBeltObject : MonoBehaviour
     {
         if (startPosition == 0)
         {
-            transform.position = sourcePosition.position;
+            ResetPositionToSource();
             state = State.AboutToSpawn;
             return;
         }

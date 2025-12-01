@@ -24,7 +24,7 @@ public class risingStarNoteScript : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 10)
+        if (timer > 7)
         {
             Destroy(gameObject);
         }
