@@ -22537,20 +22537,10 @@ MonoBehaviour:
   rigidBody: {fileID: 0}
   collidor: {fileID: 0}
   animator: {fileID: 419141058}
-  audioSource: {fileID: 419141059}
-  audioSourceMusic: {fileID: 2039038733}
-  audioSourceBass: {fileID: 1794673629}
-  audioSourceDrums: {fileID: 1849610937}
-  music: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
-  bass: {fileID: 8300000, guid: d36c0e2b8e4b1084eb8331ac06dc3098, type: 3}
-  drums: {fileID: 8300000, guid: 49c14ba59a83dce4ea98899b2e423b56, type: 3}
+  sfxSource: {fileID: 0}
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
   volume: 1
-  minX: -1
-  maxX: 1190
-  minVolume: 0
-  maxVolume: 0.8
   groundLayer:
     serializedVersion: 2
     m_Bits: 320
@@ -93916,7 +93906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768506267}
   - component: {fileID: 1768506268}
-  - component: {fileID: 1768506269}
+  - component: {fileID: 1768506270}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -94059,14 +94049,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!81 &1768506269
-AudioListener:
+--- !u!114 &1768506270
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768506265}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a5bb4e06e81d643bba80ea1d1ae265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 419141055}
+  musicSource: {fileID: 419141059}
+  bassSource: {fileID: 419141059}
+  drumSource: {fileID: 419141059}
+  musicClip: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
+  bassClip: {fileID: 8300000, guid: d36c0e2b8e4b1084eb8331ac06dc3098, type: 3}
+  drumsClip: {fileID: 8300000, guid: 49c14ba59a83dce4ea98899b2e423b56, type: 3}
+  minX: -50
+  maxX: 350
+  minVolume: 0
+  maxVolume: 0.8
 --- !u!1 &1771076333
 GameObject:
   m_ObjectHideFlags: 0
