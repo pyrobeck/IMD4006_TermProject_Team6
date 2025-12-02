@@ -55,24 +55,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private CapsuleCollider2D collidor;
     [SerializeField] private Animator animator;
 
-    public AudioSource audioSource;
-    public AudioSource audioSourceMusic;
-    public AudioSource audioSourceBass;
-    public AudioSource audioSourceDrums;
-
-    public AudioClip music;
-    public AudioClip bass;
-    public AudioClip drums;
-
+    [Header("Player Sound Effects")]
+    public AudioSource sfxSource;
     public AudioClip jumpAudio;
     public AudioClip rollAudio;
     public float volume = 0.5f;
-
-    [SerializeField] private float minX = -50f;
-    [SerializeField] private float maxX = 350f;
-    [SerializeField] private float minVolume = 0f;
-    [SerializeField] private float maxVolume = 0.8f;
-
 
     public LayerMask groundLayer;
 
@@ -105,7 +92,7 @@ public class PlayerController : MonoBehaviour
         rigidBody = this.GetComponent<Rigidbody2D>();
         collidor = this.GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
+        sfxSource = GetComponent<AudioSource>();
         Vector3 lastCheckpointPosition = new Vector3(1f, 1f, 1f); // Default position
         coyoteTimeCounter = coyoteTime;
         spriteScale = this.transform.localScale;
@@ -113,15 +100,11 @@ public class PlayerController : MonoBehaviour
 
         temp = this.GetComponent<SpriteRenderer>();
 
-        StartTracks();
-
     }
 
     private void Update()
     {
         UpdateTimers();
-        UpdateBassVolume();
-        UpdateDrumTrack();
     }
 
     private void FixedUpdate()
@@ -394,7 +377,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
@@ -435,6 +417,7 @@ public class PlayerController : MonoBehaviour
         }
         return false;
     }
+
     private bool IsWallSliding()
     {
         if (IsNextToWall() && IsGrounded() == false)
@@ -477,6 +460,7 @@ public class PlayerController : MonoBehaviour
             animator.transform.localScale = spriteScaleFlipped;
         }
     }
+
     private void SetDirection(int direction)
     {
         if (direction == 1)
@@ -492,6 +476,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
     }
+
     private void ReverseDirection()
     {
         if (directionFacing.x == 1)
@@ -505,6 +490,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
     }
+
     private bool IsInputDirectionSameAsDirectionFacing()
     {
         if (horizontal > 0 && directionFacing.x == 1)
@@ -517,6 +503,7 @@ public class PlayerController : MonoBehaviour
         }
         return false;
     }
+
     private void SetWalkState()
     {
         if (horizontal == 0)
@@ -548,6 +535,7 @@ public class PlayerController : MonoBehaviour
         ThrowCooldownTimer();
         RollTimer();
     }
+
     private void coyoteTimer()
     {
         //starts a timer whenever the player leaves the ground. Resets it once they return to ground
@@ -560,6 +548,7 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
     }
+
     private void updateJumpBufferTimer()
     {
         jumpBufferTimer -= Time.deltaTime;
@@ -570,6 +559,7 @@ public class PlayerController : MonoBehaviour
             jumpBufferTimer = -1;
         }
     }
+
     private void WallJumpTimer()
     {
         //starts a timer whenever the player leaves the ground. Resets it once they return to ground
@@ -583,6 +573,7 @@ public class PlayerController : MonoBehaviour
             isWallJumping = false;
         }
     }
+
     private void ThrowCooldownTimer()
     {
         if (isThrowingObject == true)
@@ -598,6 +589,7 @@ public class PlayerController : MonoBehaviour
             isThrowingObject = false;
         }
     }
+
     private void RollTimer()
     {
         if (isRolling == true)
@@ -619,90 +611,14 @@ public class PlayerController : MonoBehaviour
     {
         wallJumpTimer = maxWallJumpTime;
     }
-    ///////////////////// Play Music ///////////////////////////////////////////////////////
-    public void StartTracks()
-    {
-        audioSourceMusic.clip = music;
-        audioSourceBass.clip = bass;
-        audioSourceDrums.clip = drums;
 
-        // Start background tracks
-        audioSourceMusic.clip = music;
-        audioSourceMusic.volume = 0.2f; // half volume
-        audioSourceMusic.loop = true;
-        audioSourceMusic.Play();
-
-        audioSourceBass.clip = bass;
-        audioSourceBass.volume = 0.0f;// start silent
-        audioSourceBass.loop = true;
-        audioSourceBass.Play();
-
-        audioSourceDrums.clip = drums; //Horizontal movement
-        audioSourceDrums.volume = 0.8f; // start silent
-        audioSourceDrums.loop = true;
-        audioSourceDrums.Play();
+    public void PlayJumpSound() { 
+        sfxSource.PlayOneShot(jumpAudio, 0.8f); 
+    } 
+    
+    public void PlayRollSound() { 
+        sfxSource.PlayOneShot(rollAudio, 0.8f); 
     }
-
-    public void drumVol()
-    {
-        audioSourceDrums.volume = Mathf.Abs(horizontal);
-    }
-
-    public void PlayJumpSound()
-    {
-        //Debug.Log("Enters walksounds function");
-        audioSource.PlayOneShot(jumpAudio, 0.8f);
-
-    }
-
-    public void PlayRollSound()
-    {
-        audioSource.PlayOneShot(rollAudio, 0.8f);
-    }
-
-    private void UpdateBassVolume()
-    {
-        float xPos = transform.position.x;
-
-        // Clamp X between minX and maxX
-        float clampedX = Mathf.Clamp(xPos, minX, maxX);
-
-        // Map X position to 0–1
-        float t = Mathf.InverseLerp(minX, maxX, clampedX);
-
-        // Map t to volume range
-        float newVolume = Mathf.Lerp(minVolume, maxVolume, t);
-
-        // Apply to the bass AudioSource
-        audioSourceBass.volume = newVolume;
-    }
-
-    private void UpdateDrumTrack()
-    {
-        // Only play drums when walking or running
-        if (walkState == WalkState.Walking || walkState == WalkState.Running)
-        {
-            // Smoothly fade in if not already audible
-            audioSourceDrums.volume = Mathf.Lerp(audioSourceDrums.volume, 0.8f, Time.deltaTime * 5f);
-
-            if (!audioSourceDrums.isPlaying)
-            {
-                audioSourceDrums.Play();
-            }
-        }
-        else
-        {
-            // Smoothly fade out when not walking/running
-            audioSourceDrums.volume = Mathf.Lerp(audioSourceDrums.volume, 0f, Time.deltaTime * 5f);
-
-            // Optionally stop when fully silent (to save CPU)
-            if (audioSourceDrums.volume < 0.01f && audioSourceDrums.isPlaying)
-            {
-                audioSourceDrums.Stop();
-            }
-        }
-    }
-
 
     /////////////////////Collsion with enemies and check point //////////////////////////////////
 
