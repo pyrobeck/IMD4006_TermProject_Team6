@@ -498,7 +498,7 @@ Transform:
   m_GameObject: {fileID: 87955232}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.41, y: -2.2312498, z: 0.04439218}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.5197, y: 0.9116, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -766,7 +766,7 @@ Transform:
   m_GameObject: {fileID: 125354364}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.41, y: -2.2312498, z: 0.04439218}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.5197, y: 0.9116, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1572,6 +1572,8 @@ MonoBehaviour:
   maxHeight: 6
   beatOffset: 4
   isDoubleTime: 0
+  isStuck: 0
+  doorPistonIsStuckBehind: {fileID: 0}
 --- !u!4 &285822322
 Transform:
   m_ObjectHideFlags: 0
@@ -1581,7 +1583,7 @@ Transform:
   m_GameObject: {fileID: 285822320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.06, y: -15.34875, z: -0.04439218}
+  m_LocalPosition: {x: 18.443224, y: -17.42, z: -0.04439218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1819,9 +1821,10 @@ GameObject:
   m_Component:
   - component: {fileID: 365210475}
   - component: {fileID: 365210474}
+  - component: {fileID: 365210476}
   m_Layer: 0
   m_Name: door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1890,12 +1893,58 @@ Transform:
   m_GameObject: {fileID: 365210473}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.8, y: -16.58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.9, y: -16.35, z: 0}
+  m_LocalScale: {x: 11.9131, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &365210476
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365210473}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &514548492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1980,7 +2029,7 @@ Transform:
   m_GameObject: {fileID: 532017591}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.41, y: -2.2312498, z: 0.04439218}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.5197, y: 0.9116, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2730,7 +2779,7 @@ Transform:
   m_GameObject: {fileID: 703147099}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.41, y: -2.2312498, z: 0.04439218}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.5197, y: 0.9116, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4918,6 +4967,8 @@ MonoBehaviour:
   maxHeight: 4
   beatOffset: 2
   isDoubleTime: 0
+  isStuck: 1
+  doorPistonIsStuckBehind: {fileID: 365210473}
 --- !u!4 &1585948732
 Transform:
   m_ObjectHideFlags: 0
@@ -4927,7 +4978,7 @@ Transform:
   m_GameObject: {fileID: 1585948730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.72, y: -15.34875, z: -0.04439218}
+  m_LocalPosition: {x: 8.103223, y: -17.42, z: -0.04439218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5235,6 +5286,8 @@ MonoBehaviour:
   maxHeight: 5
   beatOffset: 3
   isDoubleTime: 0
+  isStuck: 0
+  doorPistonIsStuckBehind: {fileID: 0}
 --- !u!4 &1687197436
 Transform:
   m_ObjectHideFlags: 0
@@ -5244,7 +5297,7 @@ Transform:
   m_GameObject: {fileID: 1687197434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.58, y: -15.34875, z: -0.04439218}
+  m_LocalPosition: {x: 12.9632225, y: -17.42, z: -0.04439218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6310,7 +6363,7 @@ Transform:
   m_GameObject: {fileID: 1784137059}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.6, y: 6.9, z: 0}
+  m_LocalPosition: {x: -6.23, y: -17.72, z: 0}
   m_LocalScale: {x: 0.39297816, y: 0.39297816, z: 0.39297816}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7029,6 +7082,8 @@ MonoBehaviour:
   maxHeight: 3
   beatOffset: 1
   isDoubleTime: 0
+  isStuck: 1
+  doorPistonIsStuckBehind: {fileID: 365210473}
 --- !u!4 &2028220328
 Transform:
   m_ObjectHideFlags: 0
@@ -7038,7 +7093,7 @@ Transform:
   m_GameObject: {fileID: 2028220326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.893223, y: -15.34875, z: -0.04439218}
+  m_LocalPosition: {x: 2.49, y: -17.42, z: -0.04439218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

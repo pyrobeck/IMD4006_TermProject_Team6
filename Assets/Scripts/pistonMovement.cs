@@ -15,6 +15,9 @@ public class moveToBeat : MonoBehaviour
     private float lastBeatTime;
     private Vector3 targetPosition;
     private Vector3 currentPosition;
+    private bool startupPanic = true;
+    [SerializeField] private bool isStuck = false;
+    [SerializeField] private GameObject doorPistonIsStuckBehind;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +37,7 @@ public class moveToBeat : MonoBehaviour
         {
             bonusBeat = beatOffset;
         }
+        StartCoroutine(WaitForSongPositionFreakOutToEnd());
     }
 
 
@@ -41,6 +45,10 @@ public class moveToBeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isStuck == true)
+        {
+            CheckIfUnstuck();
+        }
         if (lastBeatTime == 0)
         {
             lastBeatTime = bpmCounter.GetSongPosition();
@@ -57,6 +65,10 @@ public class moveToBeat : MonoBehaviour
         }
 
         lastBeatTime += bpmCounter.GetTimeBetweenBeats();
+        if (isStuck == true)
+        {
+            return;
+        }
         if (bpmCounter.GetCurrentBeat() == beatOffset || bpmCounter.GetCurrentBeat() == bonusBeat)
         {
             isMoving = true;
@@ -83,6 +95,10 @@ public class moveToBeat : MonoBehaviour
 
     private void SetTargetPosition()
     {
+        if (isStuck == true)
+        {
+            return;
+        }
         currentPosition = transform.position;
         targetPosition = new Vector3(transform.position.x, 0, transform.position.z);
 
@@ -96,5 +112,20 @@ public class moveToBeat : MonoBehaviour
             targetPosition.y = startPosition + maxHeight;
             isUp = true;
         }
+    }
+
+    private void CheckIfUnstuck()
+    {
+        if (doorPistonIsStuckBehind == null)
+        {
+            isStuck = false;
+        }
+    }
+
+    private IEnumerator WaitForSongPositionFreakOutToEnd()
+    {
+        yield return new WaitForSeconds(2);
+        lastBeatTime = bpmCounter.GetSongPosition();
+        startupPanic = false;
     }
 }

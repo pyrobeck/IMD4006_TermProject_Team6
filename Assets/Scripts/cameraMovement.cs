@@ -13,7 +13,7 @@ public class cameraMovement : MonoBehaviour
     float standardMoveSpeedY = 5;
     [SerializeField] float fallingMoveSpeedY = 30;
     [SerializeField] float fastMoveSpeedY = 20;
-    float directionFlippingMoveSpeed = 10;
+    float directionFlippingMoveSpeed = 5;
 
 
     Vector3 zOffset = new Vector3(0, 0, -10);
@@ -61,11 +61,11 @@ public class cameraMovement : MonoBehaviour
         screenWidth = zoom * 3.6f;
         screenHeight = zoom * 2;
 
-        lookAheadOffsetX = (float)screenWidth / 6; //player will always have about 60% of the screen in front of them
+        lookAheadOffsetX = (float)screenWidth / 7; //player will always have about 60% of the screen in front of them
 
         SetNewCameraBaseline();
 
-        deadzoneRatio = screenWidth / 12;
+        deadzoneRatio = screenWidth / 11;
         deadzoneRight = deadzoneRatio;
         deadzoneLeft = -deadzoneRatio;
 

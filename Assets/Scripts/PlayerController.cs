@@ -361,6 +361,8 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Enemies"))
         {
+            isHoldingObject = false;
+            ClearHeldObjectsFromChildren();
             transform.position = lastCheckpointPosition;
             camera.SnapToTarget();
             // Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
@@ -384,6 +386,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemies"))
         {
+            isHoldingObject = false;
+            ClearHeldObjectsFromChildren();
             transform.position = lastCheckpointPosition;
             camera.SnapToTarget();
         }

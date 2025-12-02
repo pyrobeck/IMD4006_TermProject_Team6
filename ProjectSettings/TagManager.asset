@@ -12,6 +12,7 @@ TagManager:
   - ThrownObject
   - Baseline
   - MovingPlatform
+  - Door
   layers:
   - Default
   - TransparentFX
