@@ -13,6 +13,7 @@ public class cameraMovement : MonoBehaviour
     float standardMoveSpeedY = 5;
     [SerializeField] float fallingMoveSpeedY = 30;
     [SerializeField] float fastMoveSpeedY = 20;
+    [SerializeField] bool noLookahead = false;
     float directionFlippingMoveSpeed = 5;
 
 
@@ -112,6 +113,10 @@ public class cameraMovement : MonoBehaviour
         if (!(target.position.x < deadzoneRight && target.position.x > deadzoneLeft))
         {
             targetX = new Vector3(target.position.x, 0, 0) + lookAheadOffset;
+            if (noLookahead == true)
+            {
+                targetX.x -= lookAheadOffset.x;
+            }
             cameraTargetXRecord = targetX; //keep a record of the last horizontal target while the player was outside the deadzone
         }
         else
