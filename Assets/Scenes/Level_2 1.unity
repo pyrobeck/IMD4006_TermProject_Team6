@@ -23077,7 +23077,7 @@ Transform:
   m_GameObject: {fileID: 419141051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 75.2, y: 18.7, z: 0}
+  m_LocalPosition: {x: -66.32, y: -8.84, z: 0}
   m_LocalScale: {x: 0.3329301, y: 0.3562352, z: 0.3329301}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23106,20 +23106,10 @@ MonoBehaviour:
   rigidBody: {fileID: 0}
   collidor: {fileID: 0}
   animator: {fileID: 419141058}
-  audioSource: {fileID: 419141059}
-  audioSourceMusic: {fileID: 2039038733}
-  audioSourceBass: {fileID: 1794673629}
-  audioSourceDrums: {fileID: 1849610937}
-  music: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
-  bass: {fileID: 8300000, guid: d36c0e2b8e4b1084eb8331ac06dc3098, type: 3}
-  drums: {fileID: 8300000, guid: 49c14ba59a83dce4ea98899b2e423b56, type: 3}
+  sfxSource: {fileID: 0}
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
   volume: 1
-  minX: -1
-  maxX: 1190
-  minVolume: 0
-  maxVolume: 0.8
   groundLayer:
     serializedVersion: 2
     m_Bits: 320
@@ -87615,7 +87605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
       propertyPath: bpm
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -94174,6 +94164,10 @@ PrefabInstance:
     - target: {fileID: 3195322087018415868, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
       propertyPath: m_Name
       value: RisingStar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpm
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -124857,7 +124851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
       propertyPath: bpm
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -126408,7 +126402,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
       propertyPath: bpm
-      value: 12
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320591976256283819, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
