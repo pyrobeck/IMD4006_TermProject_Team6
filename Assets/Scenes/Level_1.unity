@@ -22537,7 +22537,7 @@ MonoBehaviour:
   rigidBody: {fileID: 0}
   collidor: {fileID: 0}
   animator: {fileID: 419141058}
-  sfxSource: {fileID: 0}
+  sfxSource: {fileID: 419141059}
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
   volume: 1
@@ -93907,6 +93907,7 @@ GameObject:
   - component: {fileID: 1768506267}
   - component: {fileID: 1768506268}
   - component: {fileID: 1768506270}
+  - component: {fileID: 1768506271}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -94072,6 +94073,20 @@ MonoBehaviour:
   maxX: 350
   minVolume: 0
   maxVolume: 0.8
+  tapBPM: {fileID: 1768506271}
+--- !u!114 &1768506271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768506265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad0dc12f803e5548b8abe6daeb85f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  averageBPM: 0
 --- !u!1 &1771076333
 GameObject:
   m_ObjectHideFlags: 0
