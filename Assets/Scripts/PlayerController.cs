@@ -121,12 +121,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
+
         if (IsGrounded() == false)
         {
             JumpMidairPhysics();
         }
-
+        Move();
     }
 
 
@@ -253,14 +253,13 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-
+        walkState = WalkState.Rolling;
         Roll();
     }
 
     private void Roll()
     {
         isRolling = true;
-        walkState = WalkState.Rolling;
         rigidBody.linearVelocityX = rollSpeed * directionFacing.x;
     }
 
@@ -306,7 +305,10 @@ public class PlayerController : MonoBehaviour
 
         if (IsWallSliding() == true)
         {
-            rigidBody.gravityScale = wallSlidingGravity;
+            if (rigidBody.linearVelocityY < -5)
+            {
+                rigidBody.linearVelocityY = -5;
+            }
             return;
         }
 
@@ -380,7 +382,7 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
-        Vector2 size = new Vector2(collidor.bounds.size.x * 0.8f, collidor.bounds.size.y);
+        Vector2 size = new Vector2(collidor.bounds.size.x * 0.1f, collidor.bounds.size.y);
         float angle = 0;
         Vector2 direction = Vector2.down;
         float distance = 0.5f;
