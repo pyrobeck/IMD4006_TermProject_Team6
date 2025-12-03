@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float fallingGravity = 7f;
     [SerializeField] private float wallSlidingGravity = 1.5f;
     private bool isJumping = false;
+    private bool hasLeftGround = false;
     private bool isWallJumping = false;
     private bool isRolling = false;
     private bool isDancing = false;
@@ -45,6 +46,9 @@ public class PlayerController : MonoBehaviour
     private float maxWallJumpTime = 0.5f;
     private float rollDuration = 0.6F;
     private float rollTimer = 0;
+    private float idleAnimationTimer;
+    private float timeUntilIdleAnimation = 5f;
+
 
 
 
@@ -87,6 +91,9 @@ public class PlayerController : MonoBehaviour
 
     SpriteRenderer temp;
 
+
+    private WalkState lastState;
+
     private void Start()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
@@ -95,35 +102,34 @@ public class PlayerController : MonoBehaviour
         sfxSource = GetComponent<AudioSource>();
         Vector3 lastCheckpointPosition = new Vector3(1f, 1f, 1f); // Default position
         coyoteTimeCounter = coyoteTime;
+        idleAnimationTimer = timeUntilIdleAnimation;
         spriteScale = this.transform.localScale;
         spriteScaleFlipped = new Vector3(-spriteScale.x, spriteScale.y, spriteScale.z);
 
         temp = this.GetComponent<SpriteRenderer>();
-
+        lastState = walkState;
     }
 
     private void Update()
     {
         UpdateTimers();
+        SetWalkStateAfterJumping();
+        IdleAnimations();
+        UpdateAnimationState();
     }
+
 
     private void FixedUpdate()
     {
-        Move();
+
         if (IsGrounded() == false)
         {
             JumpMidairPhysics();
         }
-
+        Move();
     }
 
-    private void LateUpdate()
-    {
-        // if (currentPlatform != null)
-        // {
-        //     transform.position += currentPlatform.DeltaPosition;
-        // }
-    }
+
 
     public void onMoveInput(float horizontal)
     {
@@ -131,42 +137,52 @@ public class PlayerController : MonoBehaviour
 
         SetDirection();
         SetWalkState();
-
+        if (isDancing)
+        {
+            walkState = WalkState.Moonwalk;
+        }
     }
 
     public void OnDanceInput(Vector2 stickInput)
     {
-        //Debug.Log(stickInput);
+
         isDancing = true;
+
+        if (walkState == WalkState.Running || walkState == WalkState.Walking || walkState == WalkState.Moonwalk)
+        {
+            walkState = WalkState.Moonwalk;
+            return;
+        }
+
         if (stickInput.x >= -0.5 && stickInput.x <= 0.5 && stickInput.y <= -0.5) //down
         {
             walkState = WalkState.Dance1;
-            animator.SetInteger("state", 6);
         }
         if (stickInput.x <= -0.5 && stickInput.y >= -0.5 && stickInput.y <= 0.5)//left
         {
             walkState = WalkState.Dance2;
-            animator.SetInteger("state", 7);
         }
         if (stickInput.x >= -0.5 && stickInput.x <= 0.5 && stickInput.y >= 0.5) //up
         {
             walkState = WalkState.Dance3;
-            animator.SetInteger("state", 8);
         }
         if (stickInput.x >= 0.5 && stickInput.y <= 0.5 && stickInput.y >= -0.5) //right
         {
             walkState = WalkState.Dance4;
-            animator.SetInteger("state", 9);
         }
-
-        //Debug.Log(walkState);
     }
 
     public void OnDanceCancelled()
     {
         isDancing = false;
-        walkState = WalkState.Idle;
-        animator.SetInteger("state", 0);
+        if (walkState == WalkState.Moonwalk)
+        {
+            SetWalkState();
+        }
+        else
+        {
+            walkState = WalkState.Idle;
+        }
     }
     public void onJumpInput()
     {
@@ -252,7 +268,7 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-
+        walkState = WalkState.Rolling;
         Roll();
     }
 
@@ -260,8 +276,6 @@ public class PlayerController : MonoBehaviour
     {
         isRolling = true;
         rigidBody.linearVelocityX = rollSpeed * directionFacing.x;
-        animator.SetInteger("state", 4);
-        walkState = WalkState.Rolling;
     }
 
     private void Jump()
@@ -273,7 +287,7 @@ public class PlayerController : MonoBehaviour
         isJumping = true;
         rigidBody.linearVelocityY = jumpHeight;
         coyoteTimeCounter = -1;
-        animator.SetInteger("state", 3);
+        walkState = WalkState.Jumping;
         PlayJumpSound();
     }
 
@@ -306,7 +320,10 @@ public class PlayerController : MonoBehaviour
 
         if (IsWallSliding() == true)
         {
-            rigidBody.gravityScale = wallSlidingGravity;
+            if (rigidBody.linearVelocityY < -5)
+            {
+                rigidBody.linearVelocityY = -5;
+            }
             return;
         }
 
@@ -380,7 +397,7 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
-        Vector2 size = new Vector2(collidor.bounds.size.x * 0.8f, collidor.bounds.size.y);
+        Vector2 size = new Vector2(collidor.bounds.size.x * 0.1f, collidor.bounds.size.y);
         float angle = 0;
         Vector2 direction = Vector2.down;
         float distance = 0.5f;
@@ -396,7 +413,6 @@ public class PlayerController : MonoBehaviour
         {
             camera.SetNewCameraBaseline();
         }
-
         return true;
     }
 
@@ -412,7 +428,6 @@ public class PlayerController : MonoBehaviour
 
         if (wallCheck)
         {
-            walkState = WalkState.WallSliding;
             return true;
         }
         return false;
@@ -422,6 +437,7 @@ public class PlayerController : MonoBehaviour
     {
         if (IsNextToWall() && IsGrounded() == false)
         {
+            walkState = WalkState.WallSliding;
             return true;
         }
         else
@@ -434,7 +450,6 @@ public class PlayerController : MonoBehaviour
     {
         //avoiding the weird movement when the player is rolling and moving
         if (isRolling) return;
-        if (isDancing) return;
         if (wallJumpTimer > 0 && IsInputDirectionSameAsDirectionFacing() == false)
         {
             return;
@@ -506,23 +521,128 @@ public class PlayerController : MonoBehaviour
 
     private void SetWalkState()
     {
+        if (IsGrounded() == false)
+        {
+            return;
+        }
         if (horizontal == 0)
         {
             walkState = WalkState.Idle;
-            animator.SetInteger("state", 0);
             return;
         }
         if (horizontal < 0.8 && horizontal > -0.8)
         {
             walkState = WalkState.Walking;
-            animator.SetInteger("state", 1);
             return;
         }
         if (horizontal >= 1 || horizontal <= -1) //help I don't know the absolute function in C#
         {
             walkState = WalkState.Running;
-            animator.SetInteger("state", 2);
             return;
+        }
+    }
+
+    private void SetWalkStateAfterJumping()
+    {
+        if (walkState != WalkState.Jumping)
+        {
+            return;
+        }
+
+        if (hasLeftGround == false)
+        {
+            if (IsGrounded() == false)
+            {
+                hasLeftGround = true;
+            }
+        }
+
+        if (hasLeftGround == true)
+        {
+            if (IsGrounded() == true)
+            {
+                SetWalkState();
+                hasLeftGround = false;
+            }
+        }
+    }
+
+    private void IdleAnimations()
+    {
+        if (horizontal == 0 && rigidBody.linearVelocity == Vector2.zero && IsGrounded() && isDancing == false && isJumping == false)
+        {
+            walkState = WalkState.Idle;
+        }
+
+        if (idleAnimationTimer <= 0)
+        {
+            int randomIdleAnimation = Random.Range(0, 2);
+            if (randomIdleAnimation == 1) // originally picked between the 2 or none but idle2 is haunted......
+            {
+                walkState = WalkState.Idle1;
+            }
+            else
+            {
+                walkState = WalkState.Idle;
+                ResetIdleAnimationTimer();
+            }
+
+
+
+        }
+
+
+    }
+    private void UpdateAnimationState()
+    {
+        if (lastState != walkState)
+        {
+            switch (walkState)
+            {
+                case WalkState.Idle:
+                    animator.SetInteger("state", 0);
+                    break;
+                case WalkState.Walking:
+                    animator.SetInteger("state", 1);
+                    break;
+                case WalkState.Running:
+                    animator.SetInteger("state", 2);
+                    break;
+                case WalkState.Jumping:
+                    animator.SetInteger("state", 3);
+                    break;
+                case WalkState.Rolling:
+                    animator.SetInteger("state", 4);
+                    break;
+                case WalkState.WallSliding:
+                    animator.SetInteger("state", 0);
+                    break;
+                case WalkState.Dance1:
+                    animator.SetInteger("state", 6);
+                    break;
+                case WalkState.Dance2:
+                    animator.SetInteger("state", 7);
+                    break;
+                case WalkState.Dance3:
+                    animator.SetInteger("state", 8);
+                    break;
+                case WalkState.Dance4:
+                    animator.SetInteger("state", 9);
+                    break;
+                case WalkState.Idle1:
+                    animator.SetInteger("state", 10);
+                    break;
+                case WalkState.Idle2:
+                    animator.SetInteger("state", 11);
+                    break;
+                case WalkState.Moonwalk:
+                    animator.SetInteger("state", 12);
+                    break;
+                default:
+                    animator.SetInteger("state", 0);
+                    break;
+            }
+            lastState = walkState;
         }
     }
 
@@ -534,6 +654,23 @@ public class PlayerController : MonoBehaviour
         WallJumpTimer();
         ThrowCooldownTimer();
         RollTimer();
+        IdleAnimationTimer();
+    }
+
+    private void ResetIdleAnimationTimer()
+    {
+        idleAnimationTimer = timeUntilIdleAnimation;
+    }
+    private void IdleAnimationTimer()
+    {
+        if (walkState == WalkState.Idle)
+        {
+            idleAnimationTimer -= Time.deltaTime;
+        }
+        else
+        {
+            idleAnimationTimer = timeUntilIdleAnimation;
+        }
     }
 
     private void coyoteTimer()
@@ -603,8 +740,7 @@ public class PlayerController : MonoBehaviour
         if (rollTimer <= 0)
         {
             isRolling = false;
-            walkState = WalkState.Idle;
-            animator.SetInteger("state", 0);
+            SetWalkState();
         }
     }
     private void ResetWallJumpTimer()
@@ -612,15 +748,16 @@ public class PlayerController : MonoBehaviour
         wallJumpTimer = maxWallJumpTime;
     }
 
-    public void PlayJumpSound() { 
-        sfxSource.PlayOneShot(jumpAudio, 0.8f); 
-    } 
-    
-    public void PlayRollSound() { 
-        sfxSource.PlayOneShot(rollAudio, 0.8f); 
+    public void PlayJumpSound()
+    {
+        sfxSource.PlayOneShot(jumpAudio, 0.8f);
     }
 
-    /////////////////////Collsion with enemies and check point //////////////////////////////////
+    public void PlayRollSound()
+    {
+        sfxSource.PlayOneShot(rollAudio, 0.8f);
+    }
+
 
     //Get functions
     public bool GetIsHoldingObject()
