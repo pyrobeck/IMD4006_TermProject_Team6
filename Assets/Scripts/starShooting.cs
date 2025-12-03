@@ -32,6 +32,10 @@ public class starShooting : MonoBehaviour
             //time between bullets
             if (timer > bpm)
             {
+                if (starSound != null)
+                {
+                    starSound.Play();
+                }
                 timer = 0;
 
                 shoot();
@@ -42,10 +46,10 @@ public class starShooting : MonoBehaviour
     }
 
     void shoot()
-    {
+    { 
+
         Instantiate(note, notePos.position, Quaternion.identity);
-         if (starSound != null)
-            starSound.Play();
-    
+
+
     }
 }

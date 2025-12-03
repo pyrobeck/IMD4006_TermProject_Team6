@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1754754322997809416}
   - component: {fileID: 3495548251865977157}
   - component: {fileID: 5486162277195628329}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Snail
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ MonoBehaviour:
   snailSound: {fileID: 5486162277195628329}
   volume: 0.05
   raycastDistance: 1
-  enemyDistance: 1
+  enemyDistance: 0.1
   wallDistance: 0.25
   bpm: 2
 --- !u!50 &1804037562755542149
