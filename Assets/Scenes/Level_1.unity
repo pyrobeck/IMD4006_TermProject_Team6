@@ -79480,6 +79480,7 @@ GameObject:
   - component: {fileID: 1507943535}
   - component: {fileID: 1507943537}
   - component: {fileID: 1507943536}
+  - component: {fileID: 1507943538}
   m_Layer: 5
   m_Name: Click your right button to continue!
   m_TagString: Untagged
@@ -79528,8 +79529,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Click your right button to continue!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -79605,6 +79606,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507943534}
   m_CullTransparentMesh: 1
+--- !u!114 &1507943538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507943534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100d648cca9fe7742a170710e7561e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1507943536}
 --- !u!1 &1512126493
 GameObject:
   m_ObjectHideFlags: 0
