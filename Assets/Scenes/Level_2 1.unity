@@ -4708,7 +4708,7 @@ GameObject:
   - component: {fileID: 96713242}
   - component: {fileID: 96713243}
   - component: {fileID: 96713244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cyan Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
