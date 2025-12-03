@@ -658,24 +658,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6.5
+  rollSpeed: 10
   jumpHeight: 20
   wallJumpDistance: 5
   jumpUpwardsGravity: 5
   fallingGravity: 7
   wallSlidingGravity: 1.5
   coyoteTime: 0.175
-  rollSpeed: 10
-  rollDuration: 0.6
   rigidBody: {fileID: 0}
   collidor: {fileID: 0}
   animator: {fileID: 419141058}
-  audioSource: {fileID: 419141059}
-  audioSourceMusic: {fileID: 419141062}
-  audioSourceBass: {fileID: 419141061}
-  audioSourceDrums: {fileID: 419141060}
-  music: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
-  bass: {fileID: 8300000, guid: d36c0e2b8e4b1084eb8331ac06dc3098, type: 3}
-  drums: {fileID: 8300000, guid: 49c14ba59a83dce4ea98899b2e423b56, type: 3}
+  sfxSource: {fileID: 0}
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
   volume: 1
@@ -1730,8 +1723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152bf7057b2a26640abc26a7c508e80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  activeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  inactiveSprite: {fileID: 0}
+  activeSprite: {fileID: 0}
 --- !u!1 &772200995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,6 +1876,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 419141055}
+  targetScript: {fileID: 0}
+  moveSpeedY: 5
+  fallingMoveSpeedY: 30
+  fastMoveSpeedY: 20
   zoom: 7
 --- !u!1 &865623504
 GameObject:
@@ -2431,6 +2428,8 @@ GameObject:
   - component: {fileID: 1566968376}
   - component: {fileID: 1566968375}
   - component: {fileID: 1566968377}
+  - component: {fileID: 1566968379}
+  - component: {fileID: 1566968378}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Ground
@@ -2554,6 +2553,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1566968378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566968374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1caa9e52e41c73d459fbecede63e3d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1566968379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566968374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1add4c0db50f05e44a65eaf91fd30fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoNotes:
+  - {fileID: 0}
 --- !u!1 &1573572509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2585,8 +2610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152bf7057b2a26640abc26a7c508e80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  activeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  inactiveSprite: {fileID: 0}
+  activeSprite: {fileID: 0}
 --- !u!61 &1573572511
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2837,8 +2862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152bf7057b2a26640abc26a7c508e80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  activeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  inactiveSprite: {fileID: 0}
+  activeSprite: {fileID: 0}
 --- !u!61 &1633674172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3188,6 +3213,12 @@ MonoBehaviour:
   pickupCancelEvent:
     m_PersistentCalls:
       m_Calls: []
+  danceInputEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  danceCancelEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1768506269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3453,6 +3484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e678f17ccb78bb7489aa2d7d563bd9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeSpeed: 5
+  bpmColorFactor: 0.01
 --- !u!1 &1842102552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,8 +3633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152bf7057b2a26640abc26a7c508e80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  activeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  inactiveSprite: {fileID: 0}
+  activeSprite: {fileID: 0}
 --- !u!1 &1894903161
 GameObject:
   m_ObjectHideFlags: 0
