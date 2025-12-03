@@ -3,11 +3,13 @@ using System.Collections.Generic;
 
 public class DigitalPianoController : MonoBehaviour
 {
+    // 🔔 Event for visualizers (like NoteVisualSpawner)
+    public static event System.Action<int> NotePlayed;
+
     [Header("Audio Clips (24 Notes)")]
     public AudioClip[] pianoNotes; // Size 24: 14 white + 10 black
 
     private AudioSource audioSource;
-
     private Dictionary<KeyCode, int> noteMap;
 
     void Awake()
@@ -65,5 +67,8 @@ public class DigitalPianoController : MonoBehaviour
         AudioClip clip = pianoNotes[index];
         if (clip)
             audioSource.PlayOneShot(clip);
+
+        // 📣 Tell listeners a note was played!
+        NotePlayed?.Invoke(index);
     }
 }

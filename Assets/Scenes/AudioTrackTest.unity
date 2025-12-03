@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &86994715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 86994716}
+  m_Layer: 3
+  m_Name: NoteSpawnerLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &86994716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86994715}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.83, y: -1.28, z: 10}
+  m_LocalScale: {x: 0.20144461, y: 0.38834494, z: 0.38834494}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 772200998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &131025552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1847,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 7.623495, z: -10}
   m_LocalScale: {x: 1.9278, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 86994716}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &772200999
@@ -2426,10 +2458,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566968376}
-  - component: {fileID: 1566968375}
-  - component: {fileID: 1566968377}
   - component: {fileID: 1566968379}
   - component: {fileID: 1566968378}
+  - component: {fileID: 1566968375}
+  - component: {fileID: 1566968377}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Ground
@@ -2565,6 +2597,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1caa9e52e41c73d459fbecede63e3d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteSpritePrefab: {fileID: 668989745089252787, guid: db282733ffa9a2e48a6ce5b3fabb6c3a, type: 3}
+  spawnArea: {fileID: 86994716}
+  riseSpeed: 1.5
+  fadeSpeed: 1.5
+  piano: {fileID: 1566968379}
 --- !u!114 &1566968379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,7 +2615,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoNotes:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: ddbd421a75110fb4187977b441b8086f, type: 3}
+  - {fileID: 8300000, guid: 081afe5a5c4313f479178907d56748dd, type: 3}
+  - {fileID: 8300000, guid: 582bddfce13c05a49b70f29b3c168773, type: 3}
+  - {fileID: 8300000, guid: f0e7018e1be7c8740a995bd610c4e0a4, type: 3}
+  - {fileID: 8300000, guid: a62ecb7e395451a46a103b315d7df289, type: 3}
+  - {fileID: 8300000, guid: f53853cadaf017c4aa6056acb9f7d312, type: 3}
+  - {fileID: 8300000, guid: bbcdcdc3938f17441944913ae00d948c, type: 3}
+  - {fileID: 8300000, guid: cf9bb744b5ee5574c81e4564b2dce920, type: 3}
+  - {fileID: 8300000, guid: 3151e4bd613bbd648ba9989954372cba, type: 3}
+  - {fileID: 8300000, guid: 1e0377042b376544c9dba1918bdc1da3, type: 3}
+  - {fileID: 8300000, guid: 757041c7dc96483479fadbe2845d54ac, type: 3}
+  - {fileID: 8300000, guid: 3cc20bb26057f954f99c435e9c7e015e, type: 3}
+  - {fileID: 8300000, guid: 6d175a38432bfb24bac1d0c000db70e2, type: 3}
+  - {fileID: 8300000, guid: c31bf657a8b34674d80ec21e2ac11017, type: 3}
+  - {fileID: 8300000, guid: fd6c8e5578a662a4fb4105a125ec46c2, type: 3}
+  - {fileID: 8300000, guid: ffe3ec6fb64677849b2c6bcfeee6fd78, type: 3}
+  - {fileID: 8300000, guid: e2bf2f3f9854d164ca6b9482e3d826c7, type: 3}
+  - {fileID: 8300000, guid: 72b2832d0c5bdb6469c2cb6d39edc282, type: 3}
+  - {fileID: 8300000, guid: 03c2398c9ce4d70469199b3a3d9859e1, type: 3}
+  - {fileID: 8300000, guid: 1b12d1821afdd89438e04493b0b1c383, type: 3}
+  - {fileID: 8300000, guid: f8ef3e58e77fae94da6bfd210fdc35a3, type: 3}
+  - {fileID: 8300000, guid: 69dbc290dd231d348a8439c528f80435, type: 3}
+  - {fileID: 8300000, guid: 67d217c501a3ab648a408ae64b195602, type: 3}
+  - {fileID: 8300000, guid: e373540fe0b68854f85578f123b726a3, type: 3}
 --- !u!1 &1573572509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,7 +2650,6 @@ GameObject:
   - component: {fileID: 1573572513}
   - component: {fileID: 1573572512}
   - component: {fileID: 1573572511}
-  - component: {fileID: 1573572510}
   m_Layer: 8
   m_Name: Start
   m_TagString: Respawn
@@ -2598,20 +2657,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1573572510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573572509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 152bf7057b2a26640abc26a7c508e80b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inactiveSprite: {fileID: 0}
-  activeSprite: {fileID: 0}
 --- !u!61 &1573572511
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+
+
 public class NoteVisualSpawner : MonoBehaviour
 {
     [Header("Visual Settings")]
@@ -8,6 +10,8 @@ public class NoteVisualSpawner : MonoBehaviour
     public Transform spawnArea; // place above keyboard visually
     public float riseSpeed = 1.5f;
     public float fadeSpeed = 1.5f;
+    public static event System.Action<int> NotePlayed;
+
 
     [Header("Note Data Link")]
     public DigitalPianoController piano; // drag your piano script object
