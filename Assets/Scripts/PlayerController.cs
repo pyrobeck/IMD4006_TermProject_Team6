@@ -137,13 +137,23 @@ public class PlayerController : MonoBehaviour
 
         SetDirection();
         SetWalkState();
-
+        if (isDancing)
+        {
+            walkState = WalkState.Moonwalk;
+        }
     }
 
     public void OnDanceInput(Vector2 stickInput)
     {
-        //Debug.Log(stickInput);
+
         isDancing = true;
+
+        if (walkState == WalkState.Running || walkState == WalkState.Walking || walkState == WalkState.Moonwalk)
+        {
+            walkState = WalkState.Moonwalk;
+            return;
+        }
+
         if (stickInput.x >= -0.5 && stickInput.x <= 0.5 && stickInput.y <= -0.5) //down
         {
             walkState = WalkState.Dance1;
@@ -160,14 +170,19 @@ public class PlayerController : MonoBehaviour
         {
             walkState = WalkState.Dance4;
         }
-
-        //Debug.Log(walkState);
     }
 
     public void OnDanceCancelled()
     {
         isDancing = false;
-        walkState = WalkState.Idle;
+        if (walkState == WalkState.Moonwalk)
+        {
+            SetWalkState();
+        }
+        else
+        {
+            walkState = WalkState.Idle;
+        }
     }
     public void onJumpInput()
     {
@@ -435,7 +450,6 @@ public class PlayerController : MonoBehaviour
     {
         //avoiding the weird movement when the player is rolling and moving
         if (isRolling) return;
-        if (isDancing) return;
         if (wallJumpTimer > 0 && IsInputDirectionSameAsDirectionFacing() == false)
         {
             return;
@@ -583,7 +597,6 @@ public class PlayerController : MonoBehaviour
     {
         if (lastState != walkState)
         {
-            Debug.Log(walkState);
             switch (walkState)
             {
                 case WalkState.Idle:
