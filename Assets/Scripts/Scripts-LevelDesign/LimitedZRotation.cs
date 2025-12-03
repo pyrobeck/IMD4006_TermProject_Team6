@@ -3,38 +3,40 @@ using UnityEngine;
 public class AutoLimitedZRotation : MonoBehaviour
 {
     [Header("Rotation Settings")]
-    public float baseRotation = -180f;
     public float minRotation = -230f;
     public float maxRotation = -130f;
-    public float rotationSpeed = 1f; // how fast it swings
 
-    private float rotationStart;
-    private int direction;
+    [Header("Speed Influence")]
+    public float baseSpeed = 5f;
+    public float speedMultiplier = 2f;
+    public TapBPM tapBPM;
+
+    [Header("Direction Control")]
+    public bool reverseDirection = false; // ← Set in Inspector
+
     private float range;
+    private float rotationProgress = 0f;
 
     void Start()
     {
-        // Calculate total range
         range = maxRotation - minRotation;
-
-        if (rotationSpeed < 0)
-        {
-            rotationStart = maxRotation;
-            direction = -1;
-        }
-        else
-        {
-            rotationStart = minRotation;
-            direction = 1;
-        }
     }
 
     void Update()
     {
-        // PingPong value oscillates between 0 and range
-        float angle = rotationStart + (direction * Mathf.PingPong(Time.time * rotationSpeed, range));
+        float bpm = tapBPM != null ? tapBPM.GetBPM() : 132f;
 
-        // Apply to Z rotation
+        float dynamicSpeed = baseSpeed + ((bpm - 132f) * speedMultiplier);
+        dynamicSpeed = Mathf.Max(0.1f, dynamicSpeed);
+
+        rotationProgress += dynamicSpeed * Time.deltaTime * 2f;
+
+        float t = Mathf.PingPong(rotationProgress, range);
+
+        float angle = reverseDirection
+            ? maxRotation - t    // reverse motion direction
+            : minRotation + t;   // normal motion
+
         transform.localEulerAngles = new Vector3(0f, 0f, angle);
     }
 }
