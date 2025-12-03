@@ -13465,10 +13465,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f761ed7fa8650984aae27fe973eab38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseRotation: -90
   minRotation: -200
   maxRotation: -100
-  rotationSpeed: 5
+  baseSpeed: 5
+  speedMultiplier: 2
+  tapBPM: {fileID: 0}
+  reverseDirection: 0
 --- !u!212 &273665721
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78130,10 +78132,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f761ed7fa8650984aae27fe973eab38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseRotation: -180
   minRotation: -230
   maxRotation: -130
-  rotationSpeed: 5
+  baseSpeed: 5
+  speedMultiplier: 2
+  tapBPM: {fileID: 0}
+  reverseDirection: 0
 --- !u!1 &1324346100
 GameObject:
   m_ObjectHideFlags: 0
@@ -94217,10 +94221,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f761ed7fa8650984aae27fe973eab38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseRotation: -180
   minRotation: -130
   maxRotation: -230
-  rotationSpeed: -5
+  baseSpeed: 5
+  speedMultiplier: 2
+  tapBPM: {fileID: 0}
+  reverseDirection: 0
 --- !u!212 &1595718441
 SpriteRenderer:
   m_ObjectHideFlags: 0
