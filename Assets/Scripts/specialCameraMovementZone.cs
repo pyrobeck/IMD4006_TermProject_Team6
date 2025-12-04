@@ -6,6 +6,7 @@ public class specialCameraMovementZone : MonoBehaviour
     [SerializeField] private Vector2 additionalCameraMovement;
     [SerializeField] private bool lockCamera;
     [SerializeField] private cameraMovement camera;
+    [SerializeField] private int bossSection;
 
 
 
@@ -36,6 +37,18 @@ public class specialCameraMovementZone : MonoBehaviour
             {
                 camera.SpecialCameraZoneExit();
             }
+        }
+    }
+
+    public void LeaveForBoss()
+    {
+        if (bossSection <= 1)
+        {
+            transform.position = transform.position - Vector3.down * 99999f;
+        }
+        else
+        {
+            bossSection--;
         }
     }
 }

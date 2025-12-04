@@ -812,5 +812,12 @@ public class PlayerController : MonoBehaviour
     {
         return rigidBody.linearVelocityY;
     }
+
+    public void RemoveHeldObjects()
+    {
+        isHoldingObject = false;
+        isThrowingObject = false;
+        ClearHeldObjectsFromChildren();
+    }
 }
 
