@@ -8,7 +8,7 @@ using Vector3 = UnityEngine.Vector3;
 public class thrownRose : MonoBehaviour
 {
     const float THROW_SPEED = 1f;
-    [SerializeField] private Vector2 targetPosition;
+    [SerializeField] private Vector3 targetPosition;
     private Vector3 targetScale;
     private Vector3 startingScale;
     private GameObject[] roses;
@@ -30,12 +30,17 @@ public class thrownRose : MonoBehaviour
         maxThrownHeights = new float[roses.Length];
         startingPosition = new Vector2[roses.Length];
         progress = new float[roses.Length];
+
+        targetPosition.z += 1;
+
         ResetIsRoseBeingThrown();
         RandomizeStartingXPositions();
         ResetRosePositions();
 
         startingScale = roses[0].transform.localScale;
         targetScale = startingScale * 0.3f;
+
+
     }
 
     // Update is called once per frame
@@ -92,7 +97,7 @@ public class thrownRose : MonoBehaviour
                 float parabola = 1.0f - 4.0f * (progress[i] - 0.5f) * (progress[i] - 0.5f);
 
                 // Travel in a straight line from our start position to the target.        
-                Vector2 nextPos = Vector2.Lerp(startingPosition[i], targetPosition, progress[i]);
+                Vector3 nextPos = Vector3.Lerp(startingPosition[i], targetPosition, progress[i]);
 
                 // Then add a vertical arc in excess of this.
                 nextPos.y += parabola * maxThrownHeights[i];
