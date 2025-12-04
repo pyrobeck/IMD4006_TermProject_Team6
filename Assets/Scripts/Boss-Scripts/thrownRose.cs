@@ -35,12 +35,14 @@ public class thrownRose : MonoBehaviour
         ResetRosePositions();
 
         startingScale = roses[0].transform.localScale;
+        targetScale = startingScale * 0.3f;
     }
 
     // Update is called once per frame
     void Update()
     {
         MoveRose();
+        ShrinkRoses();
     }
 
     private void GetChildren()
@@ -104,7 +106,17 @@ public class thrownRose : MonoBehaviour
     // parabola code from 
     // https://gamedev.stackexchange.com/a/183514
 
-
+    private void ShrinkRoses()
+    {
+        for (int i = 0; i < roses.Length; i++)
+        {
+            if (isRoseBeingThrown[i] == true)
+            {
+                Debug.Log(roses[i].transform.localScale);
+                roses[i].transform.localScale = Vector3.MoveTowards(roses[i].transform.localScale, targetScale, 1.5f * Time.deltaTime);
+            }
+        }
+    }
     private void ResetIsRoseBeingThrown()
     {
         for (int i = 0; i < isRoseBeingThrown.Length; i++)

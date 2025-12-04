@@ -24,6 +24,8 @@ public class BackgroundParallax : MonoBehaviour
         float relativePosition = cameraPosition.x * parallaxFactorX;
         float distanceBetweenCameraAndRelativePosition = cameraPosition.x - relativePosition;
 
+        float relativeHeight = cameraPosition.y * parallaxFactorY;
+
 
         Vector3 NewPosition = new Vector3(startPos.x + relativePosition, transform.position.y, transform.position.z);
 
