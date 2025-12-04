@@ -9084,8 +9084,8 @@ MonoBehaviour:
   maxHeight: 9
   beatOffset: 1
   isDoubleTime: 0
-  isStuck: 1
-  doorPistonIsStuckBehind: {fileID: 758325634}
+  isStuck: 0
+  doorPistonIsStuckBehind: {fileID: 0}
 --- !u!1 &188832826
 GameObject:
   m_ObjectHideFlags: 0
@@ -23172,7 +23172,7 @@ MonoBehaviour:
   sfxSource: {fileID: 0}
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
-  volume: 1
+  volume: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 320
@@ -23229,7 +23229,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2d90b8e7fee55874cb55c892669e3372, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -26367,7 +26367,7 @@ MonoBehaviour:
   bpmCounter: {fileID: 1768506270}
   maxHeight: 6
   beatOffset: 1
-  isDoubleTime: 1
+  isDoubleTime: 0
   isStuck: 0
   doorPistonIsStuckBehind: {fileID: 0}
 --- !u!1 &478648836
@@ -37564,8 +37564,8 @@ MonoBehaviour:
   maxHeight: 7
   beatOffset: 3
   isDoubleTime: 0
-  isStuck: 1
-  doorPistonIsStuckBehind: {fileID: 758325634}
+  isStuck: 0
+  doorPistonIsStuckBehind: {fileID: 0}
 --- !u!1 &665089872
 GameObject:
   m_ObjectHideFlags: 0
@@ -104116,6 +104116,7 @@ GameObject:
   - component: {fileID: 1768506269}
   - component: {fileID: 1768506270}
   - component: {fileID: 1768506272}
+  - component: {fileID: 1768506273}
   - component: {fileID: 1768506271}
   m_Layer: 0
   m_Name: GameManager
@@ -104347,6 +104348,30 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 69dbc290dd231d348a8439c528f80435, type: 3}
   - {fileID: 8300000, guid: 67d217c501a3ab648a408ae64b195602, type: 3}
   - {fileID: 8300000, guid: e373540fe0b68854f85578f123b726a3, type: 3}
+--- !u!114 &1768506273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768506265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a5bb4e06e81d643bba80ea1d1ae265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 419141055}
+  musicSource: {fileID: 2039038733}
+  bassSource: {fileID: 1794673629}
+  drumSource: {fileID: 1849610937}
+  musicClip: {fileID: 8300000, guid: 1dd69b1c6d7d2464db6d12f40fdee46c, type: 3}
+  bassClip: {fileID: 8300000, guid: 2d90b8e7fee55874cb55c892669e3372, type: 3}
+  drumsClip: {fileID: 8300000, guid: ea111f9c421d3d34bba577e470467c4d, type: 3}
+  minX: -50
+  maxX: 350
+  minVolume: 0
+  maxVolume: 0.8
+  tapBPM: {fileID: 798784645}
 --- !u!1 &1769194016
 GameObject:
   m_ObjectHideFlags: 0
@@ -105840,7 +105865,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2d90b8e7fee55874cb55c892669e3372, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -110122,7 +110147,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
+  m_Resource: {fileID: 8300000, guid: ea111f9c421d3d34bba577e470467c4d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -122070,7 +122095,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1dd69b1c6d7d2464db6d12f40fdee46c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -128132,7 +128157,7 @@ MonoBehaviour:
   bpmCounter: {fileID: 1768506270}
   maxHeight: 2
   beatOffset: 2
-  isDoubleTime: 1
+  isDoubleTime: 0
   isStuck: 0
   doorPistonIsStuckBehind: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

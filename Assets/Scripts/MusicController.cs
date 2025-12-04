@@ -61,7 +61,7 @@ public class MusicController : MonoBehaviour
 
         musicSource.loop = bassSource.loop = drumSource.loop = true;
 
-        musicSource.volume = 0.2f;
+        musicSource.volume = 5f;
         bassSource.volume = 0f;
         drumSource.volume = 0f;
 
