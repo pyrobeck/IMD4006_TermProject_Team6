@@ -361,6 +361,15 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Enemies"))
         {
+            if (walkState == WalkState.Rolling)
+            {
+                dieToRoll enemy = collision.gameObject.GetComponent<dieToRoll>();
+                if (enemy != null)
+                {
+                    enemy.Die();
+                    return;
+                }
+            }
             isHoldingObject = false;
             ClearHeldObjectsFromChildren();
             transform.position = lastCheckpointPosition;
@@ -386,10 +395,22 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemies"))
         {
+            if (walkState == WalkState.Rolling)
+            {
+                dieToRoll enemy = collision.gameObject.GetComponent<dieToRoll>();
+                if (enemy != null)
+                {
+                    enemy.Die();
+                    return;
+                }
+            }
+
             isHoldingObject = false;
             ClearHeldObjectsFromChildren();
             transform.position = lastCheckpointPosition;
             camera.SnapToTarget();
+
+
         }
 
     }
