@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.085
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -2884,6 +2888,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 4
@@ -5404,6 +5412,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
@@ -8935,6 +8947,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -9237,6 +9253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15811,6 +15831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &254328950
 GameObject:
   m_ObjectHideFlags: 0
@@ -16841,6 +16863,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -17531,6 +17557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!4 &286772483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1282692639165895471, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
@@ -17548,6 +17576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &287799620
 GameObject:
   m_ObjectHideFlags: 0
@@ -20562,6 +20592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &353580935
 GameObject:
   m_ObjectHideFlags: 0
@@ -21213,6 +21245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21414,6 +21450,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 5
@@ -23091,6 +23131,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 7
       objectReference: {fileID: 0}
@@ -23407,7 +23451,9 @@ MonoBehaviour:
   sfxSource: {fileID: 419141059}
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
+  deathAudio: {fileID: 0}
   volume: 1
+  deathImage: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 320
@@ -28248,6 +28294,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
       objectReference: {fileID: 0}
@@ -28593,6 +28643,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &504334985
 GameObject:
   m_ObjectHideFlags: 0
@@ -34638,6 +34690,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -37411,6 +37467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39431,6 +39491,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
       objectReference: {fileID: 0}
@@ -40633,6 +40697,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 5
@@ -44105,6 +44173,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -44186,6 +44258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &828364595
 GameObject:
   m_ObjectHideFlags: 0
@@ -46463,6 +46537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &873838435
 GameObject:
   m_ObjectHideFlags: 0
@@ -46568,6 +46644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &876304359
 GameObject:
   m_ObjectHideFlags: 0
@@ -48193,6 +48271,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.085
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -51911,6 +51993,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 4
       objectReference: {fileID: 0}
@@ -53237,6 +53323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &990287894
 GameObject:
   m_ObjectHideFlags: 0
@@ -53285,6 +53373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &993415313
 GameObject:
   m_ObjectHideFlags: 0
@@ -53523,6 +53613,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -55796,6 +55890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1037189592
 GameObject:
   m_ObjectHideFlags: 0
@@ -56077,6 +56173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1039288168
 GameObject:
   m_ObjectHideFlags: 0
@@ -57010,6 +57108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1052989713
 GameObject:
   m_ObjectHideFlags: 0
@@ -57088,6 +57188,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -60074,6 +60178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1107508798
 GameObject:
   m_ObjectHideFlags: 0
@@ -60127,6 +60233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1001 &1108805049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60139,6 +60247,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
@@ -64006,6 +64118,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -65516,6 +65632,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -66914,6 +67034,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 8
       objectReference: {fileID: 0}
@@ -68069,6 +68193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1253124931
 GameObject:
   m_ObjectHideFlags: 0
@@ -71711,6 +71837,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: floorDistance
       value: 0.1
       objectReference: {fileID: 0}
@@ -71936,6 +72066,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -73462,6 +73596,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1335361218
 GameObject:
   m_ObjectHideFlags: 0
@@ -73994,6 +74130,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -74421,6 +74561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74780,6 +74924,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
@@ -75582,6 +75730,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -77114,6 +77266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1393236613
 GameObject:
   m_ObjectHideFlags: 0
@@ -77367,6 +77521,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4967084833417504541, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -78112,6 +78270,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 5
@@ -80124,6 +80286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1456527111
 GameObject:
   m_ObjectHideFlags: 0
@@ -80795,6 +80959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1475281777
 GameObject:
   m_ObjectHideFlags: 0
@@ -86201,6 +86367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1582777651
 GameObject:
   m_ObjectHideFlags: 0
@@ -86443,6 +86611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1587201678
 GameObject:
   m_ObjectHideFlags: 0
@@ -88860,6 +89030,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1622279681
 GameObject:
   m_ObjectHideFlags: 0
@@ -90735,6 +90907,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -91472,6 +91648,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 4
@@ -94082,6 +94262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1695298595
 GameObject:
   m_ObjectHideFlags: 0
@@ -94398,6 +94580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1702031759
 GameObject:
   m_ObjectHideFlags: 0
@@ -94625,6 +94809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1708382665
 GameObject:
   m_ObjectHideFlags: 0
@@ -96185,6 +96371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1742221747
 GameObject:
   m_ObjectHideFlags: 0
@@ -96321,6 +96509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1746610949
 GameObject:
   m_ObjectHideFlags: 0
@@ -97035,6 +97225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1757686966
 GameObject:
   m_ObjectHideFlags: 0
@@ -97412,6 +97604,7 @@ GameObject:
   - component: {fileID: 1768506273}
   - component: {fileID: 1768506272}
   - component: {fileID: 1768506271}
+  - component: {fileID: 1768506274}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -97619,6 +97812,7 @@ MonoBehaviour:
   spawnArea: {fileID: 1856712364}
   riseSpeed: 1.5
   fadeSpeed: 1.5
+  spawnRadius: 3
   piano: {fileID: 1768506273}
 --- !u!114 &1768506273
 MonoBehaviour:
@@ -97657,6 +97851,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 69dbc290dd231d348a8439c528f80435, type: 3}
   - {fileID: 8300000, guid: 67d217c501a3ab648a408ae64b195602, type: 3}
   - {fileID: 8300000, guid: e373540fe0b68854f85578f123b726a3, type: 3}
+--- !u!114 &1768506274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768506265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cb77e9f9fef6f4b92274b0406bed30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bpm: 0
 --- !u!1 &1771076333
 GameObject:
   m_ObjectHideFlags: 0
@@ -101948,6 +102155,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -102567,6 +102778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1853916906
 GameObject:
   m_ObjectHideFlags: 0
@@ -102975,6 +103188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -103000,6 +103217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1865703325
 GameObject:
   m_ObjectHideFlags: 0
@@ -103182,6 +103401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1867250199
 GameObject:
   m_ObjectHideFlags: 0
@@ -103938,6 +104159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1885579852
 GameObject:
   m_ObjectHideFlags: 0
@@ -105027,6 +105250,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4967084833417504541, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -105108,6 +105335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1910906274
 GameObject:
   m_ObjectHideFlags: 0
@@ -105367,6 +105596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -107996,6 +108229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1952793883
 GameObject:
   m_ObjectHideFlags: 0
@@ -108457,6 +108692,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 4
       objectReference: {fileID: 0}
@@ -108576,6 +108815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1965675607
 GameObject:
   m_ObjectHideFlags: 0
@@ -109531,6 +109772,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1980914711
 GameObject:
   m_ObjectHideFlags: 0
@@ -109909,6 +110152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -110679,6 +110926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1994101944
 GameObject:
   m_ObjectHideFlags: 0
@@ -111745,6 +111994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &2019784984
 GameObject:
   m_ObjectHideFlags: 0
@@ -112402,6 +112653,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 5
@@ -114732,6 +114987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &2083102552
 GameObject:
   m_ObjectHideFlags: 0
@@ -115262,6 +115519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &2089571398 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5039881666830438050, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
@@ -115279,6 +115538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &2090075753
 GameObject:
   m_ObjectHideFlags: 0
@@ -115510,6 +115771,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.085
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -117810,6 +118075,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
