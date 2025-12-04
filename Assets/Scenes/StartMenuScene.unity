@@ -785,6 +785,7 @@ MonoBehaviour:
   levelsButton: {fileID: 1275517481}
   controlsButton: {fileID: 1607425034}
   creditsButton: {fileID: 1362655720}
+  Titles: {fileID: 1414680104}
   level1Button: {fileID: 2029247240}
   level2Button: {fileID: 1818640032}
   level3Button: {fileID: 1474983322}
@@ -2390,7 +2391,7 @@ GameObject:
   - component: {fileID: 1414680105}
   - component: {fileID: 1414680104}
   m_Layer: 5
-  m_Name: CloseControlsButton (1)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
