@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
     private bool isWallJumping = false;
     private bool isRolling = false;
     private bool isDancing = false;
+    private float currentRollSpeed = 0;
+    private float lastRollSpeed = 0;
     [SerializeField] float coyoteTime = 0.175f;
     private float coyoteTimeCounter;
     private float jumpBufferTime = 0.1f;
@@ -113,6 +115,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         UpdateTimers();
+        TrackCurrentRollSpeed();
         SetWalkStateAfterJumping();
         IdleAnimations();
         UpdateAnimationState();
@@ -278,6 +281,14 @@ public class PlayerController : MonoBehaviour
         rigidBody.linearVelocityX = rollSpeed * directionFacing.x;
     }
 
+    private void TrackCurrentRollSpeed()
+    {
+        if (isRolling == true)
+        {
+            lastRollSpeed = currentRollSpeed;
+            currentRollSpeed = rigidBody.linearVelocityX;
+        }
+    }
     private void Jump()
     {
         if (isRolling == true)
@@ -361,6 +372,15 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Enemies"))
         {
+            if (walkState == WalkState.Rolling)
+            {
+                dieToRoll enemy = collision.gameObject.GetComponent<dieToRoll>();
+                if (enemy != null)
+                {
+                    enemy.Die();
+                    return;
+                }
+            }
             isHoldingObject = false;
             ClearHeldObjectsFromChildren();
             transform.position = lastCheckpointPosition;
@@ -386,10 +406,23 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemies"))
         {
+            if (walkState == WalkState.Rolling)
+            {
+                dieToRoll enemy = collision.gameObject.GetComponent<dieToRoll>();
+                if (enemy != null)
+                {
+                    enemy.Die();
+                    rigidBody.linearVelocityX = lastRollSpeed;
+                    return;
+                }
+            }
+
             isHoldingObject = false;
             ClearHeldObjectsFromChildren();
             transform.position = lastCheckpointPosition;
             camera.SnapToTarget();
+
+
         }
 
     }
