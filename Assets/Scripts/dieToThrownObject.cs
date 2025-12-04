@@ -28,7 +28,6 @@ public class dieToThrownObject : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ThrownObject"))
         {
-            //Debug.Log("go enum");
             StartCoroutine(waitDie());
             
         }
@@ -36,7 +35,6 @@ public class dieToThrownObject : MonoBehaviour
 
     private IEnumerator waitDie()
     {
-        //Debug.Log("in enum");
         if (audioSource != null)
             audioSource.PlayOneShot(explosion, 0.5f);
 
@@ -44,7 +42,6 @@ public class dieToThrownObject : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         Destroy(gameObject, 0.1f);
-        //Debug.Log("end enum");
 
     }
 
