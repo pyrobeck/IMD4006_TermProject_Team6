@@ -9,7 +9,7 @@ public class PatrolStateSnail : MonoBehaviour
     public LayerMask groundLayer, enemyLayer;
 
     public AudioSource snailSound;        
-    public float volume = 0.05f;
+    //public float volume = 0.05f;
 
 
 
@@ -33,6 +33,14 @@ public class PatrolStateSnail : MonoBehaviour
 
         if (hit.collider == null | hitEnemy.collider == true | hitWallR.collider == true | hitWallL.collider == true)
         {
+            if (snailSound != null)
+            {
+                snailSound.time = 0.1f;
+                snailSound.volume = 1;
+                snailSound.Play();
+
+            }
+
             Rotate();
 
         }
@@ -55,11 +63,12 @@ public class PatrolStateSnail : MonoBehaviour
 
     void Rotate()
     {
+        
+            
         faceRight = !faceRight;
         transform.Rotate(0, 180, 0);
         //print("rot");
-        //if (snailSound != null)
-        //    snailSound.Play();
+        
     
     }
 }

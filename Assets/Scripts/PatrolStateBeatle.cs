@@ -1,4 +1,7 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using System.Collections;
+using Unity.VisualScripting;
 
 
 
@@ -18,7 +21,10 @@ public class PatrolStateBeatle : MonoBehaviour
     bool stop = false;
 
     public float playerDistance, floorDistance;
-    public float bpm;
+    private float bpm;
+    private float bpmMove;
+
+    [SerializeField] bpmCounter bpmCounter;
 
     void Start()
     {
@@ -34,23 +40,34 @@ public class PatrolStateBeatle : MonoBehaviour
 
         currentPos = gameObject.transform.position;
 
+        bpm = bpmCounter.GetBPM();
+
+        bpmMove = (bpm / 20);
+
         //print("current " + currentPos.y);
         //print("start " + startPos.y);
 
         if (hitPlayer.collider == true)
         {
-            print("player");
-            rb.linearVelocity = new Vector2(bpm, rb.linearVelocity.x);
-            moveDown();
             if (audioSource != null)
-            audioSource.PlayOneShot(Hit, 0.05f);
+                audioSource.PlayOneShot(Hit, 0.25f);
+
+            
+
+            //rb.linearVelocity = new Vector2(bpm, rb.linearVelocity.x);
+            StartCoroutine(waitDown());
+            
 
         }
 
         if (hitFloor.collider == true)
         {
+            if (audioSource != null)
+                audioSource.PlayOneShot(Fall, 0.5f);
+
             //print("floor");
-            moveUp();
+            StartCoroutine(waitUp());
+
         }
 
         if (currentPos.y > startPos.y && stop == true)
@@ -64,16 +81,51 @@ public class PatrolStateBeatle : MonoBehaviour
 
     void moveDown()
     {
-        rb.linearVelocity = new Vector2(0, -bpm);
-        if (audioSource != null)
-            audioSource.PlayOneShot(Fall, 0.05f);
+
+        rb.linearVelocity = new Vector2(0, -bpmMove);
+
     }
 
     void moveUp()
     {
 
-        rb.linearVelocity = new Vector2(0, (bpm/2));
+
+        rb.linearVelocity = new Vector2(0, (bpmMove / 2));
         stop = true;
-            
+
     }
+
+    private IEnumerator waitDown()
+    {
+        //shake
+        transform.rotation = Quaternion.Euler(0, 0, 10);
+        yield return new WaitForSeconds(0.05f);
+
+        transform.rotation = Quaternion.Euler(0, 0, -10);
+        yield return new WaitForSeconds(0.05f);
+
+        transform.rotation = Quaternion.Euler(0, 0, 10);
+        yield return new WaitForSeconds(0.05f);
+
+        transform.rotation = Quaternion.Euler(0, 0, -10);
+        yield return new WaitForSeconds(0.05f);
+
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+        yield return new WaitForSeconds(0.05f);
+
+        //yield return new WaitForSeconds(0.25f);
+
+        moveDown();
+
+    }
+
+    private IEnumerator waitUp()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        moveUp();
+
+    }
+
+
 }
