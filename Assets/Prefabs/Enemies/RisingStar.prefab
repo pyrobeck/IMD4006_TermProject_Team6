@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1282692639165895471}
   - component: {fileID: 2687829302836343409}
+  - component: {fileID: 6376302751431506889}
+  - component: {fileID: 824114889438543156}
+  - component: {fileID: -1040547923273678581}
   - component: {fileID: 7320591976256283819}
   - component: {fileID: 1143988408604690770}
-  - component: {fileID: 6376302751431506889}
   - component: {fileID: 3611108630809142690}
-  - component: {fileID: 824114889438543156}
   - component: {fileID: 2820352968633432889}
   - component: {fileID: -2429993127487814123}
-  - component: {fileID: -1040547923273678581}
   m_Layer: 7
   m_Name: RisingStar
   m_TagString: Enemies
@@ -96,6 +96,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6376302751431506889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195322087018415868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01657f5a21d6c144491af7a6b9448a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: {fileID: 668989745089252787, guid: db282733ffa9a2e48a6ce5b3fabb6c3a, type: 3}
+  notePos: {fileID: 6406794571235392509}
+  bpm: 3
+  starSound: {fileID: 2820352968633432889}
+  bpmCounter: {fileID: 0}
+--- !u!114 &824114889438543156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195322087018415868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be90b026551d51044b39bc302df047ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAnimName: star_death
+  explosion: {fileID: 8300000, guid: 7d8249c56aa7cda48837f44a8fae4971, type: 3}
+--- !u!114 &-1040547923273678581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195322087018415868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAnimName: star_death
+  explosion: {fileID: 8300000, guid: 7d8249c56aa7cda48837f44a8fae4971, type: 3}
 --- !u!50 &7320591976256283819
 Rigidbody2D:
   serializedVersion: 5
@@ -159,22 +204,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.054574426, y: -0.2260454}
   m_Radius: 0.9210765
---- !u!114 &6376302751431506889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195322087018415868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01657f5a21d6c144491af7a6b9448a13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  note: {fileID: 668989745089252787, guid: db282733ffa9a2e48a6ce5b3fabb6c3a, type: 3}
-  notePos: {fileID: 6406794571235392509}
-  bpm: 3
-  starSound: {fileID: 2820352968633432889}
 --- !u!61 &3611108630809142690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -221,18 +250,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3766959, y: 0.26666355}
   m_EdgeRadius: 0
---- !u!114 &824114889438543156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195322087018415868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be90b026551d51044b39bc302df047ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &2820352968633432889
 AudioSource:
   m_ObjectHideFlags: 0
@@ -352,18 +369,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-1040547923273678581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195322087018415868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7032735310602441096
 GameObject:
   m_ObjectHideFlags: 0

@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.085
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -2885,6 +2889,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 4
       objectReference: {fileID: 0}
@@ -4313,6 +4321,9 @@ Transform:
   - {fileID: 1313807028}
   - {fileID: 934063648}
   - {fileID: 534148769}
+  - {fileID: 1222535616}
+  - {fileID: 928238566}
+  - {fileID: 812976962}
   m_Father: {fileID: 819473158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &76808227
@@ -5404,6 +5415,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
@@ -8935,6 +8950,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -9237,6 +9256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15811,6 +15834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &254328950
 GameObject:
   m_ObjectHideFlags: 0
@@ -16841,6 +16866,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -17531,6 +17560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!4 &286772483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1282692639165895471, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
@@ -17548,6 +17579,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &287799620
 GameObject:
   m_ObjectHideFlags: 0
@@ -20562,6 +20595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &353580935
 GameObject:
   m_ObjectHideFlags: 0
@@ -21213,6 +21248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21414,6 +21453,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 5
@@ -23091,6 +23134,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 7
       objectReference: {fileID: 0}
@@ -23407,7 +23454,9 @@ MonoBehaviour:
   sfxSource: {fileID: 419141059}
   jumpAudio: {fileID: 8300000, guid: 47b839f51c2efe747b932113cef12621, type: 3}
   rollAudio: {fileID: 8300000, guid: 236b7bd964bd38a4aab50cce41cef5e5, type: 3}
+  deathAudio: {fileID: 0}
   volume: 1
+  deathImage: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 320
@@ -28248,6 +28297,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
       objectReference: {fileID: 0}
@@ -28593,6 +28646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &504334985
 GameObject:
   m_ObjectHideFlags: 0
@@ -31537,7 +31592,7 @@ Transform:
   m_GameObject: {fileID: 571840775}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 325.32, y: 10.35, z: 2.6956}
+  m_LocalPosition: {x: 324.37, y: 10.35, z: 2.6956}
   m_LocalScale: {x: 0.80754745, y: 0.80754745, z: 0.80754745}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34638,6 +34693,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -37411,6 +37470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39431,6 +39494,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
       objectReference: {fileID: 0}
@@ -40633,6 +40700,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 5
@@ -43446,6 +43517,93 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &812976961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 812976962}
+  - component: {fileID: 812976963}
+  m_Layer: 0
+  m_Name: Wall Jump Tutorial Sign
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &812976962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812976961}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 352.61, y: 0.41, z: 0}
+  m_LocalScale: {x: 0.34, y: 0.34, z: 0.34}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 76616611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &812976963
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812976961}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5754087026473978791, guid: e0cd1f89b205f464fa8bfbcf80086f6b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.39, y: 3.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &813503765
 GameObject:
   m_ObjectHideFlags: 0
@@ -44105,6 +44263,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -44186,6 +44348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &828364595
 GameObject:
   m_ObjectHideFlags: 0
@@ -46463,6 +46627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &873838435
 GameObject:
   m_ObjectHideFlags: 0
@@ -46568,6 +46734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &876304359
 GameObject:
   m_ObjectHideFlags: 0
@@ -48193,6 +48361,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.085
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -50044,6 +50216,93 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeSpeed: 5
   bpmColorFactor: 0.01
+--- !u!1 &928238565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 928238566}
+  - component: {fileID: 928238567}
+  m_Layer: 0
+  m_Name: Roll Damage Tutorial Sign
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928238566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928238565}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 285.91, y: -2.17, z: 0}
+  m_LocalScale: {x: 0.34, y: 0.34, z: 0.34}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 76616611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &928238567
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928238565}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 9080849489961943226, guid: 42c0bcafcf634734e94a4060c47bff01, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.330586, y: 4.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &929124367
 GameObject:
   m_ObjectHideFlags: 0
@@ -51911,6 +52170,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 4
       objectReference: {fileID: 0}
@@ -53237,6 +53500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &990287894
 GameObject:
   m_ObjectHideFlags: 0
@@ -53285,6 +53550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &993415313
 GameObject:
   m_ObjectHideFlags: 0
@@ -53523,6 +53790,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -55796,6 +56067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1037189592
 GameObject:
   m_ObjectHideFlags: 0
@@ -56077,6 +56350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1039288168
 GameObject:
   m_ObjectHideFlags: 0
@@ -57010,6 +57285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1052989713
 GameObject:
   m_ObjectHideFlags: 0
@@ -57088,6 +57365,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -60074,6 +60355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1107508798
 GameObject:
   m_ObjectHideFlags: 0
@@ -60127,6 +60410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1001 &1108805049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60139,6 +60424,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
@@ -64006,6 +64295,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -65516,6 +65809,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -66136,6 +66433,93 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeSpeed: 5
   bpmColorFactor: 0.01
+--- !u!1 &1222535615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1222535616}
+  - component: {fileID: 1222535617}
+  m_Layer: 0
+  m_Name: Roll Tutorial Sign
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1222535616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222535615}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 117.49, y: 4.42, z: -1.5}
+  m_LocalScale: {x: 0.34, y: 0.34, z: 0.34}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 76616611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1222535617
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222535615}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -7209202115557890239, guid: ecd7705afb16c88478efeb330c807c7a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1222639224
 GameObject:
   m_ObjectHideFlags: 0
@@ -66913,6 +67297,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 8
@@ -68069,6 +68457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1253124931
 GameObject:
   m_ObjectHideFlags: 0
@@ -71711,6 +72101,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: floorDistance
       value: 0.1
       objectReference: {fileID: 0}
@@ -71936,6 +72330,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -73462,6 +73860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1335361218
 GameObject:
   m_ObjectHideFlags: 0
@@ -73994,6 +74394,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -74421,6 +74825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74780,6 +75188,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
@@ -75582,6 +75994,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -77114,6 +77530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1393236613
 GameObject:
   m_ObjectHideFlags: 0
@@ -77367,6 +77785,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4967084833417504541, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -78112,6 +78534,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 5
@@ -80124,6 +80550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1456527111
 GameObject:
   m_ObjectHideFlags: 0
@@ -80795,6 +81223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1475281777
 GameObject:
   m_ObjectHideFlags: 0
@@ -86201,6 +86631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1582777651
 GameObject:
   m_ObjectHideFlags: 0
@@ -86443,6 +86875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1587201678
 GameObject:
   m_ObjectHideFlags: 0
@@ -88860,6 +89294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1622279681
 GameObject:
   m_ObjectHideFlags: 0
@@ -90735,6 +91171,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -91472,6 +91912,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 4
@@ -94082,6 +94526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1695298595
 GameObject:
   m_ObjectHideFlags: 0
@@ -94398,6 +94844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1702031759
 GameObject:
   m_ObjectHideFlags: 0
@@ -94625,6 +95073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1708382665
 GameObject:
   m_ObjectHideFlags: 0
@@ -96185,6 +96635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1742221747
 GameObject:
   m_ObjectHideFlags: 0
@@ -96321,6 +96773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1746610949
 GameObject:
   m_ObjectHideFlags: 0
@@ -97035,6 +97489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1757686966
 GameObject:
   m_ObjectHideFlags: 0
@@ -97412,6 +97868,7 @@ GameObject:
   - component: {fileID: 1768506273}
   - component: {fileID: 1768506272}
   - component: {fileID: 1768506271}
+  - component: {fileID: 1768506274}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -97619,6 +98076,7 @@ MonoBehaviour:
   spawnArea: {fileID: 1856712364}
   riseSpeed: 1.5
   fadeSpeed: 1.5
+  spawnRadius: 3
   piano: {fileID: 1768506273}
 --- !u!114 &1768506273
 MonoBehaviour:
@@ -97657,6 +98115,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 69dbc290dd231d348a8439c528f80435, type: 3}
   - {fileID: 8300000, guid: 67d217c501a3ab648a408ae64b195602, type: 3}
   - {fileID: 8300000, guid: e373540fe0b68854f85578f123b726a3, type: 3}
+--- !u!114 &1768506274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768506265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cb77e9f9fef6f4b92274b0406bed30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bpm: 0
 --- !u!1 &1771076333
 GameObject:
   m_ObjectHideFlags: 0
@@ -101948,6 +102419,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -102567,6 +103042,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1853916906
 GameObject:
   m_ObjectHideFlags: 0
@@ -102975,6 +103452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -103000,6 +103481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1865703325
 GameObject:
   m_ObjectHideFlags: 0
@@ -103182,6 +103665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1867250199
 GameObject:
   m_ObjectHideFlags: 0
@@ -103938,6 +104423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1885579852
 GameObject:
   m_ObjectHideFlags: 0
@@ -105027,6 +105514,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4967084833417504541, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -105108,6 +105599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1910906274
 GameObject:
   m_ObjectHideFlags: 0
@@ -105367,6 +105860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -107996,6 +108493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1952793883
 GameObject:
   m_ObjectHideFlags: 0
@@ -108457,6 +108956,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 4
       objectReference: {fileID: 0}
@@ -108576,6 +109079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1965675607
 GameObject:
   m_ObjectHideFlags: 0
@@ -109531,6 +110036,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1980914711
 GameObject:
   m_ObjectHideFlags: 0
@@ -109909,6 +110416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -110679,6 +111190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &1994101944
 GameObject:
   m_ObjectHideFlags: 0
@@ -111745,6 +112258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &2019784984
 GameObject:
   m_ObjectHideFlags: 0
@@ -112402,6 +112917,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 5
@@ -114732,6 +115251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &2083102552
 GameObject:
   m_ObjectHideFlags: 0
@@ -115262,6 +115783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &2089571398 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5039881666830438050, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
@@ -115279,6 +115802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ade6d798d55144093356523b7a2926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimName: 
+  explosion: {fileID: 0}
 --- !u!1 &2090075753
 GameObject:
   m_ObjectHideFlags: 0
@@ -115510,6 +116035,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.085
       objectReference: {fileID: 0}
+    - target: {fileID: 6306229551260547756, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 7693612009099610593, guid: e836f527bd94c214bafcce8085710bc2, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -117810,6 +118339,10 @@ PrefabInstance:
       propertyPath: bpm
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     - target: {fileID: 4499116822936708725, guid: 46f71b5f1f30dfe4eb06b11a7dbb213c, type: 3}
       propertyPath: playerDistance
       value: 6
