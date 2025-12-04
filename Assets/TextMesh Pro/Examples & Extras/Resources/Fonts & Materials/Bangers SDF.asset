@@ -455,6 +455,21 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
+  - m_Index: 96
+    m_Metrics:
+      m_Width: 72.421875
+      m_Height: 105.46875
+      m_HorizontalBearingX: 1.96875
+      m_HorizontalBearingY: 105.1875
+      m_HorizontalAdvance: 61.875
+    m_GlyphRect:
+      m_X: 205
+      m_Y: 395
+      m_Width: 74
+      m_Height: 107
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 67
@@ -531,6 +546,10 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 97
     m_GlyphIndex: 78
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 115
+    m_GlyphIndex: 96
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: 28584486757587946}
@@ -615,6 +634,10 @@ MonoBehaviour:
     m_Y: 516
     m_Width: 92
     m_Height: 128
+  - m_X: 194
+    m_Y: 384
+    m_Width: 95
+    m_Height: 128
   m_FreeGlyphRects:
   - m_X: 65
     m_Y: 257
@@ -640,18 +663,10 @@ MonoBehaviour:
     m_Y: 254
     m_Width: 8
     m_Height: 4
-  - m_X: 182
-    m_Y: 384
-    m_Width: 841
-    m_Height: 3
   - m_X: 269
     m_Y: 129
     m_Width: 754
     m_Height: 125
-  - m_X: 284
-    m_Y: 129
-    m_Width: 739
-    m_Height: 894
   - m_X: 355
     m_Y: 0
     m_Width: 668
@@ -676,14 +691,6 @@ MonoBehaviour:
     m_Y: 516
     m_Width: 77
     m_Height: 125
-  - m_X: 194
-    m_Y: 384
-    m_Width: 829
-    m_Height: 132
-  - m_X: 267
-    m_Y: 384
-    m_Width: 756
-    m_Height: 639
   - m_X: 175
     m_Y: 644
     m_Width: 848
@@ -692,6 +699,26 @@ MonoBehaviour:
     m_Y: 644
     m_Width: 846
     m_Height: 379
+  - m_X: 182
+    m_Y: 384
+    m_Width: 12
+    m_Height: 3
+  - m_X: 284
+    m_Y: 129
+    m_Width: 739
+    m_Height: 255
+  - m_X: 289
+    m_Y: 129
+    m_Width: 734
+    m_Height: 894
+  - m_X: 194
+    m_Y: 512
+    m_Width: 829
+    m_Height: 4
+  - m_X: 267
+    m_Y: 512
+    m_Width: 756
+    m_Height: 511
   m_FontFeatureTable:
     m_MultipleSubstitutionRecords: []
     m_LigatureSubstitutionRecords: []
