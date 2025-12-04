@@ -9,14 +9,10 @@ public class specialCameraMovementZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        // Store the position of the checkpoint
         if (collision.CompareTag("Player"))
         {
             camera.SpecialCameraZone(additionalCameraMovement);
         }
-
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
