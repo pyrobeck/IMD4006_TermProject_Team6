@@ -1,5 +1,7 @@
 using UnityEngine;
 
+
+
 public class risingStarNoteScript : MonoBehaviour
 {
     //for  having the bullet be aimed at the player

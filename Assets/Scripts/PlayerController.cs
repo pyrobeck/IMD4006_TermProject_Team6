@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Pool;
 using UnityEngine.UIElements;
 using static UnityEngine.UI.Image;
+using System.Collections;
+using UnityEngine.Audio;
 
 public class PlayerController : MonoBehaviour
 {
@@ -65,7 +67,11 @@ public class PlayerController : MonoBehaviour
     public AudioSource sfxSource;
     public AudioClip jumpAudio;
     public AudioClip rollAudio;
+    public AudioClip deathAudio;
     public float volume = 0.5f;
+
+    public GameObject deathImage;
+
 
     public LayerMask groundLayer;
 
@@ -110,6 +116,9 @@ public class PlayerController : MonoBehaviour
 
         temp = this.GetComponent<SpriteRenderer>();
         lastState = walkState;
+
+        deathImage.SetActive(false);
+
     }
 
     private void Update()
@@ -383,9 +392,9 @@ public class PlayerController : MonoBehaviour
             }
             isHoldingObject = false;
             ClearHeldObjectsFromChildren();
-            transform.position = lastCheckpointPosition;
-            camera.SnapToTarget();
-            // Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
+
+            StartCoroutine(playerDeath());
+
         }
 
         if (collision.gameObject.CompareTag("JunkPile"))
@@ -419,10 +428,8 @@ public class PlayerController : MonoBehaviour
 
             isHoldingObject = false;
             ClearHeldObjectsFromChildren();
-            transform.position = lastCheckpointPosition;
-            camera.SnapToTarget();
 
-
+            StartCoroutine(playerDeath());
         }
 
     }
@@ -818,6 +825,22 @@ public class PlayerController : MonoBehaviour
         isHoldingObject = false;
         isThrowingObject = false;
         ClearHeldObjectsFromChildren();
+    }
+
+    private IEnumerator playerDeath()
+    {
+        sfxSource.PlayOneShot(deathAudio, 0.8f);
+        yield return new WaitForSeconds(0.1f);
+        transform.position = new Vector3(0, -50, 0);
+        deathImage.SetActive(true);
+
+
+        yield return new WaitForSeconds(2f);
+
+        transform.position = lastCheckpointPosition;
+        deathImage.SetActive(false);
+        camera.SnapToTarget();
+        // Debug.Log("Hit enemy! Respawning at: " + lastCheckpointPosition);
     }
 }
 

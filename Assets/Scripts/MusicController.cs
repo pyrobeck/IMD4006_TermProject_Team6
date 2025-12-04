@@ -61,7 +61,7 @@ public class MusicController : MonoBehaviour
 
         musicSource.loop = bassSource.loop = drumSource.loop = true;
 
-        musicSource.volume = 0.2f;
+        musicSource.volume = 5f;
         bassSource.volume = 0f;
         drumSource.volume = 0f;
 
@@ -92,7 +92,7 @@ public class MusicController : MonoBehaviour
     private void UpdateMusicPitch(int bpm)
     {
         // Clamp BPM to avoid extreme pitch values
-        bpm = Mathf.Clamp(bpm, 20, 200);
+        bpm = Mathf.Clamp(bpm, 33, 200);
 
         // 132 BPM = 1.0 pitch; adjust proportionally
         float targetPitch = bpm / defaultBPM;
@@ -104,7 +104,7 @@ public class MusicController : MonoBehaviour
         musicSource.pitch = bassSource.pitch = drumSource.pitch = smoothPitch;
 
         // Log for debugging
-        Debug.Log($"🎵 Pitch Updated → {smoothPitch:F2} | BPM → {bpm}");
+        Debug.Log($"Pitch Updated → {smoothPitch:F2} | BPM → {bpm}");
     }
 
 }

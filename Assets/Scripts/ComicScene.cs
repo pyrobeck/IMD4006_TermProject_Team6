@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using System.Collections;
+using System;
 
 public class ComicSceneManager : MonoBehaviour
 {
-    public string[] allowedScenes;
+    public string[] allowedScenes; 
+    public string[] firstComicScene;  
 
     private InputAction anyInputAction;
 
@@ -12,7 +15,7 @@ public class ComicSceneManager : MonoBehaviour
     {
         anyInputAction = new InputAction(
             type: InputActionType.Button,
-            binding: "*/<Button>",
+            binding: "*/<Button>", 
             interactions: "press"
         );
 
@@ -42,9 +45,23 @@ public class ComicSceneManager : MonoBehaviour
         {
             if (current == allowed)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                return;
+                if (Array.Exists(firstComicScene, scene => scene == current))
+                {
+                    StartCoroutine(WaitAndLoadNextScene());
+                    return;
+                }
+                else
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    return;
+                }
             }
         }
+    }
+
+    private IEnumerator WaitAndLoadNextScene()
+    {
+        yield return new WaitForSeconds(2f);  
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

@@ -241,7 +241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 163.9, y: -177.95}
+  m_AnchoredPosition: {x: 208, y: -203}
   m_SizeDelta: {x: 200, y: 77.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398835590
@@ -715,6 +715,9 @@ MonoBehaviour:
   - FirstComic
   - FirstComic_2
   - SecondComic
+  - ThirdComic
+  - StartingScene
+  firstComicScene: []
 --- !u!4 &2053902123
 Transform:
   m_ObjectHideFlags: 0

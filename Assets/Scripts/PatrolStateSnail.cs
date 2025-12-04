@@ -9,14 +9,18 @@ public class PatrolStateSnail : MonoBehaviour
     public LayerMask groundLayer, enemyLayer;
 
     public AudioSource snailSound;        
-    public float volume = 0.05f;
+    //public float volume = 0.05f;
 
 
 
     
-    public float raycastDistance, enemyDistance, wallDistance;
-    public float bpm;
+    public float groundDistance, enemyDistance, wallDistance;
     private bool faceRight = false;
+    private float bpm;
+    private float bpmMove;
+
+    [SerializeField] bpmCounter bpmCounter;
+    
 
     void Start()
     {
@@ -26,13 +30,25 @@ public class PatrolStateSnail : MonoBehaviour
     private void Update()
     {
 
-        RaycastHit2D hit = Physics2D.Raycast(ledgeDetector.position, Vector2.down, raycastDistance, groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(ledgeDetector.position, Vector2.down, groundDistance, groundLayer);
         RaycastHit2D hitWallL = Physics2D.Raycast(ledgeDetector.position, Vector2.left, wallDistance, groundLayer);
         RaycastHit2D hitWallR = Physics2D.Raycast(ledgeDetector.position, Vector2.right, wallDistance, groundLayer);
         RaycastHit2D hitEnemy = Physics2D.Raycast(ledgeDetector.position, Vector2.left, enemyDistance, enemyLayer);
 
+        bpm = bpmCounter.GetBPM();
+
+        bpmMove = (bpm / 40);
+
         if (hit.collider == null | hitEnemy.collider == true | hitWallR.collider == true | hitWallL.collider == true)
         {
+            if (snailSound != null)
+            {
+                snailSound.time = 0.1f;
+                snailSound.volume = 1;
+                snailSound.Play();
+
+            }
+
             Rotate();
 
         }
@@ -42,12 +58,12 @@ public class PatrolStateSnail : MonoBehaviour
     {
         if (faceRight)
         {
-            rb.linearVelocity = new Vector2(bpm, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(bpmMove, rb.linearVelocity.y);
             //print("right");
         }
         else
         {
-            rb.linearVelocity = new Vector2(-bpm, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(-bpmMove, rb.linearVelocity.y);
             //print("left");
         }
         
@@ -55,11 +71,12 @@ public class PatrolStateSnail : MonoBehaviour
 
     void Rotate()
     {
+        
+            
         faceRight = !faceRight;
         transform.Rotate(0, 180, 0);
         //print("rot");
-        //if (snailSound != null)
-        //    snailSound.Play();
+        
     
     }
 }
