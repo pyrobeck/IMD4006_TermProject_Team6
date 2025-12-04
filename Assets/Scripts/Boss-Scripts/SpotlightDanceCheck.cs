@@ -8,7 +8,7 @@ public class SpotlightDanceCheck : MonoBehaviour
     {
         if (isPlayerUnderSpotlight)
         {
-            Debug.Log("WE'RE DANCING!!!! UNDER THE SPOT LIGHT!!!");
+            // Debug.Log("WE'RE DANCING!!!! UNDER THE SPOT LIGHT!!!");
             danceSuccessful.Invoke();
         }
 
@@ -16,19 +16,19 @@ public class SpotlightDanceCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("something entered colission");
+        // Debug.Log("something entered colission");
         if (collider.gameObject.CompareTag("Player"))
         {
-            Debug.Log("It was the player!!!");
+            // Debug.Log("It was the player!!!");
             isPlayerUnderSpotlight = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collider)
     {
-        Debug.Log("something exited colission");
+        //Debug.Log("something exited colission");
         if (collider.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Bye player!!!");
+            //  Debug.Log("Bye player!!!");
             isPlayerUnderSpotlight = false;
         }
     }
