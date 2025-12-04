@@ -23079,8 +23079,8 @@ Transform:
   m_GameObject: {fileID: 419141051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66.42, y: -8.89, z: 0}
-  m_LocalScale: {x: 0.3329301, y: 0.3562352, z: 0.3329301}
+  m_LocalPosition: {x: -66.42, y: -9.12, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -23097,8 +23097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3926ee85602dae44ab9cc222e15dbc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6.5
-  rollSpeed: 20
+  moveSpeed: 6
+  rollSpeed: 18.5
   jumpHeight: 20
   wallJumpDistance: 5
   jumpUpwardsGravity: 5
