@@ -14,9 +14,13 @@ public class PatrolStateSnail : MonoBehaviour
 
 
     
-    public float raycastDistance, enemyDistance, wallDistance;
-    public float bpm;
+    public float groundDistance, enemyDistance, wallDistance;
     private bool faceRight = false;
+    private float bpm;
+    private float bpmMove;
+
+    [SerializeField] bpmCounter bpmCounter;
+    
 
     void Start()
     {
@@ -26,10 +30,14 @@ public class PatrolStateSnail : MonoBehaviour
     private void Update()
     {
 
-        RaycastHit2D hit = Physics2D.Raycast(ledgeDetector.position, Vector2.down, raycastDistance, groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(ledgeDetector.position, Vector2.down, groundDistance, groundLayer);
         RaycastHit2D hitWallL = Physics2D.Raycast(ledgeDetector.position, Vector2.left, wallDistance, groundLayer);
         RaycastHit2D hitWallR = Physics2D.Raycast(ledgeDetector.position, Vector2.right, wallDistance, groundLayer);
         RaycastHit2D hitEnemy = Physics2D.Raycast(ledgeDetector.position, Vector2.left, enemyDistance, enemyLayer);
+
+        bpm = bpmCounter.GetBPM();
+
+        bpmMove = (bpm / 40);
 
         if (hit.collider == null | hitEnemy.collider == true | hitWallR.collider == true | hitWallL.collider == true)
         {
@@ -50,12 +58,12 @@ public class PatrolStateSnail : MonoBehaviour
     {
         if (faceRight)
         {
-            rb.linearVelocity = new Vector2(bpm, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(bpmMove, rb.linearVelocity.y);
             //print("right");
         }
         else
         {
-            rb.linearVelocity = new Vector2(-bpm, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(-bpmMove, rb.linearVelocity.y);
             //print("left");
         }
         

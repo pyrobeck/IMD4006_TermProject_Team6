@@ -115,10 +115,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   snailSound: {fileID: 5486162277195628329}
-  raycastDistance: 1
+  groundDistance: 1
   enemyDistance: 0.1
   wallDistance: 0.25
-  bpm: 2
+  bpmCounter: {fileID: 0}
 --- !u!114 &3495548251865977157
 MonoBehaviour:
   m_ObjectHideFlags: 0
