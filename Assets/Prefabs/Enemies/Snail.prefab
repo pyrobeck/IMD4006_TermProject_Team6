@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 8181474285197410126}
   - component: {fileID: 5140182158493660435}
   - component: {fileID: 6306229551260547756}
+  - component: {fileID: 3495548251865977157}
   - component: {fileID: 1804037562755542149}
   - component: {fileID: 2243343722233662888}
   - component: {fileID: 1754754322997809416}
-  - component: {fileID: 3495548251865977157}
   - component: {fileID: 5486162277195628329}
-  - component: {fileID: -7236281011505380283}
   m_Layer: 7
   m_Name: Snail
   m_TagString: Enemies
@@ -116,11 +115,24 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   snailSound: {fileID: 5486162277195628329}
-  volume: 0.05
-  raycastDistance: 1
-  enemyDistance: 1
+  groundDistance: 1
+  enemyDistance: 0.1
   wallDistance: 0.25
-  bpm: 2
+  bpmCounter: {fileID: 0}
+--- !u!114 &3495548251865977157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479452921825548939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be90b026551d51044b39bc302df047ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAnimName: snail_death
+  explosion: {fileID: 8300000, guid: 7d8249c56aa7cda48837f44a8fae4971, type: 3}
 --- !u!50 &1804037562755542149
 Rigidbody2D:
   serializedVersion: 5
@@ -216,18 +228,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3495548251865977157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5479452921825548939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be90b026551d51044b39bc302df047ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &5486162277195628329
 AudioSource:
   m_ObjectHideFlags: 0
