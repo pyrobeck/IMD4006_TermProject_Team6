@@ -1,20 +1,19 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-
-
 public class NoteVisualSpawner : MonoBehaviour
 {
     [Header("Visual Settings")]
     public GameObject noteSpritePrefab;
-    public Transform spawnArea; // place above keyboard visually
+    public Transform spawnArea;
     public float riseSpeed = 1.5f;
     public float fadeSpeed = 1.5f;
-    public static event System.Action<int> NotePlayed;
 
+    [Header("Random Spawn Settings")]
+    public float spawnRadius = 3.0f;     // how far from center notes can appear
 
     [Header("Note Data Link")]
-    public DigitalPianoController piano; // drag your piano script object
+    public DigitalPianoController piano;
 
     private void OnEnable()
     {
@@ -30,21 +29,28 @@ public class NoteVisualSpawner : MonoBehaviour
     {
         if (!noteSpritePrefab || !spawnArea) return;
 
+        // 🔥 Random XY offset inside a circle
+        Vector2 randomOffset = Random.insideUnitCircle * spawnRadius;
+
+        Vector3 spawnPos = new Vector3(
+            spawnArea.position.x + randomOffset.x,
+            spawnArea.position.y + randomOffset.y,
+            spawnArea.position.z
+        );
+
         GameObject note = Instantiate(
             noteSpritePrefab,
-            spawnArea.position,
+            spawnPos,
             Quaternion.identity,
             spawnArea
         );
 
         SpriteRenderer sr = note.GetComponent<SpriteRenderer>();
 
-        // Assign color based on note index (rainbow mapping)
+        // Color mapping based on note index
         float hue = (noteIndex / 24f) % 1f;
-        Color noteColor = Color.HSVToRGB(hue, 1f, 1f);
-        sr.color = noteColor;
+        sr.color = Color.HSVToRGB(hue, 1f, 1f);
 
-        // Animate + Self-Destruct
         StartCoroutine(AnimateNote(note, sr));
     }
 
