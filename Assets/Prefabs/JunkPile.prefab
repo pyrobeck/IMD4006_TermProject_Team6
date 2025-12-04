@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4189491448116814177}
   - component: {fileID: 6152497327213774991}
   - component: {fileID: 6639033909969434086}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: JunkPile
   m_TagString: JunkPile
   m_Icon: {fileID: 0}
