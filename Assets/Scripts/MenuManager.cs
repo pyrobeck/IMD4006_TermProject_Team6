@@ -14,12 +14,14 @@ public class MenuManager : MonoBehaviour
     public GameObject mainPanel;  
 
     [Header("Main Menu Buttons")]
+    public Button Title;
     public Button startButton;
     public Button levelsButton;
     public Button controlsButton;
     public Button creditsButton;
 
-    [Header("Levels Menu Buttons")]
+    [Header("Levels Menu Buttons")]    
+    public Button Titles;
     public Button level1Button;
     public Button level2Button;
     public Button level3Button;
@@ -119,7 +121,11 @@ public class MenuManager : MonoBehaviour
             activeButtons[i].colors = cb;
         }
 
+        EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(activeButtons[index].gameObject);
+
+        Debug.Log("Selected Button: " + activeButtons[index].name);
+
     }
 
     // ----------------------------
@@ -172,7 +178,7 @@ public class MenuManager : MonoBehaviour
         mainPanel.SetActive(false);
         levelsPanel.SetActive(true);
 
-        SetActiveButtons(new Button[] { level1Button, level2Button, level3Button, backFromLevelsButton });
+        SetActiveButtons(new Button[] { Titles, level1Button, level2Button, level3Button, backFromLevelsButton });
     }
 
     public void HideLevels()
@@ -180,7 +186,7 @@ public class MenuManager : MonoBehaviour
         levelsPanel.SetActive(false);
         mainPanel.SetActive(true);
 
-        SetActiveButtons(new Button[] { startButton, levelsButton, controlsButton, creditsButton });
+        SetActiveButtons(new Button[] { Title, startButton, levelsButton, controlsButton, creditsButton });
     }
 
     public void ShowControls()
@@ -196,7 +202,7 @@ public class MenuManager : MonoBehaviour
         controlsPanel.SetActive(false);
         mainPanel.SetActive(true);
 
-        SetActiveButtons(new Button[] { startButton, levelsButton, controlsButton, creditsButton });
+        SetActiveButtons(new Button[] { Title, startButton, levelsButton, controlsButton, creditsButton });
     }
 
     public void ShowCredits()
@@ -212,7 +218,7 @@ public class MenuManager : MonoBehaviour
         creditsPanel.SetActive(false);
         mainPanel.SetActive(true);
 
-        SetActiveButtons(new Button[] { startButton, levelsButton, controlsButton, creditsButton });
+        SetActiveButtons(new Button[] { Title, startButton, levelsButton, controlsButton, creditsButton });
     }
 
     public void LoadLevel1()
