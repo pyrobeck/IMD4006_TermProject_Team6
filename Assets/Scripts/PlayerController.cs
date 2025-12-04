@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 using static UnityEngine.UI.Image;
 using System.Collections;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -390,9 +391,6 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
             }
-            isHoldingObject = false;
-            ClearHeldObjectsFromChildren();
-
             StartCoroutine(playerDeath());
 
         }
@@ -425,10 +423,6 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
             }
-
-            isHoldingObject = false;
-            ClearHeldObjectsFromChildren();
-
             StartCoroutine(playerDeath());
         }
 
@@ -827,6 +821,23 @@ public class PlayerController : MonoBehaviour
         ClearHeldObjectsFromChildren();
     }
 
+    public void KillPlayer()
+    {
+        StartCoroutine(DeathOnBossLevel());
+    }
+
+    private IEnumerator DeathOnBossLevel()
+    {
+        sfxSource.PlayOneShot(deathAudio, 0.8f);
+        yield return new WaitForSeconds(0.1f);
+        transform.position = new Vector3(0, -50, 0);
+        deathImage.SetActive(true);
+
+
+        yield return new WaitForSeconds(2f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     private IEnumerator playerDeath()
     {
         sfxSource.PlayOneShot(deathAudio, 0.8f);
@@ -837,6 +848,8 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
+        isHoldingObject = false;
+        ClearHeldObjectsFromChildren();
         transform.position = lastCheckpointPosition;
         deathImage.SetActive(false);
         camera.SnapToTarget();

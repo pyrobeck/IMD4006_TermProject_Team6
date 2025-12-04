@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BossTimer : MonoBehaviour
 {
     [SerializeField] private float time;
     [SerializeField] private Transform timerHands;
+    public UnityEvent Failure;
     private float timeRemaining;
     private Transform timerBar;
     bool isTimerRunning = false;
@@ -35,7 +37,8 @@ public class BossTimer : MonoBehaviour
             timeRemaining -= Time.deltaTime;
             if (timeRemaining <= 0)
             {
-                Debug.Log("TIME IS UP!!!!");
+                isTimerRunning = false;
+                Failure.Invoke();
             }
         }
     }

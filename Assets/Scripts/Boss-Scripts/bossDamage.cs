@@ -4,13 +4,18 @@ using System.Collections;
 public class bossDamage : MonoBehaviour
 {
     public UnityEvent bossHit;
-    private int health = 3;
+    public UnityEvent GameEnd;
+    private int health = 2;
     private bool isInvincible = false;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("ThrownObject") && isInvincible == false)
         {
-            Debug.Log("I'VE BEEN HIT!!!");
+            isInvincible = true;
+            if (health == 0)
+            {
+                GameEnd.Invoke();
+            }
             bossHit.Invoke();
             health--;
             isInvincible = true;

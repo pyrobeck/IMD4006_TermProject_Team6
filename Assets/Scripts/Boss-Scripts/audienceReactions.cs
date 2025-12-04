@@ -12,12 +12,18 @@ public class audienceReactions : MonoBehaviour
     public void Cheer()
     {
         animator.SetInteger("state", 1);
-        StartCoroutine(ReturnToNeutral());
+        StartCoroutine(ReturnToNeutral(4));
     }
 
-    private IEnumerator ReturnToNeutral()
+    public void Boo()
     {
-        yield return new WaitForSeconds(4);
+        animator.SetInteger("state", 2);
+        StartCoroutine(ReturnToNeutral(7));
+    }
+
+    private IEnumerator ReturnToNeutral(float timeToWait)
+    {
+        yield return new WaitForSeconds(timeToWait);
         animator.SetInteger("state", 0);
     }
 }

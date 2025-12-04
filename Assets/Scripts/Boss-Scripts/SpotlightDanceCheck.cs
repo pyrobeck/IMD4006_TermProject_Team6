@@ -55,4 +55,9 @@ public class SpotlightDanceCheck : MonoBehaviour
         transform.position = targetPositions[currentLocation];
         currentLocation++;
     }
+
+    public void DisableSpotlight()
+    {
+        isUsed = true;
+    }
 }

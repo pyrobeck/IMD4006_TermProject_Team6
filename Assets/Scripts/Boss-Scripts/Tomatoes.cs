@@ -8,7 +8,7 @@ public class Tomatoes : MonoBehaviour
 {
     const float THROW_SPEED = 1f;
     [SerializeField] private GameObject player;
-    private Vector3 targetPosition;
+    private Vector3[] targetPositions;
     private int currentSection = -1;
     private Vector3 targetScale;
     private Vector3 startingScale;
@@ -31,6 +31,7 @@ public class Tomatoes : MonoBehaviour
         maxThrownHeights = new float[tomatoes.Length];
         startingPosition = new Vector2[tomatoes.Length];
         progress = new float[tomatoes.Length];
+        targetPositions = new Vector3[tomatoes.Length];
 
         startingScale = tomatoes[0].transform.localScale;
         targetScale = startingScale * 0.3f;
@@ -41,20 +42,19 @@ public class Tomatoes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateTargetPosition();
         MoveTomato();
         ShrinkTomatoes();
     }
 
-    private void UpdateTargetPosition()
+    private void SetTargetPosition(int tomatoNumber)
     {
-        targetPosition = player.transform.position;
+        targetPositions[tomatoNumber] = player.transform.position;
     }
 
     private IEnumerator KillPlayer()
     {
         yield return new WaitForSeconds(3);
-        // player.GetComponent<PlayerController>().
+        player.GetComponent<PlayerController>().KillPlayer();
     }
     private void GetChildren()
     {
@@ -69,12 +69,11 @@ public class Tomatoes : MonoBehaviour
 
     public void ThrowAllTomatoes()
     {
-        RandomizeMaxThrownHeights();
-
+        StartCoroutine(KillPlayer());
         int i = 0;
         foreach (GameObject tomato in tomatoes)
         {
-            float randomTime = Random.Range(0.2f, 1f);
+            float randomTime = Random.Range(0.5f, 2f);
             StartCoroutine(ThrowTomatoAfterAMoment(randomTime, i));
             i++;
         }
@@ -84,6 +83,8 @@ public class Tomatoes : MonoBehaviour
     private IEnumerator ThrowTomatoAfterAMoment(float timeUntilThrow, int tomatoNumber)
     {
         yield return new WaitForSeconds(timeUntilThrow);
+        SetTargetPosition(tomatoNumber);
+        RandomizeMaxThrownHeight(tomatoNumber);
         isTomatoBeingThrown[tomatoNumber] = true;
     }
 
@@ -100,7 +101,7 @@ public class Tomatoes : MonoBehaviour
                 float parabola = 1.0f - 4.0f * (progress[i] - 0.5f) * (progress[i] - 0.5f);
 
                 // Travel in a straight line from our start position to the target.        
-                Vector3 nextPos = Vector3.Lerp(startingPosition[i], targetPosition, progress[i]);
+                Vector3 nextPos = Vector3.Lerp(startingPosition[i], targetPositions[i], progress[i]);
 
                 // Then add a vertical arc in excess of this.
                 nextPos.y += parabola * maxThrownHeights[i];
@@ -133,13 +134,10 @@ public class Tomatoes : MonoBehaviour
     }
 
 
-    private void RandomizeMaxThrownHeights()
+    private void RandomizeMaxThrownHeight(int tomatoNumber)
     {
-        for (int i = 0; i < yTarget.Length; i++)
-        {
-            float randomHeight = Random.Range(3f, 7f);
-            maxThrownHeights[i] = targetPosition.y + randomHeight;
-        }
+        float randomHeight = Random.Range(3f, 7f);
+        maxThrownHeights[tomatoNumber] = targetPositions[tomatoNumber].y + randomHeight;
     }
 
     private void RandomizeStartingXPositions()
