@@ -717,6 +717,8 @@ MonoBehaviour:
   - SecondComic
   - ThirdComic
   - StartingScene
+  firstComicScene:
+  - FirstComic
 --- !u!4 &2053902123
 Transform:
   m_ObjectHideFlags: 0
