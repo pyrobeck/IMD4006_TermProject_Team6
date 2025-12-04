@@ -52,7 +52,7 @@ public class SpotlightDanceCheck : MonoBehaviour
     public void Move()
     {
         isUsed = false;
-        currentLocation++;
         transform.position = targetPositions[currentLocation];
+        currentLocation++;
     }
 }
