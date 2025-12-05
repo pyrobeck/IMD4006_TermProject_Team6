@@ -1,7 +1,10 @@
 using System;
+using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class cameraMovement : MonoBehaviour
 {
@@ -13,6 +16,7 @@ public class cameraMovement : MonoBehaviour
     float standardMoveSpeedY = 5;
     [SerializeField] float fallingMoveSpeedY = 30;
     [SerializeField] float fastMoveSpeedY = 20;
+    [SerializeField] bool bossLookahead = false;
     float directionFlippingMoveSpeed = 5;
 
 
@@ -53,6 +57,7 @@ public class cameraMovement : MonoBehaviour
     bool isOffScreen = false;
     bool isWallJumping = false;
 
+    bool lockCameraPosition = false;
 
     private int numberOfOverlappingZones = 0;
     void Start()
@@ -84,12 +89,20 @@ public class cameraMovement : MonoBehaviour
         //Debug.DrawRay(new Vector3(deadzoneRight, 0, 0), Vector3.up * 500);
         //Debug.DrawRay(new Vector3(deadzoneLeft, 0, 0), Vector3.up * 500);
 
+
         UpdateDirection();
         UpdateLookAheadOffset();
         UpdateScreenBoundaries();
         UpdateMoveSpeedY();
-        updateCameraPosition();
 
+        if (lockCameraPosition == false)
+        {
+            updateCameraPosition();
+        }
+        else
+        {
+            MoveCameraToLockedPosition();
+        }
         UpdateDeadzonePosition();
     }
 
@@ -109,6 +122,13 @@ public class cameraMovement : MonoBehaviour
     {
         //only update the camera target if the player is outside the camera deadzone
         //this is so the camera smoothly stops following the player's slight horizontal adjustments, but still follows them jumping or falling
+        if (bossLookahead == true)
+        {
+            targetX = new Vector3(target.position.x, 0, 0) + lookAheadOffset;
+            cameraTargetXRecord = targetX;
+            targetX += additionalXOffset;
+            return;
+        }
         if (!(target.position.x < deadzoneRight && target.position.x > deadzoneLeft))
         {
             targetX = new Vector3(target.position.x, 0, 0) + lookAheadOffset;
@@ -160,6 +180,11 @@ public class cameraMovement : MonoBehaviour
 
     private void ResetLookAheadOffset()
     {
+        if (bossLookahead == true)
+        {
+            lookAheadOffset = new Vector3(lookAheadOffsetX, 0, 0);
+            return;
+        }
         lookAheadOffset = new Vector3(lookAheadOffsetX * direction, 0, 0);
     }
 
@@ -299,9 +324,26 @@ public class cameraMovement : MonoBehaviour
         if (numberOfOverlappingZones == 0)
         {
             additionalXOffset = new Vector3(0, 0, 0);
-            additionalYOffset = new Vector3(0, 0, 0);
+            additionalYOffset = new UnityEngine.Vector3(0, 0, 0);
         }
 
+    }
+
+    public void LockCamera(Vector2 lockedPosition)
+    {
+        lockCameraPosition = true;
+        UnityEngine.Vector3 newTarget = lockedPosition;
+        newTarget.z = transform.position.z;
+        cameraTarget = newTarget;
+    }
+
+    private void MoveCameraToLockedPosition()
+    {
+        transform.position = UnityEngine.Vector3.MoveTowards(transform.position, cameraTarget, moveSpeedX * Time.deltaTime);
+    }
+    public void UnlockCamera()
+    {
+        lockCameraPosition = false;
     }
 }
 

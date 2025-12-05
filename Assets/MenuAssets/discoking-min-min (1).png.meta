@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 219d5983382714e4d8a61b581618e6ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1806926155545899250
+    second: discoking-min-min (1)_0
+  - first:
+      213: -5948889355652707924
+    second: discoking-min-min (1)_1
+  - first:
+      213: 6912467280378123385
+    second: discoking-min-min (1)_2
+  - first:
+      213: 3149898630094696501
+    second: discoking-min-min (1)_3
+  - first:
+      213: 7302159518223251739
+    second: discoking-min-min (1)_4
+  - first:
+      213: -7569854667644196190
+    second: discoking-min-min (1)_5
+  - first:
+      213: -4530357484620812210
+    second: discoking-min-min (1)_6
+  - first:
+      213: 7437432781617392042
+    second: discoking-min-min (1)_7
+  - first:
+      213: -5201244275089054291
+    second: discoking-min-min (1)_8
+  - first:
+      213: -4189669246081754169
+    second: discoking-min-min (1)_9
+  - first:
+      213: 4831552995372671065
+    second: discoking-min-min (1)_10
+  - first:
+      213: 2372152784634002592
+    second: discoking-min-min (1)_11
+  - first:
+      213: -4828517743741653757
+    second: discoking-min-min (1)_12
+  - first:
+      213: -8933380093360181440
+    second: discoking-min-min (1)_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: discoking-min-min (1)_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 2408
+        width: 1521
+        height: 1864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f035b2c328ce6e0800000000000000
+      internalID: -1806926155545899250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_1
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 3489
+        width: 700
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9c73c46ac417da0800000000000000
+      internalID: -5948889355652707924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_2
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 3414
+        width: 1006
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974d2702e540eef50800000000000000
+      internalID: 6912467280378123385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_3
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 3630
+        width: 289
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530b84d7d10b6bb20800000000000000
+      internalID: 3149898630094696501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 3399
+        width: 75
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b193fe0b46b765560800000000000000
+      internalID: 7302159518223251739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_5
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 3325
+        width: 558
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa2cbd594972f690800000000000000
+      internalID: -7569854667644196190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_6
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 2729
+        width: 793
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40f4afdedfe021c0800000000000000
+      internalID: -4530357484620812210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 2697
+        width: 856
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9662da5b1173760800000000000000
+      internalID: 7437432781617392042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_8
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 2684
+        width: 392
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da56841a3e771d7b0800000000000000
+      internalID: -5201244275089054291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 1074
+        width: 1345
+        height: 1359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb1becb40e4bd5c0800000000000000
+      internalID: -4189669246081754169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_10
+      rect:
+        serializedVersion: 2
+        x: 3134
+        y: 1190
+        width: 528
+        height: 729
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950a9a2c9df1d0340800000000000000
+      internalID: 4831552995372671065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_11
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 195
+        width: 1484
+        height: 1687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac3011b3649be020800000000000000
+      internalID: 2372152784634002592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_12
+      rect:
+        serializedVersion: 2
+        x: 4822
+        y: 665
+        width: 249
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30dab94d1b8adfcb0800000000000000
+      internalID: -4828517743741653757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking-min-min (1)_13
+      rect:
+        serializedVersion: 2
+        x: 4730
+        y: 80
+        width: 117
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f68bbd222460480800000000000000
+      internalID: -8933380093360181440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      discoking-min-min (1)_0: -1806926155545899250
+      discoking-min-min (1)_1: -5948889355652707924
+      discoking-min-min (1)_10: 4831552995372671065
+      discoking-min-min (1)_11: 2372152784634002592
+      discoking-min-min (1)_12: -4828517743741653757
+      discoking-min-min (1)_13: -8933380093360181440
+      discoking-min-min (1)_2: 6912467280378123385
+      discoking-min-min (1)_3: 3149898630094696501
+      discoking-min-min (1)_4: 7302159518223251739
+      discoking-min-min (1)_5: -7569854667644196190
+      discoking-min-min (1)_6: -4530357484620812210
+      discoking-min-min (1)_7: 7437432781617392042
+      discoking-min-min (1)_8: -5201244275089054291
+      discoking-min-min (1)_9: -4189669246081754169
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

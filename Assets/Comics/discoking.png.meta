@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 8a438f53a5762dc47a7bff7559425e19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8596235401103285985
+    second: discoking_0
+  - first:
+      213: -6335515098947683085
+    second: discoking_1
+  - first:
+      213: -8440461246988550324
+    second: discoking_2
+  - first:
+      213: -4277359941002358351
+    second: discoking_3
+  - first:
+      213: 8086669628851614142
+    second: discoking_4
+  - first:
+      213: 612483236942404348
+    second: discoking_5
+  - first:
+      213: 3347569820026550136
+    second: discoking_6
+  - first:
+      213: 3179877069633334559
+    second: discoking_7
+  - first:
+      213: 7296618669517718314
+    second: discoking_8
+  - first:
+      213: -3718084270560611999
+    second: discoking_9
+  - first:
+      213: -1720062984374619088
+    second: discoking_10
+  - first:
+      213: -6040812509263167431
+    second: discoking_11
+  - first:
+      213: -1840153433066130522
+    second: discoking_12
+  - first:
+      213: -7977848367043183894
+    second: discoking_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: discoking_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2407
+        width: 1522
+        height: 1866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11e99f827904b880800000000000000
+      internalID: -8596235401103285985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_1
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 3489
+        width: 702
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc7912a59ab318a0800000000000000
+      internalID: -6335515098947683085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_2
+      rect:
+        serializedVersion: 2
+        x: 2892
+        y: 3413
+        width: 1008
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ffbc027357dda80800000000000000
+      internalID: -8440461246988550324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_3
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 3630
+        width: 290
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1911ccbc3c3a4c0800000000000000
+      internalID: -4277359941002358351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_4
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 3399
+        width: 77
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1f3a3be2f993070800000000000000
+      internalID: 8086669628851614142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_5
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 3325
+        width: 560
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa55d8424aff7800800000000000000
+      internalID: 612483236942404348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_6
+      rect:
+        serializedVersion: 2
+        x: 3013
+        y: 2728
+        width: 795
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877308fd305f47e20800000000000000
+      internalID: 3347569820026550136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_7
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 2696
+        width: 858
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1da7ecd851312c20800000000000000
+      internalID: 3179877069633334559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_8
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 2683
+        width: 394
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a234612550cc24560800000000000000
+      internalID: 7296618669517718314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_9
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 1074
+        width: 1347
+        height: 1359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16174402e06b66cc0800000000000000
+      internalID: -3718084270560611999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_10
+      rect:
+        serializedVersion: 2
+        x: 3134
+        y: 1190
+        width: 529
+        height: 730
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0347d0934db1128e0800000000000000
+      internalID: -1720062984374619088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_11
+      rect:
+        serializedVersion: 2
+        x: 3319
+        y: 194
+        width: 1486
+        height: 1689
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93002a64709ba2ca0800000000000000
+      internalID: -6040812509263167431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_12
+      rect:
+        serializedVersion: 2
+        x: 4821
+        y: 664
+        width: 251
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3b0e1c3367676e0800000000000000
+      internalID: -1840153433066130522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: discoking_13
+      rect:
+        serializedVersion: 2
+        x: 4730
+        y: 80
+        width: 117
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeaf57abd2df84190800000000000000
+      internalID: -7977848367043183894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      discoking_0: -8596235401103285985
+      discoking_1: -6335515098947683085
+      discoking_10: -1720062984374619088
+      discoking_11: -6040812509263167431
+      discoking_12: -1840153433066130522
+      discoking_13: -7977848367043183894
+      discoking_2: -8440461246988550324
+      discoking_3: -4277359941002358351
+      discoking_4: 8086669628851614142
+      discoking_5: 612483236942404348
+      discoking_6: 3347569820026550136
+      discoking_7: 3179877069633334559
+      discoking_8: 7296618669517718314
+      discoking_9: -3718084270560611999
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
