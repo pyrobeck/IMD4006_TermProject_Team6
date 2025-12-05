@@ -1,39 +1,57 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+
 public class bossDamage : MonoBehaviour
 {
     public AudioSource sfxSource;
     public AudioClip screechSound;
     public AudioClip sadSound;
 
+    public GameObject winPanel;
+
     public UnityEvent bossHit;
     public UnityEvent GameEnd;
+
     private int health = 2;
     private bool isInvincible = false;
+
+    private void Start()
+    {
+        winPanel.SetActive(false);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("ThrownObject") && isInvincible == false)
         {
+            // play screech
             if (sfxSource != null && screechSound != null)
-                sfxSource.volume = 2.0f; // 50% volume
+            {
+                sfxSource.volume = 1.0f;
                 sfxSource.PlayOneShot(screechSound);
+            }
 
-            isInvincible = true;
-            if (health == 0)
+            // boss takes damage
+            health--;
+            bossHit.Invoke();
+
+            // check if dead
+            Debug.Log(health);
+
+            if (health <= -2)
             {
                 GameEnd.Invoke();
+                winPanel.SetActive(true);
                 StartCoroutine(PlayAndFadeViolin());
                 Debug.Log("dead");
             }
-            bossHit.Invoke();
-            health--;
 
+            // invincibility
             isInvincible = true;
             StartCoroutine(Invincibility());
         }
     }
-
 
     private IEnumerator Invincibility()
     {
@@ -61,5 +79,4 @@ public class bossDamage : MonoBehaviour
         sfxSource.volume = 0f;
         sfxSource.Stop();
     }
-
 }
