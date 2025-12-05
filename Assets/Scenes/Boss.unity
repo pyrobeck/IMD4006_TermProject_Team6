@@ -1288,7 +1288,7 @@ MonoBehaviour:
   musicClip: {fileID: 8300000, guid: ffca6800531bd41498cfada16cf15aaf, type: 3}
   bassClip: {fileID: 8300000, guid: 0250a361a50231e498b88e33311ff0dc, type: 3}
   drumsClip: {fileID: 8300000, guid: 0250a361a50231e498b88e33311ff0dc, type: 3}
-  minX: -50
+  minX: -100
   maxX: 50
   minVolume: 0
   maxVolume: 0.8
@@ -2142,6 +2142,42 @@ MonoBehaviour:
       - m_Target: {fileID: 973164298}
         m_TargetAssemblyTypeName: SpotlightDanceCheck, Assembly-CSharp
         m_MethodName: DisableSpotlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1280352039}
+        m_TargetAssemblyTypeName: audienceReactions, Assembly-CSharp
+        m_MethodName: Boo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1709145522}
+        m_TargetAssemblyTypeName: audienceReactions, Assembly-CSharp
+        m_MethodName: Boo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1373221118}
+        m_TargetAssemblyTypeName: audienceReactions, Assembly-CSharp
+        m_MethodName: Boo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4178,6 +4214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxSource: {fileID: 1108138579}
   screechSound: {fileID: 8300000, guid: 76aa266ca8ec8754fa303677c5448c16, type: 3}
+  sadSound: {fileID: 8300000, guid: b61b9453e2b041645970276702a5823c, type: 3}
   bossHit:
     m_PersistentCalls:
       m_Calls:
@@ -5362,10 +5399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f534fc9f83753747906ae75abff47ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxSource: {fileID: 0}
+  sfxSource: {fileID: 1531011948}
   chatterSource: {fileID: 1280352040}
   cheerSound: {fileID: 0}
-  booSound: {fileID: 0}
+  booSound: {fileID: 8300000, guid: 03a32cfa3b9e75f40a5d462d2e1bec04, type: 3}
   chatterSound: {fileID: 8300000, guid: 28923d05c7e2d064dae4f3d3cbc5fbf2, type: 3}
 --- !u!82 &1280352040
 AudioSource:
@@ -5379,7 +5416,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
