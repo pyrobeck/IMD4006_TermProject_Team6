@@ -24,6 +24,7 @@ public class bossDamage : MonoBehaviour
             {
                 GameEnd.Invoke();
                 StartCoroutine(PlayAndFadeViolin());
+                Debug.Log("dead");
             }
             bossHit.Invoke();
             health--;
