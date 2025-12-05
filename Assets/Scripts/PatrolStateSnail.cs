@@ -41,13 +41,13 @@ public class PatrolStateSnail : MonoBehaviour
 
         if (hit.collider == null | hitEnemy.collider == true | hitWallR.collider == true | hitWallL.collider == true)
         {
-            if (snailSound != null)
-            {
-                snailSound.time = 0.1f;
-                snailSound.volume = 1;
-                snailSound.Play();
+            //if (snailSound != null)
+           // {
+          //      snailSound.time = 0.1f;
+           //     snailSound.volume = 1;
+           //     snailSound.Play();
 
-            }
+           // }
 
             Rotate();
 

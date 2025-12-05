@@ -49,8 +49,8 @@ public class PatrolStateBeatle : MonoBehaviour
 
         if (hitPlayer.collider == true)
         {
-            if (audioSource != null)
-                audioSource.PlayOneShot(Hit, 0.25f);
+            //if (audioSource != null)
+            //    audioSource.PlayOneShot(Fall, 0.25f);
 
             
 
@@ -63,7 +63,7 @@ public class PatrolStateBeatle : MonoBehaviour
         if (hitFloor.collider == true)
         {
             if (audioSource != null)
-                audioSource.PlayOneShot(Fall, 0.5f);
+                audioSource.PlayOneShot(Hit, 0.5f);
 
             //print("floor");
             StartCoroutine(waitUp());
