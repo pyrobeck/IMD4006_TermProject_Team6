@@ -106,10 +106,10 @@ TextureImporter:
       name: tutorial-sign-dance_0
       rect:
         serializedVersion: 2
-        x: 451
-        y: 733
-        width: 1020
-        height: 1146
+        x: 0
+        y: 0
+        width: 2048
+        height: 2048
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: tutorial-sign-dance_1
-      rect:
-        serializedVersion: 2
-        x: 430
-        y: 94
-        width: 1188
-        height: 628
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2199ad459f2496c40800000000000000
-      internalID: 5506005658075044114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 35b6099b69be4a44bae660d8c8e3234d
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +139,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       tutorial-sign-dance_0: -4875575871108541121
-      tutorial-sign-dance_1: 5506005658075044114
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
