@@ -20,9 +20,9 @@ public class BossCameraZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (hasEnteredBefore == false)
+            if (hasEnteredBefore == false && bossSection != 0)
             {
-                Debug.Log("Starting Boss Section");
+                //Debug.Log("Starting Boss Section");
                 hasEnteredBefore = true;
                 StartCoroutine(BeginSection());
             }
@@ -34,6 +34,7 @@ public class BossCameraZone : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         BeginBossSection.Invoke();
+        Debug.Log("Invoking Boss Section Start");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -48,6 +49,7 @@ public class BossCameraZone : MonoBehaviour
     {
         bossSection++;
         transform.position = cameraZonePositions[bossSection];
+        hasEnteredBefore = false;
     }
 }
 
