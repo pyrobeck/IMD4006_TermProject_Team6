@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: 75b329966b0a0d04c9387bdd03be28ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4031316653126117528
+    second: violin_idleSheet_0
+  - first:
+      213: -7989145681514981990
+    second: violin_idleSheet_1
+  - first:
+      213: 7068826629673204813
+    second: violin_idleSheet_2
+  - first:
+      213: -8959858795057037304
+    second: violin_idleSheet_3
+  - first:
+      213: 2166445425629249079
+    second: violin_idleSheet_4
+  - first:
+      213: -765008310754609248
+    second: violin_idleSheet_5
+  - first:
+      213: 1840616572438830308
+    second: violin_idleSheet_6
+  - first:
+      213: -2169625670878458608
+    second: violin_idleSheet_7
+  - first:
+      213: 4398918176576475496
+    second: violin_idleSheet_8
+  - first:
+      213: 1553480608987578742
+    second: violin_idleSheet_9
+  - first:
+      213: -7605970924626238317
+    second: violin_idleSheet_10
+  - first:
+      213: 6407427729981728416
+    second: violin_idleSheet_11
+  - first:
+      213: 397188695512877701
+    second: violin_idleSheet_12
+  - first:
+      213: -2565636430503131010
+    second: violin_idleSheet_13
+  - first:
+      213: 381669476890719744
+    second: violin_idleSheet_14
+  - first:
+      213: -4791569842530371048
+    second: violin_idleSheet_15
+  - first:
+      213: -1983210138313368656
+    second: violin_idleSheet_16
+  - first:
+      213: 6461849061128317127
+    second: violin_idleSheet_17
+  - first:
+      213: -941382443329197567
+    second: violin_idleSheet_18
+  - first:
+      213: 8483695057049701493
+    second: violin_idleSheet_19
+  - first:
+      213: 2039349610208439654
+    second: violin_idleSheet_20
+  - first:
+      213: 4248906855512043744
+    second: violin_idleSheet_21
+  - first:
+      213: 3614711144615415615
+    second: violin_idleSheet_22
+  - first:
+      213: 7184815388969955517
+    second: violin_idleSheet_23
+  - first:
+      213: 3374123383621650584
+    second: violin_idleSheet_24
+  - first:
+      213: 8504906578896556684
+    second: violin_idleSheet_25
+  - first:
+      213: -5102997882666943149
+    second: violin_idleSheet_26
+  - first:
+      213: 1598497901446413771
+    second: violin_idleSheet_27
+  - first:
+      213: 6326608866722311638
+    second: violin_idleSheet_28
+  - first:
+      213: -3388669618994859495
+    second: violin_idleSheet_29
+  - first:
+      213: -5950375139156261027
+    second: violin_idleSheet_30
+  - first:
+      213: 2930741966281494066
+    second: violin_idleSheet_31
+  - first:
+      213: 8955324039813023920
+    second: violin_idleSheet_32
+  - first:
+      213: 3189827209816579682
+    second: violin_idleSheet_33
+  - first:
+      213: -9189867869556421460
+    second: violin_idleSheet_34
+  - first:
+      213: 6463529645765080314
+    second: violin_idleSheet_35
+  - first:
+      213: -4677083926630977621
+    second: violin_idleSheet_36
+  - first:
+      213: -354717700490061003
+    second: violin_idleSheet_37
+  - first:
+      213: 6021789466415845917
+    second: violin_idleSheet_38
+  - first:
+      213: 6711072044933553794
+    second: violin_idleSheet_39
+  - first:
+      213: 1746478587642003662
+    second: violin_idleSheet_40
+  - first:
+      213: -267990531897750258
+    second: violin_idleSheet_41
+  - first:
+      213: -3676220279881644485
+    second: violin_idleSheet_42
+  - first:
+      213: 1322119495861102898
+    second: violin_idleSheet_43
+  - first:
+      213: -6484421154868465132
+    second: violin_idleSheet_44
+  - first:
+      213: 5026172398999279010
+    second: violin_idleSheet_45
+  - first:
+      213: -3491170532354458708
+    second: violin_idleSheet_46
+  - first:
+      213: -14624777247275001
+    second: violin_idleSheet_47
+  - first:
+      213: -4875870894912362167
+    second: violin_idleSheet_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: violin_idleSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898e2be132d12f730800000000000000
+      internalID: 4031316653126117528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95147ab45ad02190800000000000000
+      internalID: -7989145681514981990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c3e701e54891260800000000000000
+      internalID: 7068826629673204813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80047f2b5ef28a380800000000000000
+      internalID: -8959858795057037304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73eb6e3e2a2c01e10800000000000000
+      internalID: 2166445425629249079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7ff3b9ef42265f0800000000000000
+      internalID: -765008310754609248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ecd9e7450f2b8910800000000000000
+      internalID: 1840616572438830308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d88bf82f0f3e1e0800000000000000
+      internalID: -2169625670878458608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_8
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86199de66c81c0d30800000000000000
+      internalID: 4398918176576475496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_9
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671892812621f8510800000000000000
+      internalID: 1553480608987578742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_10
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39424b10eb9227690800000000000000
+      internalID: -7605970924626238317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a66c898291cbe850800000000000000
+      internalID: 6407427729981728416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a88d0a309138500800000000000000
+      internalID: 397188695512877701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e784f018247056cd0800000000000000
+      internalID: -2565636430503131010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0063ea7fd56fb4500800000000000000
+      internalID: 381669476890719744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_15
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ab0837d9ce08db0800000000000000
+      internalID: -4791569842530371048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_16
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbd0eef2e83a74e0800000000000000
+      internalID: -1983210138313368656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_17
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8aeb81c791da950800000000000000
+      internalID: 6461849061128317127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ae29bc7a98fe2f0800000000000000
+      internalID: -941382443329197567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c4f22b4b32cb570800000000000000
+      internalID: 8483695057049701493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d2e416aa93d4c10800000000000000
+      internalID: 2039349610208439654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0748ef54627fa30800000000000000
+      internalID: 4248906855512043744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_22
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f827c62a80a2230800000000000000
+      internalID: 3614711144615415615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_23
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0705c878795b360800000000000000
+      internalID: 7184815388969955517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_24
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8988b1d275b43de20800000000000000
+      internalID: 3374123383621650584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82130bf87f770670800000000000000
+      internalID: 8504906578896556684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35df01a66728e29b0800000000000000
+      internalID: -5102997882666943149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdbbe54f510f2610800000000000000
+      internalID: 1598497901446413771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dde1d59e31acc750800000000000000
+      internalID: 6326608866722311638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_29
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91237aa7fe609f0d0800000000000000
+      internalID: -3388669618994859495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_30
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57864e56550c6da0800000000000000
+      internalID: -5950375139156261027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_31
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ec9846a461ca820800000000000000
+      internalID: 2930741966281494066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8429154c3b74c70800000000000000
+      internalID: 8955324039813023920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e1ef762fa844c20800000000000000
+      internalID: 3189827209816579682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac4056dcd7077080800000000000000
+      internalID: -9189867869556421460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4b803b7f113b950800000000000000
+      internalID: 6463529645765080314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_36
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafa870f2f8a71fb0800000000000000
+      internalID: -4677083926630977621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_37
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b1fba712ac31bf0800000000000000
+      internalID: -354717700490061003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_38
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12d7e96d91b19350800000000000000
+      internalID: 6021789466415845917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e9154d774822d50800000000000000
+      internalID: 6711072044933553794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec04a30b50dbc3810800000000000000
+      internalID: 1746478587642003662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d0117f708e74cf0800000000000000
+      internalID: -267990531897750258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36419502217bfcc0800000000000000
+      internalID: -3676220279881644485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_43
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2396b653dac195210800000000000000
+      internalID: 1322119495861102898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_44
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412790ac055b206a0800000000000000
+      internalID: -6484421154868465132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_45
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a59936ca2d80c540800000000000000
+      internalID: 5026172398999279010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab73b8d5eedc8fc0800000000000000
+      internalID: -3491170532354458708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708c143b7da0ccff0800000000000000
+      internalID: -14624777247275001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_idleSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949251a214d655cb0800000000000000
+      internalID: -4875870894912362167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4dddd5ac1b80d1d4dab26efe271ebedf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      violin_idleSheet_0: 4031316653126117528
+      violin_idleSheet_1: -7989145681514981990
+      violin_idleSheet_10: -7605970924626238317
+      violin_idleSheet_11: 6407427729981728416
+      violin_idleSheet_12: 397188695512877701
+      violin_idleSheet_13: -2565636430503131010
+      violin_idleSheet_14: 381669476890719744
+      violin_idleSheet_15: -4791569842530371048
+      violin_idleSheet_16: -1983210138313368656
+      violin_idleSheet_17: 6461849061128317127
+      violin_idleSheet_18: -941382443329197567
+      violin_idleSheet_19: 8483695057049701493
+      violin_idleSheet_2: 7068826629673204813
+      violin_idleSheet_20: 2039349610208439654
+      violin_idleSheet_21: 4248906855512043744
+      violin_idleSheet_22: 3614711144615415615
+      violin_idleSheet_23: 7184815388969955517
+      violin_idleSheet_24: 3374123383621650584
+      violin_idleSheet_25: 8504906578896556684
+      violin_idleSheet_26: -5102997882666943149
+      violin_idleSheet_27: 1598497901446413771
+      violin_idleSheet_28: 6326608866722311638
+      violin_idleSheet_29: -3388669618994859495
+      violin_idleSheet_3: -8959858795057037304
+      violin_idleSheet_30: -5950375139156261027
+      violin_idleSheet_31: 2930741966281494066
+      violin_idleSheet_32: 8955324039813023920
+      violin_idleSheet_33: 3189827209816579682
+      violin_idleSheet_34: -9189867869556421460
+      violin_idleSheet_35: 6463529645765080314
+      violin_idleSheet_36: -4677083926630977621
+      violin_idleSheet_37: -354717700490061003
+      violin_idleSheet_38: 6021789466415845917
+      violin_idleSheet_39: 6711072044933553794
+      violin_idleSheet_4: 2166445425629249079
+      violin_idleSheet_40: 1746478587642003662
+      violin_idleSheet_41: -267990531897750258
+      violin_idleSheet_42: -3676220279881644485
+      violin_idleSheet_43: 1322119495861102898
+      violin_idleSheet_44: -6484421154868465132
+      violin_idleSheet_45: 5026172398999279010
+      violin_idleSheet_46: -3491170532354458708
+      violin_idleSheet_47: -14624777247275001
+      violin_idleSheet_48: -4875870894912362167
+      violin_idleSheet_5: -765008310754609248
+      violin_idleSheet_6: 1840616572438830308
+      violin_idleSheet_7: -2169625670878458608
+      violin_idleSheet_8: 4398918176576475496
+      violin_idleSheet_9: 1553480608987578742
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

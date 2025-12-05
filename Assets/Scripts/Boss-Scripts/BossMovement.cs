@@ -37,7 +37,7 @@ public class BossMovement : MonoBehaviour
     private IEnumerator HitAnimation()
     {
         animator.SetInteger("state", 1);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         animator.SetInteger("state", 0);
 
         if (isTheFinalHit)
@@ -54,9 +54,9 @@ public class BossMovement : MonoBehaviour
 
     private IEnumerator GetAngry()
     {
-        sprite.color = Color.red;
+        animator.SetInteger("state", 3);
         yield return new WaitForSeconds(2f);
-        sprite.color = Color.white;
+        animator.SetInteger("state", 0);
         isMoving = true;
         BossMoving.Invoke();
     }

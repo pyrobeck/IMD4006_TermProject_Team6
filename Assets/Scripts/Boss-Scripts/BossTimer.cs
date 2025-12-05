@@ -73,7 +73,7 @@ public class BossTimer : MonoBehaviour
     {
         if (isTimerRunning)
         {
-            timerHands.Rotate(0, 0, -5);
+            timerHands.Rotate(0, 0, -1);
         }
     }
     public void ResetTimer()

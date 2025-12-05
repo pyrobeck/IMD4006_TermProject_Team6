@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: e90a550ac998ce442b61d30d5f432558
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2745565155149846608
+    second: violion_laughSheet_0
+  - first:
+      213: 4389409136509345623
+    second: violion_laughSheet_1
+  - first:
+      213: 8893419772325898305
+    second: violion_laughSheet_2
+  - first:
+      213: 6418824940045595831
+    second: violion_laughSheet_3
+  - first:
+      213: 642794760382262121
+    second: violion_laughSheet_4
+  - first:
+      213: -7325581193137431764
+    second: violion_laughSheet_5
+  - first:
+      213: 6534797525889793803
+    second: violion_laughSheet_6
+  - first:
+      213: 8233175187028123184
+    second: violion_laughSheet_7
+  - first:
+      213: 8724490207855291005
+    second: violion_laughSheet_8
+  - first:
+      213: -8857359763977494846
+    second: violion_laughSheet_9
+  - first:
+      213: -4951087693322064392
+    second: violion_laughSheet_10
+  - first:
+      213: 7198590555110051086
+    second: violion_laughSheet_11
+  - first:
+      213: 6579535031590428880
+    second: violion_laughSheet_12
+  - first:
+      213: 5683651830989621087
+    second: violion_laughSheet_13
+  - first:
+      213: -8556130210468074828
+    second: violion_laughSheet_14
+  - first:
+      213: -6747207001978982943
+    second: violion_laughSheet_15
+  - first:
+      213: -5919292058912606991
+    second: violion_laughSheet_16
+  - first:
+      213: 7748881307510695807
+    second: violion_laughSheet_17
+  - first:
+      213: -2863633373423951067
+    second: violion_laughSheet_18
+  - first:
+      213: 3900351468381226427
+    second: violion_laughSheet_19
+  - first:
+      213: 4641608366054201394
+    second: violion_laughSheet_20
+  - first:
+      213: -4243842615598879477
+    second: violion_laughSheet_21
+  - first:
+      213: -522871329243875470
+    second: violion_laughSheet_22
+  - first:
+      213: 7368656101551342751
+    second: violion_laughSheet_23
+  - first:
+      213: -3558192776130739587
+    second: violion_laughSheet_24
+  - first:
+      213: -7362131951065234269
+    second: violion_laughSheet_25
+  - first:
+      213: -5810468778255336151
+    second: violion_laughSheet_26
+  - first:
+      213: -3199362183119627681
+    second: violion_laughSheet_27
+  - first:
+      213: -3775967480138437099
+    second: violion_laughSheet_28
+  - first:
+      213: -5207493595861347592
+    second: violion_laughSheet_29
+  - first:
+      213: 6701110797038074632
+    second: violion_laughSheet_30
+  - first:
+      213: 5098057450964476744
+    second: violion_laughSheet_31
+  - first:
+      213: -8874843330599799518
+    second: violion_laughSheet_32
+  - first:
+      213: -6001497400380334192
+    second: violion_laughSheet_33
+  - first:
+      213: -2022830443789882681
+    second: violion_laughSheet_34
+  - first:
+      213: -4065689069754292695
+    second: violion_laughSheet_35
+  - first:
+      213: 5511470807078181806
+    second: violion_laughSheet_36
+  - first:
+      213: 9099347290239919972
+    second: violion_laughSheet_37
+  - first:
+      213: -1112198852813072678
+    second: violion_laughSheet_38
+  - first:
+      213: -2195506382526059903
+    second: violion_laughSheet_39
+  - first:
+      213: -2573868085119315397
+    second: violion_laughSheet_40
+  - first:
+      213: 3239971234845024138
+    second: violion_laughSheet_41
+  - first:
+      213: 3041769423049386676
+    second: violion_laughSheet_42
+  - first:
+      213: -8108613309892829359
+    second: violion_laughSheet_43
+  - first:
+      213: -3362350932194132127
+    second: violion_laughSheet_44
+  - first:
+      213: 4359685486166106903
+    second: violion_laughSheet_45
+  - first:
+      213: -8130396840788598257
+    second: violion_laughSheet_46
+  - first:
+      213: 5666178938301452145
+    second: violion_laughSheet_47
+  - first:
+      213: 7532085235206805830
+    second: violion_laughSheet_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: violion_laughSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b76a9bb90bc5e9d0800000000000000
+      internalID: -2745565155149846608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f5e738a505aec30800000000000000
+      internalID: 4389409136509345623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148abefd926cb6b70800000000000000
+      internalID: 8893419772325898305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4f5da464f341950800000000000000
+      internalID: 6418824940045595831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b211ccd6aabe800800000000000000
+      internalID: 642794760382262121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bd2c9a7be465a90800000000000000
+      internalID: -7325581193137431764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1756
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f33c91ab340ba50800000000000000
+      internalID: 6534797525889793803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e1f5c163d124270800000000000000
+      internalID: 8233175187028123184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_8
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7aa695ae9d931970800000000000000
+      internalID: 8724490207855291005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_9
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce98441936541580800000000000000
+      internalID: -8857359763977494846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_10
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdeab399f33a4bb0800000000000000
+      internalID: -4951087693322064392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d01d858f786e360800000000000000
+      internalID: 7198590555110051086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0af2950443f4b50800000000000000
+      internalID: 6579535031590428880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1464
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57822d1a3360ee40800000000000000
+      internalID: 5683651830989621087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4baef09e7e4824980800000000000000
+      internalID: -8556130210468074828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_15
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eda30ddafa1d52a0800000000000000
+      internalID: -6747207001978982943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_16
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f439b2fb337adda0800000000000000
+      internalID: -5919292058912606991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_17
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77e6dc6e7e898b60800000000000000
+      internalID: 7748881307510695807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523ac1a7e945248d0800000000000000
+      internalID: -2863633373423951067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5490cdef4d02630800000000000000
+      internalID: 3900351468381226427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1172
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2385425773e4a6040800000000000000
+      internalID: 4641608366054201394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d609e30a7da15c0800000000000000
+      internalID: -4243842615598879477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_22
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277be2ddb436eb8f0800000000000000
+      internalID: -522871329243875470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_23
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f948bfcfea9b24660800000000000000
+      internalID: 7368656101551342751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_24
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72cd50b582ce9ec0800000000000000
+      internalID: -3558192776130739587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4043b2ff374d990800000000000000
+      internalID: -7362131951065234269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92db79d6e611d5fa0800000000000000
+      internalID: -5810468778255336151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 880
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a165f9b059993d0800000000000000
+      internalID: -3199362183119627681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51eebee2591199bc0800000000000000
+      internalID: -3775967480138437099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_29
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f210904a244bb7b0800000000000000
+      internalID: -5207493595861347592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_30
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b3df114c02ffc50800000000000000
+      internalID: 6701110797038074632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_31
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8436541bd30ffb640800000000000000
+      internalID: 5098057450964476744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225ba52030936d480800000000000000
+      internalID: -8874843330599799518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f56e169e566bca0800000000000000
+      internalID: -6001497400380334192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 588
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7caee05cd667de3e0800000000000000
+      internalID: -2022830443789882681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9266b1ef455c397c0800000000000000
+      internalID: -4065689069754292695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_36
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab94dd7f7dac7c40800000000000000
+      internalID: 5511470807078181806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_37
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467e9aa6620674e70800000000000000
+      internalID: 9099347290239919972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_38
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6da7a390da090f0800000000000000
+      internalID: -1112198852813072678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a6e6fc39ef781e0800000000000000
+      internalID: -2195506382526059903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b329fbf0d98c74cd0800000000000000
+      internalID: -2573868085119315397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 296
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fdb670ca0b6fc20800000000000000
+      internalID: 3239971234845024138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bae08d9c29863a20800000000000000
+      internalID: 3041769423049386676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_43
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f55dae72b687f80800000000000000
+      internalID: -8108613309892829359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_44
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f7d5444a78651d0800000000000000
+      internalID: -3362350932194132127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_45
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7136b5fd9d6b08c30800000000000000
+      internalID: 4359685486166106903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0266d566270b2f80800000000000000
+      internalID: -8130396840788598257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f024349bf42ae40800000000000000
+      internalID: 5666178938301452145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violion_laughSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 4
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649577e5d97578860800000000000000
+      internalID: 7532085235206805830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f827e0cf3a41965448fd27b1b729a2e5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      violion_laughSheet_0: -2745565155149846608
+      violion_laughSheet_1: 4389409136509345623
+      violion_laughSheet_10: -4951087693322064392
+      violion_laughSheet_11: 7198590555110051086
+      violion_laughSheet_12: 6579535031590428880
+      violion_laughSheet_13: 5683651830989621087
+      violion_laughSheet_14: -8556130210468074828
+      violion_laughSheet_15: -6747207001978982943
+      violion_laughSheet_16: -5919292058912606991
+      violion_laughSheet_17: 7748881307510695807
+      violion_laughSheet_18: -2863633373423951067
+      violion_laughSheet_19: 3900351468381226427
+      violion_laughSheet_2: 8893419772325898305
+      violion_laughSheet_20: 4641608366054201394
+      violion_laughSheet_21: -4243842615598879477
+      violion_laughSheet_22: -522871329243875470
+      violion_laughSheet_23: 7368656101551342751
+      violion_laughSheet_24: -3558192776130739587
+      violion_laughSheet_25: -7362131951065234269
+      violion_laughSheet_26: -5810468778255336151
+      violion_laughSheet_27: -3199362183119627681
+      violion_laughSheet_28: -3775967480138437099
+      violion_laughSheet_29: -5207493595861347592
+      violion_laughSheet_3: 6418824940045595831
+      violion_laughSheet_30: 6701110797038074632
+      violion_laughSheet_31: 5098057450964476744
+      violion_laughSheet_32: -8874843330599799518
+      violion_laughSheet_33: -6001497400380334192
+      violion_laughSheet_34: -2022830443789882681
+      violion_laughSheet_35: -4065689069754292695
+      violion_laughSheet_36: 5511470807078181806
+      violion_laughSheet_37: 9099347290239919972
+      violion_laughSheet_38: -1112198852813072678
+      violion_laughSheet_39: -2195506382526059903
+      violion_laughSheet_4: 642794760382262121
+      violion_laughSheet_40: -2573868085119315397
+      violion_laughSheet_41: 3239971234845024138
+      violion_laughSheet_42: 3041769423049386676
+      violion_laughSheet_43: -8108613309892829359
+      violion_laughSheet_44: -3362350932194132127
+      violion_laughSheet_45: 4359685486166106903
+      violion_laughSheet_46: -8130396840788598257
+      violion_laughSheet_47: 5666178938301452145
+      violion_laughSheet_48: 7532085235206805830
+      violion_laughSheet_5: -7325581193137431764
+      violion_laughSheet_6: 6534797525889793803
+      violion_laughSheet_7: 8233175187028123184
+      violion_laughSheet_8: 8724490207855291005
+      violion_laughSheet_9: -8857359763977494846
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
