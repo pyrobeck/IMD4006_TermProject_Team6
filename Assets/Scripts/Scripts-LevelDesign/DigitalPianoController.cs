@@ -20,35 +20,92 @@ public class DigitalPianoController : MonoBehaviour
 
         // Assign keys to note index in your AudioClip array
         noteMap = new Dictionary<KeyCode, int>()
-        {
-            // White Keys (14)
-            { KeyCode.Tab, 0 },
-            { KeyCode.Q, 1 },
-            { KeyCode.W, 2 },
-            { KeyCode.E, 3 },
-            { KeyCode.R, 4 },
-            { KeyCode.T, 5 },
-            { KeyCode.Y, 6 },
-            { KeyCode.U, 7 },
-            { KeyCode.I, 8 },
-            { KeyCode.O, 9 },
-            { KeyCode.P, 10 },
-            { KeyCode.LeftBracket, 11 },
-            { KeyCode.RightBracket, 12 },
-            { KeyCode.Backslash, 13 },
+{
+    // White Keys (14)
+    { KeyCode.A, 0 },
+    { KeyCode.Z, 0 },
 
-            // Black Keys (10)
-            { KeyCode.Alpha1, 14 },
-            { KeyCode.Alpha2, 15 },
-            { KeyCode.Alpha3, 16 },
-            { KeyCode.Alpha4, 17 },
-            { KeyCode.Alpha5, 18 },
-            { KeyCode.Alpha6, 19 },
-            { KeyCode.Alpha7, 20 },
-            { KeyCode.Alpha8, 21 },
-            { KeyCode.Alpha9, 22 },
-            { KeyCode.Alpha0, 23 }
-        };
+    { KeyCode.S, 1 },
+    { KeyCode.X, 1 },
+    { KeyCode.LeftAlt, 1 },
+    { KeyCode.RightAlt, 1 },
+
+    { KeyCode.C, 2 },
+    { KeyCode.R, 2 },
+    { KeyCode.F, 2 },
+
+    { KeyCode.V, 3 },
+
+    { KeyCode.B, 4 },      // was R → now B N Space
+    { KeyCode.N, 4 },
+    { KeyCode.Space, 4 },
+
+    { KeyCode.M, 5 },      // was T → now M
+
+    { KeyCode.Comma, 6 },  // was Y → now , . L O
+    { KeyCode.Period, 6 },
+    { KeyCode.L, 6 },
+    { KeyCode.O, 6 },
+
+    { KeyCode.P, 7 },      // was U → now P ; /
+    { KeyCode.Semicolon, 7 },
+    { KeyCode.Slash, 7 },
+
+    { KeyCode.RightBracket, 8 }, // was I → now ] Shift
+    { KeyCode.LeftShift, 8 },
+    { KeyCode.RightShift, 8 },
+
+    { KeyCode.Return, 9 }, // was O → now Enter
+
+    { KeyCode.LeftControl, 10 }, // was P → now Ctrl
+    { KeyCode.RightControl, 10 },
+
+    { KeyCode.UpArrow, 11 },     // was LeftBracket → now Up, Left, Down
+    { KeyCode.LeftArrow, 11 },
+    { KeyCode.DownArrow, 11 },
+
+    { KeyCode.RightArrow, 12 },  // was RightBracket → now Right arrow
+
+    { KeyCode.Alpha0, 13 },      // was Backslash → now "10"? You wrote "10", mapping to key "0"
+    
+    // -------------------------
+    // Black Keys (10)
+    // -------------------------
+    
+    // was 1 → now Q W
+    { KeyCode.Q, 14 },
+    { KeyCode.W, 14 },
+
+    // was 2 → now E
+    { KeyCode.E, 15 },
+
+    // was 3 → now Y
+    { KeyCode.Y, 16 },
+
+    // was 4 → now U J
+    { KeyCode.U, 17 },
+    { KeyCode.J, 17 },
+
+    // was 5 → now K L
+    { KeyCode.K, 18 },
+
+    // was 6 → now [
+    { KeyCode.LeftBracket, 19 },
+
+    // was 7 → now Enter + Backslash
+    { KeyCode.Backslash, 20 },
+
+    // was 8 → now Delete
+    { KeyCode.Delete, 21 },
+
+    // was 9 → now Page Up + Page Down
+    { KeyCode.PageUp, 22 },
+    { KeyCode.PageDown, 22 },
+
+    // was 0 → now Key 7
+    { KeyCode.Alpha7, 23 },
+};
+
     }
 
     void Update()

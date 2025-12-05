@@ -15518,6 +15518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49598,6 +49602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60608,7 +60616,7 @@ Transform:
   m_GameObject: {fileID: 419141051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -64, y: -9.01, z: 0}
+  m_LocalPosition: {x: 33.4, y: 0.02, z: 0}
   m_LocalScale: {x: 0.3329301, y: 0.3562352, z: 0.3329301}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -61544,6 +61552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -95292,6 +95304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -113589,6 +113605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -197644,6 +197664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -211313,6 +211337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -217918,6 +217946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -254682,6 +254714,8 @@ GameObject:
   - component: {fileID: 1768506272}
   - component: {fileID: 1768506271}
   - component: {fileID: 1768506270}
+  - component: {fileID: 1768506274}
+  - component: {fileID: 1768506273}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -254876,6 +254910,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pianoNotes:
   - {fileID: 0}
+  - {fileID: 8300000, guid: ddbd421a75110fb4187977b441b8086f, type: 3}
+  - {fileID: 8300000, guid: 081afe5a5c4313f479178907d56748dd, type: 3}
+  - {fileID: 8300000, guid: 582bddfce13c05a49b70f29b3c168773, type: 3}
+  - {fileID: 8300000, guid: f0e7018e1be7c8740a995bd610c4e0a4, type: 3}
+  - {fileID: 8300000, guid: a62ecb7e395451a46a103b315d7df289, type: 3}
+  - {fileID: 8300000, guid: f53853cadaf017c4aa6056acb9f7d312, type: 3}
+  - {fileID: 8300000, guid: bbcdcdc3938f17441944913ae00d948c, type: 3}
+  - {fileID: 8300000, guid: cf9bb744b5ee5574c81e4564b2dce920, type: 3}
+  - {fileID: 8300000, guid: 3151e4bd613bbd648ba9989954372cba, type: 3}
+  - {fileID: 8300000, guid: 1e0377042b376544c9dba1918bdc1da3, type: 3}
+  - {fileID: 8300000, guid: 757041c7dc96483479fadbe2845d54ac, type: 3}
+  - {fileID: 8300000, guid: 3cc20bb26057f954f99c435e9c7e015e, type: 3}
+  - {fileID: 8300000, guid: 6d175a38432bfb24bac1d0c000db70e2, type: 3}
+  - {fileID: 8300000, guid: c31bf657a8b34674d80ec21e2ac11017, type: 3}
+  - {fileID: 8300000, guid: fd6c8e5578a662a4fb4105a125ec46c2, type: 3}
+  - {fileID: 8300000, guid: ffe3ec6fb64677849b2c6bcfeee6fd78, type: 3}
+  - {fileID: 8300000, guid: e2bf2f3f9854d164ca6b9482e3d826c7, type: 3}
+  - {fileID: 8300000, guid: 72b2832d0c5bdb6469c2cb6d39edc282, type: 3}
+  - {fileID: 8300000, guid: 03c2398c9ce4d70469199b3a3d9859e1, type: 3}
+  - {fileID: 8300000, guid: 1b12d1821afdd89438e04493b0b1c383, type: 3}
+  - {fileID: 8300000, guid: f8ef3e58e77fae94da6bfd210fdc35a3, type: 3}
+  - {fileID: 8300000, guid: 69dbc290dd231d348a8439c528f80435, type: 3}
+  - {fileID: 8300000, guid: 67d217c501a3ab648a408ae64b195602, type: 3}
+  - {fileID: 8300000, guid: e373540fe0b68854f85578f123b726a3, type: 3}
 --- !u!114 &1768506272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254888,18 +254946,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a5bb4e06e81d643bba80ea1d1ae265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  musicSource: {fileID: 0}
-  bassSource: {fileID: 0}
-  drumSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  bassClip: {fileID: 0}
-  drumsClip: {fileID: 0}
+  player: {fileID: 419141055}
+  musicSource: {fileID: 2039038733}
+  bassSource: {fileID: 1794673629}
+  drumSource: {fileID: 1849610937}
+  musicClip: {fileID: 8300000, guid: 1dd69b1c6d7d2464db6d12f40fdee46c, type: 3}
+  bassClip: {fileID: 8300000, guid: 2d90b8e7fee55874cb55c892669e3372, type: 3}
+  drumsClip: {fileID: 8300000, guid: ea111f9c421d3d34bba577e470467c4d, type: 3}
   minX: -50
   maxX: 350
   minVolume: 0
   maxVolume: 0.8
-  tapBPM: {fileID: 0}
+  tapBPM: {fileID: 798784645}
+--- !u!114 &1768506273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768506265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad0dc12f803e5548b8abe6daeb85f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  averageBPM: 120
+--- !u!114 &1768506274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768506265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cb77e9f9fef6f4b92274b0406bed30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bpm: 120
 --- !u!1 &1772810391
 GameObject:
   m_ObjectHideFlags: 0
@@ -258123,7 +258207,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2d90b8e7fee55874cb55c892669e3372, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -267954,7 +268038,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
+  m_Resource: {fileID: 8300000, guid: ea111f9c421d3d34bba577e470467c4d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -287021,6 +287105,7 @@ MonoBehaviour:
   moveSpeedY: 5
   fallingMoveSpeedY: 30
   fastMoveSpeedY: 20
+  bossLookahead: 0
   zoom: 7
 --- !u!114 &1986489759
 MonoBehaviour:
@@ -294541,7 +294626,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 251d6fe77f46fcb4783b2cfb01aba897, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1dd69b1c6d7d2464db6d12f40fdee46c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -304819,6 +304904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RisingStar (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376302751431506889, guid: 62cae00084281bb4f81a75a01a9ac757, type: 3}
+      propertyPath: bpmCounter
+      value: 
+      objectReference: {fileID: 1768506274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
