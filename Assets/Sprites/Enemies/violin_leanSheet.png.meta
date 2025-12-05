@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 0974bd2fc80387449bd9f91525b91a3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5909105409278480237
+    second: violin_leanSheet_0
+  - first:
+      213: -1057425182009190924
+    second: violin_leanSheet_1
+  - first:
+      213: 459943404559639942
+    second: violin_leanSheet_2
+  - first:
+      213: 2863335609079559881
+    second: violin_leanSheet_3
+  - first:
+      213: -4005463030213909576
+    second: violin_leanSheet_4
+  - first:
+      213: 5164639240146784596
+    second: violin_leanSheet_5
+  - first:
+      213: 6446550553990237227
+    second: violin_leanSheet_6
+  - first:
+      213: 3087102243208283779
+    second: violin_leanSheet_7
+  - first:
+      213: -448864685891507499
+    second: violin_leanSheet_8
+  - first:
+      213: -5241604539360645368
+    second: violin_leanSheet_9
+  - first:
+      213: -5690315921021509748
+    second: violin_leanSheet_10
+  - first:
+      213: -1251859159669732833
+    second: violin_leanSheet_11
+  - first:
+      213: -5173807512087672555
+    second: violin_leanSheet_12
+  - first:
+      213: 8288620190540783151
+    second: violin_leanSheet_13
+  - first:
+      213: -8188474668051444745
+    second: violin_leanSheet_14
+  - first:
+      213: 1392012136099976137
+    second: violin_leanSheet_15
+  - first:
+      213: 2629142919727495000
+    second: violin_leanSheet_16
+  - first:
+      213: 6426319024922304269
+    second: violin_leanSheet_17
+  - first:
+      213: -1989573473794136744
+    second: violin_leanSheet_18
+  - first:
+      213: 9184656323810030681
+    second: violin_leanSheet_19
+  - first:
+      213: -3448563989870012869
+    second: violin_leanSheet_20
+  - first:
+      213: 3474419479068874632
+    second: violin_leanSheet_21
+  - first:
+      213: -5620929565414010242
+    second: violin_leanSheet_22
+  - first:
+      213: 110346903252619189
+    second: violin_leanSheet_23
+  - first:
+      213: -863073541486277142
+    second: violin_leanSheet_24
+  - first:
+      213: 1211366378686506088
+    second: violin_leanSheet_25
+  - first:
+      213: 924610413607699852
+    second: violin_leanSheet_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: violin_leanSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1366
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f026cdf0c510250800000000000000
+      internalID: 5909105409278480237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_1
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1366
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f51ac146654351f0800000000000000
+      internalID: -1057425182009190924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_2
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1366
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685af8de61c026600800000000000000
+      internalID: 459943404559639942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1366
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6f9ebd09c9cb720800000000000000
+      internalID: 2863335609079559881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1366
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3e32b889cb968c0800000000000000
+      internalID: -4005463030213909576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1366
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4511ef5860c7ca740800000000000000
+      internalID: 5164639240146784596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1025
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c8f25d29fb67950800000000000000
+      internalID: 6446550553990237227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1025
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386cdbf422797da20800000000000000
+      internalID: 3087102243208283779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_8
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1025
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da283542ff45c9f0800000000000000
+      internalID: -448864685891507499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1025
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f655251741247b0800000000000000
+      internalID: -5241604539360645368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1025
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f53c381dfe701b0800000000000000
+      internalID: -5690315921021509748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1025
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a01171ab080aee0800000000000000
+      internalID: -1251859159669732833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51944c1da71f238b0800000000000000
+      internalID: -5173807512087672555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_13
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 684
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e5057f528170370800000000000000
+      internalID: 8288620190540783151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_14
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 684
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb428e7ca1bc5e80800000000000000
+      internalID: -8188474668051444745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 684
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3954f99ab615310800000000000000
+      internalID: 1392012136099976137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 684
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85737124e879c7420800000000000000
+      internalID: 2629142919727495000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 684
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f14d5ea1fde2950800000000000000
+      internalID: 6426319024922304269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855e5ff777d9364e0800000000000000
+      internalID: -1989573473794136744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_19
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 343
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954fdbc9344767f70800000000000000
+      internalID: 9184656323810030681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_20
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 343
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36189e825d3420d0800000000000000
+      internalID: -3448563989870012869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 343
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8871992ab1e973030800000000000000
+      internalID: 3474419479068874632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 343
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72d10a57527ef1b0800000000000000
+      internalID: -5620929565414010242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 343
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfcf628ce7088100800000000000000
+      internalID: 110346903252619189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed0ca0df2fb504f0800000000000000
+      internalID: -863073541486277142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_25
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 2
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864e576ad43afc010800000000000000
+      internalID: 1211366378686506088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: violin_leanSheet_26
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2
+        width: 341
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85c6bab540e4dc00800000000000000
+      internalID: 924610413607699852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c3ffc3e00c8391f4caefaad6882b317e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      violin_leanSheet_0: 5909105409278480237
+      violin_leanSheet_1: -1057425182009190924
+      violin_leanSheet_10: -5690315921021509748
+      violin_leanSheet_11: -1251859159669732833
+      violin_leanSheet_12: -5173807512087672555
+      violin_leanSheet_13: 8288620190540783151
+      violin_leanSheet_14: -8188474668051444745
+      violin_leanSheet_15: 1392012136099976137
+      violin_leanSheet_16: 2629142919727495000
+      violin_leanSheet_17: 6426319024922304269
+      violin_leanSheet_18: -1989573473794136744
+      violin_leanSheet_19: 9184656323810030681
+      violin_leanSheet_2: 459943404559639942
+      violin_leanSheet_20: -3448563989870012869
+      violin_leanSheet_21: 3474419479068874632
+      violin_leanSheet_22: -5620929565414010242
+      violin_leanSheet_23: 110346903252619189
+      violin_leanSheet_24: -863073541486277142
+      violin_leanSheet_25: 1211366378686506088
+      violin_leanSheet_26: 924610413607699852
+      violin_leanSheet_3: 2863335609079559881
+      violin_leanSheet_4: -4005463030213909576
+      violin_leanSheet_5: 5164639240146784596
+      violin_leanSheet_6: 6446550553990237227
+      violin_leanSheet_7: 3087102243208283779
+      violin_leanSheet_8: -448864685891507499
+      violin_leanSheet_9: -5241604539360645368
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
