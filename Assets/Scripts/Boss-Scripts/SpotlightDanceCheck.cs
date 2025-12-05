@@ -4,10 +4,17 @@ public class SpotlightDanceCheck : MonoBehaviour
 {
     private bool isPlayerUnderSpotlight = false;
     public UnityEvent danceSuccessful;
+    public UnityEvent StartBoss;
     private bool isUsed = false;
+    private bool isBossStarted = false;
 
     [SerializeField] Vector2[] targetPositions;
-    int currentLocation = 0;
+    int currentLocation = 1;
+
+    void Start()
+    {
+        transform.position = targetPositions[0];
+    }
     public void OnDanceInput(Vector2 stickInput)
     {
         if (isUsed)
@@ -16,7 +23,11 @@ public class SpotlightDanceCheck : MonoBehaviour
         }
         if (isPlayerUnderSpotlight)
         {
-            // Debug.Log("WE'RE DANCING!!!! UNDER THE SPOT LIGHT!!!");
+            if (isBossStarted == false)
+            {
+                isBossStarted = true;
+                StartBoss.Invoke();
+            }
             danceSuccessful.Invoke();
             isUsed = true;
         }
@@ -44,7 +55,7 @@ public class SpotlightDanceCheck : MonoBehaviour
         }
         if (collider.gameObject.CompareTag("Player"))
         {
-            //  Debug.Log("Bye player!!!");
+            //Debug.Log("Bye player!!!");
             isPlayerUnderSpotlight = false;
         }
     }
@@ -52,6 +63,7 @@ public class SpotlightDanceCheck : MonoBehaviour
     public void Move()
     {
         isUsed = false;
+        isPlayerUnderSpotlight = false;
         transform.position = targetPositions[currentLocation];
         currentLocation++;
     }

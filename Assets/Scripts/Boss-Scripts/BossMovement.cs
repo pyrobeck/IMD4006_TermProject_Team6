@@ -10,13 +10,14 @@ public class BossMovement : MonoBehaviour
     private float moveSpeed = 8;
     private SpriteRenderer sprite;
     private Animator animator;
-    private int currentLocation = 0;
+    private int currentLocation = 1;
     private bool isMoving = false;
     private bool isTheFinalHit = false;
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        transform.position = Vector3.up * 99999;
     }
 
     void Update()
@@ -28,13 +29,28 @@ public class BossMovement : MonoBehaviour
         StartCoroutine(HitAnimation());
     }
 
+    public void StartBoss()
+    {
+        transform.position = moveLocations[0];
+        StartCoroutine(AppearanceAnimation());
+    }
     private IEnumerator HitAnimation()
     {
         animator.SetInteger("state", 1);
         yield return new WaitForSeconds(1.5f);
         animator.SetInteger("state", 0);
-        StartCoroutine(GetAngry());
+
+        if (isTheFinalHit)
+        {
+            StartCoroutine(DieAnimation());
+        }
+        else
+        {
+            StartCoroutine(GetAngry());
+        }
+
     }
+
 
     private IEnumerator GetAngry()
     {
@@ -45,7 +61,19 @@ public class BossMovement : MonoBehaviour
         BossMoving.Invoke();
     }
 
+    private IEnumerator AppearanceAnimation()
+    {
+        animator.SetInteger("state", 2);
+        yield return new WaitForSeconds(2);
+        animator.SetInteger("state", 0);
+    }
 
+    private IEnumerator DieAnimation()
+    {
+        animator.SetInteger("state", 3);
+        yield return new WaitForSeconds(2);
+        animator.SetInteger("state", 0);
+    }
     private void Move()
     {
         if (isMoving)

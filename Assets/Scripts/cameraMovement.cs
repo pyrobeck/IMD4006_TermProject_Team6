@@ -16,7 +16,7 @@ public class cameraMovement : MonoBehaviour
     float standardMoveSpeedY = 5;
     [SerializeField] float fallingMoveSpeedY = 30;
     [SerializeField] float fastMoveSpeedY = 20;
-    [SerializeField] bool noLookahead = false;
+    [SerializeField] bool bossLookahead = false;
     float directionFlippingMoveSpeed = 5;
 
 
@@ -122,13 +122,16 @@ public class cameraMovement : MonoBehaviour
     {
         //only update the camera target if the player is outside the camera deadzone
         //this is so the camera smoothly stops following the player's slight horizontal adjustments, but still follows them jumping or falling
+        if (bossLookahead == true)
+        {
+            targetX = new Vector3(target.position.x, 0, 0) + lookAheadOffset;
+            cameraTargetXRecord = targetX;
+            targetX += additionalXOffset;
+            return;
+        }
         if (!(target.position.x < deadzoneRight && target.position.x > deadzoneLeft))
         {
             targetX = new Vector3(target.position.x, 0, 0) + lookAheadOffset;
-            if (noLookahead == true)
-            {
-                targetX.x -= lookAheadOffset.x;
-            }
             cameraTargetXRecord = targetX; //keep a record of the last horizontal target while the player was outside the deadzone
         }
         else
@@ -177,6 +180,11 @@ public class cameraMovement : MonoBehaviour
 
     private void ResetLookAheadOffset()
     {
+        if (bossLookahead == true)
+        {
+            lookAheadOffset = new Vector3(lookAheadOffsetX, 0, 0);
+            return;
+        }
         lookAheadOffset = new Vector3(lookAheadOffsetX * direction, 0, 0);
     }
 
