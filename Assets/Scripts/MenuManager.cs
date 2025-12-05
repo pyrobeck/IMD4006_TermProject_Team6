@@ -236,7 +236,7 @@ public class MenuManager : MonoBehaviour
     public void LoadLevel3()
     {
         StopMusic();
-        SceneManager.LoadScene("Level_3");
+        SceneManager.LoadScene("Boss");
     }
 
     private void StopMusic()
