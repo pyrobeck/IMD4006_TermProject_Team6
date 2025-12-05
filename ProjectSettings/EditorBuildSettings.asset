@@ -28,10 +28,10 @@ EditorBuildSettings:
     guid: 0bca731305a23ce4ab9a0e76b4c58d14
   - enabled: 1
     path: Assets/Scenes/ThirdComic.unity
-    guid: f1396b4eced37cf4887a5a2e5e05da39
+    guid: 8c72f483aca884d4f898bf455b6b6e87
   - enabled: 1
-    path: Assets/Scenes/Level_3.unity
-    guid: e120c3fe0332e5344a09c2edaf8bdefd
+    path: Assets/Scenes/Boss.unity
+    guid: b389c11f57185264d862a42cf4009b8f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 136c07edb0795984f990e16a5aeb5a07, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
